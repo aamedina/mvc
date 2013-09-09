@@ -1,5 +1,18 @@
 (ns mvc.impl.stm)
 
+(defprotocol IRef
+  (-alter [_ f args])
+  (-commute [_ f args])
+  (-ensure [_])
+  (-dosync [_ exprs]))
+
+(deftype Ref [state meta revision-id]
+  IDeref
+  (-deref [_] state)
+  
+  IMeta
+  (-meta [_] meta))
+
 (defprotocol IAtomicTransaction)
 
 (defprotocol IAtomicTransactor
@@ -26,14 +39,7 @@
   (-inc-and-get! [_])
   (-get-and-inc! [_]))
 
-(defprotocol ICountDownLatch
-  (await [_]))
-
-(deftype CountDownLatch [count]
-  ICountDownLatch
-  (await [_]))
-
-(deftype Ref [history min-history max-history])
+(deftype ARef [history min-history max-history])
 
 (deftype AtomicTransaction [status])
 

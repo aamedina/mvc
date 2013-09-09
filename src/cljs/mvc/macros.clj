@@ -1,5 +1,5 @@
 (ns mvc.macros
-  (:refer-clojure :exclude [future])
+  (:refer-clojure :exclude [future dosync sync])
   (:require
    [cljs.core]
    [cljs.analyzer :as analyzer]
@@ -211,3 +211,11 @@
 (defmacro atomic
   [& body]
   ~@body)
+
+(defmacro sync
+  [& body]
+  `(mvc.impl.transaction/locking-transaction (fn [] ~@body)))
+
+(defmacro dosync
+  [& exprs]
+  `(sync nil ~@exprs))
