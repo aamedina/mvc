@@ -56,8 +56,7 @@
 (defmacro with-agent
   [a & body]
   `(binding [mvc.impl.agent/*agent* ~a]
-     (try (do ~@body)
-          (catch js/Error err "error goes here"))))
+     (do ~@body)))
 
 (defmacro with-worker
   [w & body]
@@ -153,14 +152,16 @@
                             (clojure.string/lower-case))))
         method-sym (symbol method-name)
         cljs-fn (if (upper-case? (first method-name))
-                  `(def ~(with-meta method-sym
-                           (assoc (meta method-sym) :doc doc-string))
+                  `(def ~method-sym
                      ~(symbol (str lib-sym "/" method)))
-                  `(defn ~(with-meta method-sym
-                            (assoc (meta method-sym) :doc doc-string))
-                     [& args#]
-                     (apply ~(symbol (str lib-sym "/" method))
-                            (map cljs.core/clj->js args#))))]
+                  `(def ~method-sym
+                     ~(symbol (str lib-sym "/" method)))
+                  ;; `(defn ~(with-meta method-sym
+                  ;;           (assoc (meta method-sym) :doc doc-string))
+                  ;;    [& args#]
+                  ;;    (apply ~(symbol (str lib-sym "/" method))
+                  ;;           (map cljs.core/clj->js args#)))
+                  )]
     cljs-fn))
 
 (defmacro import-goog
@@ -192,7 +193,7 @@
                  cljs-libpath (clojure.string/replace libpath #"\.js$" ".cljs")]
              (into defs methods)))
          [] libs)]
-    `~defs#))
+    `(do ~@(for [def# defs#] def#))))
 
 (defmacro future
   [& body]

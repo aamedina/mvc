@@ -2,7 +2,8 @@
   (:require
    [cljs.core.async :as a :refer [>! <! put! take! chan]]
    [mvc.impl.compiler]
-   [dommy.core :as dommy])
+   [dommy.core :as dommy]
+   [mvc.ui.meny :as meny])
   (:require-macros
    [cljs.core.async.macros :as am :refer [go alts!]]
    [mvc.macros :as m :refer [defcollection defmodel defpartial]]
@@ -33,4 +34,4 @@
 (defn bootstrap
   [& args]
   (println "Hello, examples!")
-  (dommy/append! (sel1 :div#content) (test-node 10)))
+  (dommy/append! (sel1 :body) (meny/meny)))

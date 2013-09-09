@@ -4,27 +4,6 @@
   (:require-macros
    [mvc.macros :as m :refer [future atomic]]))
 
-(def ^:dynamic *callback-executor* nil)
-
-(def ^:dynamic *future-executor* nil)
-
-(defprotocol IDeliver
-  (-deliver [promise val])
-  (-deliver-exception [promise exception]))
-
-(defprotocol INotify
-  (-attend [promise f executor]))
-
-(defprotocol IFail
-  (-realized-exception? [promise]))
-
-(defprotocol IFuture
-  (cancelled? [_])
-  (completed? [_])
-  (cancel! [_]))
-
-(deftype Future [])
-
 (defprotocol IExecutor
   (execute [f] "Executes the function at some time in the future."))
 
@@ -42,6 +21,9 @@
   (submit [_ task result] "Enqueues a value-returning task and returns a Future."))
 
 (deftype SoloExecutor []
+  IExecutor
+  (execute [f])
+  
   IExecutorService
   (await-termination [_ timeout-ms])
   (invoke-all [_ tasks timeout-ms])
@@ -53,6 +35,9 @@
   (submit [_ task result]))
 
 (deftype PoolExecutor []
+  IExecutor
+  (execute [f])
+  
   IExecutorService
   (await-termination [_ timeout-ms])
   (invoke-all [_ tasks timeout-ms])
@@ -62,28 +47,3 @@
   (shutdown [_])
   (shutdown-now [_])
   (submit [_ task result]))
-
-(defprotocol IAtomicTransactor
-  (-retry [_])
-  (-else! [_])
-  (-commit! [_])
-  (-abort! [_])
-  (-reset! [_])
-  (-validate! [_]))
-
-(defprotocol IAtomicReference
-  (-get [_])
-  (-compare-and-set! [_ expect update])
-  (-get-and-set! [_ new-val])
-  (-lazy-set! [_ new-val])
-  (-set! [_ new-val])
-  (-weak-compare-and-set! [_ expect update]))
-
-(deftype STM []
-  IAtomicTransactor
-  (-retry [_])
-  (-else! [_])
-  (-commit! [_])
-  (-abort! [_])
-  (-reset! [_])
-  (-validate! [_]))

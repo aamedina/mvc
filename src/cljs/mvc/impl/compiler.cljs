@@ -98,13 +98,14 @@
   (let [html (replace html #"data-(\w+)=\"" "data-event=\"$1 ")
         frag (htmlToDocumentFragment html)
         matched (sel "[data-event]" frag)]
-    (doseq [elem matched]
-      (let [data-event (.getAttribute elem "data-event")
-            event (clojure.string/trim (first (re-seq #"^\w+ " data-event)))
-            handler (-> data-event
-                        (replace (re-pattern (str "^" event)) "")
-                        (str "; " event ";")
-                        (#(str "var " event " =" %))
-                        js/eval)]
-        (events/listen! elem event handler)))
+    (when (pos? (count matched))
+      (doseq [elem matched]
+        (let [data-event (.getAttribute elem "data-event")
+              event (clojure.string/trim (first (re-seq #"^\w+ " data-event)))
+              handler (-> data-event
+                          (replace (re-pattern (str "^" event)) "")
+                          (str "; " event ";")
+                          (#(str "var " event " =" %))
+                          js/eval)]
+          (events/listen! elem event handler))))    
     frag))

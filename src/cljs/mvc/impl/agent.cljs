@@ -4,74 +4,43 @@
    [cljs.core.async.impl.protocols :as impl]
    [cljs.core.async.impl.dispatch :as dispatch]
    [cljs.core.async.impl.buffers :as buffers]
-   [mvc.browser.core :as browser :refer [immutable immutable?]]
-   [mvc.browser.db :as db]
-   [mvc.impl.executor :as executor :refer [PoolExecutor SoloExecutor]])
+   [mvc.browser.core :as browser :refer [immutable!]]
+   [mvc.browser.db :as db] [goog.ui.Menu]
+   [mvc.impl.executor :as executor
+    :refer [PoolExecutor SoloExecutor execute]])
   (:require-macros
    [cljs.core.async.macros :as am :refer [go]]
-   [mvc.macros :as m :refer [future]]))
+   [mvc.macros :as m :refer [future with-agent]]))
 
 (def ^:dynamic *agent* nil)
 
 (def ^:dynamic *agent-pool* nil)
 
 (defn queue
-  ([] PersistentQueue/EMPTY)
+  ([] cljs.core.PersistentQueue/EMPTY)
   ([& xs]
      (when (first xs)
        (let [front (first xs) rear (rest xs) num (count xs)]
          (cljs.core/PersistentQueue. nil num front (if rear rear []) 0)))))
 
-(deftype DerefChannel [takes ^:mutable dirty-takes puts ^:mutable dirty-puts
-                       ^not-native buf ^:mutable closed state meta action-queue]
-  impl/WritePort
-  (put! [this val handler])
-
-  impl/ReadPort
-  (take! [this handler])
-
-  impl/Channel
-  (close! [this])
-
-  IEquiv
-  (-equiv [o other] (identical? o other))
-  
-  IDeref
-  (-deref [_] state)
-  
-  IMeta
-  (-meta [_] meta)
-
-  IHash
-  (-hash [this] (goog/getUid this)))
-
-(defn deref-chan
-  [buf]
-  (DerefChannel. (buffers/ring-buffer 32) 0
-                 (buffers/ring-buffer 32) 0 buf nil nil {}
-                 (queue)))
-
 (defprotocol IAgent
-  (-shutdown! [_])
-  (-set-error-handler! [_])
-  (-set-error-mode! [_])
-  (-error-handler [_])
-  (-restart! [_])
-  (-error [_])
-  (-release-pending! [_])
-  (-enqueue! [_])
+  (-send [agent f args])
+  (-send-off [agent f args])
+  ;; (-restart-agent [agent new-state options])
+  ;; (-shutdown! [_])
+  ;; (-set-error-handler! [_])
+  ;; (-set-error-mode! [_])
+  ;; (-error-handler [_])
+  ;; (-restart! [_])
+  ;; (-error [_])
+  ;; (-release-pending! [_])
+  (-enqueue! [agent f args])
   (-enqueued-count [_])
-  (-dispatch! [_]))
-
-(defprotocol IFailed
-  (get-error [_]))
-
-(defprotocol IAction
-  (-execute [_])
-  (-dorun [_]))
+  ;; (-dispatch! [_])
+  )
 
 (deftype Agent [state meta validator error-handler error-mode watches
-                send-counter send-off-counter pooled-executor solo-executor nested]
+                send-counter send-off-counter action-queue]
   IEquiv
   (-equiv [o other] (identical? o other))
   
@@ -99,21 +68,44 @@
   IHash
   (-hash [this] (goog/getUid this))
 
+  IAgent
+  (-send [agent f args]
+    (let [args (if (seq args) args (list))]
+      (if (and (:mutable (meta agent)) (keyword? f))
+        (let [obj (:mutable (meta agent))
+              f (cond (get obj f) (get obj f)
+                      (get obj (goog.string/toCamelCase (name f)))
+                      (get obj (goog.string/toCamelCase (name f))))]
+          (put! action-queue #(immutable! (apply f (cons obj args)))))
+        (put! action-queue #(apply f (cons @agent args))))))
+  (-send-off [agent f args]
+    (put! action-queue (partial f (cons @agent args))))
+  (-enqueue! [_])
+  (-enqueued-count [_])
+
   )
 
 (defn agent
   ([] (agent 0 {} nil nil))
   ([state & {:keys [meta validator error-handler error-mode]
-             :or {meta {} validator nil error-handler nil}}]     
-     (Agent. state meta validator error-handler
-             (if error-handler :continue :fail) nil 0 0
-             (PoolExecutor.) (SoloExecutor.) nil)))
+             :or {meta {} validator nil error-handler nil}}]
+     (let [action-queue (chan)
+           a (->Agent state meta validator error-handler
+                      (if error-handler :continue :fail) nil 0 0 action-queue)]
+       (go (while true
+             (let [f (<! action-queue)]
+               (try (let [new-value (f)]
+                      (reset! a new-value))
+                    (catch js/Error e "there was an error!")))))
+       a)))
 
 (defn send-via
   [executor agent f & args])
 
 (defn send
-  [agent f & args])
+  [agent f & args]  
+  (-send agent f args)
+  agent)
 
 (defn send-off
   [agent f & args])
@@ -138,90 +130,3 @@
 
 (defn error-mode
   [])
-
-(defn shutdown-agents
-  [])
-
-(defn await
-  [& agents])
-
-(defn await-for
-  [timeout-ms & agents])
-
-(defn commute
-  [ref fun & args])
-
-(defn alter
-  [ref f & args])
-
-(defprotocol IClojureScript
-  (-js->cljs [_]))
-
-(extend-protocol IClojureScript
-  array
-  (-js->cljs [o] (js->clj o))
-
-  boolean
-  (-js->cljs [o] (js->clj o))
-
-  js/Date
-  (-js->cljs [o] (js->clj o))
-
-  number
-  (-js->cljs [o] (js->clj o))
-
-  string
-  (-js->cljs [o] (js->clj o))
-
-  object
-  (-js->cljs [o] (js->clj o))
-
-  nil
-  (-js->cljs [o] nil)
-
-  default
-  (-js->cljs [js-obj]
-    (let [cljs-obj (js->clj js-obj)]
-      (with-meta cljs-obj {:obj js-obj}))))
-
-(defprotocol IJavaScript
-  (-cljs->js [_]))
-
-(extend-protocol IJavaScript
-  PersistentVector
-  (-cljs->js [v] v)
-
-  PersistentHashMap
-  (-cljs->js [v] v)
-
-  PersistentHashSet
-  (-cljs->js [v] v)
-
-  PersistentTreeSet
-  (-cljs->js [v] v)
-
-  PersistentTreeMap
-  (-cljs->js [v] v)
-
-  PersistentArrayMap
-  (-cljs->js [v] v)
-
-  PersistentQueue
-  (-cljs->js [v] v)
-
-  object
-  (-cljs->js [v] v)
-
-  nil
-  (-cljs->js [_] nil)
-  
-  default
-  (-cljs->js [v] v))
-
-(defn cljs->js
-  [cljs-obj]
-  (-cljs->js cljs-obj))
-
-(defn js->cljs
-  [js-obj]
-  (-js->cljs js-obj))

@@ -6,3 +6,7 @@
    [mvc.macros :as m :refer [import-goog]]))
 
 (import-goog [goog.string])
+
+(defn clojurify
+  [s]
+  (keyword (to-selector-case s)))

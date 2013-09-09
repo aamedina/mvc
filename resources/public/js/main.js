@@ -667,7 +667,7 @@ goog.string.compareVersions = function(a, b) {
       if(0 == n[0].length && 0 == p[0].length) {
         break
       }
-      var c = 0 == n[1].length ? 0 : parseInt(n[1], 10), q = 0 == p[1].length ? 0 : parseInt(p[1], 10), c = goog.string.compareElements_(c, q) || goog.string.compareElements_(0 == n[2].length, 0 == p[2].length) || goog.string.compareElements_(n[2], p[2])
+      var c = 0 == n[1].length ? 0 : parseInt(n[1], 10), r = 0 == p[1].length ? 0 : parseInt(p[1], 10), c = goog.string.compareElements_(c, r) || goog.string.compareElements_(0 == n[2].length, 0 == p[2].length) || goog.string.compareElements_(n[2], p[2])
     }while(0 == c)
   }
   return c
@@ -1722,140 +1722,140 @@ cljs.core._invoke = function() {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
     return p.call(null, a, b, c, d, e, f, g, h, k, l, m, n)
-  }, q = function(a, b, c, d, e, f, g, h, k, l, m, n, p) {
+  }, r = function(a, b, c, d, e, f, g, h, k, l, m, n, p) {
     if(a ? a.cljs$core$IFn$_invoke$arity$13 : a) {
       return a.cljs$core$IFn$_invoke$arity$13(a, b, c, d, e, f, g, h, k, l, m, n, p)
-    }
-    var q;
-    q = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!q && (q = cljs.core._invoke._, !q)) {
-      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
-    }
-    return q.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p)
-  }, r = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$14 : a) {
-      return a.cljs$core$IFn$_invoke$arity$14(a, b, c, d, e, f, g, h, k, l, m, n, p, q)
     }
     var r;
     r = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!r && (r = cljs.core._invoke._, !r)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return r.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q)
-  }, s = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r) {
+    return r.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p)
+  }, q = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$14 : a) {
+      return a.cljs$core$IFn$_invoke$arity$14(a, b, c, d, e, f, g, h, k, l, m, n, p, r)
+    }
+    var q;
+    q = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!q && (q = cljs.core._invoke._, !q)) {
+      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
+    }
+    return q.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r)
+  }, s = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q) {
     if(a ? a.cljs$core$IFn$_invoke$arity$15 : a) {
-      return a.cljs$core$IFn$_invoke$arity$15(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r)
+      return a.cljs$core$IFn$_invoke$arity$15(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q)
     }
     var s;
     s = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!s && (s = cljs.core._invoke._, !s)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return s.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r)
-  }, t = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s) {
+    return s.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q)
+  }, t = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s) {
     if(a ? a.cljs$core$IFn$_invoke$arity$16 : a) {
-      return a.cljs$core$IFn$_invoke$arity$16(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s)
+      return a.cljs$core$IFn$_invoke$arity$16(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s)
     }
-    var J;
-    J = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!J && (J = cljs.core._invoke._, !J)) {
+    var E;
+    E = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!E && (E = cljs.core._invoke._, !E)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return J.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s)
-  }, u = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, J) {
+    return E.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s)
+  }, v = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E) {
     if(a ? a.cljs$core$IFn$_invoke$arity$17 : a) {
-      return a.cljs$core$IFn$_invoke$arity$17(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, J)
+      return a.cljs$core$IFn$_invoke$arity$17(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E)
     }
     var t;
     t = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!t && (t = cljs.core._invoke._, !t)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return t.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, J)
-  }, w = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N) {
+    return t.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E)
+  }, C = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t) {
     if(a ? a.cljs$core$IFn$_invoke$arity$18 : a) {
-      return a.cljs$core$IFn$_invoke$arity$18(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N)
+      return a.cljs$core$IFn$_invoke$arity$18(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t)
     }
-    var v;
-    v = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!v && (v = cljs.core._invoke._, !v)) {
+    var K;
+    K = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!K && (K = cljs.core._invoke._, !K)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return v.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N)
-  }, v = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N, v) {
+    return K.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t)
+  }, y = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K) {
     if(a ? a.cljs$core$IFn$_invoke$arity$19 : a) {
-      return a.cljs$core$IFn$_invoke$arity$19(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N, v)
-    }
-    var w;
-    w = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!w && (w = cljs.core._invoke._, !w)) {
-      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
-    }
-    return w.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, N, v)
-  }, y = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$20 : a) {
-      return a.cljs$core$IFn$_invoke$arity$20(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u)
+      return a.cljs$core$IFn$_invoke$arity$19(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K)
     }
     var y;
     y = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!y && (y = cljs.core._invoke._, !y)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return y.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u)
-  }, H = function(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u, y) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$21 : a) {
-      return a.cljs$core$IFn$_invoke$arity$21(a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u, y)
+    return y.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K)
+  }, I = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$20 : a) {
+      return a.cljs$core$IFn$_invoke$arity$20(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y)
     }
-    var H;
-    H = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!H && (H = cljs.core._invoke._, !H)) {
+    var v;
+    v = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!v && (v = cljs.core._invoke._, !v)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return H.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, q, r, s, t, v, w, u, y)
-  }, a = function(a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J, N, R, S, T) {
+    return v.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y)
+  }, M = function(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y, v) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$21 : a) {
+      return a.cljs$core$IFn$_invoke$arity$21(a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y, v)
+    }
+    var C;
+    C = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!C && (C = cljs.core._invoke._, !C)) {
+      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
+    }
+    return C.call(null, a, b, c, d, e, f, g, h, k, l, m, n, p, r, q, s, E, t, K, y, v)
+  }, a = function(a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E, V, K, W, Y) {
     switch(arguments.length) {
       case 1:
         return b.call(this, a);
       case 2:
-        return c.call(this, a, x);
+        return c.call(this, a, D);
       case 3:
-        return d.call(this, a, x, z);
+        return d.call(this, a, D, F);
       case 4:
-        return e.call(this, a, x, z, A);
+        return e.call(this, a, D, F, G);
       case 5:
-        return f.call(this, a, x, z, A, C);
+        return f.call(this, a, D, F, G, A);
       case 6:
-        return g.call(this, a, x, z, A, C, D);
+        return g.call(this, a, D, F, G, A, u);
       case 7:
-        return h.call(this, a, x, z, A, C, D, E);
+        return h.call(this, a, D, F, G, A, u, z);
       case 8:
-        return k.call(this, a, x, z, A, C, D, E, F);
+        return k.call(this, a, D, F, G, A, u, z, B);
       case 9:
-        return l.call(this, a, x, z, A, C, D, E, F, G);
+        return l.call(this, a, D, F, G, A, u, z, B, J);
       case 10:
-        return m.call(this, a, x, z, A, C, D, E, F, G, B);
+        return m.call(this, a, D, F, G, A, u, z, B, J, H);
       case 11:
-        return n.call(this, a, x, z, A, C, D, E, F, G, B, K);
+        return n.call(this, a, D, F, G, A, u, z, B, J, H, N);
       case 12:
-        return p.call(this, a, x, z, A, C, D, E, F, G, B, K, I);
+        return p.call(this, a, D, F, G, A, u, z, B, J, H, N, L);
       case 13:
-        return q.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L);
+        return r.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P);
       case 14:
-        return r.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M);
+        return q.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q);
       case 15:
-        return s.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O);
+        return s.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w);
       case 16:
-        return t.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P);
+        return t.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x);
       case 17:
-        return u.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J);
+        return v.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E);
       case 18:
-        return w.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J, N);
+        return C.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E, V);
       case 19:
-        return v.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J, N, R);
+        return y.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E, V, K);
       case 20:
-        return y.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J, N, R, S);
+        return I.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E, V, K, W);
       case 21:
-        return H.call(this, a, x, z, A, C, D, E, F, G, B, K, I, L, M, O, P, J, N, R, S, T)
+        return M.call(this, a, D, F, G, A, u, z, B, J, H, N, L, P, Q, w, x, E, V, K, W, Y)
     }
     throw Error("Invalid arity: " + arguments.length);
   };
@@ -1871,15 +1871,15 @@ cljs.core._invoke = function() {
   a.cljs$core$IFn$_invoke$arity$10 = m;
   a.cljs$core$IFn$_invoke$arity$11 = n;
   a.cljs$core$IFn$_invoke$arity$12 = p;
-  a.cljs$core$IFn$_invoke$arity$13 = q;
-  a.cljs$core$IFn$_invoke$arity$14 = r;
+  a.cljs$core$IFn$_invoke$arity$13 = r;
+  a.cljs$core$IFn$_invoke$arity$14 = q;
   a.cljs$core$IFn$_invoke$arity$15 = s;
   a.cljs$core$IFn$_invoke$arity$16 = t;
-  a.cljs$core$IFn$_invoke$arity$17 = u;
-  a.cljs$core$IFn$_invoke$arity$18 = w;
-  a.cljs$core$IFn$_invoke$arity$19 = v;
-  a.cljs$core$IFn$_invoke$arity$20 = y;
-  a.cljs$core$IFn$_invoke$arity$21 = H;
+  a.cljs$core$IFn$_invoke$arity$17 = v;
+  a.cljs$core$IFn$_invoke$arity$18 = C;
+  a.cljs$core$IFn$_invoke$arity$19 = y;
+  a.cljs$core$IFn$_invoke$arity$20 = I;
+  a.cljs$core$IFn$_invoke$arity$21 = M;
   return a
 }();
 cljs.core.ICounted = {};
@@ -3529,16 +3529,16 @@ cljs.core.with_meta = function with_meta(b, c) {
     c && (b ? (c = (c = b.cljs$lang$protocol_mask$partition0$ & 262144) ? c : b.cljs$core$IWithMeta$, c = c ? !0 : b.cljs$lang$protocol_mask$partition0$ ? !1 : cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, b)) : c = cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, b), c = !c);
     return c
   }() ? with_meta.call(null, function() {
-    "undefined" === typeof cljs.core.t453460 && (cljs.core.t453460 = {}, cljs.core.t453460 = function(b, c, f, g) {
+    "undefined" === typeof cljs.core.t60812 && (cljs.core.t60812 = {}, cljs.core.t60812 = function(b, c, f, g) {
       this.meta = b;
       this.o = c;
       this.with_meta = f;
-      this.meta453461 = g;
+      this.meta60813 = g;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393217
-    }, cljs.core.t453460.cljs$lang$type = !0, cljs.core.t453460.cljs$lang$ctorStr = "cljs.core/t453460", cljs.core.t453460.cljs$lang$ctorPrWriter = function(b, c, f) {
-      return cljs.core._write.call(null, c, "cljs.core/t453460")
-    }, cljs.core.t453460.prototype.call = function() {
+    }, cljs.core.t60812.cljs$lang$type = !0, cljs.core.t60812.cljs$lang$ctorStr = "cljs.core/t60812", cljs.core.t60812.cljs$lang$ctorPrWriter = function(b, c, f) {
+      return cljs.core._write.call(null, c, "cljs.core/t60812")
+    }, cljs.core.t60812.prototype.call = function() {
       var b = function(b, c) {
         return cljs.core.apply.call(null, b.o, c)
       }, c = function(c, e) {
@@ -3555,17 +3555,17 @@ cljs.core.with_meta = function with_meta(b, c) {
       };
       c.cljs$core$IFn$_invoke$arity$variadic = b;
       return c
-    }(), cljs.core.t453460.prototype.apply = function(b, c) {
+    }(), cljs.core.t60812.prototype.apply = function(b, c) {
       b = this;
       return b.call.apply(b, [b].concat(c.slice()))
-    }, cljs.core.t453460.prototype.cljs$core$Fn$ = !0, cljs.core.t453460.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-      return this.meta453461
-    }, cljs.core.t453460.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-      return new cljs.core.t453460(this.meta, this.o, this.with_meta, c)
-    }, cljs.core.__GT_t453460 = function(b, c, f, g) {
-      return new cljs.core.t453460(b, c, f, g)
+    }, cljs.core.t60812.prototype.cljs$core$Fn$ = !0, cljs.core.t60812.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+      return this.meta60813
+    }, cljs.core.t60812.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+      return new cljs.core.t60812(this.meta, this.o, this.with_meta, c)
+    }, cljs.core.__GT_t60812 = function(b, c, f, g) {
+      return new cljs.core.t60812(b, c, f, g)
     });
-    return new cljs.core.t453460(c, b, with_meta, null)
+    return new cljs.core.t60812(c, b, with_meta, null)
   }(), c) : cljs.core._with_meta.call(null, b, c)
 };
 cljs.core.meta = function(a) {
@@ -6217,47 +6217,47 @@ cljs.core.apply_to = function(a, b, c) {
   if(10 === b) {
     return a.cljs$core$IFn$_invoke$arity$10 ? a.cljs$core$IFn$_invoke$arity$10(c, d, e, f, g, a, h, k, l, m) : a.call(null, c, d, e, f, g, a, h, k, l, m)
   }
-  var n = cljs.core._first.call(null, p), q = cljs.core._rest.call(null, p);
+  var n = cljs.core._first.call(null, p), r = cljs.core._rest.call(null, p);
   if(11 === b) {
     return a.cljs$core$IFn$_invoke$arity$11 ? a.cljs$core$IFn$_invoke$arity$11(c, d, e, f, g, a, h, k, l, m, n) : a.call(null, c, d, e, f, g, a, h, k, l, m, n)
   }
-  var p = cljs.core._first.call(null, q), r = cljs.core._rest.call(null, q);
+  var p = cljs.core._first.call(null, r), q = cljs.core._rest.call(null, r);
   if(12 === b) {
     return a.cljs$core$IFn$_invoke$arity$12 ? a.cljs$core$IFn$_invoke$arity$12(c, d, e, f, g, a, h, k, l, m, n, p) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p)
   }
-  var q = cljs.core._first.call(null, r), s = cljs.core._rest.call(null, r);
+  var r = cljs.core._first.call(null, q), s = cljs.core._rest.call(null, q);
   if(13 === b) {
-    return a.cljs$core$IFn$_invoke$arity$13 ? a.cljs$core$IFn$_invoke$arity$13(c, d, e, f, g, a, h, k, l, m, n, p, q) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q)
+    return a.cljs$core$IFn$_invoke$arity$13 ? a.cljs$core$IFn$_invoke$arity$13(c, d, e, f, g, a, h, k, l, m, n, p, r) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r)
   }
-  var r = cljs.core._first.call(null, s), t = cljs.core._rest.call(null, s);
+  var q = cljs.core._first.call(null, s), t = cljs.core._rest.call(null, s);
   if(14 === b) {
-    return a.cljs$core$IFn$_invoke$arity$14 ? a.cljs$core$IFn$_invoke$arity$14(c, d, e, f, g, a, h, k, l, m, n, p, q, r) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r)
+    return a.cljs$core$IFn$_invoke$arity$14 ? a.cljs$core$IFn$_invoke$arity$14(c, d, e, f, g, a, h, k, l, m, n, p, r, q) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q)
   }
-  var s = cljs.core._first.call(null, t), u = cljs.core._rest.call(null, t);
+  var s = cljs.core._first.call(null, t), v = cljs.core._rest.call(null, t);
   if(15 === b) {
-    return a.cljs$core$IFn$_invoke$arity$15 ? a.cljs$core$IFn$_invoke$arity$15(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s)
+    return a.cljs$core$IFn$_invoke$arity$15 ? a.cljs$core$IFn$_invoke$arity$15(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s)
   }
-  var t = cljs.core._first.call(null, u), w = cljs.core._rest.call(null, u);
+  var t = cljs.core._first.call(null, v), C = cljs.core._rest.call(null, v);
   if(16 === b) {
-    return a.cljs$core$IFn$_invoke$arity$16 ? a.cljs$core$IFn$_invoke$arity$16(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t)
+    return a.cljs$core$IFn$_invoke$arity$16 ? a.cljs$core$IFn$_invoke$arity$16(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t)
   }
-  var u = cljs.core._first.call(null, w), v = cljs.core._rest.call(null, w);
+  var v = cljs.core._first.call(null, C), y = cljs.core._rest.call(null, C);
   if(17 === b) {
-    return a.cljs$core$IFn$_invoke$arity$17 ? a.cljs$core$IFn$_invoke$arity$17(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u)
+    return a.cljs$core$IFn$_invoke$arity$17 ? a.cljs$core$IFn$_invoke$arity$17(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v)
   }
-  var w = cljs.core._first.call(null, v), y = cljs.core._rest.call(null, v);
+  var C = cljs.core._first.call(null, y), I = cljs.core._rest.call(null, y);
   if(18 === b) {
-    return a.cljs$core$IFn$_invoke$arity$18 ? a.cljs$core$IFn$_invoke$arity$18(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w)
+    return a.cljs$core$IFn$_invoke$arity$18 ? a.cljs$core$IFn$_invoke$arity$18(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C)
   }
-  v = cljs.core._first.call(null, y);
-  y = cljs.core._rest.call(null, y);
+  y = cljs.core._first.call(null, I);
+  I = cljs.core._rest.call(null, I);
   if(19 === b) {
-    return a.cljs$core$IFn$_invoke$arity$19 ? a.cljs$core$IFn$_invoke$arity$19(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w, v) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w, v)
+    return a.cljs$core$IFn$_invoke$arity$19 ? a.cljs$core$IFn$_invoke$arity$19(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C, y) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C, y)
   }
-  var H = cljs.core._first.call(null, y);
-  cljs.core._rest.call(null, y);
+  var M = cljs.core._first.call(null, I);
+  cljs.core._rest.call(null, I);
   if(20 === b) {
-    return a.cljs$core$IFn$_invoke$arity$20 ? a.cljs$core$IFn$_invoke$arity$20(c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w, v, H) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, q, r, s, t, u, w, v, H)
+    return a.cljs$core$IFn$_invoke$arity$20 ? a.cljs$core$IFn$_invoke$arity$20(c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C, y, M) : a.call(null, c, d, e, f, g, a, h, k, l, m, n, p, r, q, s, t, v, C, y, M)
   }
   throw Error("Only up to 20 arguments supported on functions");
 };
@@ -6291,9 +6291,9 @@ cljs.core.apply = function() {
       c = a.cljs$lang$maxFixedArity;
       return a.cljs$lang$applyTo ? (d = cljs.core.bounded_count.call(null, b, c + 1), d <= c ? cljs.core.apply_to.call(null, a, d, b) : a.cljs$lang$applyTo(b)) : a.apply(a, cljs.core.to_array.call(null, b))
     }, b = function(b, c, d, e, f, h) {
-      var r = null;
-      5 < arguments.length && (r = cljs.core.array_seq(Array.prototype.slice.call(arguments, 5), 0));
-      return a.call(this, b, c, d, e, f, r)
+      var q = null;
+      5 < arguments.length && (q = cljs.core.array_seq(Array.prototype.slice.call(arguments, 5), 0));
+      return a.call(this, b, c, d, e, f, q)
     };
     b.cljs$lang$maxFixedArity = 5;
     b.cljs$lang$applyTo = function(b) {
@@ -6566,7 +6566,7 @@ cljs.core.comp = function() {
         };
         e.cljs$core$IFn$_invoke$arity$variadic = d;
         return e
-      }(), d = function(d, k, p, q) {
+      }(), d = function(d, k, p, r) {
         switch(arguments.length) {
           case 0:
             return a.call(null, b.call(null, c.call(null)));
@@ -6863,7 +6863,7 @@ cljs.core.fnil = function() {
         };
         l.cljs$core$IFn$_invoke$arity$variadic = k;
         return l
-      }(), k = function(k, n, p, q) {
+      }(), k = function(k, n, p, r) {
         switch(arguments.length) {
           case 2:
             return a.call(null, null == k ? b : k, null == n ? c : n);
@@ -7672,10 +7672,10 @@ cljs.core.map = function() {
     var b = function(b, c, d, e, f) {
       return a.call(null, function(a) {
         return cljs.core.apply.call(null, b, a)
-      }, function q(b) {
+      }, function r(b) {
         return new cljs.core.LazySeq(null, !1, function() {
           var c = a.call(null, cljs.core.seq, b);
-          return cljs.core.every_QMARK_.call(null, cljs.core.identity, c) ? cljs.core.cons.call(null, a.call(null, cljs.core.first, c), q.call(null, a.call(null, cljs.core.rest, c))) : null
+          return cljs.core.every_QMARK_.call(null, cljs.core.identity, c) ? cljs.core.cons.call(null, a.call(null, cljs.core.first, c), r.call(null, a.call(null, cljs.core.rest, c))) : null
         }, null)
       }.call(null, cljs.core.conj.call(null, f, e, d, c)))
     }, c = function(a, c, d, e, g) {
@@ -8145,7 +8145,7 @@ cljs.core.update_in = function() {
       var s = cljs.core.nth.call(null, c, 0, null);
       c = cljs.core.nthnext.call(null, c, 1);
       return cljs.core.truth_(c) ? cljs.core.assoc.call(null, b, s, cljs.core.apply.call(null, a, cljs.core.get.call(null, b, s), c, d, e, f, g, h)) : cljs.core.assoc.call(null, b, s, cljs.core.apply.call(null, d, cljs.core.get.call(null, b, s), e, f, g, h))
-    }, c = function(a, c, d, e, f, h, r) {
+    }, c = function(a, c, d, e, f, h, q) {
       var s = null;
       6 < arguments.length && (s = cljs.core.array_seq(Array.prototype.slice.call(arguments, 6), 0));
       return b.call(this, a, c, d, e, f, h, s)
@@ -8162,9 +8162,9 @@ cljs.core.update_in = function() {
       a = cljs.core.next(a);
       var h = cljs.core.first(a);
       a = cljs.core.next(a);
-      var r = cljs.core.first(a);
+      var q = cljs.core.first(a);
       a = cljs.core.rest(a);
-      return b(c, d, e, f, h, r, a)
+      return b(c, d, e, f, h, q, a)
     };
     c.cljs$core$IFn$_invoke$arity$variadic = b;
     return c
@@ -12103,7 +12103,7 @@ cljs.core.juxt = function() {
         };
         e.cljs$core$IFn$_invoke$arity$variadic = d;
         return e
-      }(), d = function(d, k, p, q) {
+      }(), d = function(d, k, p, r) {
         switch(arguments.length) {
           case 0:
             return cljs.core.vector.call(null, a.call(null), b.call(null), c.call(null));
@@ -12846,9 +12846,9 @@ cljs.core.swap_BANG_ = function() {
     var a = function(a, b, c, d, e, f) {
       return cljs.core.reset_BANG_.call(null, a, cljs.core.apply.call(null, b, a.state, c, d, e, f))
     }, b = function(b, c, d, e, f, h) {
-      var r = null;
-      5 < arguments.length && (r = cljs.core.array_seq(Array.prototype.slice.call(arguments, 5), 0));
-      return a.call(this, b, c, d, e, f, r)
+      var q = null;
+      5 < arguments.length && (q = cljs.core.array_seq(Array.prototype.slice.call(arguments, 5), 0));
+      return a.call(this, b, c, d, e, f, q)
     };
     b.cljs$lang$maxFixedArity = 5;
     b.cljs$lang$applyTo = function(b) {
@@ -13077,7 +13077,7 @@ cljs.core.js__GT_clj = function() {
           return function s(e) {
             return cljs.core.seq_QMARK_.call(null, e) ? cljs.core.doall.call(null, cljs.core.map.call(null, s, e)) : cljs.core.coll_QMARK_.call(null, e) ? cljs.core.into.call(null, cljs.core.empty.call(null, e), cljs.core.map.call(null, s, e)) : e instanceof Array ? cljs.core.vec.call(null, cljs.core.map.call(null, s, e)) : cljs.core.type.call(null, e) === Object ? cljs.core.into.call(null, cljs.core.PersistentArrayMap.EMPTY, function() {
               return function(a, b, c, d) {
-                return function Q(f) {
+                return function O(f) {
                   return new cljs.core.LazySeq(null, !1, function(a, b, c, d) {
                     return function() {
                       for(;;) {
@@ -13098,10 +13098,10 @@ cljs.core.js__GT_clj = function() {
                               }
                               b = void 0
                             }
-                            return b ? cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, g), Q.call(null, cljs.core.chunk_rest.call(null, a))) : cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, g), null)
+                            return b ? cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, g), O.call(null, cljs.core.chunk_rest.call(null, a))) : cljs.core.chunk_cons.call(null, cljs.core.chunk.call(null, g), null)
                           }
                           g = cljs.core.first.call(null, a);
-                          return cljs.core.cons.call(null, cljs.core.PersistentVector.fromArray([d.call(null, g), s.call(null, e[g])], !0), Q.call(null, cljs.core.rest.call(null, a)))
+                          return cljs.core.cons.call(null, cljs.core.PersistentVector.fromArray([d.call(null, g), s.call(null, e[g])], !0), O.call(null, cljs.core.rest.call(null, a)))
                         }
                         return null
                       }
@@ -16800,26 +16800,26 @@ cljs.core.async.impl.ioc_helpers.finished_QMARK_ = function(a) {
   return"\ufdd0:finished" === a[cljs.core.async.impl.ioc_helpers.STATE_IDX]
 };
 cljs.core.async.impl.ioc_helpers.fn_handler = function fn_handler(b) {
-  "undefined" === typeof cljs.core.async.impl.ioc_helpers.t454294 && (cljs.core.async.impl.ioc_helpers.t454294 = {}, cljs.core.async.impl.ioc_helpers.t454294 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.impl.ioc_helpers.t61646 && (cljs.core.async.impl.ioc_helpers.t61646 = {}, cljs.core.async.impl.ioc_helpers.t61646 = function(b, d, e) {
     this.f = b;
     this.fn_handler = d;
-    this.meta454295 = e;
+    this.meta61647 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.impl.ioc_helpers.t454294.cljs$lang$type = !0, cljs.core.async.impl.ioc_helpers.t454294.cljs$lang$ctorStr = "cljs.core.async.impl.ioc-helpers/t454294", cljs.core.async.impl.ioc_helpers.t454294.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async.impl.ioc-helpers/t454294")
-  }, cljs.core.async.impl.ioc_helpers.t454294.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.impl.ioc_helpers.t454294.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.impl.ioc_helpers.t61646.cljs$lang$type = !0, cljs.core.async.impl.ioc_helpers.t61646.cljs$lang$ctorStr = "cljs.core.async.impl.ioc-helpers/t61646", cljs.core.async.impl.ioc_helpers.t61646.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async.impl.ioc-helpers/t61646")
+  }, cljs.core.async.impl.ioc_helpers.t61646.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.impl.ioc_helpers.t61646.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return!0
-  }, cljs.core.async.impl.ioc_helpers.t454294.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.impl.ioc_helpers.t61646.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     return this.f
-  }, cljs.core.async.impl.ioc_helpers.t454294.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta454295
-  }, cljs.core.async.impl.ioc_helpers.t454294.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.impl.ioc_helpers.t454294(this.f, this.fn_handler, d)
-  }, cljs.core.async.impl.ioc_helpers.__GT_t454294 = function(b, d, e) {
-    return new cljs.core.async.impl.ioc_helpers.t454294(b, d, e)
+  }, cljs.core.async.impl.ioc_helpers.t61646.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta61647
+  }, cljs.core.async.impl.ioc_helpers.t61646.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.impl.ioc_helpers.t61646(this.f, this.fn_handler, d)
+  }, cljs.core.async.impl.ioc_helpers.__GT_t61646 = function(b, d, e) {
+    return new cljs.core.async.impl.ioc_helpers.t61646(b, d, e)
   });
-  return new cljs.core.async.impl.ioc_helpers.t454294(b, fn_handler, null)
+  return new cljs.core.async.impl.ioc_helpers.t61646(b, fn_handler, null)
 };
 cljs.core.async.impl.ioc_helpers.run_state_machine = function(a) {
   return cljs.core.async.impl.ioc_helpers.aget_object.call(null, a, cljs.core.async.impl.ioc_helpers.FN_IDX).call(null, a)
@@ -17084,24 +17084,24 @@ cljs.core.async.impl.dispatch.queue_delay = function(a, b) {
 };
 cljs.core.async.impl.channels = {};
 cljs.core.async.impl.channels.box = function box(b) {
-  "undefined" === typeof cljs.core.async.impl.channels.t454327 && (cljs.core.async.impl.channels.t454327 = {}, cljs.core.async.impl.channels.t454327 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.impl.channels.t61679 && (cljs.core.async.impl.channels.t61679 = {}, cljs.core.async.impl.channels.t61679 = function(b, d, e) {
     this.val = b;
     this.box = d;
-    this.meta454328 = e;
+    this.meta61680 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 425984
-  }, cljs.core.async.impl.channels.t454327.cljs$lang$type = !0, cljs.core.async.impl.channels.t454327.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t454327", cljs.core.async.impl.channels.t454327.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async.impl.channels/t454327")
-  }, cljs.core.async.impl.channels.t454327.prototype.cljs$core$IDeref$_deref$arity$1 = function(b) {
+  }, cljs.core.async.impl.channels.t61679.cljs$lang$type = !0, cljs.core.async.impl.channels.t61679.cljs$lang$ctorStr = "cljs.core.async.impl.channels/t61679", cljs.core.async.impl.channels.t61679.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async.impl.channels/t61679")
+  }, cljs.core.async.impl.channels.t61679.prototype.cljs$core$IDeref$_deref$arity$1 = function(b) {
     return this.val
-  }, cljs.core.async.impl.channels.t454327.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta454328
-  }, cljs.core.async.impl.channels.t454327.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.impl.channels.t454327(this.val, this.box, d)
-  }, cljs.core.async.impl.channels.__GT_t454327 = function(b, d, e) {
-    return new cljs.core.async.impl.channels.t454327(b, d, e)
+  }, cljs.core.async.impl.channels.t61679.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta61680
+  }, cljs.core.async.impl.channels.t61679.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.impl.channels.t61679(this.val, this.box, d)
+  }, cljs.core.async.impl.channels.__GT_t61679 = function(b, d, e) {
+    return new cljs.core.async.impl.channels.t61679(b, d, e)
   });
-  return new cljs.core.async.impl.channels.t454327(b, box, null)
+  return new cljs.core.async.impl.channels.t61679(b, box, null)
 };
 cljs.core.async.impl.channels.PutBox = function(a, b) {
   this.handler = a;
@@ -17485,26 +17485,26 @@ cljs.core.async.impl.timers.timeout = function(a) {
   return d
 };
 cljs.core.async.fn_handler = function fn_handler$$0(b) {
-  "undefined" === typeof cljs.core.async.t454241 && (cljs.core.async.t454241 = {}, cljs.core.async.t454241 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.t61593 && (cljs.core.async.t61593 = {}, cljs.core.async.t61593 = function(b, d, e) {
     this.f = b;
     this.fn_handler = d;
-    this.meta454242 = e;
+    this.meta61594 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t454241.cljs$lang$type = !0, cljs.core.async.t454241.cljs$lang$ctorStr = "cljs.core.async/t454241", cljs.core.async.t454241.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async/t454241")
-  }, cljs.core.async.t454241.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t454241.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t61593.cljs$lang$type = !0, cljs.core.async.t61593.cljs$lang$ctorStr = "cljs.core.async/t61593", cljs.core.async.t61593.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async/t61593")
+  }, cljs.core.async.t61593.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t61593.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return!0
-  }, cljs.core.async.t454241.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t61593.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     return this.f
-  }, cljs.core.async.t454241.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta454242
-  }, cljs.core.async.t454241.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.t454241(this.f, this.fn_handler, d)
-  }, cljs.core.async.__GT_t454241 = function(b, d, e) {
-    return new cljs.core.async.t454241(b, d, e)
+  }, cljs.core.async.t61593.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta61594
+  }, cljs.core.async.t61593.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.t61593(this.f, this.fn_handler, d)
+  }, cljs.core.async.__GT_t61593 = function(b, d, e) {
+    return new cljs.core.async.t61593(b, d, e)
   });
-  return new cljs.core.async.t454241(b, fn_handler$$0, null)
+  return new cljs.core.async.t61593(b, fn_handler$$0, null)
 };
 cljs.core.async.buffer = function(a) {
   return cljs.core.async.impl.buffers.fixed_buffer.call(null, a)
@@ -17618,51 +17618,51 @@ cljs.core.async.random_array = function(a) {
 };
 cljs.core.async.alt_flag = function alt_flag() {
   var b = cljs.core.atom.call(null, !0);
-  "undefined" === typeof cljs.core.async.t454252 && (cljs.core.async.t454252 = {}, cljs.core.async.t454252 = function(b, d, e) {
+  "undefined" === typeof cljs.core.async.t61604 && (cljs.core.async.t61604 = {}, cljs.core.async.t61604 = function(b, d, e) {
     this.flag = b;
     this.alt_flag = d;
-    this.meta454253 = e;
+    this.meta61605 = e;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t454252.cljs$lang$type = !0, cljs.core.async.t454252.cljs$lang$ctorStr = "cljs.core.async/t454252", cljs.core.async.t454252.cljs$lang$ctorPrWriter = function(b, d, e) {
-    return cljs.core._write.call(null, d, "cljs.core.async/t454252")
-  }, cljs.core.async.t454252.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t454252.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t61604.cljs$lang$type = !0, cljs.core.async.t61604.cljs$lang$ctorStr = "cljs.core.async/t61604", cljs.core.async.t61604.cljs$lang$ctorPrWriter = function(b, d, e) {
+    return cljs.core._write.call(null, d, "cljs.core.async/t61604")
+  }, cljs.core.async.t61604.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t61604.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return cljs.core.deref.call(null, this.flag)
-  }, cljs.core.async.t454252.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t61604.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     cljs.core.reset_BANG_.call(null, this.flag, null);
     return!0
-  }, cljs.core.async.t454252.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta454253
-  }, cljs.core.async.t454252.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
-    return new cljs.core.async.t454252(this.flag, this.alt_flag, d)
-  }, cljs.core.async.__GT_t454252 = function(b, d, e) {
-    return new cljs.core.async.t454252(b, d, e)
+  }, cljs.core.async.t61604.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta61605
+  }, cljs.core.async.t61604.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, d) {
+    return new cljs.core.async.t61604(this.flag, this.alt_flag, d)
+  }, cljs.core.async.__GT_t61604 = function(b, d, e) {
+    return new cljs.core.async.t61604(b, d, e)
   });
-  return new cljs.core.async.t454252(b, alt_flag, null)
+  return new cljs.core.async.t61604(b, alt_flag, null)
 };
 cljs.core.async.alt_handler = function alt_handler(b, c) {
-  "undefined" === typeof cljs.core.async.t454258 && (cljs.core.async.t454258 = {}, cljs.core.async.t454258 = function(b, c, f, g) {
+  "undefined" === typeof cljs.core.async.t61610 && (cljs.core.async.t61610 = {}, cljs.core.async.t61610 = function(b, c, f, g) {
     this.cb = b;
     this.flag = c;
     this.alt_handler = f;
-    this.meta454259 = g;
+    this.meta61611 = g;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216
-  }, cljs.core.async.t454258.cljs$lang$type = !0, cljs.core.async.t454258.cljs$lang$ctorStr = "cljs.core.async/t454258", cljs.core.async.t454258.cljs$lang$ctorPrWriter = function(b, c, f) {
-    return cljs.core._write.call(null, c, "cljs.core.async/t454258")
-  }, cljs.core.async.t454258.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t454258.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
+  }, cljs.core.async.t61610.cljs$lang$type = !0, cljs.core.async.t61610.cljs$lang$ctorStr = "cljs.core.async/t61610", cljs.core.async.t61610.cljs$lang$ctorPrWriter = function(b, c, f) {
+    return cljs.core._write.call(null, c, "cljs.core.async/t61610")
+  }, cljs.core.async.t61610.prototype.cljs$core$async$impl$protocols$Handler$ = !0, cljs.core.async.t61610.prototype.cljs$core$async$impl$protocols$Handler$active_QMARK_$arity$1 = function(b) {
     return cljs.core.async.impl.protocols.active_QMARK_.call(null, this.flag)
-  }, cljs.core.async.t454258.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
+  }, cljs.core.async.t61610.prototype.cljs$core$async$impl$protocols$Handler$commit$arity$1 = function(b) {
     cljs.core.async.impl.protocols.commit.call(null, this.flag);
     return this.cb
-  }, cljs.core.async.t454258.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta454259
-  }, cljs.core.async.t454258.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new cljs.core.async.t454258(this.cb, this.flag, this.alt_handler, c)
-  }, cljs.core.async.__GT_t454258 = function(b, c, f, g) {
-    return new cljs.core.async.t454258(b, c, f, g)
+  }, cljs.core.async.t61610.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta61611
+  }, cljs.core.async.t61610.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new cljs.core.async.t61610(this.cb, this.flag, this.alt_handler, c)
+  }, cljs.core.async.__GT_t61610 = function(b, c, f, g) {
+    return new cljs.core.async.t61610(b, c, f, g)
   });
-  return new cljs.core.async.t454258(c, b, alt_handler, null)
+  return new cljs.core.async.t61610(c, b, alt_handler, null)
 };
 cljs.core.async.do_alts = function(a, b, c) {
   var d = cljs.core.async.alt_flag.call(null), e = cljs.core.count.call(null, b), f = cljs.core.async.random_array.call(null, e), g = (new cljs.core.Keyword("\ufdd0:priority")).call(null, c), h = function() {
@@ -18052,6 +18052,19 @@ mvc.util.routes.absolute_url = function(a) {
     return cljs.core.truth_(mvc.util.routes.absolute_url_QMARK_.call(null, g)) ? b : [cljs.core.str(mvc.browser.ajax._STAR_api_STAR_), cljs.core.str(b)].join("")
   }
   return null
+};
+goog.structs.Node = function(a, b) {
+  this.key_ = a;
+  this.value_ = b
+};
+goog.structs.Node.prototype.getKey = function() {
+  return this.key_
+};
+goog.structs.Node.prototype.getValue = function() {
+  return this.value_
+};
+goog.structs.Node.prototype.clone = function() {
+  return new goog.structs.Node(this.key_, this.value_)
 };
 mvc.core = {};
 mvc.core.protocols = {};
@@ -19151,6 +19164,10 @@ NodeList.prototype.cljs$core$ISeq$_rest$arity$1 = function(a) {
     }, null)
   }.call(null, cljs.core.range.call(null, 1, a.length))
 };
+NodeList.prototype.cljs$core$ICounted$ = !0;
+NodeList.prototype.cljs$core$ICounted$_count$arity$1 = function(a) {
+  return a.length
+};
 HTMLCollection.prototype.cljs$core$ISeqable$ = !0;
 HTMLCollection.prototype.cljs$core$ISeqable$_seq$arity$1 = function(a) {
   return a
@@ -19208,1141 +19225,181 @@ cljs.core.async.impl.channels.ManyToManyChannel.prototype.cljs$core$IMeta$ = !0;
 cljs.core.async.impl.channels.ManyToManyChannel.prototype.cljs$core$IMeta$_meta$arity$1 = function(a) {
   return a.meta
 };
-cljs.core.ILookup.object = !0;
-cljs.core._lookup.object = function(a, b) {
-  return cljs.core._lookup.call(null, a, b, null)
+mvc.browser.protocols.pr_type = function(a) {
+  return cljs.core.string_QMARK_.call(null, a) ? a : a instanceof Array ? a : "number" === typeof a ? a : cljs.core.fn_QMARK_.call(null, a) ? "[function Function]" : null == a ? "null" : a.toString()
 };
-cljs.core._lookup.object = function(a, b, c) {
-  return cljs.core.truth_(a.hasOwnProperty(cljs.core.name.call(null, b))) ? a[cljs.core.name.call(null, b)] : c
-};
-goog.net.xpc = {};
-goog.net.xpc.TransportTypes = {NATIVE_MESSAGING:1, FRAME_ELEMENT_METHOD:2, IFRAME_RELAY:3, IFRAME_POLLING:4, FLASH:5, NIX:6};
-goog.net.xpc.TransportNames = {1:"NativeMessagingTransport", 2:"FrameElementMethodTransport", 3:"IframeRelayTransport", 4:"IframePollingTransport", 5:"FlashTransport", 6:"NixTransport"};
-goog.net.xpc.CfgFields = {CHANNEL_NAME:"cn", AUTH_TOKEN:"at", REMOTE_AUTH_TOKEN:"rat", PEER_URI:"pu", IFRAME_ID:"ifrid", TRANSPORT:"tp", LOCAL_RELAY_URI:"lru", PEER_RELAY_URI:"pru", LOCAL_POLL_URI:"lpu", PEER_POLL_URI:"ppu", PEER_HOSTNAME:"ph", ONE_SIDED_HANDSHAKE:"osh", ROLE:"role", NATIVE_TRANSPORT_PROTOCOL_VERSION:"nativeProtocolVersion"};
-goog.net.xpc.UriCfgFields = [goog.net.xpc.CfgFields.PEER_URI, goog.net.xpc.CfgFields.LOCAL_RELAY_URI, goog.net.xpc.CfgFields.PEER_RELAY_URI, goog.net.xpc.CfgFields.LOCAL_POLL_URI, goog.net.xpc.CfgFields.PEER_POLL_URI];
-goog.net.xpc.ChannelStates = {NOT_CONNECTED:1, CONNECTED:2, CLOSED:3};
-goog.net.xpc.TRANSPORT_SERVICE_ = "tp";
-goog.net.xpc.SETUP = "SETUP";
-goog.net.xpc.SETUP_NTPV2 = "SETUP_NTPV2";
-goog.net.xpc.SETUP_ACK_ = "SETUP_ACK";
-goog.net.xpc.SETUP_ACK_NTPV2 = "SETUP_ACK_NTPV2";
-goog.net.xpc.channels = {};
-goog.net.xpc.getRandomString = function(a, b) {
-  for(var c = b || goog.net.xpc.randomStringCharacters_, d = c.length, e = "";0 < a--;) {
-    e += c.charAt(Math.floor(Math.random() * d))
-  }
-  return e
-};
-goog.net.xpc.randomStringCharacters_ = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-goog.net.xpc.logger = goog.debug.Logger.getLogger("goog.net.xpc");
-goog.fs = {};
-goog.fs.Error = function(a, b) {
-  goog.debug.Error.call(this, goog.string.subs("Error %s: %s", b, goog.fs.Error.getDebugMessage(a)));
-  this.code = a
-};
-goog.inherits(goog.fs.Error, goog.debug.Error);
-goog.fs.Error.ErrorCode = {NOT_FOUND:1, SECURITY:2, ABORT:3, NOT_READABLE:4, ENCODING:5, NO_MODIFICATION_ALLOWED:6, INVALID_STATE:7, SYNTAX:8, INVALID_MODIFICATION:9, QUOTA_EXCEEDED:10, TYPE_MISMATCH:11, PATH_EXISTS:12};
-goog.fs.Error.getDebugMessage = function(a) {
-  switch(a) {
-    case goog.fs.Error.ErrorCode.NOT_FOUND:
-      return"File or directory not found";
-    case goog.fs.Error.ErrorCode.SECURITY:
-      return"Insecure or disallowed operation";
-    case goog.fs.Error.ErrorCode.ABORT:
-      return"Operation aborted";
-    case goog.fs.Error.ErrorCode.NOT_READABLE:
-      return"File or directory not readable";
-    case goog.fs.Error.ErrorCode.ENCODING:
-      return"Invalid encoding";
-    case goog.fs.Error.ErrorCode.NO_MODIFICATION_ALLOWED:
-      return"Cannot modify file or directory";
-    case goog.fs.Error.ErrorCode.INVALID_STATE:
-      return"Invalid state";
-    case goog.fs.Error.ErrorCode.SYNTAX:
-      return"Invalid line-ending specifier";
-    case goog.fs.Error.ErrorCode.INVALID_MODIFICATION:
-      return"Invalid modification";
-    case goog.fs.Error.ErrorCode.QUOTA_EXCEEDED:
-      return"Quota exceeded";
-    case goog.fs.Error.ErrorCode.TYPE_MISMATCH:
-      return"Invalid filetype";
-    case goog.fs.Error.ErrorCode.PATH_EXISTS:
-      return"File or directory already exists at specified path";
-    default:
-      return"Unrecognized error"
-  }
-};
-goog.fs.ProgressEvent = function(a, b) {
-  goog.events.Event.call(this, a.type, b);
-  this.event_ = a
-};
-goog.inherits(goog.fs.ProgressEvent, goog.events.Event);
-goog.fs.ProgressEvent.prototype.isLengthComputable = function() {
-  return this.event_.lengthComputable
-};
-goog.fs.ProgressEvent.prototype.getLoaded = function() {
-  return this.event_.loaded
-};
-goog.fs.ProgressEvent.prototype.getTotal = function() {
-  return this.event_.total
-};
-goog.fs.FileSaver = function(a) {
-  goog.events.EventTarget.call(this);
-  this.saver_ = a;
-  this.saver_.onwritestart = goog.bind(this.dispatchProgressEvent_, this);
-  this.saver_.onprogress = goog.bind(this.dispatchProgressEvent_, this);
-  this.saver_.onwrite = goog.bind(this.dispatchProgressEvent_, this);
-  this.saver_.onabort = goog.bind(this.dispatchProgressEvent_, this);
-  this.saver_.onerror = goog.bind(this.dispatchProgressEvent_, this);
-  this.saver_.onwriteend = goog.bind(this.dispatchProgressEvent_, this)
-};
-goog.inherits(goog.fs.FileSaver, goog.events.EventTarget);
-goog.fs.FileSaver.ReadyState = {INIT:0, WRITING:1, DONE:2};
-goog.fs.FileSaver.EventType = {WRITE_START:"writestart", PROGRESS:"progress", WRITE:"write", ABORT:"abort", ERROR:"error", WRITE_END:"writeend"};
-goog.fs.FileSaver.prototype.abort = function() {
-  try {
-    this.saver_.abort()
-  }catch(a) {
-    throw new goog.fs.Error(a.code, "aborting save");
-  }
-};
-goog.fs.FileSaver.prototype.getReadyState = function() {
-  return this.saver_.readyState
-};
-goog.fs.FileSaver.prototype.getError = function() {
-  return this.saver_.error && new goog.fs.Error(this.saver_.error.code, "saving file")
-};
-goog.fs.FileSaver.prototype.dispatchProgressEvent_ = function(a) {
-  this.dispatchEvent(new goog.fs.ProgressEvent(a, this))
-};
-goog.fs.FileSaver.prototype.disposeInternal = function() {
-  delete this.saver_;
-  goog.fs.FileSaver.superClass_.disposeInternal.call(this)
-};
-goog.fs.FileSaver.ProgressEvent = goog.fs.ProgressEvent;
-goog.fs.FileWriter = function(a) {
-  goog.fs.FileSaver.call(this, a);
-  this.writer_ = a
-};
-goog.inherits(goog.fs.FileWriter, goog.fs.FileSaver);
-goog.fs.FileWriter.prototype.getPosition = function() {
-  return this.writer_.position
-};
-goog.fs.FileWriter.prototype.getLength = function() {
-  return this.writer_.length
-};
-goog.fs.FileWriter.prototype.write = function(a) {
-  try {
-    this.writer_.write(a)
-  }catch(b) {
-    throw new goog.fs.Error(b.code, "writing file");
-  }
-};
-goog.fs.FileWriter.prototype.seek = function(a) {
-  try {
-    this.writer_.seek(a)
-  }catch(b) {
-    throw new goog.fs.Error(b.code, "seeking in file");
-  }
-};
-goog.fs.FileWriter.prototype.truncate = function(a) {
-  try {
-    this.writer_.truncate(a)
-  }catch(b) {
-    throw new goog.fs.Error(b.code, "truncating file");
-  }
-};
-var dommy = {attrs:{}};
-dommy.attrs.class_match_QMARK_ = function(a, b, c) {
-  var d;
-  d = (d = 0 === c) ? d : " " === a.charAt(c - 1);
-  return cljs.core.truth_(d) ? (d = a.length, b = c + b.length, b <= d ? (c = b === d) ? c : " " === a.charAt(b) : null) : d
-};
-dommy.attrs.class_index = function(a, b) {
-  for(var c = 0;;) {
-    if(c = a.indexOf(b, c), 0 <= c) {
-      if(dommy.attrs.class_match_QMARK_.call(null, a, b, c)) {
-        return c
-      }
-      c += b.length
-    }else {
-      return null
-    }
-  }
-};
-dommy.attrs.has_class_QMARK_ = function(a, b) {
-  var c = dommy.template.__GT_node_like.call(null, a), d = cljs.core.name.call(null, b), e = c.classList;
-  if(cljs.core.truth_(e)) {
-    return e.contains(d)
-  }
-  c = c.className;
-  return cljs.core.truth_(c) ? (d = dommy.attrs.class_index.call(null, c, d), cljs.core.truth_(d) ? 0 <= d : null) : null
-};
-dommy.attrs.add_class_BANG_ = function() {
-  var a = null, b = function(a, b) {
-    var c = dommy.template.__GT_node_like.call(null, a), g = clojure.string.trim.call(null, cljs.core.name.call(null, b));
-    if(cljs.core.seq.call(null, g)) {
-      var h = c.classList;
-      if(cljs.core.truth_(h)) {
-        for(var g = cljs.core.seq.call(null, g.split(/\s+/)), k = null, l = 0, m = 0;;) {
-          if(m < l) {
-            var n = cljs.core._nth.call(null, k, m);
-            h.add(n);
-            m += 1
-          }else {
-            if(g = cljs.core.seq.call(null, g)) {
-              k = g, cljs.core.chunked_seq_QMARK_.call(null, k) ? (g = cljs.core.chunk_first.call(null, k), m = cljs.core.chunk_rest.call(null, k), k = g, l = cljs.core.count.call(null, g), g = m) : (g = cljs.core.first.call(null, k), h.add(g), g = cljs.core.next.call(null, k), k = null, l = 0), m = 0
-            }else {
-              break
-            }
-          }
-        }
-      }else {
-        for(h = c.className, g = cljs.core.seq.call(null, g.split(/\s+/)), k = null, m = l = 0;;) {
-          if(m < l) {
-            n = cljs.core._nth.call(null, k, m), cljs.core.truth_(dommy.attrs.class_index.call(null, h, n)) || (c.className = "" === h ? n : [cljs.core.str(h), cljs.core.str(" "), cljs.core.str(n)].join("")), m += 1
-          }else {
-            if(g = cljs.core.seq.call(null, g)) {
-              k = g, cljs.core.chunked_seq_QMARK_.call(null, k) ? (g = cljs.core.chunk_first.call(null, k), m = cljs.core.chunk_rest.call(null, k), k = g, l = cljs.core.count.call(null, g), g = m) : (g = cljs.core.first.call(null, k), cljs.core.truth_(dommy.attrs.class_index.call(null, h, g)) || (c.className = "" === h ? g : [cljs.core.str(h), cljs.core.str(" "), cljs.core.str(g)].join("")), g = cljs.core.next.call(null, k), k = null, l = 0), m = 0
-            }else {
-              break
-            }
-          }
-        }
-      }
-    }
-    return c
-  }, c = function() {
-    var b = function(b, c, d) {
-      b = dommy.template.__GT_node_like.call(null, b);
-      c = cljs.core.seq.call(null, cljs.core.conj.call(null, d, c));
-      d = null;
-      for(var e = 0, l = 0;;) {
-        if(l < e) {
-          var m = cljs.core._nth.call(null, d, l);
-          a.call(null, b, m);
-          l += 1
-        }else {
-          if(c = cljs.core.seq.call(null, c)) {
-            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), l = cljs.core.chunk_rest.call(null, d), d = c, e = cljs.core.count.call(null, c), c = l) : (c = cljs.core.first.call(null, d), a.call(null, b, c), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
-          }else {
-            break
-          }
-        }
-      }
-      return b
-    }, c = function(a, c, e) {
-      var k = null;
-      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
-      return b.call(this, a, c, k)
-    };
-    c.cljs$lang$maxFixedArity = 2;
-    c.cljs$lang$applyTo = function(a) {
-      var c = cljs.core.first(a);
-      a = cljs.core.next(a);
-      var e = cljs.core.first(a);
-      a = cljs.core.rest(a);
-      return b(c, e, a)
-    };
-    c.cljs$core$IFn$_invoke$arity$variadic = b;
-    return c
-  }(), a = function(a, e, f) {
-    switch(arguments.length) {
-      case 2:
-        return b.call(this, a, e);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a
-}();
-dommy.attrs.remove_class_str = function(a, b) {
-  for(var c = a;;) {
-    var d = c.length, e = dommy.attrs.class_index.call(null, c, b);
-    if(cljs.core.truth_(e)) {
-      var f = e + b.length, c = "" + cljs.core.str(f < d ? [cljs.core.str(c.substring(0, e)), cljs.core.str(c.substr(f + 1))].join("") : c.substring(0, e - 1))
-    }else {
-      return c
-    }
-  }
-};
-dommy.attrs.remove_class_BANG_ = function() {
-  var a = null, b = function(a, b) {
-    var c = dommy.template.__GT_node_like.call(null, a), g = cljs.core.name.call(null, b), h = c.classList;
-    cljs.core.truth_(h) ? h.remove(g) : (h = c.className, g = dommy.attrs.remove_class_str.call(null, h, g), h !== g && (c.className = g));
-    return c
-  }, c = function() {
-    var b = function(b, c, d) {
-      b = dommy.template.__GT_node_like.call(null, b);
-      c = cljs.core.seq.call(null, cljs.core.conj.call(null, d, c));
-      d = null;
-      for(var e = 0, l = 0;;) {
-        if(l < e) {
-          var m = cljs.core._nth.call(null, d, l);
-          a.call(null, b, m);
-          l += 1
-        }else {
-          if(c = cljs.core.seq.call(null, c)) {
-            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), e = cljs.core.chunk_rest.call(null, d), d = c, m = cljs.core.count.call(null, c), c = e, e = m) : (m = cljs.core.first.call(null, d), a.call(null, b, m), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
-          }else {
-            return null
-          }
-        }
-      }
-    }, c = function(a, c, e) {
-      var k = null;
-      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
-      return b.call(this, a, c, k)
-    };
-    c.cljs$lang$maxFixedArity = 2;
-    c.cljs$lang$applyTo = function(a) {
-      var c = cljs.core.first(a);
-      a = cljs.core.next(a);
-      var e = cljs.core.first(a);
-      a = cljs.core.rest(a);
-      return b(c, e, a)
-    };
-    c.cljs$core$IFn$_invoke$arity$variadic = b;
-    return c
-  }(), a = function(a, e, f) {
-    switch(arguments.length) {
-      case 2:
-        return b.call(this, a, e);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a
-}();
-dommy.attrs.toggle_class_BANG_ = function() {
-  var a = null, b = function(b, c) {
-    var f = dommy.template.__GT_node_like.call(null, b), g = f.classList;
-    cljs.core.truth_(g) ? g.toggle(c) : a.call(null, f, c, !dommy.attrs.has_class_QMARK_.call(null, f, c));
-    return f
-  }, c = function(a, b, c) {
-    a = dommy.template.__GT_node_like.call(null, a);
-    c ? dommy.attrs.add_class_BANG_.call(null, a, b) : dommy.attrs.remove_class_BANG_.call(null, a, b);
-    return a
-  }, a = function(a, e, f) {
-    switch(arguments.length) {
-      case 2:
-        return b.call(this, a, e);
-      case 3:
-        return c.call(this, a, e, f)
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$3 = c;
-  return a
-}();
-dommy.attrs.style_str = function(a) {
-  return cljs.core.string_QMARK_.call(null, a) ? a : clojure.string.join.call(null, " ", cljs.core.map.call(null, function(a) {
-    var c = cljs.core.nth.call(null, a, 0, null);
-    a = cljs.core.nth.call(null, a, 1, null);
-    return[cljs.core.str(cljs.core.name.call(null, c)), cljs.core.str(":"), cljs.core.str(cljs.core.name.call(null, a)), cljs.core.str(";")].join("")
-  }, a))
-};
-dommy.attrs.set_style_BANG_ = function() {
-  var a = function(a, b) {
-    if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, b))) {
-      throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
-    }
-    for(var e = dommy.template.__GT_node_like.call(null, a), f = e.style, g = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), h = null, k = 0, l = 0;;) {
+mvc.browser.protocols.pr_object_writer = function(a, b, c, d, e, f, g) {
+  cljs.core._write.call(null, a, c);
+  c = cljs.core.js_keys.call(null, g);
+  if(cljs.core.seq.call(null, c)) {
+    b.call(null, cljs.core.PersistentArrayMap.fromArray([cljs.core.first.call(null, c), mvc.browser.protocols.pr_type.call(null, g[cljs.core.first.call(null, c)])], !0), a, f);
+    c = cljs.core.seq.call(null, cljs.core.next.call(null, c));
+    for(var h = null, k = 0, l = 0;;) {
       if(l < k) {
-        var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null);
-        f[cljs.core.name.call(null, n)] = m;
+        var m = cljs.core._nth.call(null, h, l);
+        cljs.core._write.call(null, a, d);
+        b.call(null, cljs.core.PersistentArrayMap.fromArray([m, mvc.browser.protocols.pr_type.call(null, g[m])], !0), a, f);
         l += 1
       }else {
-        if(g = cljs.core.seq.call(null, g)) {
-          cljs.core.chunked_seq_QMARK_.call(null, g) ? (k = cljs.core.chunk_first.call(null, g), g = cljs.core.chunk_rest.call(null, g), h = k, k = cljs.core.count.call(null, k)) : (k = cljs.core.first.call(null, g), h = cljs.core.nth.call(null, k, 0, null), k = cljs.core.nth.call(null, k, 1, null), f[cljs.core.name.call(null, h)] = k, g = cljs.core.next.call(null, g), h = null, k = 0), l = 0
+        if(c = cljs.core.seq.call(null, c)) {
+          h = c, cljs.core.chunked_seq_QMARK_.call(null, h) ? (c = cljs.core.chunk_first.call(null, h), l = cljs.core.chunk_rest.call(null, h), h = c, k = cljs.core.count.call(null, c), c = l) : (c = cljs.core.first.call(null, h), cljs.core._write.call(null, a, d), b.call(null, cljs.core.PersistentArrayMap.fromArray([c, mvc.browser.protocols.pr_type.call(null, g[c])], !0), a, f), c = cljs.core.next.call(null, h), h = null, k = 0), l = 0
         }else {
           break
         }
       }
     }
-    return e
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e)
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}();
-dommy.attrs.style = function(a, b) {
-  if(!cljs.core.truth_(b)) {
-    throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, new cljs.core.Symbol(null, "k", "k", -1640531420, null)))].join(""));
   }
-  return window.getComputedStyle(dommy.template.__GT_node_like.call(null, a))[cljs.core.name.call(null, b)]
+  return cljs.core._write.call(null, a, e)
 };
-dommy.attrs.set_px_BANG_ = function() {
-  var a = function(a, b) {
-    if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, b))) {
-      throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
-    }
-    for(var e = dommy.template.__GT_node_like.call(null, a), f = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), g = null, h = 0, k = 0;;) {
-      if(k < h) {
-        var l = cljs.core._nth.call(null, g, k), m = cljs.core.nth.call(null, l, 0, null), l = cljs.core.nth.call(null, l, 1, null);
-        dommy.attrs.set_style_BANG_.call(null, e, m, [cljs.core.str(l), cljs.core.str("px")].join(""));
-        k += 1
-      }else {
-        if(f = cljs.core.seq.call(null, f)) {
-          cljs.core.chunked_seq_QMARK_.call(null, f) ? (h = cljs.core.chunk_first.call(null, f), f = cljs.core.chunk_rest.call(null, f), g = h, h = cljs.core.count.call(null, h)) : (h = cljs.core.first.call(null, f), g = cljs.core.nth.call(null, h, 0, null), h = cljs.core.nth.call(null, h, 1, null), dommy.attrs.set_style_BANG_.call(null, e, g, [cljs.core.str(h), cljs.core.str("px")].join("")), f = cljs.core.next.call(null, f), g = null, h = 0), k = 0
-        }else {
-          break
-        }
-      }
-    }
-    return e
-  }, b = function(b, d) {
-    var e = null;
-    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
-    return a.call(this, b, e)
-  };
-  b.cljs$lang$maxFixedArity = 1;
-  b.cljs$lang$applyTo = function(b) {
-    var d = cljs.core.first(b);
-    b = cljs.core.rest(b);
-    return a(d, b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}();
-dommy.attrs.px = function(a, b) {
-  var c = dommy.attrs.style.call(null, dommy.template.__GT_node_like.call(null, a), b);
-  return cljs.core.seq.call(null, c) ? parseInt(c) : null
+cljs.core.IPrintWithWriter.object = !0;
+cljs.core._pr_writer.object = function(a, b, c) {
+  return mvc.browser.protocols.pr_object_writer.call(null, b, cljs.core.pr_writer, "{", ", ", "}", c, a)
 };
-dommy.attrs.event_chan = function() {
-  var a = null, b = function(b) {
-    return a.call(null, document, b)
-  }, c = function(a, b) {
-    var c = cljs.core.async.chan.call(null);
-    goog.events.listen(a, cljs.core.name.call(null, b), function(a) {
-      return cljs.core.async.put_BANG_.call(null, c, a)
-    }, !0);
-    return c
-  }, a = function(a, e) {
-    switch(arguments.length) {
-      case 1:
-        return b.call(this, a);
-      case 2:
-        return c.call(this, a, e)
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$core$IFn$_invoke$arity$1 = b;
-  a.cljs$core$IFn$_invoke$arity$2 = c;
-  return a
-}();
-dommy.attrs.bind_event = function() {
-  var a = null, b = function(b, c) {
-    return a.call(null, document, b, c)
-  }, c = function(a, b, c) {
-    var g = dommy.attrs.event_chan.call(null, a, cljs.core.name.call(null, b)), h = cljs.core.async.chan.call(null, 1);
-    cljs.core.async.impl.dispatch.run.call(null, function() {
-      var a = function() {
-        return function(a) {
-          return function() {
-            var b = null, c = function() {
-              var a = Array(6);
-              a[0] = b;
-              a[1] = 1;
-              return a
-            }, d = function(b) {
-              for(;;) {
-                var c = a.call(null, b);
-                if("\ufdd0:recur" !== c) {
-                  return c
-                }
-              }
-            }, b = function(a) {
-              switch(arguments.length) {
-                case 0:
-                  return c.call(this);
-                case 1:
-                  return d.call(this, a)
-              }
-              throw Error("Invalid arity: " + arguments.length);
-            };
-            b.cljs$core$IFn$_invoke$arity$0 = c;
-            b.cljs$core$IFn$_invoke$arity$1 = d;
-            return b
-          }()
-        }(function(a) {
-          var b = a[1];
-          return 7 === b ? (b = c.call(null, a[2]), a[5] = b, a[2] = null, a[1] = 2, "\ufdd0:recur") : 6 === b ? (b = a[2], a[2] = b, a[1] = 3, "\ufdd0:recur") : 5 === b ? (a[2] = null, a[1] = 6, "\ufdd0:recur") : 4 === b ? cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 7, g) : 3 === b ? (b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 2 === b ? (a[1] = 4, "\ufdd0:recur") : 1 === b ? (a[2] = null, a[1] = 2, "\ufdd0:recur") : null
-        })
-      }(), b = function() {
-        var b = a.call(null);
-        b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = h;
-        return b
-      }();
-      return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, b)
-    });
-    return h
-  }, a = function(a, e, f) {
+cljs.core.ICounted.object = !0;
+cljs.core._count.object = function(a) {
+  return goog.object.getCount(a)
+};
+cljs.core.ILookup.object = !0;
+cljs.core._lookup.object = function() {
+  var a = null;
+  return a = function(a, c, d) {
     switch(arguments.length) {
       case 2:
-        return b.call(this, a, e);
+        return a[cljs.core.name.call(null, c)];
       case 3:
-        return c.call(this, a, e, f)
+        var e;
+        e = cljs.core.name.call(null, c);
+        e = cljs.core.truth_(goog.object.containsKey(a, e)) ? a[e] : d;
+        return e
     }
     throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$3 = c;
-  return a
+  }
 }();
-dommy.attrs.set_attr_BANG_ = function() {
-  var a = null, b = function(b, c) {
-    return a.call(null, dommy.template.__GT_node_like.call(null, b), c, "true")
-  }, c = function(a, b, c) {
-    if(cljs.core.truth_(c)) {
-      if(cljs.core._EQ_.call(null, cljs.core.name.call(null, b), "data-event")) {
-        c = cljs.core.seq.call(null, c);
-        for(var d = null, k = 0, l = 0;;) {
-          if(l < k) {
-            var m = cljs.core._nth.call(null, d, l);
-            b = cljs.core.nth.call(null, m, 0, null);
-            m = cljs.core.nth.call(null, m, 1, null);
-            dommy.attrs.bind_event.call(null, dommy.template.__GT_node_like.call(null, a), b, m);
-            l += 1
-          }else {
-            if(c = cljs.core.seq.call(null, c)) {
-              cljs.core.chunked_seq_QMARK_.call(null, c) ? (d = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), b = d, k = cljs.core.count.call(null, d), d = b) : (d = cljs.core.first.call(null, c), b = cljs.core.nth.call(null, d, 0, null), m = cljs.core.nth.call(null, d, 1, null), dommy.attrs.bind_event.call(null, dommy.template.__GT_node_like.call(null, a), b, m), c = cljs.core.next.call(null, c), d = null, k = 0), l = 0
-            }else {
-              return null
-            }
-          }
-        }
-      }else {
-        if(cljs.core._EQ_.call(null, cljs.core.name.call(null, b), "data-bind")) {
-          return a = dommy.template.__GT_node_like.call(null, a), a.innerHTML = c, a
-        }
-        if(cljs.core.fn_QMARK_.call(null, c)) {
-          return a = dommy.template.__GT_node_like.call(null, a), a[cljs.core.name.call(null, b)] = c, a
-        }
-        a = dommy.template.__GT_node_like.call(null, a);
-        a.setAttribute(cljs.core.name.call(null, b), "\ufdd0:style" === b ? dommy.attrs.style_str.call(null, c) : c);
-        return a
-      }
-    }else {
-      return null
-    }
-  }, d = function() {
-    var b = function(b, c, d, e) {
-      if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, e))) {
-        throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
-      }
-      b = dommy.template.__GT_node_like.call(null, b);
-      c = cljs.core.seq.call(null, cljs.core.cons.call(null, cljs.core.PersistentVector.fromArray([c, d], !0), cljs.core.partition.call(null, 2, e)));
-      d = null;
-      for(var f = e = 0;;) {
-        if(f < e) {
-          var n = cljs.core._nth.call(null, d, f), p = cljs.core.nth.call(null, n, 0, null), n = cljs.core.nth.call(null, n, 1, null);
-          a.call(null, b, p, n);
-          f += 1
-        }else {
-          if(c = cljs.core.seq.call(null, c)) {
-            cljs.core.chunked_seq_QMARK_.call(null, c) ? (e = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), d = e, e = cljs.core.count.call(null, e)) : (e = cljs.core.first.call(null, c), d = cljs.core.nth.call(null, e, 0, null), e = cljs.core.nth.call(null, e, 1, null), a.call(null, b, d, e), c = cljs.core.next.call(null, c), d = null, e = 0), f = 0
-          }else {
-            break
-          }
-        }
-      }
-      return b
-    }, c = function(a, c, d, f) {
-      var m = null;
-      3 < arguments.length && (m = cljs.core.array_seq(Array.prototype.slice.call(arguments, 3), 0));
-      return b.call(this, a, c, d, m)
-    };
-    c.cljs$lang$maxFixedArity = 3;
-    c.cljs$lang$applyTo = function(a) {
-      var c = cljs.core.first(a);
-      a = cljs.core.next(a);
-      var d = cljs.core.first(a);
-      a = cljs.core.next(a);
-      var f = cljs.core.first(a);
-      a = cljs.core.rest(a);
-      return b(c, d, f, a)
-    };
-    c.cljs$core$IFn$_invoke$arity$variadic = b;
-    return c
-  }(), a = function(a, f, g, h) {
-    switch(arguments.length) {
-      case 2:
-        return b.call(this, a, f);
-      case 3:
-        return c.call(this, a, f, g);
-      default:
-        return d.cljs$core$IFn$_invoke$arity$variadic(a, f, g, cljs.core.array_seq(arguments, 3))
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 3;
-  a.cljs$lang$applyTo = d.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$3 = c;
-  a.cljs$core$IFn$_invoke$arity$variadic = d.cljs$core$IFn$_invoke$arity$variadic;
-  return a
-}();
-dommy.attrs.remove_attr_BANG_ = function() {
-  var a = null, b = function(a, b) {
-    var c = dommy.template.__GT_node_like.call(null, a);
-    cljs.core.truth_(cljs.core.PersistentHashSet.fromArray(["\ufdd0:class", null, "\ufdd0:classes", null], !0).call(null, b)) ? c.className = "" : c.removeAttribute(cljs.core.name.call(null, b));
-    return c
-  }, c = function() {
-    var b = function(b, c, d) {
-      b = dommy.template.__GT_node_like.call(null, b);
-      c = cljs.core.seq.call(null, cljs.core.cons.call(null, c, d));
-      d = null;
-      for(var e = 0, l = 0;;) {
-        if(l < e) {
-          var m = cljs.core._nth.call(null, d, l);
-          a.call(null, b, m);
-          l += 1
-        }else {
-          if(c = cljs.core.seq.call(null, c)) {
-            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), l = cljs.core.chunk_rest.call(null, d), d = c, e = cljs.core.count.call(null, c), c = l) : (c = cljs.core.first.call(null, d), a.call(null, b, c), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
-          }else {
-            break
-          }
-        }
-      }
-      return b
-    }, c = function(a, c, e) {
-      var k = null;
-      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
-      return b.call(this, a, c, k)
-    };
-    c.cljs$lang$maxFixedArity = 2;
-    c.cljs$lang$applyTo = function(a) {
-      var c = cljs.core.first(a);
-      a = cljs.core.next(a);
-      var e = cljs.core.first(a);
-      a = cljs.core.rest(a);
-      return b(c, e, a)
-    };
-    c.cljs$core$IFn$_invoke$arity$variadic = b;
-    return c
-  }(), a = function(a, e, f) {
-    switch(arguments.length) {
-      case 2:
-        return b.call(this, a, e);
-      default:
-        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
-  a.cljs$core$IFn$_invoke$arity$2 = b;
-  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
-  return a
-}();
-dommy.attrs.attr = function(a, b) {
-  return cljs.core.truth_(b) ? dommy.template.__GT_node_like.call(null, a).getAttribute(cljs.core.name.call(null, b)) : null
-};
-dommy.attrs.hidden_QMARK_ = function(a) {
-  return"none" === dommy.template.__GT_node_like.call(null, a).style.display
-};
-dommy.attrs.toggle_BANG_ = function() {
-  var a = null, b = function(b) {
-    b = dommy.template.__GT_node_like.call(null, b);
-    a.call(null, b, dommy.attrs.hidden_QMARK_.call(null, b));
-    return b
-  }, c = function(a, b) {
-    var c = dommy.template.__GT_node_like.call(null, a);
-    c.style.display = b ? "" : "none";
-    return c
-  }, a = function(a, e) {
-    switch(arguments.length) {
-      case 1:
-        return b.call(this, a);
-      case 2:
-        return c.call(this, a, e)
-    }
-    throw Error("Invalid arity: " + arguments.length);
-  };
-  a.cljs$core$IFn$_invoke$arity$1 = b;
-  a.cljs$core$IFn$_invoke$arity$2 = c;
-  return a
-}();
-dommy.attrs.hide_BANG_ = function(a) {
-  a = dommy.template.__GT_node_like.call(null, a);
-  dommy.attrs.toggle_BANG_.call(null, a, !1);
-  return a
-};
-dommy.attrs.show_BANG_ = function(a) {
-  a = dommy.template.__GT_node_like.call(null, a);
-  dommy.attrs.toggle_BANG_.call(null, a, !0);
-  return a
-};
-dommy.attrs.bounding_client_rect = function(a) {
-  return cljs.core.js__GT_clj.call(null, function() {
-    var b = dommy.template.__GT_node_like.call(null, a).getBoundingClientRect();
-    b.constructor = Object;
-    return b
-  }(), "\ufdd0:keywordize-keys", !0)
-};
-goog.dom = {};
-goog.dom.vendor = {};
-goog.dom.vendor.getVendorJsPrefix = function() {
-  return goog.userAgent.WEBKIT ? "Webkit" : goog.userAgent.GECKO ? "Moz" : goog.userAgent.IE ? "ms" : goog.userAgent.OPERA ? "O" : null
-};
-goog.dom.vendor.getVendorPrefix = function() {
-  return goog.userAgent.WEBKIT ? "-webkit" : goog.userAgent.GECKO ? "-moz" : goog.userAgent.IE ? "-ms" : goog.userAgent.OPERA ? "-o" : null
-};
-goog.Uri = function(a, b) {
+mvc.impl = {};
+mvc.impl.promise = {};
+mvc.impl.promise.IDeliver = {};
+mvc.impl.promise._deliver = function(a, b) {
+  if(a ? a.mvc$impl$promise$IDeliver$_deliver$arity$2 : a) {
+    return a.mvc$impl$promise$IDeliver$_deliver$arity$2(a, b)
+  }
   var c;
-  a instanceof goog.Uri ? (this.ignoreCase_ = goog.isDef(b) ? b : a.getIgnoreCase(), this.setScheme(a.getScheme()), this.setUserInfo(a.getUserInfo()), this.setDomain(a.getDomain()), this.setPort(a.getPort()), this.setPath(a.getPath()), this.setQueryData(a.getQueryData().clone()), this.setFragment(a.getFragment())) : a && (c = goog.uri.utils.split(String(a))) ? (this.ignoreCase_ = !!b, this.setScheme(c[goog.uri.utils.ComponentIndex.SCHEME] || "", !0), this.setUserInfo(c[goog.uri.utils.ComponentIndex.USER_INFO] || 
-  "", !0), this.setDomain(c[goog.uri.utils.ComponentIndex.DOMAIN] || "", !0), this.setPort(c[goog.uri.utils.ComponentIndex.PORT]), this.setPath(c[goog.uri.utils.ComponentIndex.PATH] || "", !0), this.setQueryData(c[goog.uri.utils.ComponentIndex.QUERY_DATA] || "", !0), this.setFragment(c[goog.uri.utils.ComponentIndex.FRAGMENT] || "", !0)) : (this.ignoreCase_ = !!b, this.queryData_ = new goog.Uri.QueryData(null, null, this.ignoreCase_))
-};
-goog.Uri.preserveParameterTypesCompatibilityFlag = !1;
-goog.Uri.RANDOM_PARAM = goog.uri.utils.StandardQueryParam.RANDOM;
-goog.Uri.prototype.scheme_ = "";
-goog.Uri.prototype.userInfo_ = "";
-goog.Uri.prototype.domain_ = "";
-goog.Uri.prototype.port_ = null;
-goog.Uri.prototype.path_ = "";
-goog.Uri.prototype.fragment_ = "";
-goog.Uri.prototype.isReadOnly_ = !1;
-goog.Uri.prototype.ignoreCase_ = !1;
-goog.Uri.prototype.toString = function() {
-  var a = [], b = this.getScheme();
-  b && a.push(goog.Uri.encodeSpecialChars_(b, goog.Uri.reDisallowedInSchemeOrUserInfo_), ":");
-  if(b = this.getDomain()) {
-    a.push("//");
-    var c = this.getUserInfo();
-    c && a.push(goog.Uri.encodeSpecialChars_(c, goog.Uri.reDisallowedInSchemeOrUserInfo_), "@");
-    a.push(goog.string.urlEncode(b));
-    b = this.getPort();
-    null != b && a.push(":", String(b))
+  c = mvc.impl.promise._deliver[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.promise._deliver._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IDeliver.-deliver", a);
   }
-  if(b = this.getPath()) {
-    this.hasDomain() && "/" != b.charAt(0) && a.push("/"), a.push(goog.Uri.encodeSpecialChars_(b, "/" == b.charAt(0) ? goog.Uri.reDisallowedInAbsolutePath_ : goog.Uri.reDisallowedInRelativePath_))
+  return c.call(null, a, b)
+};
+mvc.impl.promise._deliver_exception = function(a, b) {
+  if(a ? a.mvc$impl$promise$IDeliver$_deliver_exception$arity$2 : a) {
+    return a.mvc$impl$promise$IDeliver$_deliver_exception$arity$2(a, b)
   }
-  (b = this.getEncodedQuery()) && a.push("?", b);
-  (b = this.getFragment()) && a.push("#", goog.Uri.encodeSpecialChars_(b, goog.Uri.reDisallowedInFragment_));
-  return a.join("")
-};
-goog.Uri.prototype.resolve = function(a) {
-  var b = this.clone(), c = a.hasScheme();
-  c ? b.setScheme(a.getScheme()) : c = a.hasUserInfo();
-  c ? b.setUserInfo(a.getUserInfo()) : c = a.hasDomain();
-  c ? b.setDomain(a.getDomain()) : c = a.hasPort();
-  var d = a.getPath();
-  if(c) {
-    b.setPort(a.getPort())
-  }else {
-    if(c = a.hasPath()) {
-      if("/" != d.charAt(0)) {
-        if(this.hasDomain() && !this.hasPath()) {
-          d = "/" + d
-        }else {
-          var e = b.getPath().lastIndexOf("/");
-          -1 != e && (d = b.getPath().substr(0, e + 1) + d)
-        }
-      }
-      d = goog.Uri.removeDotSegments(d)
-    }
+  var c;
+  c = mvc.impl.promise._deliver_exception[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.promise._deliver_exception._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IDeliver.-deliver-exception", a);
   }
-  c ? b.setPath(d) : c = a.hasQuery();
-  c ? b.setQueryData(a.getDecodedQuery()) : c = a.hasFragment();
-  c && b.setFragment(a.getFragment());
-  return b
+  return c.call(null, a, b)
 };
-goog.Uri.prototype.clone = function() {
-  return new goog.Uri(this)
-};
-goog.Uri.prototype.getScheme = function() {
-  return this.scheme_
-};
-goog.Uri.prototype.setScheme = function(a, b) {
-  this.enforceReadOnly();
-  if(this.scheme_ = b ? goog.Uri.decodeOrEmpty_(a) : a) {
-    this.scheme_ = this.scheme_.replace(/:$/, "")
+mvc.impl.promise.INotify = {};
+mvc.impl.promise._attend = function(a, b, c) {
+  if(a ? a.mvc$impl$promise$INotify$_attend$arity$3 : a) {
+    return a.mvc$impl$promise$INotify$_attend$arity$3(a, b, c)
   }
-  return this
-};
-goog.Uri.prototype.hasScheme = function() {
-  return!!this.scheme_
-};
-goog.Uri.prototype.getUserInfo = function() {
-  return this.userInfo_
-};
-goog.Uri.prototype.setUserInfo = function(a, b) {
-  this.enforceReadOnly();
-  this.userInfo_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
-  return this
-};
-goog.Uri.prototype.hasUserInfo = function() {
-  return!!this.userInfo_
-};
-goog.Uri.prototype.getDomain = function() {
-  return this.domain_
-};
-goog.Uri.prototype.setDomain = function(a, b) {
-  this.enforceReadOnly();
-  this.domain_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
-  return this
-};
-goog.Uri.prototype.hasDomain = function() {
-  return!!this.domain_
-};
-goog.Uri.prototype.getPort = function() {
-  return this.port_
-};
-goog.Uri.prototype.setPort = function(a) {
-  this.enforceReadOnly();
-  if(a) {
-    a = Number(a);
-    if(isNaN(a) || 0 > a) {
-      throw Error("Bad port number " + a);
-    }
-    this.port_ = a
-  }else {
-    this.port_ = null
+  var d;
+  d = mvc.impl.promise._attend[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.promise._attend._, !d)) {
+    throw cljs.core.missing_protocol.call(null, "INotify.-attend", a);
   }
-  return this
+  return d.call(null, a, b, c)
 };
-goog.Uri.prototype.hasPort = function() {
-  return null != this.port_
+mvc.impl.promise.IFail = {};
+mvc.impl.promise._realized_exception_QMARK_ = function(a) {
+  if(a ? a.mvc$impl$promise$IFail$_realized_exception_QMARK_$arity$1 : a) {
+    return a.mvc$impl$promise$IFail$_realized_exception_QMARK_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.promise._realized_exception_QMARK_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.promise._realized_exception_QMARK_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IFail.-realized-exception?", a);
+  }
+  return b.call(null, a)
 };
-goog.Uri.prototype.getPath = function() {
-  return this.path_
+mvc.impl.promise.Promise = function() {
 };
-goog.Uri.prototype.setPath = function(a, b) {
-  this.enforceReadOnly();
-  this.path_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
-  return this
+mvc.impl.promise.Promise.cljs$lang$type = !0;
+mvc.impl.promise.Promise.cljs$lang$ctorStr = "mvc.impl.promise/Promise";
+mvc.impl.promise.Promise.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.promise/Promise")
 };
-goog.Uri.prototype.hasPath = function() {
-  return!!this.path_
+mvc.impl.promise.__GT_Promise = function() {
+  return new mvc.impl.promise.Promise
 };
-goog.Uri.prototype.hasQuery = function() {
-  return"" !== this.queryData_.toString()
+goog.a11y = {};
+goog.a11y.aria = {};
+goog.a11y.aria.Role = {ALERT:"alert", ALERTDIALOG:"alertdialog", APPLICATION:"application", ARTICLE:"article", BANNER:"banner", BUTTON:"button", CHECKBOX:"checkbox", COLUMNHEADER:"columnheader", COMBOBOX:"combobox", COMPLEMENTARY:"complementary", CONTENTINFO:"contentinfo", DEFINITION:"definition", DIALOG:"dialog", DIRECTORY:"directory", DOCUMENT:"document", FORM:"form", GRID:"grid", GRIDCELL:"gridcell", GROUP:"group", HEADING:"heading", IMG:"img", LINK:"link", LIST:"list", LISTBOX:"listbox", LISTITEM:"listitem", 
+LOG:"log", MAIN:"main", MARQUEE:"marquee", MATH:"math", MENU:"menu", MENUBAR:"menubar", MENU_ITEM:"menuitem", MENU_ITEM_CHECKBOX:"menuitemcheckbox", MENU_ITEM_RADIO:"menuitemradio", NAVIGATION:"navigation", NOTE:"note", OPTION:"option", PRESENTATION:"presentation", PROGRESSBAR:"progressbar", RADIO:"radio", RADIOGROUP:"radiogroup", REGION:"region", ROW:"row", ROWGROUP:"rowgroup", ROWHEADER:"rowheader", SCROLLBAR:"scrollbar", SEARCH:"search", SEPARATOR:"separator", SLIDER:"slider", SPINBUTTON:"spinbutton", 
+STATUS:"status", TAB:"tab", TAB_LIST:"tablist", TAB_PANEL:"tabpanel", TEXTBOX:"textbox", TIMER:"timer", TOOLBAR:"toolbar", TOOLTIP:"tooltip", TREE:"tree", TREEGRID:"treegrid", TREEITEM:"treeitem"};
+goog.a11y.aria.State = {ACTIVEDESCENDANT:"activedescendant", ATOMIC:"atomic", AUTOCOMPLETE:"autocomplete", BUSY:"busy", CHECKED:"checked", CONTROLS:"controls", DESCRIBEDBY:"describedby", DISABLED:"disabled", DROPEFFECT:"dropeffect", EXPANDED:"expanded", FLOWTO:"flowto", GRABBED:"grabbed", HASPOPUP:"haspopup", HIDDEN:"hidden", INVALID:"invalid", LABEL:"label", LABELLEDBY:"labelledby", LEVEL:"level", LIVE:"live", MULTILINE:"multiline", MULTISELECTABLE:"multiselectable", ORIENTATION:"orientation", OWNS:"owns", 
+POSINSET:"posinset", PRESSED:"pressed", READONLY:"readonly", RELEVANT:"relevant", REQUIRED:"required", SELECTED:"selected", SETSIZE:"setsize", SORT:"sort", VALUEMAX:"valuemax", VALUEMIN:"valuemin", VALUENOW:"valuenow", VALUETEXT:"valuetext"};
+goog.a11y.aria.LivePriority = {OFF:"off", POLITE:"polite", ASSERTIVE:"assertive"};
+goog.dom = {};
+goog.dom.BrowserFeature = {CAN_ADD_NAME_OR_TYPE_ATTRIBUTES:!goog.userAgent.IE || goog.userAgent.isDocumentMode(9), CAN_USE_CHILDREN_ATTRIBUTE:!goog.userAgent.GECKO && !goog.userAgent.IE || goog.userAgent.IE && goog.userAgent.isDocumentMode(9) || goog.userAgent.GECKO && goog.userAgent.isVersion("1.9.1"), CAN_USE_INNER_TEXT:goog.userAgent.IE && !goog.userAgent.isVersion("9"), CAN_USE_PARENT_ELEMENT_PROPERTY:goog.userAgent.IE || goog.userAgent.OPERA || goog.userAgent.WEBKIT, INNER_HTML_NEEDS_SCOPED_ELEMENT:goog.userAgent.IE};
+goog.dom.TagName = {A:"A", ABBR:"ABBR", ACRONYM:"ACRONYM", ADDRESS:"ADDRESS", APPLET:"APPLET", AREA:"AREA", ARTICLE:"ARTICLE", ASIDE:"ASIDE", AUDIO:"AUDIO", B:"B", BASE:"BASE", BASEFONT:"BASEFONT", BDI:"BDI", BDO:"BDO", BIG:"BIG", BLOCKQUOTE:"BLOCKQUOTE", BODY:"BODY", BR:"BR", BUTTON:"BUTTON", CANVAS:"CANVAS", CAPTION:"CAPTION", CENTER:"CENTER", CITE:"CITE", CODE:"CODE", COL:"COL", COLGROUP:"COLGROUP", COMMAND:"COMMAND", DATA:"DATA", DATALIST:"DATALIST", DD:"DD", DEL:"DEL", DETAILS:"DETAILS", DFN:"DFN", 
+DIALOG:"DIALOG", DIR:"DIR", DIV:"DIV", DL:"DL", DT:"DT", EM:"EM", EMBED:"EMBED", FIELDSET:"FIELDSET", FIGCAPTION:"FIGCAPTION", FIGURE:"FIGURE", FONT:"FONT", FOOTER:"FOOTER", FORM:"FORM", FRAME:"FRAME", FRAMESET:"FRAMESET", H1:"H1", H2:"H2", H3:"H3", H4:"H4", H5:"H5", H6:"H6", HEAD:"HEAD", HEADER:"HEADER", HGROUP:"HGROUP", HR:"HR", HTML:"HTML", I:"I", IFRAME:"IFRAME", IMG:"IMG", INPUT:"INPUT", INS:"INS", ISINDEX:"ISINDEX", KBD:"KBD", KEYGEN:"KEYGEN", LABEL:"LABEL", LEGEND:"LEGEND", LI:"LI", LINK:"LINK", 
+MAP:"MAP", MARK:"MARK", MATH:"MATH", MENU:"MENU", META:"META", METER:"METER", NAV:"NAV", NOFRAMES:"NOFRAMES", NOSCRIPT:"NOSCRIPT", OBJECT:"OBJECT", OL:"OL", OPTGROUP:"OPTGROUP", OPTION:"OPTION", OUTPUT:"OUTPUT", P:"P", PARAM:"PARAM", PRE:"PRE", PROGRESS:"PROGRESS", Q:"Q", RP:"RP", RT:"RT", RUBY:"RUBY", S:"S", SAMP:"SAMP", SCRIPT:"SCRIPT", SECTION:"SECTION", SELECT:"SELECT", SMALL:"SMALL", SOURCE:"SOURCE", SPAN:"SPAN", STRIKE:"STRIKE", STRONG:"STRONG", STYLE:"STYLE", SUB:"SUB", SUMMARY:"SUMMARY", 
+SUP:"SUP", SVG:"SVG", TABLE:"TABLE", TBODY:"TBODY", TD:"TD", TEXTAREA:"TEXTAREA", TFOOT:"TFOOT", TH:"TH", THEAD:"THEAD", TIME:"TIME", TITLE:"TITLE", TR:"TR", TRACK:"TRACK", TT:"TT", U:"U", UL:"UL", VAR:"VAR", VIDEO:"VIDEO", WBR:"WBR"};
+goog.dom.classes = {};
+goog.dom.classes.set = function(a, b) {
+  a.className = b
 };
-goog.Uri.prototype.setQueryData = function(a, b) {
-  this.enforceReadOnly();
-  a instanceof goog.Uri.QueryData ? (this.queryData_ = a, this.queryData_.setIgnoreCase(this.ignoreCase_)) : (b || (a = goog.Uri.encodeSpecialChars_(a, goog.Uri.reDisallowedInQuery_)), this.queryData_ = new goog.Uri.QueryData(a, null, this.ignoreCase_));
-  return this
+goog.dom.classes.get = function(a) {
+  a = a.className;
+  return goog.isString(a) && a.match(/\S+/g) || []
 };
-goog.Uri.prototype.setQuery = function(a, b) {
-  return this.setQueryData(a, b)
+goog.dom.classes.add = function(a, b) {
+  var c = goog.dom.classes.get(a), d = goog.array.slice(arguments, 1), e = c.length + d.length;
+  goog.dom.classes.add_(c, d);
+  goog.dom.classes.set(a, c.join(" "));
+  return c.length == e
 };
-goog.Uri.prototype.getEncodedQuery = function() {
-  return this.queryData_.toString()
+goog.dom.classes.remove = function(a, b) {
+  var c = goog.dom.classes.get(a), d = goog.array.slice(arguments, 1), e = goog.dom.classes.getDifference_(c, d);
+  goog.dom.classes.set(a, e.join(" "));
+  return e.length == c.length - d.length
 };
-goog.Uri.prototype.getDecodedQuery = function() {
-  return this.queryData_.toDecodedString()
-};
-goog.Uri.prototype.getQueryData = function() {
-  return this.queryData_
-};
-goog.Uri.prototype.getQuery = function() {
-  return this.getEncodedQuery()
-};
-goog.Uri.prototype.setParameterValue = function(a, b) {
-  this.enforceReadOnly();
-  this.queryData_.set(a, b);
-  return this
-};
-goog.Uri.prototype.setParameterValues = function(a, b) {
-  this.enforceReadOnly();
-  goog.isArray(b) || (b = [String(b)]);
-  this.queryData_.setValues(a, b);
-  return this
-};
-goog.Uri.prototype.getParameterValues = function(a) {
-  return this.queryData_.getValues(a)
-};
-goog.Uri.prototype.getParameterValue = function(a) {
-  return this.queryData_.get(a)
-};
-goog.Uri.prototype.getFragment = function() {
-  return this.fragment_
-};
-goog.Uri.prototype.setFragment = function(a, b) {
-  this.enforceReadOnly();
-  this.fragment_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
-  return this
-};
-goog.Uri.prototype.hasFragment = function() {
-  return!!this.fragment_
-};
-goog.Uri.prototype.hasSameDomainAs = function(a) {
-  return(!this.hasDomain() && !a.hasDomain() || this.getDomain() == a.getDomain()) && (!this.hasPort() && !a.hasPort() || this.getPort() == a.getPort())
-};
-goog.Uri.prototype.makeUnique = function() {
-  this.enforceReadOnly();
-  this.setParameterValue(goog.Uri.RANDOM_PARAM, goog.string.getRandomString());
-  return this
-};
-goog.Uri.prototype.removeParameter = function(a) {
-  this.enforceReadOnly();
-  this.queryData_.remove(a);
-  return this
-};
-goog.Uri.prototype.setReadOnly = function(a) {
-  this.isReadOnly_ = a;
-  return this
-};
-goog.Uri.prototype.isReadOnly = function() {
-  return this.isReadOnly_
-};
-goog.Uri.prototype.enforceReadOnly = function() {
-  if(this.isReadOnly_) {
-    throw Error("Tried to modify a read-only Uri");
+goog.dom.classes.add_ = function(a, b) {
+  for(var c = 0;c < b.length;c++) {
+    goog.array.contains(a, b[c]) || a.push(b[c])
   }
 };
-goog.Uri.prototype.setIgnoreCase = function(a) {
-  this.ignoreCase_ = a;
-  this.queryData_ && this.queryData_.setIgnoreCase(a);
-  return this
+goog.dom.classes.getDifference_ = function(a, b) {
+  return goog.array.filter(a, function(a) {
+    return!goog.array.contains(b, a)
+  })
 };
-goog.Uri.prototype.getIgnoreCase = function() {
-  return this.ignoreCase_
-};
-goog.Uri.parse = function(a, b) {
-  return a instanceof goog.Uri ? a.clone() : new goog.Uri(a, b)
-};
-goog.Uri.create = function(a, b, c, d, e, f, g, h) {
-  h = new goog.Uri(null, h);
-  a && h.setScheme(a);
-  b && h.setUserInfo(b);
-  c && h.setDomain(c);
-  d && h.setPort(d);
-  e && h.setPath(e);
-  f && h.setQueryData(f);
-  g && h.setFragment(g);
-  return h
-};
-goog.Uri.resolve = function(a, b) {
-  a instanceof goog.Uri || (a = goog.Uri.parse(a));
-  b instanceof goog.Uri || (b = goog.Uri.parse(b));
-  return a.resolve(b)
-};
-goog.Uri.removeDotSegments = function(a) {
-  if(".." == a || "." == a) {
-    return""
+goog.dom.classes.swap = function(a, b, c) {
+  for(var d = goog.dom.classes.get(a), e = !1, f = 0;f < d.length;f++) {
+    d[f] == b && (goog.array.splice(d, f--, 1), e = !0)
   }
-  if(goog.string.contains(a, "./") || goog.string.contains(a, "/.")) {
-    var b = goog.string.startsWith(a, "/");
-    a = a.split("/");
-    for(var c = [], d = 0;d < a.length;) {
-      var e = a[d++];
-      "." == e ? b && d == a.length && c.push("") : ".." == e ? ((1 < c.length || 1 == c.length && "" != c[0]) && c.pop(), b && d == a.length && c.push("")) : (c.push(e), b = !0)
-    }
-    return c.join("/")
-  }
-  return a
+  e && (d.push(c), goog.dom.classes.set(a, d.join(" ")));
+  return e
 };
-goog.Uri.decodeOrEmpty_ = function(a) {
-  return a ? decodeURIComponent(a) : ""
+goog.dom.classes.addRemove = function(a, b, c) {
+  var d = goog.dom.classes.get(a);
+  goog.isString(b) ? goog.array.remove(d, b) : goog.isArray(b) && (d = goog.dom.classes.getDifference_(d, b));
+  goog.isString(c) && !goog.array.contains(d, c) ? d.push(c) : goog.isArray(c) && goog.dom.classes.add_(d, c);
+  goog.dom.classes.set(a, d.join(" "))
 };
-goog.Uri.encodeSpecialChars_ = function(a, b) {
-  return goog.isString(a) ? encodeURI(a).replace(b, goog.Uri.encodeChar_) : null
+goog.dom.classes.has = function(a, b) {
+  return goog.array.contains(goog.dom.classes.get(a), b)
 };
-goog.Uri.encodeChar_ = function(a) {
-  a = a.charCodeAt(0);
-  return"%" + (a >> 4 & 15).toString(16) + (a & 15).toString(16)
+goog.dom.classes.enable = function(a, b, c) {
+  c ? goog.dom.classes.add(a, b) : goog.dom.classes.remove(a, b)
 };
-goog.Uri.reDisallowedInSchemeOrUserInfo_ = /[#\/\?@]/g;
-goog.Uri.reDisallowedInRelativePath_ = /[\#\?:]/g;
-goog.Uri.reDisallowedInAbsolutePath_ = /[\#\?]/g;
-goog.Uri.reDisallowedInQuery_ = /[\#\?@]/g;
-goog.Uri.reDisallowedInFragment_ = /#/g;
-goog.Uri.haveSameDomain = function(a, b) {
-  var c = goog.uri.utils.split(a), d = goog.uri.utils.split(b);
-  return c[goog.uri.utils.ComponentIndex.DOMAIN] == d[goog.uri.utils.ComponentIndex.DOMAIN] && c[goog.uri.utils.ComponentIndex.PORT] == d[goog.uri.utils.ComponentIndex.PORT]
-};
-goog.Uri.QueryData = function(a, b, c) {
-  this.encodedQuery_ = a || null;
-  this.ignoreCase_ = !!c
-};
-goog.Uri.QueryData.prototype.ensureKeyMapInitialized_ = function() {
-  if(!this.keyMap_ && (this.keyMap_ = new goog.structs.Map, this.count_ = 0, this.encodedQuery_)) {
-    for(var a = this.encodedQuery_.split("\x26"), b = 0;b < a.length;b++) {
-      var c = a[b].indexOf("\x3d"), d = null, e = null;
-      0 <= c ? (d = a[b].substring(0, c), e = a[b].substring(c + 1)) : d = a[b];
-      d = goog.string.urlDecode(d);
-      d = this.getKeyName_(d);
-      this.add(d, e ? goog.string.urlDecode(e) : "")
-    }
-  }
-};
-goog.Uri.QueryData.createFromMap = function(a, b, c) {
-  b = goog.structs.getKeys(a);
-  if("undefined" == typeof b) {
-    throw Error("Keys are undefined");
-  }
-  c = new goog.Uri.QueryData(null, null, c);
-  a = goog.structs.getValues(a);
-  for(var d = 0;d < b.length;d++) {
-    var e = b[d], f = a[d];
-    goog.isArray(f) ? c.setValues(e, f) : c.add(e, f)
-  }
+goog.dom.classes.toggle = function(a, b) {
+  var c = !goog.dom.classes.has(a, b);
+  goog.dom.classes.enable(a, b, c);
   return c
-};
-goog.Uri.QueryData.createFromKeysValues = function(a, b, c, d) {
-  if(a.length != b.length) {
-    throw Error("Mismatched lengths for keys/values");
-  }
-  c = new goog.Uri.QueryData(null, null, d);
-  for(d = 0;d < a.length;d++) {
-    c.add(a[d], b[d])
-  }
-  return c
-};
-goog.Uri.QueryData.prototype.keyMap_ = null;
-goog.Uri.QueryData.prototype.count_ = null;
-goog.Uri.QueryData.prototype.getCount = function() {
-  this.ensureKeyMapInitialized_();
-  return this.count_
-};
-goog.Uri.QueryData.prototype.add = function(a, b) {
-  this.ensureKeyMapInitialized_();
-  this.invalidateCache_();
-  a = this.getKeyName_(a);
-  var c = this.keyMap_.get(a);
-  c || this.keyMap_.set(a, c = []);
-  c.push(b);
-  this.count_++;
-  return this
-};
-goog.Uri.QueryData.prototype.remove = function(a) {
-  this.ensureKeyMapInitialized_();
-  a = this.getKeyName_(a);
-  return this.keyMap_.containsKey(a) ? (this.invalidateCache_(), this.count_ -= this.keyMap_.get(a).length, this.keyMap_.remove(a)) : !1
-};
-goog.Uri.QueryData.prototype.clear = function() {
-  this.invalidateCache_();
-  this.keyMap_ = null;
-  this.count_ = 0
-};
-goog.Uri.QueryData.prototype.isEmpty = function() {
-  this.ensureKeyMapInitialized_();
-  return 0 == this.count_
-};
-goog.Uri.QueryData.prototype.containsKey = function(a) {
-  this.ensureKeyMapInitialized_();
-  a = this.getKeyName_(a);
-  return this.keyMap_.containsKey(a)
-};
-goog.Uri.QueryData.prototype.containsValue = function(a) {
-  var b = this.getValues();
-  return goog.array.contains(b, a)
-};
-goog.Uri.QueryData.prototype.getKeys = function() {
-  this.ensureKeyMapInitialized_();
-  for(var a = this.keyMap_.getValues(), b = this.keyMap_.getKeys(), c = [], d = 0;d < b.length;d++) {
-    for(var e = a[d], f = 0;f < e.length;f++) {
-      c.push(b[d])
-    }
-  }
-  return c
-};
-goog.Uri.QueryData.prototype.getValues = function(a) {
-  this.ensureKeyMapInitialized_();
-  var b = [];
-  if(a) {
-    this.containsKey(a) && (b = goog.array.concat(b, this.keyMap_.get(this.getKeyName_(a))))
-  }else {
-    a = this.keyMap_.getValues();
-    for(var c = 0;c < a.length;c++) {
-      b = goog.array.concat(b, a[c])
-    }
-  }
-  return b
-};
-goog.Uri.QueryData.prototype.set = function(a, b) {
-  this.ensureKeyMapInitialized_();
-  this.invalidateCache_();
-  a = this.getKeyName_(a);
-  this.containsKey(a) && (this.count_ -= this.keyMap_.get(a).length);
-  this.keyMap_.set(a, [b]);
-  this.count_++;
-  return this
-};
-goog.Uri.QueryData.prototype.get = function(a, b) {
-  var c = a ? this.getValues(a) : [];
-  return goog.Uri.preserveParameterTypesCompatibilityFlag ? 0 < c.length ? c[0] : b : 0 < c.length ? String(c[0]) : b
-};
-goog.Uri.QueryData.prototype.setValues = function(a, b) {
-  this.remove(a);
-  0 < b.length && (this.invalidateCache_(), this.keyMap_.set(this.getKeyName_(a), goog.array.clone(b)), this.count_ += b.length)
-};
-goog.Uri.QueryData.prototype.toString = function() {
-  if(this.encodedQuery_) {
-    return this.encodedQuery_
-  }
-  if(!this.keyMap_) {
-    return""
-  }
-  for(var a = [], b = this.keyMap_.getKeys(), c = 0;c < b.length;c++) {
-    for(var d = b[c], e = goog.string.urlEncode(d), d = this.getValues(d), f = 0;f < d.length;f++) {
-      var g = e;
-      "" !== d[f] && (g += "\x3d" + goog.string.urlEncode(d[f]));
-      a.push(g)
-    }
-  }
-  return this.encodedQuery_ = a.join("\x26")
-};
-goog.Uri.QueryData.prototype.toDecodedString = function() {
-  return goog.Uri.decodeOrEmpty_(this.toString())
-};
-goog.Uri.QueryData.prototype.invalidateCache_ = function() {
-  this.encodedQuery_ = null
-};
-goog.Uri.QueryData.prototype.filterKeys = function(a) {
-  this.ensureKeyMapInitialized_();
-  goog.structs.forEach(this.keyMap_, function(b, c, d) {
-    goog.array.contains(a, c) || this.remove(c)
-  }, this);
-  return this
-};
-goog.Uri.QueryData.prototype.clone = function() {
-  var a = new goog.Uri.QueryData;
-  a.encodedQuery_ = this.encodedQuery_;
-  this.keyMap_ && (a.keyMap_ = this.keyMap_.clone(), a.count_ = this.count_);
-  return a
-};
-goog.Uri.QueryData.prototype.getKeyName_ = function(a) {
-  a = String(a);
-  this.ignoreCase_ && (a = a.toLowerCase());
-  return a
-};
-goog.Uri.QueryData.prototype.setIgnoreCase = function(a) {
-  a && !this.ignoreCase_ && (this.ensureKeyMapInitialized_(), this.invalidateCache_(), goog.structs.forEach(this.keyMap_, function(a, c) {
-    var d = c.toLowerCase();
-    c != d && (this.remove(c), this.setValues(d, a))
-  }, this));
-  this.ignoreCase_ = a
-};
-goog.Uri.QueryData.prototype.extend = function(a) {
-  for(var b = 0;b < arguments.length;b++) {
-    goog.structs.forEach(arguments[b], function(a, b) {
-      this.add(b, a)
-    }, this)
-  }
 };
 goog.math = {};
 goog.math.randomInt = function(a) {
@@ -20444,653 +19501,6 @@ goog.math.safeFloor = function(a, b) {
 goog.math.safeCeil = function(a, b) {
   goog.asserts.assert(!goog.isDef(b) || 0 < b);
   return Math.ceil(a - (b || 2E-15))
-};
-mvc.browser.math = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.math.is_finite_number = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.isFiniteNumber, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.standard_deviation = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.standardDeviation, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.is_int = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.isInt, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.angle_dx = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.angleDx, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.angle_dy = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.angleDy, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.sum = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.sum, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.to_degrees = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.toDegrees, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.random_int = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.randomInt, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.longest_common_subsequence = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.longestCommonSubsequence, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.angle_difference = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.angleDifference, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.safe_ceil = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.safeCeil, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.angle = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.angle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.nearly_equals = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.nearlyEquals, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.standard_angle = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.standardAngle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.modulo = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.modulo, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.lerp = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.lerp, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.to_radians = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.toRadians, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.uniform_random = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.uniformRandom, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.clamp = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.clamp, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.sign = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.sign, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.average = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.average, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.math.safe_floor = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.math.safeFloor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
-mvc.browser.net = {};
-goog.functions = {};
-goog.functions.constant = function(a) {
-  return function() {
-    return a
-  }
-};
-goog.functions.FALSE = goog.functions.constant(!1);
-goog.functions.TRUE = goog.functions.constant(!0);
-goog.functions.NULL = goog.functions.constant(null);
-goog.functions.identity = function(a, b) {
-  return a
-};
-goog.functions.error = function(a) {
-  return function() {
-    throw Error(a);
-  }
-};
-goog.functions.lock = function(a, b) {
-  b = b || 0;
-  return function() {
-    return a.apply(this, Array.prototype.slice.call(arguments, 0, b))
-  }
-};
-goog.functions.withReturnValue = function(a, b) {
-  return goog.functions.sequence(a, goog.functions.constant(b))
-};
-goog.functions.compose = function(a, b) {
-  var c = arguments, d = c.length;
-  return function() {
-    var a;
-    d && (a = c[d - 1].apply(this, arguments));
-    for(var b = d - 2;0 <= b;b--) {
-      a = c[b].call(this, a)
-    }
-    return a
-  }
-};
-goog.functions.sequence = function(a) {
-  var b = arguments, c = b.length;
-  return function() {
-    for(var a, e = 0;e < c;e++) {
-      a = b[e].apply(this, arguments)
-    }
-    return a
-  }
-};
-goog.functions.and = function(a) {
-  var b = arguments, c = b.length;
-  return function() {
-    for(var a = 0;a < c;a++) {
-      if(!b[a].apply(this, arguments)) {
-        return!1
-      }
-    }
-    return!0
-  }
-};
-goog.functions.or = function(a) {
-  var b = arguments, c = b.length;
-  return function() {
-    for(var a = 0;a < c;a++) {
-      if(b[a].apply(this, arguments)) {
-        return!0
-      }
-    }
-    return!1
-  }
-};
-goog.functions.not = function(a) {
-  return function() {
-    return!a.apply(this, arguments)
-  }
-};
-goog.functions.create = function(a, b) {
-  var c = function() {
-  };
-  c.prototype = a.prototype;
-  c = new c;
-  a.apply(c, Array.prototype.slice.call(arguments, 1));
-  return c
-};
-goog.fs.Entry = function(a, b) {
-  this.fs_ = a;
-  this.entry_ = b
-};
-goog.fs.Entry.prototype.isFile = function() {
-  return this.entry_.isFile
-};
-goog.fs.Entry.prototype.isDirectory = function() {
-  return this.entry_.isDirectory
-};
-goog.fs.Entry.prototype.getName = function() {
-  return this.entry_.name
-};
-goog.fs.Entry.prototype.getFullPath = function() {
-  return this.entry_.fullPath
-};
-goog.fs.Entry.prototype.getFileSystem = function() {
-  return this.fs_
-};
-goog.fs.Entry.prototype.getLastModified = function() {
-  return this.getMetadata().addCallback(function(a) {
-    return a.modificationTime
-  })
-};
-goog.fs.Entry.prototype.getMetadata = function() {
-  var a = new goog.async.Deferred;
-  this.entry_.getMetadata(function(b) {
-    a.callback(b)
-  }, goog.bind(function(b) {
-    var c = "retrieving metadata for " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.fs.Entry.prototype.moveTo = function(a, b) {
-  var c = new goog.async.Deferred;
-  this.entry_.moveTo(a.dir_, b, goog.bind(function(a) {
-    c.callback(this.wrapEntry(a))
-  }, this), goog.bind(function(d) {
-    var e = "moving " + this.getFullPath() + " into " + a.getFullPath() + (b ? ", renaming to " + b : "");
-    c.errback(new goog.fs.Error(d.code, e))
-  }, this));
-  return c
-};
-goog.fs.Entry.prototype.copyTo = function(a, b) {
-  var c = new goog.async.Deferred;
-  this.entry_.copyTo(a.dir_, b, goog.bind(function(a) {
-    c.callback(this.wrapEntry(a))
-  }, this), goog.bind(function(d) {
-    var e = "copying " + this.getFullPath() + " into " + a.getFullPath() + (b ? ", renaming to " + b : "");
-    c.errback(new goog.fs.Error(d.code, e))
-  }, this));
-  return c
-};
-goog.fs.Entry.prototype.wrapEntry = function(a) {
-  return a.isFile ? new goog.fs.FileEntry(this.fs_, a) : new goog.fs.DirectoryEntry(this.fs_, a)
-};
-goog.fs.Entry.prototype.toUrl = function(a) {
-  return this.entry_.toURL(a)
-};
-goog.fs.Entry.prototype.toUri = goog.fs.Entry.prototype.toUrl;
-goog.fs.Entry.prototype.remove = function() {
-  var a = new goog.async.Deferred;
-  this.entry_.remove(goog.bind(a.callback, a, !0), goog.bind(function(b) {
-    var c = "removing " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.fs.Entry.prototype.getParent = function() {
-  var a = new goog.async.Deferred;
-  this.entry_.getParent(goog.bind(function(b) {
-    a.callback(new goog.fs.DirectoryEntry(this.fs_, b))
-  }, this), goog.bind(function(b) {
-    var c = "getting parent of " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.fs.DirectoryEntry = function(a, b) {
-  goog.fs.Entry.call(this, a, b);
-  this.dir_ = b
-};
-goog.inherits(goog.fs.DirectoryEntry, goog.fs.Entry);
-goog.fs.DirectoryEntry.Behavior = {DEFAULT:1, CREATE:2, CREATE_EXCLUSIVE:3};
-goog.fs.DirectoryEntry.prototype.getFile = function(a, b) {
-  var c = new goog.async.Deferred;
-  this.dir_.getFile(a, this.getOptions_(b), goog.bind(function(a) {
-    c.callback(new goog.fs.FileEntry(this.fs_, a))
-  }, this), goog.bind(function(b) {
-    var e = "loading file " + a + " from " + this.getFullPath();
-    c.errback(new goog.fs.Error(b.code, e))
-  }, this));
-  return c
-};
-goog.fs.DirectoryEntry.prototype.getDirectory = function(a, b) {
-  var c = new goog.async.Deferred;
-  this.dir_.getDirectory(a, this.getOptions_(b), goog.bind(function(a) {
-    c.callback(new goog.fs.DirectoryEntry(this.fs_, a))
-  }, this), goog.bind(function(b) {
-    var e = "loading directory " + a + " from " + this.getFullPath();
-    c.errback(new goog.fs.Error(b.code, e))
-  }, this));
-  return c
-};
-goog.fs.DirectoryEntry.prototype.createPath = function(a) {
-  function b(a) {
-    if(!d.length) {
-      return goog.async.Deferred.succeed(a)
-    }
-    var c = d.shift();
-    return(".." == c ? a.getParent() : "." == c ? goog.async.Deferred.succeed(a) : a.getDirectory(c, goog.fs.DirectoryEntry.Behavior.CREATE)).addCallback(b)
-  }
-  if(goog.string.startsWith(a, "/")) {
-    var c = this.getFileSystem().getRoot();
-    if(this.getFullPath() != c.getFullPath()) {
-      return c.createPath(a)
-    }
-  }
-  var d = goog.array.filter(a.split("/"), goog.functions.identity);
-  return b(this)
-};
-goog.fs.DirectoryEntry.prototype.listDirectory = function() {
-  var a = new goog.async.Deferred, b = this.dir_.createReader(), c = [], d = goog.bind(function(b) {
-    var c = "listing directory " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this), e = goog.bind(function(f) {
-    if(f.length) {
-      for(var g = 0, h;h = f[g];g++) {
-        c.push(this.wrapEntry(h))
-      }
-      b.readEntries(e, d)
-    }else {
-      a.callback(c)
-    }
-  }, this);
-  b.readEntries(e, d);
-  return a
-};
-goog.fs.DirectoryEntry.prototype.removeRecursively = function() {
-  var a = new goog.async.Deferred;
-  this.dir_.removeRecursively(goog.bind(a.callback, a, !0), goog.bind(function(b) {
-    var c = "removing " + this.getFullPath() + " recursively";
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.fs.DirectoryEntry.prototype.getOptions_ = function(a) {
-  return a == goog.fs.DirectoryEntry.Behavior.CREATE ? {create:!0} : a == goog.fs.DirectoryEntry.Behavior.CREATE_EXCLUSIVE ? {create:!0, exclusive:!0} : {}
-};
-goog.fs.FileEntry = function(a, b) {
-  goog.fs.Entry.call(this, a, b);
-  this.file_ = b
-};
-goog.inherits(goog.fs.FileEntry, goog.fs.Entry);
-goog.fs.FileEntry.prototype.createWriter = function() {
-  var a = new goog.async.Deferred;
-  this.file_.createWriter(function(b) {
-    a.callback(new goog.fs.FileWriter(b))
-  }, goog.bind(function(b) {
-    var c = "creating writer for " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.fs.FileEntry.prototype.file = function() {
-  var a = new goog.async.Deferred;
-  this.file_.file(function(b) {
-    a.callback(b)
-  }, goog.bind(function(b) {
-    var c = "getting file for " + this.getFullPath();
-    a.errback(new goog.fs.Error(b.code, c))
-  }, this));
-  return a
-};
-goog.dom.BrowserFeature = {CAN_ADD_NAME_OR_TYPE_ATTRIBUTES:!goog.userAgent.IE || goog.userAgent.isDocumentMode(9), CAN_USE_CHILDREN_ATTRIBUTE:!goog.userAgent.GECKO && !goog.userAgent.IE || goog.userAgent.IE && goog.userAgent.isDocumentMode(9) || goog.userAgent.GECKO && goog.userAgent.isVersion("1.9.1"), CAN_USE_INNER_TEXT:goog.userAgent.IE && !goog.userAgent.isVersion("9"), CAN_USE_PARENT_ELEMENT_PROPERTY:goog.userAgent.IE || goog.userAgent.OPERA || goog.userAgent.WEBKIT, INNER_HTML_NEEDS_SCOPED_ELEMENT:goog.userAgent.IE};
-goog.dom.TagName = {A:"A", ABBR:"ABBR", ACRONYM:"ACRONYM", ADDRESS:"ADDRESS", APPLET:"APPLET", AREA:"AREA", ARTICLE:"ARTICLE", ASIDE:"ASIDE", AUDIO:"AUDIO", B:"B", BASE:"BASE", BASEFONT:"BASEFONT", BDI:"BDI", BDO:"BDO", BIG:"BIG", BLOCKQUOTE:"BLOCKQUOTE", BODY:"BODY", BR:"BR", BUTTON:"BUTTON", CANVAS:"CANVAS", CAPTION:"CAPTION", CENTER:"CENTER", CITE:"CITE", CODE:"CODE", COL:"COL", COLGROUP:"COLGROUP", COMMAND:"COMMAND", DATA:"DATA", DATALIST:"DATALIST", DD:"DD", DEL:"DEL", DETAILS:"DETAILS", DFN:"DFN", 
-DIALOG:"DIALOG", DIR:"DIR", DIV:"DIV", DL:"DL", DT:"DT", EM:"EM", EMBED:"EMBED", FIELDSET:"FIELDSET", FIGCAPTION:"FIGCAPTION", FIGURE:"FIGURE", FONT:"FONT", FOOTER:"FOOTER", FORM:"FORM", FRAME:"FRAME", FRAMESET:"FRAMESET", H1:"H1", H2:"H2", H3:"H3", H4:"H4", H5:"H5", H6:"H6", HEAD:"HEAD", HEADER:"HEADER", HGROUP:"HGROUP", HR:"HR", HTML:"HTML", I:"I", IFRAME:"IFRAME", IMG:"IMG", INPUT:"INPUT", INS:"INS", ISINDEX:"ISINDEX", KBD:"KBD", KEYGEN:"KEYGEN", LABEL:"LABEL", LEGEND:"LEGEND", LI:"LI", LINK:"LINK", 
-MAP:"MAP", MARK:"MARK", MATH:"MATH", MENU:"MENU", META:"META", METER:"METER", NAV:"NAV", NOFRAMES:"NOFRAMES", NOSCRIPT:"NOSCRIPT", OBJECT:"OBJECT", OL:"OL", OPTGROUP:"OPTGROUP", OPTION:"OPTION", OUTPUT:"OUTPUT", P:"P", PARAM:"PARAM", PRE:"PRE", PROGRESS:"PROGRESS", Q:"Q", RP:"RP", RT:"RT", RUBY:"RUBY", S:"S", SAMP:"SAMP", SCRIPT:"SCRIPT", SECTION:"SECTION", SELECT:"SELECT", SMALL:"SMALL", SOURCE:"SOURCE", SPAN:"SPAN", STRIKE:"STRIKE", STRONG:"STRONG", STYLE:"STYLE", SUB:"SUB", SUMMARY:"SUMMARY", 
-SUP:"SUP", SVG:"SVG", TABLE:"TABLE", TBODY:"TBODY", TD:"TD", TEXTAREA:"TEXTAREA", TFOOT:"TFOOT", TH:"TH", THEAD:"THEAD", TIME:"TIME", TITLE:"TITLE", TR:"TR", TRACK:"TRACK", TT:"TT", U:"U", UL:"UL", VAR:"VAR", VIDEO:"VIDEO", WBR:"WBR"};
-goog.dom.classes = {};
-goog.dom.classes.set = function(a, b) {
-  a.className = b
-};
-goog.dom.classes.get = function(a) {
-  a = a.className;
-  return goog.isString(a) && a.match(/\S+/g) || []
-};
-goog.dom.classes.add = function(a, b) {
-  var c = goog.dom.classes.get(a), d = goog.array.slice(arguments, 1), e = c.length + d.length;
-  goog.dom.classes.add_(c, d);
-  goog.dom.classes.set(a, c.join(" "));
-  return c.length == e
-};
-goog.dom.classes.remove = function(a, b) {
-  var c = goog.dom.classes.get(a), d = goog.array.slice(arguments, 1), e = goog.dom.classes.getDifference_(c, d);
-  goog.dom.classes.set(a, e.join(" "));
-  return e.length == c.length - d.length
-};
-goog.dom.classes.add_ = function(a, b) {
-  for(var c = 0;c < b.length;c++) {
-    goog.array.contains(a, b[c]) || a.push(b[c])
-  }
-};
-goog.dom.classes.getDifference_ = function(a, b) {
-  return goog.array.filter(a, function(a) {
-    return!goog.array.contains(b, a)
-  })
-};
-goog.dom.classes.swap = function(a, b, c) {
-  for(var d = goog.dom.classes.get(a), e = !1, f = 0;f < d.length;f++) {
-    d[f] == b && (goog.array.splice(d, f--, 1), e = !0)
-  }
-  e && (d.push(c), goog.dom.classes.set(a, d.join(" ")));
-  return e
-};
-goog.dom.classes.addRemove = function(a, b, c) {
-  var d = goog.dom.classes.get(a);
-  goog.isString(b) ? goog.array.remove(d, b) : goog.isArray(b) && (d = goog.dom.classes.getDifference_(d, b));
-  goog.isString(c) && !goog.array.contains(d, c) ? d.push(c) : goog.isArray(c) && goog.dom.classes.add_(d, c);
-  goog.dom.classes.set(a, d.join(" "))
-};
-goog.dom.classes.has = function(a, b) {
-  return goog.array.contains(goog.dom.classes.get(a), b)
-};
-goog.dom.classes.enable = function(a, b, c) {
-  c ? goog.dom.classes.add(a, b) : goog.dom.classes.remove(a, b)
-};
-goog.dom.classes.toggle = function(a, b) {
-  var c = !goog.dom.classes.has(a, b);
-  goog.dom.classes.enable(a, b, c);
-  return c
 };
 goog.math.Coordinate = function(a, b) {
   this.x = goog.isDef(a) ? a : 0;
@@ -21927,6 +20337,169 @@ goog.dom.DomHelper.prototype.isNodeList = goog.dom.isNodeList;
 goog.dom.DomHelper.prototype.getAncestorByTagNameAndClass = goog.dom.getAncestorByTagNameAndClass;
 goog.dom.DomHelper.prototype.getAncestorByClass = goog.dom.getAncestorByClass;
 goog.dom.DomHelper.prototype.getAncestor = goog.dom.getAncestor;
+goog.a11y.aria.setRole = function(a, b) {
+  a.setAttribute("role", b)
+};
+goog.a11y.aria.getRole = function(a) {
+  return a.getAttribute("role") || ""
+};
+goog.a11y.aria.setState = function(a, b, c) {
+  a.setAttribute("aria-" + b, c)
+};
+goog.a11y.aria.getState = function(a, b) {
+  var c = a.getAttribute("aria-" + b);
+  return!0 === c || !1 === c ? c ? "true" : "false" : c ? String(c) : ""
+};
+goog.a11y.aria.getActiveDescendant = function(a) {
+  var b = goog.a11y.aria.getState(a, goog.a11y.aria.State.ACTIVEDESCENDANT);
+  return goog.dom.getOwnerDocument(a).getElementById(b)
+};
+goog.a11y.aria.setActiveDescendant = function(a, b) {
+  goog.a11y.aria.setState(a, goog.a11y.aria.State.ACTIVEDESCENDANT, b ? b.id : "")
+};
+goog.a11y.aria.getLabel = function(a) {
+  return goog.a11y.aria.getState(a, goog.a11y.aria.State.LABEL)
+};
+goog.a11y.aria.setLabel = function(a, b) {
+  goog.a11y.aria.setState(a, goog.a11y.aria.State.LABEL, b)
+};
+goog.dom.classlist = {};
+goog.dom.classlist.ALWAYS_USE_DOM_TOKEN_LIST = !1;
+goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ = goog.dom.classlist.ALWAYS_USE_DOM_TOKEN_LIST || "undefined" != typeof DOMTokenList;
+goog.dom.classlist.get = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a) {
+  return a.classList
+} : function(a) {
+  a = a.className;
+  return goog.isString(a) && a.match(/\S+/g) || []
+};
+goog.dom.classlist.set = function(a, b) {
+  a.className = b
+};
+goog.dom.classlist.contains = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a, b) {
+  goog.asserts.assert(!!a.classList);
+  return a.classList.contains(b)
+} : function(a, b) {
+  return goog.array.contains(goog.dom.classlist.get(a), b)
+};
+goog.dom.classlist.add = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a, b) {
+  a.classList.add(b)
+} : function(a, b) {
+  goog.dom.classlist.contains(a, b) || (a.className += 0 < a.className.length ? " " + b : b)
+};
+goog.dom.classlist.addAll = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a, b) {
+  goog.array.forEach(b, function(b) {
+    goog.dom.classlist.add(a, b)
+  })
+} : function(a, b) {
+  var c = {};
+  goog.array.forEach(goog.dom.classlist.get(a), function(a) {
+    c[a] = !0
+  });
+  goog.array.forEach(b, function(a) {
+    c[a] = !0
+  });
+  a.className = "";
+  for(var d in c) {
+    a.className += 0 < a.className.length ? " " + d : d
+  }
+};
+goog.dom.classlist.remove = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a, b) {
+  a.classList.remove(b)
+} : function(a, b) {
+  goog.dom.classlist.contains(a, b) && (a.className = goog.array.filter(goog.dom.classlist.get(a), function(a) {
+    return a != b
+  }).join(" "))
+};
+goog.dom.classlist.removeAll = goog.dom.classlist.NATIVE_DOM_TOKEN_LIST_ ? function(a, b) {
+  goog.array.forEach(b, function(b) {
+    goog.dom.classlist.remove(a, b)
+  })
+} : function(a, b) {
+  a.className = goog.array.filter(goog.dom.classlist.get(a), function(a) {
+    return!goog.array.contains(b, a)
+  }).join(" ")
+};
+goog.dom.classlist.enable = function(a, b, c) {
+  c ? goog.dom.classlist.add(a, b) : goog.dom.classlist.remove(a, b)
+};
+goog.dom.classlist.swap = function(a, b, c) {
+  return goog.dom.classlist.contains(a, b) ? (goog.dom.classlist.remove(a, b), goog.dom.classlist.add(a, c), !0) : !1
+};
+goog.dom.classlist.toggle = function(a, b) {
+  var c = !goog.dom.classlist.contains(a, b);
+  goog.dom.classlist.enable(a, b, c);
+  return c
+};
+goog.dom.classlist.addRemove = function(a, b, c) {
+  goog.dom.classlist.remove(a, b);
+  goog.dom.classlist.add(a, c)
+};
+goog.events.EventHandler = function(a) {
+  goog.Disposable.call(this);
+  this.handler_ = a;
+  this.keys_ = []
+};
+goog.inherits(goog.events.EventHandler, goog.Disposable);
+goog.events.EventHandler.typeArray_ = [];
+goog.events.EventHandler.prototype.listen = function(a, b, c, d, e) {
+  goog.isArray(b) || (goog.events.EventHandler.typeArray_[0] = b, b = goog.events.EventHandler.typeArray_);
+  for(var f = 0;f < b.length;f++) {
+    var g = goog.events.listen(a, b[f], c || this, d || !1, e || this.handler_ || this);
+    this.keys_.push(g)
+  }
+  return this
+};
+goog.events.EventHandler.prototype.listenOnce = function(a, b, c, d, e) {
+  if(goog.isArray(b)) {
+    for(var f = 0;f < b.length;f++) {
+      this.listenOnce(a, b[f], c, d, e)
+    }
+  }else {
+    a = goog.events.listenOnce(a, b, c || this, d, e || this.handler_ || this), this.keys_.push(a)
+  }
+  return this
+};
+goog.events.EventHandler.prototype.listenWithWrapper = function(a, b, c, d, e) {
+  b.listen(a, c, d, e || this.handler_ || this, this);
+  return this
+};
+goog.events.EventHandler.prototype.getListenerCount = function() {
+  return this.keys_.length
+};
+goog.events.EventHandler.prototype.unlisten = function(a, b, c, d, e) {
+  if(goog.isArray(b)) {
+    for(var f = 0;f < b.length;f++) {
+      this.unlisten(a, b[f], c, d, e)
+    }
+  }else {
+    if(a = goog.events.getListener(a, b, c || this, d, e || this.handler_ || this)) {
+      a = a.key, goog.events.unlistenByKey(a), goog.array.remove(this.keys_, a)
+    }
+  }
+  return this
+};
+goog.events.EventHandler.prototype.unlistenWithWrapper = function(a, b, c, d, e) {
+  b.unlisten(a, c, d, e || this.handler_ || this, this);
+  return this
+};
+goog.events.EventHandler.prototype.removeAll = function() {
+  goog.array.forEach(this.keys_, goog.events.unlistenByKey);
+  this.keys_.length = 0
+};
+goog.events.EventHandler.prototype.disposeInternal = function() {
+  goog.events.EventHandler.superClass_.disposeInternal.call(this);
+  this.removeAll()
+};
+goog.events.EventHandler.prototype.handleEvent = function(a) {
+  throw Error("EventHandler.handleEvent not implemented");
+};
+goog.dom.vendor = {};
+goog.dom.vendor.getVendorJsPrefix = function() {
+  return goog.userAgent.WEBKIT ? "Webkit" : goog.userAgent.GECKO ? "Moz" : goog.userAgent.IE ? "ms" : goog.userAgent.OPERA ? "O" : null
+};
+goog.dom.vendor.getVendorPrefix = function() {
+  return goog.userAgent.WEBKIT ? "-webkit" : goog.userAgent.GECKO ? "-moz" : goog.userAgent.IE ? "-ms" : goog.userAgent.OPERA ? "-o" : null
+};
 goog.math.Box = function(a, b, c, d) {
   this.top = a;
   this.right = b;
@@ -22668,6 +21241,2199 @@ goog.style.getCssTranslation = function(a) {
   c || (c = goog.style.getStyle_(a, "transform"));
   return c ? (a = c.match(goog.style.MATRIX_TRANSLATION_REGEX_)) ? new goog.math.Coordinate(parseFloat(a[1]), parseFloat(a[2])) : new goog.math.Coordinate(0, 0) : new goog.math.Coordinate(0, 0)
 };
+goog.ui = {};
+goog.ui.IdGenerator = function() {
+};
+goog.addSingletonGetter(goog.ui.IdGenerator);
+goog.ui.IdGenerator.prototype.nextId_ = 0;
+goog.ui.IdGenerator.prototype.getNextUniqueId = function() {
+  return":" + (this.nextId_++).toString(36)
+};
+goog.ui.IdGenerator.instance = goog.ui.IdGenerator.getInstance();
+goog.ui.Component = function(a) {
+  goog.events.EventTarget.call(this);
+  this.dom_ = a || goog.dom.getDomHelper();
+  this.rightToLeft_ = goog.ui.Component.defaultRightToLeft_
+};
+goog.inherits(goog.ui.Component, goog.events.EventTarget);
+goog.ui.Component.prototype.idGenerator_ = goog.ui.IdGenerator.getInstance();
+goog.ui.Component.defaultRightToLeft_ = null;
+goog.ui.Component.EventType = {BEFORE_SHOW:"beforeshow", SHOW:"show", HIDE:"hide", DISABLE:"disable", ENABLE:"enable", HIGHLIGHT:"highlight", UNHIGHLIGHT:"unhighlight", ACTIVATE:"activate", DEACTIVATE:"deactivate", SELECT:"select", UNSELECT:"unselect", CHECK:"check", UNCHECK:"uncheck", FOCUS:"focus", BLUR:"blur", OPEN:"open", CLOSE:"close", ENTER:"enter", LEAVE:"leave", ACTION:"action", CHANGE:"change"};
+goog.ui.Component.Error = {NOT_SUPPORTED:"Method not supported", DECORATE_INVALID:"Invalid element to decorate", ALREADY_RENDERED:"Component already rendered", PARENT_UNABLE_TO_BE_SET:"Unable to set parent component", CHILD_INDEX_OUT_OF_BOUNDS:"Child component index out of bounds", NOT_OUR_CHILD:"Child is not in parent component", NOT_IN_DOCUMENT:"Operation not supported while component is not in document", STATE_INVALID:"Invalid component state"};
+goog.ui.Component.State = {ALL:255, DISABLED:1, HOVER:2, ACTIVE:4, SELECTED:8, CHECKED:16, FOCUSED:32, OPENED:64};
+goog.ui.Component.getStateTransitionEvent = function(a, b) {
+  switch(a) {
+    case goog.ui.Component.State.DISABLED:
+      return b ? goog.ui.Component.EventType.DISABLE : goog.ui.Component.EventType.ENABLE;
+    case goog.ui.Component.State.HOVER:
+      return b ? goog.ui.Component.EventType.HIGHLIGHT : goog.ui.Component.EventType.UNHIGHLIGHT;
+    case goog.ui.Component.State.ACTIVE:
+      return b ? goog.ui.Component.EventType.ACTIVATE : goog.ui.Component.EventType.DEACTIVATE;
+    case goog.ui.Component.State.SELECTED:
+      return b ? goog.ui.Component.EventType.SELECT : goog.ui.Component.EventType.UNSELECT;
+    case goog.ui.Component.State.CHECKED:
+      return b ? goog.ui.Component.EventType.CHECK : goog.ui.Component.EventType.UNCHECK;
+    case goog.ui.Component.State.FOCUSED:
+      return b ? goog.ui.Component.EventType.FOCUS : goog.ui.Component.EventType.BLUR;
+    case goog.ui.Component.State.OPENED:
+      return b ? goog.ui.Component.EventType.OPEN : goog.ui.Component.EventType.CLOSE
+  }
+  throw Error(goog.ui.Component.Error.STATE_INVALID);
+};
+goog.ui.Component.setDefaultRightToLeft = function(a) {
+  goog.ui.Component.defaultRightToLeft_ = a
+};
+goog.ui.Component.prototype.id_ = null;
+goog.ui.Component.prototype.inDocument_ = !1;
+goog.ui.Component.prototype.element_ = null;
+goog.ui.Component.prototype.rightToLeft_ = null;
+goog.ui.Component.prototype.model_ = null;
+goog.ui.Component.prototype.parent_ = null;
+goog.ui.Component.prototype.children_ = null;
+goog.ui.Component.prototype.childIndex_ = null;
+goog.ui.Component.prototype.wasDecorated_ = !1;
+goog.ui.Component.prototype.getId = function() {
+  return this.id_ || (this.id_ = this.idGenerator_.getNextUniqueId())
+};
+goog.ui.Component.prototype.setId = function(a) {
+  this.parent_ && this.parent_.childIndex_ && (goog.object.remove(this.parent_.childIndex_, this.id_), goog.object.add(this.parent_.childIndex_, a, this));
+  this.id_ = a
+};
+goog.ui.Component.prototype.getElement = function() {
+  return this.element_
+};
+goog.ui.Component.prototype.getElementStrict = function() {
+  var a = this.element_;
+  goog.asserts.assert(a, "Can not call getElementStrict before rendering/decorating.");
+  return a
+};
+goog.ui.Component.prototype.setElementInternal = function(a) {
+  this.element_ = a
+};
+goog.ui.Component.prototype.getElementsByClass = function(a) {
+  return this.element_ ? this.dom_.getElementsByClass(a, this.element_) : []
+};
+goog.ui.Component.prototype.getElementByClass = function(a) {
+  return this.element_ ? this.dom_.getElementByClass(a, this.element_) : null
+};
+goog.ui.Component.prototype.getHandler = function() {
+  return this.googUiComponentHandler_ || (this.googUiComponentHandler_ = new goog.events.EventHandler(this))
+};
+goog.ui.Component.prototype.setParent = function(a) {
+  if(this == a) {
+    throw Error(goog.ui.Component.Error.PARENT_UNABLE_TO_BE_SET);
+  }
+  if(a && this.parent_ && this.id_ && this.parent_.getChild(this.id_) && this.parent_ != a) {
+    throw Error(goog.ui.Component.Error.PARENT_UNABLE_TO_BE_SET);
+  }
+  this.parent_ = a;
+  goog.ui.Component.superClass_.setParentEventTarget.call(this, a)
+};
+goog.ui.Component.prototype.getParent = function() {
+  return this.parent_
+};
+goog.ui.Component.prototype.setParentEventTarget = function(a) {
+  if(this.parent_ && this.parent_ != a) {
+    throw Error(goog.ui.Component.Error.NOT_SUPPORTED);
+  }
+  goog.ui.Component.superClass_.setParentEventTarget.call(this, a)
+};
+goog.ui.Component.prototype.getDomHelper = function() {
+  return this.dom_
+};
+goog.ui.Component.prototype.isInDocument = function() {
+  return this.inDocument_
+};
+goog.ui.Component.prototype.createDom = function() {
+  this.element_ = this.dom_.createElement("div")
+};
+goog.ui.Component.prototype.render = function(a) {
+  this.render_(a)
+};
+goog.ui.Component.prototype.renderBefore = function(a) {
+  this.render_(a.parentNode, a)
+};
+goog.ui.Component.prototype.render_ = function(a, b) {
+  if(this.inDocument_) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  this.element_ || this.createDom();
+  a ? a.insertBefore(this.element_, b || null) : this.dom_.getDocument().body.appendChild(this.element_);
+  this.parent_ && !this.parent_.isInDocument() || this.enterDocument()
+};
+goog.ui.Component.prototype.decorate = function(a) {
+  if(this.inDocument_) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  if(a && this.canDecorate(a)) {
+    this.wasDecorated_ = !0, this.dom_ && this.dom_.getDocument() == goog.dom.getOwnerDocument(a) || (this.dom_ = goog.dom.getDomHelper(a)), this.decorateInternal(a), this.enterDocument()
+  }else {
+    throw Error(goog.ui.Component.Error.DECORATE_INVALID);
+  }
+};
+goog.ui.Component.prototype.canDecorate = function(a) {
+  return!0
+};
+goog.ui.Component.prototype.wasDecorated = function() {
+  return this.wasDecorated_
+};
+goog.ui.Component.prototype.decorateInternal = function(a) {
+  this.element_ = a
+};
+goog.ui.Component.prototype.enterDocument = function() {
+  this.inDocument_ = !0;
+  this.forEachChild(function(a) {
+    !a.isInDocument() && a.getElement() && a.enterDocument()
+  })
+};
+goog.ui.Component.prototype.exitDocument = function() {
+  this.forEachChild(function(a) {
+    a.isInDocument() && a.exitDocument()
+  });
+  this.googUiComponentHandler_ && this.googUiComponentHandler_.removeAll();
+  this.inDocument_ = !1
+};
+goog.ui.Component.prototype.disposeInternal = function() {
+  this.inDocument_ && this.exitDocument();
+  this.googUiComponentHandler_ && (this.googUiComponentHandler_.dispose(), delete this.googUiComponentHandler_);
+  this.forEachChild(function(a) {
+    a.dispose()
+  });
+  !this.wasDecorated_ && this.element_ && goog.dom.removeNode(this.element_);
+  this.parent_ = this.model_ = this.element_ = this.childIndex_ = this.children_ = null;
+  goog.ui.Component.superClass_.disposeInternal.call(this)
+};
+goog.ui.Component.prototype.makeId = function(a) {
+  return this.getId() + "." + a
+};
+goog.ui.Component.prototype.makeIds = function(a) {
+  var b = {}, c;
+  for(c in a) {
+    b[c] = this.makeId(a[c])
+  }
+  return b
+};
+goog.ui.Component.prototype.getModel = function() {
+  return this.model_
+};
+goog.ui.Component.prototype.setModel = function(a) {
+  this.model_ = a
+};
+goog.ui.Component.prototype.getFragmentFromId = function(a) {
+  return a.substring(this.getId().length + 1)
+};
+goog.ui.Component.prototype.getElementByFragment = function(a) {
+  if(!this.inDocument_) {
+    throw Error(goog.ui.Component.Error.NOT_IN_DOCUMENT);
+  }
+  return this.dom_.getElement(this.makeId(a))
+};
+goog.ui.Component.prototype.addChild = function(a, b) {
+  this.addChildAt(a, this.getChildCount(), b)
+};
+goog.ui.Component.prototype.addChildAt = function(a, b, c) {
+  if(a.inDocument_ && (c || !this.inDocument_)) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  if(0 > b || b > this.getChildCount()) {
+    throw Error(goog.ui.Component.Error.CHILD_INDEX_OUT_OF_BOUNDS);
+  }
+  this.childIndex_ && this.children_ || (this.childIndex_ = {}, this.children_ = []);
+  a.getParent() == this ? (goog.object.set(this.childIndex_, a.getId(), a), goog.array.remove(this.children_, a)) : goog.object.add(this.childIndex_, a.getId(), a);
+  a.setParent(this);
+  goog.array.insertAt(this.children_, a, b);
+  a.inDocument_ && this.inDocument_ && a.getParent() == this ? (c = this.getContentElement(), c.insertBefore(a.getElement(), c.childNodes[b] || null)) : c ? (this.element_ || this.createDom(), b = this.getChildAt(b + 1), a.render_(this.getContentElement(), b ? b.element_ : null)) : this.inDocument_ && (!a.inDocument_ && a.element_ && a.element_.parentNode && a.element_.parentNode.nodeType == goog.dom.NodeType.ELEMENT) && a.enterDocument()
+};
+goog.ui.Component.prototype.getContentElement = function() {
+  return this.element_
+};
+goog.ui.Component.prototype.isRightToLeft = function() {
+  null == this.rightToLeft_ && (this.rightToLeft_ = goog.style.isRightToLeft(this.inDocument_ ? this.element_ : this.dom_.getDocument().body));
+  return this.rightToLeft_
+};
+goog.ui.Component.prototype.setRightToLeft = function(a) {
+  if(this.inDocument_) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  this.rightToLeft_ = a
+};
+goog.ui.Component.prototype.hasChildren = function() {
+  return!!this.children_ && 0 != this.children_.length
+};
+goog.ui.Component.prototype.getChildCount = function() {
+  return this.children_ ? this.children_.length : 0
+};
+goog.ui.Component.prototype.getChildIds = function() {
+  var a = [];
+  this.forEachChild(function(b) {
+    a.push(b.getId())
+  });
+  return a
+};
+goog.ui.Component.prototype.getChild = function(a) {
+  return this.childIndex_ && a ? goog.object.get(this.childIndex_, a) || null : null
+};
+goog.ui.Component.prototype.getChildAt = function(a) {
+  return this.children_ ? this.children_[a] || null : null
+};
+goog.ui.Component.prototype.forEachChild = function(a, b) {
+  this.children_ && goog.array.forEach(this.children_, a, b)
+};
+goog.ui.Component.prototype.indexOfChild = function(a) {
+  return this.children_ && a ? goog.array.indexOf(this.children_, a) : -1
+};
+goog.ui.Component.prototype.removeChild = function(a, b) {
+  if(a) {
+    var c = goog.isString(a) ? a : a.getId();
+    a = this.getChild(c);
+    c && a && (goog.object.remove(this.childIndex_, c), goog.array.remove(this.children_, a), b && (a.exitDocument(), a.element_ && goog.dom.removeNode(a.element_)), a.setParent(null))
+  }
+  if(!a) {
+    throw Error(goog.ui.Component.Error.NOT_OUR_CHILD);
+  }
+  return a
+};
+goog.ui.Component.prototype.removeChildAt = function(a, b) {
+  return this.removeChild(this.getChildAt(a), b)
+};
+goog.ui.Component.prototype.removeChildren = function(a) {
+  for(var b = [];this.hasChildren();) {
+    b.push(this.removeChildAt(0, a))
+  }
+  return b
+};
+goog.ui.ControlRenderer = function() {
+};
+goog.addSingletonGetter(goog.ui.ControlRenderer);
+goog.ui.ControlRenderer.getCustomRenderer = function(a, b) {
+  var c = new a;
+  c.getCssClass = function() {
+    return b
+  };
+  return c
+};
+goog.ui.ControlRenderer.CSS_CLASS = "goog-control";
+goog.ui.ControlRenderer.IE6_CLASS_COMBINATIONS = [];
+goog.ui.ControlRenderer.prototype.getAriaRole = function() {
+};
+goog.ui.ControlRenderer.prototype.createDom = function(a) {
+  var b = a.getDomHelper().createDom("div", this.getClassNames(a).join(" "), a.getContent());
+  this.setAriaStates(a, b);
+  return b
+};
+goog.ui.ControlRenderer.prototype.getContentElement = function(a) {
+  return a
+};
+goog.ui.ControlRenderer.prototype.enableClassName = function(a, b, c) {
+  if(a = a.getElement ? a.getElement() : a) {
+    if(goog.userAgent.IE && !goog.userAgent.isVersion("7")) {
+      var d = this.getAppliedCombinedClassNames_(goog.dom.classes.get(a), b);
+      d.push(b);
+      goog.partial(c ? goog.dom.classes.add : goog.dom.classes.remove, a).apply(null, d)
+    }else {
+      goog.dom.classes.enable(a, b, c)
+    }
+  }
+};
+goog.ui.ControlRenderer.prototype.enableExtraClassName = function(a, b, c) {
+  this.enableClassName(a, b, c)
+};
+goog.ui.ControlRenderer.prototype.canDecorate = function(a) {
+  return!0
+};
+goog.ui.ControlRenderer.prototype.decorate = function(a, b) {
+  b.id && a.setId(b.id);
+  var c = this.getContentElement(b);
+  c && c.firstChild ? a.setContentInternal(c.firstChild.nextSibling ? goog.array.clone(c.childNodes) : c.firstChild) : a.setContentInternal(null);
+  var d = 0, e = this.getCssClass(), f = this.getStructuralCssClass(), g = !1, h = !1, c = !1, k = goog.dom.classes.get(b);
+  goog.array.forEach(k, function(a) {
+    g || a != e ? h || a != f ? d |= this.getStateFromClass(a) : h = !0 : (g = !0, f == e && (h = !0))
+  }, this);
+  a.setStateInternal(d);
+  g || (k.push(e), f == e && (h = !0));
+  h || k.push(f);
+  var l = a.getExtraClassNames();
+  l && k.push.apply(k, l);
+  if(goog.userAgent.IE && !goog.userAgent.isVersion("7")) {
+    var m = this.getAppliedCombinedClassNames_(k);
+    0 < m.length && (k.push.apply(k, m), c = !0)
+  }
+  g && h && !l && !c || goog.dom.classes.set(b, k.join(" "));
+  this.setAriaStates(a, b);
+  return b
+};
+goog.ui.ControlRenderer.prototype.initializeDom = function(a) {
+  a.isRightToLeft() && this.setRightToLeft(a.getElement(), !0);
+  a.isEnabled() && this.setFocusable(a, a.isVisible())
+};
+goog.ui.ControlRenderer.prototype.setAriaRole = function(a, b) {
+  var c = b || this.getAriaRole();
+  c && (goog.asserts.assert(a, "The element passed as a first parameter cannot be null."), goog.a11y.aria.setRole(a, c))
+};
+goog.ui.ControlRenderer.prototype.setAriaStates = function(a, b) {
+  goog.asserts.assert(a);
+  goog.asserts.assert(b);
+  a.isVisible() || goog.a11y.aria.setState(b, goog.a11y.aria.State.HIDDEN, !a.isVisible());
+  a.isEnabled() || this.updateAriaState(b, goog.ui.Component.State.DISABLED, !a.isEnabled());
+  a.isSupportedState(goog.ui.Component.State.SELECTED) && this.updateAriaState(b, goog.ui.Component.State.SELECTED, a.isSelected());
+  a.isSupportedState(goog.ui.Component.State.CHECKED) && this.updateAriaState(b, goog.ui.Component.State.CHECKED, a.isChecked());
+  a.isSupportedState(goog.ui.Component.State.OPENED) && this.updateAriaState(b, goog.ui.Component.State.OPENED, a.isOpen())
+};
+goog.ui.ControlRenderer.prototype.setAllowTextSelection = function(a, b) {
+  goog.style.setUnselectable(a, !b, !goog.userAgent.IE && !goog.userAgent.OPERA)
+};
+goog.ui.ControlRenderer.prototype.setRightToLeft = function(a, b) {
+  this.enableClassName(a, this.getStructuralCssClass() + "-rtl", b)
+};
+goog.ui.ControlRenderer.prototype.isFocusable = function(a) {
+  var b;
+  return a.isSupportedState(goog.ui.Component.State.FOCUSED) && (b = a.getKeyEventTarget()) ? goog.dom.isFocusableTabIndex(b) : !1
+};
+goog.ui.ControlRenderer.prototype.setFocusable = function(a, b) {
+  var c;
+  if(a.isSupportedState(goog.ui.Component.State.FOCUSED) && (c = a.getKeyEventTarget())) {
+    if(!b && a.isFocused()) {
+      try {
+        c.blur()
+      }catch(d) {
+      }
+      a.isFocused() && a.handleBlur(null)
+    }
+    goog.dom.isFocusableTabIndex(c) != b && goog.dom.setFocusableTabIndex(c, b)
+  }
+};
+goog.ui.ControlRenderer.prototype.setVisible = function(a, b) {
+  goog.style.showElement(a, b);
+  a && goog.a11y.aria.setState(a, goog.a11y.aria.State.HIDDEN, !b)
+};
+goog.ui.ControlRenderer.prototype.setState = function(a, b, c) {
+  var d = a.getElement();
+  if(d) {
+    var e = this.getClassForState(b);
+    e && this.enableClassName(a, e, c);
+    this.updateAriaState(d, b, c)
+  }
+};
+goog.ui.ControlRenderer.prototype.updateAriaState = function(a, b, c) {
+  goog.ui.ControlRenderer.ARIA_STATE_MAP_ || (goog.ui.ControlRenderer.ARIA_STATE_MAP_ = goog.object.create(goog.ui.Component.State.DISABLED, goog.a11y.aria.State.DISABLED, goog.ui.Component.State.SELECTED, goog.a11y.aria.State.SELECTED, goog.ui.Component.State.CHECKED, goog.a11y.aria.State.CHECKED, goog.ui.Component.State.OPENED, goog.a11y.aria.State.EXPANDED));
+  if(b = goog.ui.ControlRenderer.ARIA_STATE_MAP_[b]) {
+    goog.asserts.assert(a, "The element passed as a first parameter cannot be null."), goog.a11y.aria.setState(a, b, c)
+  }
+};
+goog.ui.ControlRenderer.prototype.setContent = function(a, b) {
+  var c = this.getContentElement(a);
+  if(c && (goog.dom.removeChildren(c), b)) {
+    if(goog.isString(b)) {
+      goog.dom.setTextContent(c, b)
+    }else {
+      var d = function(a) {
+        if(a) {
+          var b = goog.dom.getOwnerDocument(c);
+          c.appendChild(goog.isString(a) ? b.createTextNode(a) : a)
+        }
+      };
+      goog.isArray(b) ? goog.array.forEach(b, d) : !goog.isArrayLike(b) || "nodeType" in b ? d(b) : goog.array.forEach(goog.array.clone(b), d)
+    }
+  }
+};
+goog.ui.ControlRenderer.prototype.getKeyEventTarget = function(a) {
+  return a.getElement()
+};
+goog.ui.ControlRenderer.prototype.getCssClass = function() {
+  return goog.ui.ControlRenderer.CSS_CLASS
+};
+goog.ui.ControlRenderer.prototype.getIe6ClassCombinations = function() {
+  return[]
+};
+goog.ui.ControlRenderer.prototype.getStructuralCssClass = function() {
+  return this.getCssClass()
+};
+goog.ui.ControlRenderer.prototype.getClassNames = function(a) {
+  var b = this.getCssClass(), c = [b], d = this.getStructuralCssClass();
+  d != b && c.push(d);
+  b = this.getClassNamesForState(a.getState());
+  c.push.apply(c, b);
+  (a = a.getExtraClassNames()) && c.push.apply(c, a);
+  goog.userAgent.IE && !goog.userAgent.isVersion("7") && c.push.apply(c, this.getAppliedCombinedClassNames_(c));
+  return c
+};
+goog.ui.ControlRenderer.prototype.getAppliedCombinedClassNames_ = function(a, b) {
+  var c = [];
+  b && (a = a.concat([b]));
+  goog.array.forEach(this.getIe6ClassCombinations(), function(d) {
+    !goog.array.every(d, goog.partial(goog.array.contains, a)) || b && !goog.array.contains(d, b) || c.push(d.join("_"))
+  });
+  return c
+};
+goog.ui.ControlRenderer.prototype.getClassNamesForState = function(a) {
+  for(var b = [];a;) {
+    var c = a & -a;
+    b.push(this.getClassForState(c));
+    a &= ~c
+  }
+  return b
+};
+goog.ui.ControlRenderer.prototype.getClassForState = function(a) {
+  this.classByState_ || this.createClassByStateMap_();
+  return this.classByState_[a]
+};
+goog.ui.ControlRenderer.prototype.getStateFromClass = function(a) {
+  this.stateByClass_ || this.createStateByClassMap_();
+  a = parseInt(this.stateByClass_[a], 10);
+  return isNaN(a) ? 0 : a
+};
+goog.ui.ControlRenderer.prototype.createClassByStateMap_ = function() {
+  var a = this.getStructuralCssClass();
+  this.classByState_ = goog.object.create(goog.ui.Component.State.DISABLED, a + "-disabled", goog.ui.Component.State.HOVER, a + "-hover", goog.ui.Component.State.ACTIVE, a + "-active", goog.ui.Component.State.SELECTED, a + "-selected", goog.ui.Component.State.CHECKED, a + "-checked", goog.ui.Component.State.FOCUSED, a + "-focused", goog.ui.Component.State.OPENED, a + "-open")
+};
+goog.ui.ControlRenderer.prototype.createStateByClassMap_ = function() {
+  this.classByState_ || this.createClassByStateMap_();
+  this.stateByClass_ = goog.object.transpose(this.classByState_)
+};
+goog.ui.MenuItemRenderer = function() {
+  goog.ui.ControlRenderer.call(this);
+  this.classNameCache_ = []
+};
+goog.inherits(goog.ui.MenuItemRenderer, goog.ui.ControlRenderer);
+goog.addSingletonGetter(goog.ui.MenuItemRenderer);
+goog.ui.MenuItemRenderer.CSS_CLASS = "goog-menuitem";
+goog.ui.MenuItemRenderer.CompositeCssClassIndex_ = {HOVER:0, CHECKBOX:1, CONTENT:2};
+goog.ui.MenuItemRenderer.prototype.getCompositeCssClass_ = function(a) {
+  var b = this.classNameCache_[a];
+  if(!b) {
+    switch(a) {
+      case goog.ui.MenuItemRenderer.CompositeCssClassIndex_.HOVER:
+        b = this.getStructuralCssClass() + "-highlight";
+        break;
+      case goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CHECKBOX:
+        b = this.getStructuralCssClass() + "-checkbox";
+        break;
+      case goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CONTENT:
+        b = this.getStructuralCssClass() + "-content"
+    }
+    this.classNameCache_[a] = b
+  }
+  return b
+};
+goog.ui.MenuItemRenderer.prototype.getAriaRole = function() {
+  return goog.a11y.aria.Role.MENU_ITEM
+};
+goog.ui.MenuItemRenderer.prototype.createDom = function(a) {
+  var b = a.getDomHelper().createDom("div", this.getClassNames(a).join(" "), this.createContent(a.getContent(), a.getDomHelper()));
+  this.setEnableCheckBoxStructure(a, b, a.isSupportedState(goog.ui.Component.State.SELECTED) || a.isSupportedState(goog.ui.Component.State.CHECKED));
+  this.setAriaStates(a, b);
+  return b
+};
+goog.ui.MenuItemRenderer.prototype.getContentElement = function(a) {
+  return a && a.firstChild
+};
+goog.ui.MenuItemRenderer.prototype.decorate = function(a, b) {
+  this.hasContentStructure(b) || b.appendChild(this.createContent(b.childNodes, a.getDomHelper()));
+  goog.dom.classlist.contains(b, "goog-option") && (a.setCheckable(!0), this.setCheckable(a, b, !0));
+  return goog.ui.MenuItemRenderer.superClass_.decorate.call(this, a, b)
+};
+goog.ui.MenuItemRenderer.prototype.setContent = function(a, b) {
+  var c = this.getContentElement(a), d = this.hasCheckBoxStructure(a) ? c.firstChild : null;
+  goog.ui.MenuItemRenderer.superClass_.setContent.call(this, a, b);
+  d && !this.hasCheckBoxStructure(a) && c.insertBefore(d, c.firstChild || null)
+};
+goog.ui.MenuItemRenderer.prototype.hasContentStructure = function(a) {
+  a = goog.dom.getFirstElementChild(a);
+  var b = this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CONTENT);
+  return!!a && goog.dom.classlist.contains(a, b)
+};
+goog.ui.MenuItemRenderer.prototype.createContent = function(a, b) {
+  var c = this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CONTENT);
+  return b.createDom("div", c, a)
+};
+goog.ui.MenuItemRenderer.prototype.setSelectable = function(a, b, c) {
+  b && (goog.a11y.aria.setRole(b, c ? goog.a11y.aria.Role.MENU_ITEM_RADIO : this.getAriaRole()), this.setEnableCheckBoxStructure(a, b, c))
+};
+goog.ui.MenuItemRenderer.prototype.setCheckable = function(a, b, c) {
+  b && (goog.a11y.aria.setRole(b, c ? goog.a11y.aria.Role.MENU_ITEM_CHECKBOX : this.getAriaRole()), this.setEnableCheckBoxStructure(a, b, c))
+};
+goog.ui.MenuItemRenderer.prototype.hasCheckBoxStructure = function(a) {
+  if(a = this.getContentElement(a)) {
+    a = goog.dom.getFirstElementChild(a);
+    var b = this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CHECKBOX);
+    return!!a && goog.dom.classlist.contains(a, b)
+  }
+  return!1
+};
+goog.ui.MenuItemRenderer.prototype.setEnableCheckBoxStructure = function(a, b, c) {
+  c != this.hasCheckBoxStructure(b) && (goog.dom.classlist.enable(b, "goog-option", c), b = this.getContentElement(b), c ? (c = this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.CHECKBOX), b.insertBefore(a.getDomHelper().createDom("div", c), b.firstChild || null)) : b.removeChild(b.firstChild))
+};
+goog.ui.MenuItemRenderer.prototype.getClassForState = function(a) {
+  switch(a) {
+    case goog.ui.Component.State.HOVER:
+      return this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.HOVER);
+    case goog.ui.Component.State.CHECKED:
+    ;
+    case goog.ui.Component.State.SELECTED:
+      return"goog-option-selected";
+    default:
+      return goog.ui.MenuItemRenderer.superClass_.getClassForState.call(this, a)
+  }
+};
+goog.ui.MenuItemRenderer.prototype.getStateFromClass = function(a) {
+  var b = this.getCompositeCssClass_(goog.ui.MenuItemRenderer.CompositeCssClassIndex_.HOVER);
+  switch(a) {
+    case "goog-option-selected":
+      return goog.ui.Component.State.CHECKED;
+    case b:
+      return goog.ui.Component.State.HOVER;
+    default:
+      return goog.ui.MenuItemRenderer.superClass_.getStateFromClass.call(this, a)
+  }
+};
+goog.ui.MenuItemRenderer.prototype.getCssClass = function() {
+  return goog.ui.MenuItemRenderer.CSS_CLASS
+};
+goog.net.xpc = {};
+goog.net.xpc.TransportTypes = {NATIVE_MESSAGING:1, FRAME_ELEMENT_METHOD:2, IFRAME_RELAY:3, IFRAME_POLLING:4, FLASH:5, NIX:6};
+goog.net.xpc.TransportNames = {1:"NativeMessagingTransport", 2:"FrameElementMethodTransport", 3:"IframeRelayTransport", 4:"IframePollingTransport", 5:"FlashTransport", 6:"NixTransport"};
+goog.net.xpc.CfgFields = {CHANNEL_NAME:"cn", AUTH_TOKEN:"at", REMOTE_AUTH_TOKEN:"rat", PEER_URI:"pu", IFRAME_ID:"ifrid", TRANSPORT:"tp", LOCAL_RELAY_URI:"lru", PEER_RELAY_URI:"pru", LOCAL_POLL_URI:"lpu", PEER_POLL_URI:"ppu", PEER_HOSTNAME:"ph", ONE_SIDED_HANDSHAKE:"osh", ROLE:"role", NATIVE_TRANSPORT_PROTOCOL_VERSION:"nativeProtocolVersion"};
+goog.net.xpc.UriCfgFields = [goog.net.xpc.CfgFields.PEER_URI, goog.net.xpc.CfgFields.LOCAL_RELAY_URI, goog.net.xpc.CfgFields.PEER_RELAY_URI, goog.net.xpc.CfgFields.LOCAL_POLL_URI, goog.net.xpc.CfgFields.PEER_POLL_URI];
+goog.net.xpc.ChannelStates = {NOT_CONNECTED:1, CONNECTED:2, CLOSED:3};
+goog.net.xpc.TRANSPORT_SERVICE_ = "tp";
+goog.net.xpc.SETUP = "SETUP";
+goog.net.xpc.SETUP_NTPV2 = "SETUP_NTPV2";
+goog.net.xpc.SETUP_ACK_ = "SETUP_ACK";
+goog.net.xpc.SETUP_ACK_NTPV2 = "SETUP_ACK_NTPV2";
+goog.net.xpc.channels = {};
+goog.net.xpc.getRandomString = function(a, b) {
+  for(var c = b || goog.net.xpc.randomStringCharacters_, d = c.length, e = "";0 < a--;) {
+    e += c.charAt(Math.floor(Math.random() * d))
+  }
+  return e
+};
+goog.net.xpc.randomStringCharacters_ = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+goog.net.xpc.logger = goog.debug.Logger.getLogger("goog.net.xpc");
+goog.fs = {};
+goog.fs.Error = function(a, b) {
+  goog.debug.Error.call(this, goog.string.subs("Error %s: %s", b, goog.fs.Error.getDebugMessage(a)));
+  this.code = a
+};
+goog.inherits(goog.fs.Error, goog.debug.Error);
+goog.fs.Error.ErrorCode = {NOT_FOUND:1, SECURITY:2, ABORT:3, NOT_READABLE:4, ENCODING:5, NO_MODIFICATION_ALLOWED:6, INVALID_STATE:7, SYNTAX:8, INVALID_MODIFICATION:9, QUOTA_EXCEEDED:10, TYPE_MISMATCH:11, PATH_EXISTS:12};
+goog.fs.Error.getDebugMessage = function(a) {
+  switch(a) {
+    case goog.fs.Error.ErrorCode.NOT_FOUND:
+      return"File or directory not found";
+    case goog.fs.Error.ErrorCode.SECURITY:
+      return"Insecure or disallowed operation";
+    case goog.fs.Error.ErrorCode.ABORT:
+      return"Operation aborted";
+    case goog.fs.Error.ErrorCode.NOT_READABLE:
+      return"File or directory not readable";
+    case goog.fs.Error.ErrorCode.ENCODING:
+      return"Invalid encoding";
+    case goog.fs.Error.ErrorCode.NO_MODIFICATION_ALLOWED:
+      return"Cannot modify file or directory";
+    case goog.fs.Error.ErrorCode.INVALID_STATE:
+      return"Invalid state";
+    case goog.fs.Error.ErrorCode.SYNTAX:
+      return"Invalid line-ending specifier";
+    case goog.fs.Error.ErrorCode.INVALID_MODIFICATION:
+      return"Invalid modification";
+    case goog.fs.Error.ErrorCode.QUOTA_EXCEEDED:
+      return"Quota exceeded";
+    case goog.fs.Error.ErrorCode.TYPE_MISMATCH:
+      return"Invalid filetype";
+    case goog.fs.Error.ErrorCode.PATH_EXISTS:
+      return"File or directory already exists at specified path";
+    default:
+      return"Unrecognized error"
+  }
+};
+goog.fs.ProgressEvent = function(a, b) {
+  goog.events.Event.call(this, a.type, b);
+  this.event_ = a
+};
+goog.inherits(goog.fs.ProgressEvent, goog.events.Event);
+goog.fs.ProgressEvent.prototype.isLengthComputable = function() {
+  return this.event_.lengthComputable
+};
+goog.fs.ProgressEvent.prototype.getLoaded = function() {
+  return this.event_.loaded
+};
+goog.fs.ProgressEvent.prototype.getTotal = function() {
+  return this.event_.total
+};
+goog.fs.FileSaver = function(a) {
+  goog.events.EventTarget.call(this);
+  this.saver_ = a;
+  this.saver_.onwritestart = goog.bind(this.dispatchProgressEvent_, this);
+  this.saver_.onprogress = goog.bind(this.dispatchProgressEvent_, this);
+  this.saver_.onwrite = goog.bind(this.dispatchProgressEvent_, this);
+  this.saver_.onabort = goog.bind(this.dispatchProgressEvent_, this);
+  this.saver_.onerror = goog.bind(this.dispatchProgressEvent_, this);
+  this.saver_.onwriteend = goog.bind(this.dispatchProgressEvent_, this)
+};
+goog.inherits(goog.fs.FileSaver, goog.events.EventTarget);
+goog.fs.FileSaver.ReadyState = {INIT:0, WRITING:1, DONE:2};
+goog.fs.FileSaver.EventType = {WRITE_START:"writestart", PROGRESS:"progress", WRITE:"write", ABORT:"abort", ERROR:"error", WRITE_END:"writeend"};
+goog.fs.FileSaver.prototype.abort = function() {
+  try {
+    this.saver_.abort()
+  }catch(a) {
+    throw new goog.fs.Error(a.code, "aborting save");
+  }
+};
+goog.fs.FileSaver.prototype.getReadyState = function() {
+  return this.saver_.readyState
+};
+goog.fs.FileSaver.prototype.getError = function() {
+  return this.saver_.error && new goog.fs.Error(this.saver_.error.code, "saving file")
+};
+goog.fs.FileSaver.prototype.dispatchProgressEvent_ = function(a) {
+  this.dispatchEvent(new goog.fs.ProgressEvent(a, this))
+};
+goog.fs.FileSaver.prototype.disposeInternal = function() {
+  delete this.saver_;
+  goog.fs.FileSaver.superClass_.disposeInternal.call(this)
+};
+goog.fs.FileSaver.ProgressEvent = goog.fs.ProgressEvent;
+goog.fs.FileWriter = function(a) {
+  goog.fs.FileSaver.call(this, a);
+  this.writer_ = a
+};
+goog.inherits(goog.fs.FileWriter, goog.fs.FileSaver);
+goog.fs.FileWriter.prototype.getPosition = function() {
+  return this.writer_.position
+};
+goog.fs.FileWriter.prototype.getLength = function() {
+  return this.writer_.length
+};
+goog.fs.FileWriter.prototype.write = function(a) {
+  try {
+    this.writer_.write(a)
+  }catch(b) {
+    throw new goog.fs.Error(b.code, "writing file");
+  }
+};
+goog.fs.FileWriter.prototype.seek = function(a) {
+  try {
+    this.writer_.seek(a)
+  }catch(b) {
+    throw new goog.fs.Error(b.code, "seeking in file");
+  }
+};
+goog.fs.FileWriter.prototype.truncate = function(a) {
+  try {
+    this.writer_.truncate(a)
+  }catch(b) {
+    throw new goog.fs.Error(b.code, "truncating file");
+  }
+};
+var dommy = {attrs:{}};
+dommy.attrs.class_match_QMARK_ = function(a, b, c) {
+  var d;
+  d = (d = 0 === c) ? d : " " === a.charAt(c - 1);
+  return cljs.core.truth_(d) ? (d = a.length, b = c + b.length, b <= d ? (c = b === d) ? c : " " === a.charAt(b) : null) : d
+};
+dommy.attrs.class_index = function(a, b) {
+  for(var c = 0;;) {
+    if(c = a.indexOf(b, c), 0 <= c) {
+      if(dommy.attrs.class_match_QMARK_.call(null, a, b, c)) {
+        return c
+      }
+      c += b.length
+    }else {
+      return null
+    }
+  }
+};
+dommy.attrs.has_class_QMARK_ = function(a, b) {
+  var c = dommy.template.__GT_node_like.call(null, a), d = cljs.core.name.call(null, b), e = c.classList;
+  if(cljs.core.truth_(e)) {
+    return e.contains(d)
+  }
+  c = c.className;
+  return cljs.core.truth_(c) ? (d = dommy.attrs.class_index.call(null, c, d), cljs.core.truth_(d) ? 0 <= d : null) : null
+};
+dommy.attrs.add_class_BANG_ = function() {
+  var a = null, b = function(a, b) {
+    var c = dommy.template.__GT_node_like.call(null, a), g = clojure.string.trim.call(null, cljs.core.name.call(null, b));
+    if(cljs.core.seq.call(null, g)) {
+      var h = c.classList;
+      if(cljs.core.truth_(h)) {
+        for(var g = cljs.core.seq.call(null, g.split(/\s+/)), k = null, l = 0, m = 0;;) {
+          if(m < l) {
+            var n = cljs.core._nth.call(null, k, m);
+            h.add(n);
+            m += 1
+          }else {
+            if(g = cljs.core.seq.call(null, g)) {
+              k = g, cljs.core.chunked_seq_QMARK_.call(null, k) ? (g = cljs.core.chunk_first.call(null, k), m = cljs.core.chunk_rest.call(null, k), k = g, l = cljs.core.count.call(null, g), g = m) : (g = cljs.core.first.call(null, k), h.add(g), g = cljs.core.next.call(null, k), k = null, l = 0), m = 0
+            }else {
+              break
+            }
+          }
+        }
+      }else {
+        for(h = c.className, g = cljs.core.seq.call(null, g.split(/\s+/)), k = null, m = l = 0;;) {
+          if(m < l) {
+            n = cljs.core._nth.call(null, k, m), cljs.core.truth_(dommy.attrs.class_index.call(null, h, n)) || (c.className = "" === h ? n : [cljs.core.str(h), cljs.core.str(" "), cljs.core.str(n)].join("")), m += 1
+          }else {
+            if(g = cljs.core.seq.call(null, g)) {
+              k = g, cljs.core.chunked_seq_QMARK_.call(null, k) ? (g = cljs.core.chunk_first.call(null, k), m = cljs.core.chunk_rest.call(null, k), k = g, l = cljs.core.count.call(null, g), g = m) : (g = cljs.core.first.call(null, k), cljs.core.truth_(dommy.attrs.class_index.call(null, h, g)) || (c.className = "" === h ? g : [cljs.core.str(h), cljs.core.str(" "), cljs.core.str(g)].join("")), g = cljs.core.next.call(null, k), k = null, l = 0), m = 0
+            }else {
+              break
+            }
+          }
+        }
+      }
+    }
+    return c
+  }, c = function() {
+    var b = function(b, c, d) {
+      b = dommy.template.__GT_node_like.call(null, b);
+      c = cljs.core.seq.call(null, cljs.core.conj.call(null, d, c));
+      d = null;
+      for(var e = 0, l = 0;;) {
+        if(l < e) {
+          var m = cljs.core._nth.call(null, d, l);
+          a.call(null, b, m);
+          l += 1
+        }else {
+          if(c = cljs.core.seq.call(null, c)) {
+            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), l = cljs.core.chunk_rest.call(null, d), d = c, e = cljs.core.count.call(null, c), c = l) : (c = cljs.core.first.call(null, d), a.call(null, b, c), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
+          }else {
+            break
+          }
+        }
+      }
+      return b
+    }, c = function(a, c, e) {
+      var k = null;
+      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
+      return b.call(this, a, c, k)
+    };
+    c.cljs$lang$maxFixedArity = 2;
+    c.cljs$lang$applyTo = function(a) {
+      var c = cljs.core.first(a);
+      a = cljs.core.next(a);
+      var e = cljs.core.first(a);
+      a = cljs.core.rest(a);
+      return b(c, e, a)
+    };
+    c.cljs$core$IFn$_invoke$arity$variadic = b;
+    return c
+  }(), a = function(a, e, f) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, e);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 2;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a
+}();
+dommy.attrs.remove_class_str = function(a, b) {
+  for(var c = a;;) {
+    var d = c.length, e = dommy.attrs.class_index.call(null, c, b);
+    if(cljs.core.truth_(e)) {
+      var f = e + b.length, c = "" + cljs.core.str(f < d ? [cljs.core.str(c.substring(0, e)), cljs.core.str(c.substr(f + 1))].join("") : c.substring(0, e - 1))
+    }else {
+      return c
+    }
+  }
+};
+dommy.attrs.remove_class_BANG_ = function() {
+  var a = null, b = function(a, b) {
+    var c = dommy.template.__GT_node_like.call(null, a), g = cljs.core.name.call(null, b), h = c.classList;
+    cljs.core.truth_(h) ? h.remove(g) : (h = c.className, g = dommy.attrs.remove_class_str.call(null, h, g), h !== g && (c.className = g));
+    return c
+  }, c = function() {
+    var b = function(b, c, d) {
+      b = dommy.template.__GT_node_like.call(null, b);
+      c = cljs.core.seq.call(null, cljs.core.conj.call(null, d, c));
+      d = null;
+      for(var e = 0, l = 0;;) {
+        if(l < e) {
+          var m = cljs.core._nth.call(null, d, l);
+          a.call(null, b, m);
+          l += 1
+        }else {
+          if(c = cljs.core.seq.call(null, c)) {
+            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), e = cljs.core.chunk_rest.call(null, d), d = c, m = cljs.core.count.call(null, c), c = e, e = m) : (m = cljs.core.first.call(null, d), a.call(null, b, m), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
+          }else {
+            return null
+          }
+        }
+      }
+    }, c = function(a, c, e) {
+      var k = null;
+      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
+      return b.call(this, a, c, k)
+    };
+    c.cljs$lang$maxFixedArity = 2;
+    c.cljs$lang$applyTo = function(a) {
+      var c = cljs.core.first(a);
+      a = cljs.core.next(a);
+      var e = cljs.core.first(a);
+      a = cljs.core.rest(a);
+      return b(c, e, a)
+    };
+    c.cljs$core$IFn$_invoke$arity$variadic = b;
+    return c
+  }(), a = function(a, e, f) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, e);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 2;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a
+}();
+dommy.attrs.toggle_class_BANG_ = function() {
+  var a = null, b = function(b, c) {
+    var f = dommy.template.__GT_node_like.call(null, b), g = f.classList;
+    cljs.core.truth_(g) ? g.toggle(c) : a.call(null, f, c, !dommy.attrs.has_class_QMARK_.call(null, f, c));
+    return f
+  }, c = function(a, b, c) {
+    a = dommy.template.__GT_node_like.call(null, a);
+    c ? dommy.attrs.add_class_BANG_.call(null, a, b) : dommy.attrs.remove_class_BANG_.call(null, a, b);
+    return a
+  }, a = function(a, e, f) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, e);
+      case 3:
+        return c.call(this, a, e, f)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$3 = c;
+  return a
+}();
+dommy.attrs.style_str = function(a) {
+  return cljs.core.string_QMARK_.call(null, a) ? a : clojure.string.join.call(null, " ", cljs.core.map.call(null, function(a) {
+    var c = cljs.core.nth.call(null, a, 0, null);
+    a = cljs.core.nth.call(null, a, 1, null);
+    return[cljs.core.str(cljs.core.name.call(null, c)), cljs.core.str(":"), cljs.core.str(cljs.core.name.call(null, a)), cljs.core.str(";")].join("")
+  }, a))
+};
+dommy.attrs.set_style_BANG_ = function() {
+  var a = function(a, b) {
+    if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, b))) {
+      throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
+    }
+    for(var e = dommy.template.__GT_node_like.call(null, a), f = e.style, g = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), h = null, k = 0, l = 0;;) {
+      if(l < k) {
+        var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null);
+        f[cljs.core.name.call(null, n)] = m;
+        l += 1
+      }else {
+        if(g = cljs.core.seq.call(null, g)) {
+          cljs.core.chunked_seq_QMARK_.call(null, g) ? (k = cljs.core.chunk_first.call(null, g), g = cljs.core.chunk_rest.call(null, g), h = k, k = cljs.core.count.call(null, k)) : (k = cljs.core.first.call(null, g), h = cljs.core.nth.call(null, k, 0, null), k = cljs.core.nth.call(null, k, 1, null), f[cljs.core.name.call(null, h)] = k, g = cljs.core.next.call(null, g), h = null, k = 0), l = 0
+        }else {
+          break
+        }
+      }
+    }
+    return e
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e)
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b)
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b
+}();
+dommy.attrs.style = function(a, b) {
+  if(!cljs.core.truth_(b)) {
+    throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, new cljs.core.Symbol(null, "k", "k", -1640531420, null)))].join(""));
+  }
+  return window.getComputedStyle(dommy.template.__GT_node_like.call(null, a))[cljs.core.name.call(null, b)]
+};
+dommy.attrs.set_px_BANG_ = function() {
+  var a = function(a, b) {
+    if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, b))) {
+      throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
+    }
+    for(var e = dommy.template.__GT_node_like.call(null, a), f = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), g = null, h = 0, k = 0;;) {
+      if(k < h) {
+        var l = cljs.core._nth.call(null, g, k), m = cljs.core.nth.call(null, l, 0, null), l = cljs.core.nth.call(null, l, 1, null);
+        dommy.attrs.set_style_BANG_.call(null, e, m, [cljs.core.str(l), cljs.core.str("px")].join(""));
+        k += 1
+      }else {
+        if(f = cljs.core.seq.call(null, f)) {
+          cljs.core.chunked_seq_QMARK_.call(null, f) ? (h = cljs.core.chunk_first.call(null, f), f = cljs.core.chunk_rest.call(null, f), g = h, h = cljs.core.count.call(null, h)) : (h = cljs.core.first.call(null, f), g = cljs.core.nth.call(null, h, 0, null), h = cljs.core.nth.call(null, h, 1, null), dommy.attrs.set_style_BANG_.call(null, e, g, [cljs.core.str(h), cljs.core.str("px")].join("")), f = cljs.core.next.call(null, f), g = null, h = 0), k = 0
+        }else {
+          break
+        }
+      }
+    }
+    return e
+  }, b = function(b, d) {
+    var e = null;
+    1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
+    return a.call(this, b, e)
+  };
+  b.cljs$lang$maxFixedArity = 1;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, b)
+  };
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b
+}();
+dommy.attrs.px = function(a, b) {
+  var c = dommy.attrs.style.call(null, dommy.template.__GT_node_like.call(null, a), b);
+  return cljs.core.seq.call(null, c) ? parseInt(c) : null
+};
+dommy.attrs.event_chan = function() {
+  var a = null, b = function(b) {
+    return a.call(null, document, b)
+  }, c = function(a, b) {
+    var c = cljs.core.async.chan.call(null);
+    goog.events.listen(a, cljs.core.name.call(null, b), function(a) {
+      return cljs.core.async.put_BANG_.call(null, c, a)
+    }, !0);
+    return c
+  }, a = function(a, e) {
+    switch(arguments.length) {
+      case 1:
+        return b.call(this, a);
+      case 2:
+        return c.call(this, a, e)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$1 = b;
+  a.cljs$core$IFn$_invoke$arity$2 = c;
+  return a
+}();
+dommy.attrs.bind_event = function() {
+  var a = null, b = function(b, c) {
+    return a.call(null, document, b, c)
+  }, c = function(a, b, c) {
+    var g = dommy.attrs.event_chan.call(null, a, cljs.core.name.call(null, b)), h = cljs.core.async.chan.call(null, 1);
+    cljs.core.async.impl.dispatch.run.call(null, function() {
+      var a = function() {
+        return function(a) {
+          return function() {
+            var b = null, c = function() {
+              var a = Array(6);
+              a[0] = b;
+              a[1] = 1;
+              return a
+            }, d = function(b) {
+              for(;;) {
+                var c = a.call(null, b);
+                if("\ufdd0:recur" !== c) {
+                  return c
+                }
+              }
+            }, b = function(a) {
+              switch(arguments.length) {
+                case 0:
+                  return c.call(this);
+                case 1:
+                  return d.call(this, a)
+              }
+              throw Error("Invalid arity: " + arguments.length);
+            };
+            b.cljs$core$IFn$_invoke$arity$0 = c;
+            b.cljs$core$IFn$_invoke$arity$1 = d;
+            return b
+          }()
+        }(function(a) {
+          var b = a[1];
+          return 7 === b ? (b = c.call(null, a[2]), a[5] = b, a[2] = null, a[1] = 2, "\ufdd0:recur") : 6 === b ? (b = a[2], a[2] = b, a[1] = 3, "\ufdd0:recur") : 5 === b ? (a[2] = null, a[1] = 6, "\ufdd0:recur") : 4 === b ? cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 7, g) : 3 === b ? (b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 2 === b ? (a[1] = 4, "\ufdd0:recur") : 1 === b ? (a[2] = null, a[1] = 2, "\ufdd0:recur") : null
+        })
+      }(), b = function() {
+        var b = a.call(null);
+        b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = h;
+        return b
+      }();
+      return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, b)
+    });
+    return h
+  }, a = function(a, e, f) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, e);
+      case 3:
+        return c.call(this, a, e, f)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$3 = c;
+  return a
+}();
+dommy.attrs.set_attr_BANG_ = function() {
+  var a = null, b = function(b, c) {
+    return a.call(null, dommy.template.__GT_node_like.call(null, b), c, "true")
+  }, c = function(a, b, c) {
+    if(cljs.core.truth_(c)) {
+      if(cljs.core._EQ_.call(null, cljs.core.name.call(null, b), "data-event")) {
+        c = cljs.core.seq.call(null, c);
+        for(var d = null, k = 0, l = 0;;) {
+          if(l < k) {
+            var m = cljs.core._nth.call(null, d, l);
+            b = cljs.core.nth.call(null, m, 0, null);
+            m = cljs.core.nth.call(null, m, 1, null);
+            dommy.attrs.bind_event.call(null, dommy.template.__GT_node_like.call(null, a), b, m);
+            l += 1
+          }else {
+            if(c = cljs.core.seq.call(null, c)) {
+              cljs.core.chunked_seq_QMARK_.call(null, c) ? (d = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), b = d, k = cljs.core.count.call(null, d), d = b) : (d = cljs.core.first.call(null, c), b = cljs.core.nth.call(null, d, 0, null), m = cljs.core.nth.call(null, d, 1, null), dommy.attrs.bind_event.call(null, dommy.template.__GT_node_like.call(null, a), b, m), c = cljs.core.next.call(null, c), d = null, k = 0), l = 0
+            }else {
+              return null
+            }
+          }
+        }
+      }else {
+        if(cljs.core._EQ_.call(null, cljs.core.name.call(null, b), "data-bind")) {
+          return a = dommy.template.__GT_node_like.call(null, a), a.innerHTML = c, a
+        }
+        if(cljs.core.fn_QMARK_.call(null, c)) {
+          return a = dommy.template.__GT_node_like.call(null, a), a[cljs.core.name.call(null, b)] = c, a
+        }
+        a = dommy.template.__GT_node_like.call(null, a);
+        a.setAttribute(cljs.core.name.call(null, b), "\ufdd0:style" === b ? dommy.attrs.style_str.call(null, c) : c);
+        return a
+      }
+    }else {
+      return null
+    }
+  }, d = function() {
+    var b = function(b, c, d, e) {
+      if(!cljs.core.even_QMARK_.call(null, cljs.core.count.call(null, e))) {
+        throw Error([cljs.core.str("Assert failed: "), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "even?", "even?", -1543640034, null), cljs.core.list(new cljs.core.Symbol(null, "count", "count", -1545680184, null), new cljs.core.Symbol(null, "kvs", "kvs", -1640424927, null)))))].join(""));
+      }
+      b = dommy.template.__GT_node_like.call(null, b);
+      c = cljs.core.seq.call(null, cljs.core.cons.call(null, cljs.core.PersistentVector.fromArray([c, d], !0), cljs.core.partition.call(null, 2, e)));
+      d = null;
+      for(var f = e = 0;;) {
+        if(f < e) {
+          var n = cljs.core._nth.call(null, d, f), p = cljs.core.nth.call(null, n, 0, null), n = cljs.core.nth.call(null, n, 1, null);
+          a.call(null, b, p, n);
+          f += 1
+        }else {
+          if(c = cljs.core.seq.call(null, c)) {
+            cljs.core.chunked_seq_QMARK_.call(null, c) ? (e = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), d = e, e = cljs.core.count.call(null, e)) : (e = cljs.core.first.call(null, c), d = cljs.core.nth.call(null, e, 0, null), e = cljs.core.nth.call(null, e, 1, null), a.call(null, b, d, e), c = cljs.core.next.call(null, c), d = null, e = 0), f = 0
+          }else {
+            break
+          }
+        }
+      }
+      return b
+    }, c = function(a, c, d, f) {
+      var m = null;
+      3 < arguments.length && (m = cljs.core.array_seq(Array.prototype.slice.call(arguments, 3), 0));
+      return b.call(this, a, c, d, m)
+    };
+    c.cljs$lang$maxFixedArity = 3;
+    c.cljs$lang$applyTo = function(a) {
+      var c = cljs.core.first(a);
+      a = cljs.core.next(a);
+      var d = cljs.core.first(a);
+      a = cljs.core.next(a);
+      var f = cljs.core.first(a);
+      a = cljs.core.rest(a);
+      return b(c, d, f, a)
+    };
+    c.cljs$core$IFn$_invoke$arity$variadic = b;
+    return c
+  }(), a = function(a, f, g, h) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, f);
+      case 3:
+        return c.call(this, a, f, g);
+      default:
+        return d.cljs$core$IFn$_invoke$arity$variadic(a, f, g, cljs.core.array_seq(arguments, 3))
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 3;
+  a.cljs$lang$applyTo = d.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$3 = c;
+  a.cljs$core$IFn$_invoke$arity$variadic = d.cljs$core$IFn$_invoke$arity$variadic;
+  return a
+}();
+dommy.attrs.remove_attr_BANG_ = function() {
+  var a = null, b = function(a, b) {
+    var c = dommy.template.__GT_node_like.call(null, a);
+    cljs.core.truth_(cljs.core.PersistentHashSet.fromArray(["\ufdd0:class", null, "\ufdd0:classes", null], !0).call(null, b)) ? c.className = "" : c.removeAttribute(cljs.core.name.call(null, b));
+    return c
+  }, c = function() {
+    var b = function(b, c, d) {
+      b = dommy.template.__GT_node_like.call(null, b);
+      c = cljs.core.seq.call(null, cljs.core.cons.call(null, c, d));
+      d = null;
+      for(var e = 0, l = 0;;) {
+        if(l < e) {
+          var m = cljs.core._nth.call(null, d, l);
+          a.call(null, b, m);
+          l += 1
+        }else {
+          if(c = cljs.core.seq.call(null, c)) {
+            d = c, cljs.core.chunked_seq_QMARK_.call(null, d) ? (c = cljs.core.chunk_first.call(null, d), l = cljs.core.chunk_rest.call(null, d), d = c, e = cljs.core.count.call(null, c), c = l) : (c = cljs.core.first.call(null, d), a.call(null, b, c), c = cljs.core.next.call(null, d), d = null, e = 0), l = 0
+          }else {
+            break
+          }
+        }
+      }
+      return b
+    }, c = function(a, c, e) {
+      var k = null;
+      2 < arguments.length && (k = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
+      return b.call(this, a, c, k)
+    };
+    c.cljs$lang$maxFixedArity = 2;
+    c.cljs$lang$applyTo = function(a) {
+      var c = cljs.core.first(a);
+      a = cljs.core.next(a);
+      var e = cljs.core.first(a);
+      a = cljs.core.rest(a);
+      return b(c, e, a)
+    };
+    c.cljs$core$IFn$_invoke$arity$variadic = b;
+    return c
+  }(), a = function(a, e, f) {
+    switch(arguments.length) {
+      case 2:
+        return b.call(this, a, e);
+      default:
+        return c.cljs$core$IFn$_invoke$arity$variadic(a, e, cljs.core.array_seq(arguments, 2))
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$lang$maxFixedArity = 2;
+  a.cljs$lang$applyTo = c.cljs$lang$applyTo;
+  a.cljs$core$IFn$_invoke$arity$2 = b;
+  a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
+  return a
+}();
+dommy.attrs.attr = function(a, b) {
+  return cljs.core.truth_(b) ? dommy.template.__GT_node_like.call(null, a).getAttribute(cljs.core.name.call(null, b)) : null
+};
+dommy.attrs.hidden_QMARK_ = function(a) {
+  return"none" === dommy.template.__GT_node_like.call(null, a).style.display
+};
+dommy.attrs.toggle_BANG_ = function() {
+  var a = null, b = function(b) {
+    b = dommy.template.__GT_node_like.call(null, b);
+    a.call(null, b, dommy.attrs.hidden_QMARK_.call(null, b));
+    return b
+  }, c = function(a, b) {
+    var c = dommy.template.__GT_node_like.call(null, a);
+    c.style.display = b ? "" : "none";
+    return c
+  }, a = function(a, e) {
+    switch(arguments.length) {
+      case 1:
+        return b.call(this, a);
+      case 2:
+        return c.call(this, a, e)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$1 = b;
+  a.cljs$core$IFn$_invoke$arity$2 = c;
+  return a
+}();
+dommy.attrs.hide_BANG_ = function(a) {
+  a = dommy.template.__GT_node_like.call(null, a);
+  dommy.attrs.toggle_BANG_.call(null, a, !1);
+  return a
+};
+dommy.attrs.show_BANG_ = function(a) {
+  a = dommy.template.__GT_node_like.call(null, a);
+  dommy.attrs.toggle_BANG_.call(null, a, !0);
+  return a
+};
+dommy.attrs.bounding_client_rect = function(a) {
+  return cljs.core.js__GT_clj.call(null, function() {
+    var b = dommy.template.__GT_node_like.call(null, a).getBoundingClientRect();
+    b.constructor = Object;
+    return b
+  }(), "\ufdd0:keywordize-keys", !0)
+};
+goog.Uri = function(a, b) {
+  var c;
+  a instanceof goog.Uri ? (this.ignoreCase_ = goog.isDef(b) ? b : a.getIgnoreCase(), this.setScheme(a.getScheme()), this.setUserInfo(a.getUserInfo()), this.setDomain(a.getDomain()), this.setPort(a.getPort()), this.setPath(a.getPath()), this.setQueryData(a.getQueryData().clone()), this.setFragment(a.getFragment())) : a && (c = goog.uri.utils.split(String(a))) ? (this.ignoreCase_ = !!b, this.setScheme(c[goog.uri.utils.ComponentIndex.SCHEME] || "", !0), this.setUserInfo(c[goog.uri.utils.ComponentIndex.USER_INFO] || 
+  "", !0), this.setDomain(c[goog.uri.utils.ComponentIndex.DOMAIN] || "", !0), this.setPort(c[goog.uri.utils.ComponentIndex.PORT]), this.setPath(c[goog.uri.utils.ComponentIndex.PATH] || "", !0), this.setQueryData(c[goog.uri.utils.ComponentIndex.QUERY_DATA] || "", !0), this.setFragment(c[goog.uri.utils.ComponentIndex.FRAGMENT] || "", !0)) : (this.ignoreCase_ = !!b, this.queryData_ = new goog.Uri.QueryData(null, null, this.ignoreCase_))
+};
+goog.Uri.preserveParameterTypesCompatibilityFlag = !1;
+goog.Uri.RANDOM_PARAM = goog.uri.utils.StandardQueryParam.RANDOM;
+goog.Uri.prototype.scheme_ = "";
+goog.Uri.prototype.userInfo_ = "";
+goog.Uri.prototype.domain_ = "";
+goog.Uri.prototype.port_ = null;
+goog.Uri.prototype.path_ = "";
+goog.Uri.prototype.fragment_ = "";
+goog.Uri.prototype.isReadOnly_ = !1;
+goog.Uri.prototype.ignoreCase_ = !1;
+goog.Uri.prototype.toString = function() {
+  var a = [], b = this.getScheme();
+  b && a.push(goog.Uri.encodeSpecialChars_(b, goog.Uri.reDisallowedInSchemeOrUserInfo_), ":");
+  if(b = this.getDomain()) {
+    a.push("//");
+    var c = this.getUserInfo();
+    c && a.push(goog.Uri.encodeSpecialChars_(c, goog.Uri.reDisallowedInSchemeOrUserInfo_), "@");
+    a.push(goog.string.urlEncode(b));
+    b = this.getPort();
+    null != b && a.push(":", String(b))
+  }
+  if(b = this.getPath()) {
+    this.hasDomain() && "/" != b.charAt(0) && a.push("/"), a.push(goog.Uri.encodeSpecialChars_(b, "/" == b.charAt(0) ? goog.Uri.reDisallowedInAbsolutePath_ : goog.Uri.reDisallowedInRelativePath_))
+  }
+  (b = this.getEncodedQuery()) && a.push("?", b);
+  (b = this.getFragment()) && a.push("#", goog.Uri.encodeSpecialChars_(b, goog.Uri.reDisallowedInFragment_));
+  return a.join("")
+};
+goog.Uri.prototype.resolve = function(a) {
+  var b = this.clone(), c = a.hasScheme();
+  c ? b.setScheme(a.getScheme()) : c = a.hasUserInfo();
+  c ? b.setUserInfo(a.getUserInfo()) : c = a.hasDomain();
+  c ? b.setDomain(a.getDomain()) : c = a.hasPort();
+  var d = a.getPath();
+  if(c) {
+    b.setPort(a.getPort())
+  }else {
+    if(c = a.hasPath()) {
+      if("/" != d.charAt(0)) {
+        if(this.hasDomain() && !this.hasPath()) {
+          d = "/" + d
+        }else {
+          var e = b.getPath().lastIndexOf("/");
+          -1 != e && (d = b.getPath().substr(0, e + 1) + d)
+        }
+      }
+      d = goog.Uri.removeDotSegments(d)
+    }
+  }
+  c ? b.setPath(d) : c = a.hasQuery();
+  c ? b.setQueryData(a.getDecodedQuery()) : c = a.hasFragment();
+  c && b.setFragment(a.getFragment());
+  return b
+};
+goog.Uri.prototype.clone = function() {
+  return new goog.Uri(this)
+};
+goog.Uri.prototype.getScheme = function() {
+  return this.scheme_
+};
+goog.Uri.prototype.setScheme = function(a, b) {
+  this.enforceReadOnly();
+  if(this.scheme_ = b ? goog.Uri.decodeOrEmpty_(a) : a) {
+    this.scheme_ = this.scheme_.replace(/:$/, "")
+  }
+  return this
+};
+goog.Uri.prototype.hasScheme = function() {
+  return!!this.scheme_
+};
+goog.Uri.prototype.getUserInfo = function() {
+  return this.userInfo_
+};
+goog.Uri.prototype.setUserInfo = function(a, b) {
+  this.enforceReadOnly();
+  this.userInfo_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
+  return this
+};
+goog.Uri.prototype.hasUserInfo = function() {
+  return!!this.userInfo_
+};
+goog.Uri.prototype.getDomain = function() {
+  return this.domain_
+};
+goog.Uri.prototype.setDomain = function(a, b) {
+  this.enforceReadOnly();
+  this.domain_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
+  return this
+};
+goog.Uri.prototype.hasDomain = function() {
+  return!!this.domain_
+};
+goog.Uri.prototype.getPort = function() {
+  return this.port_
+};
+goog.Uri.prototype.setPort = function(a) {
+  this.enforceReadOnly();
+  if(a) {
+    a = Number(a);
+    if(isNaN(a) || 0 > a) {
+      throw Error("Bad port number " + a);
+    }
+    this.port_ = a
+  }else {
+    this.port_ = null
+  }
+  return this
+};
+goog.Uri.prototype.hasPort = function() {
+  return null != this.port_
+};
+goog.Uri.prototype.getPath = function() {
+  return this.path_
+};
+goog.Uri.prototype.setPath = function(a, b) {
+  this.enforceReadOnly();
+  this.path_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
+  return this
+};
+goog.Uri.prototype.hasPath = function() {
+  return!!this.path_
+};
+goog.Uri.prototype.hasQuery = function() {
+  return"" !== this.queryData_.toString()
+};
+goog.Uri.prototype.setQueryData = function(a, b) {
+  this.enforceReadOnly();
+  a instanceof goog.Uri.QueryData ? (this.queryData_ = a, this.queryData_.setIgnoreCase(this.ignoreCase_)) : (b || (a = goog.Uri.encodeSpecialChars_(a, goog.Uri.reDisallowedInQuery_)), this.queryData_ = new goog.Uri.QueryData(a, null, this.ignoreCase_));
+  return this
+};
+goog.Uri.prototype.setQuery = function(a, b) {
+  return this.setQueryData(a, b)
+};
+goog.Uri.prototype.getEncodedQuery = function() {
+  return this.queryData_.toString()
+};
+goog.Uri.prototype.getDecodedQuery = function() {
+  return this.queryData_.toDecodedString()
+};
+goog.Uri.prototype.getQueryData = function() {
+  return this.queryData_
+};
+goog.Uri.prototype.getQuery = function() {
+  return this.getEncodedQuery()
+};
+goog.Uri.prototype.setParameterValue = function(a, b) {
+  this.enforceReadOnly();
+  this.queryData_.set(a, b);
+  return this
+};
+goog.Uri.prototype.setParameterValues = function(a, b) {
+  this.enforceReadOnly();
+  goog.isArray(b) || (b = [String(b)]);
+  this.queryData_.setValues(a, b);
+  return this
+};
+goog.Uri.prototype.getParameterValues = function(a) {
+  return this.queryData_.getValues(a)
+};
+goog.Uri.prototype.getParameterValue = function(a) {
+  return this.queryData_.get(a)
+};
+goog.Uri.prototype.getFragment = function() {
+  return this.fragment_
+};
+goog.Uri.prototype.setFragment = function(a, b) {
+  this.enforceReadOnly();
+  this.fragment_ = b ? goog.Uri.decodeOrEmpty_(a) : a;
+  return this
+};
+goog.Uri.prototype.hasFragment = function() {
+  return!!this.fragment_
+};
+goog.Uri.prototype.hasSameDomainAs = function(a) {
+  return(!this.hasDomain() && !a.hasDomain() || this.getDomain() == a.getDomain()) && (!this.hasPort() && !a.hasPort() || this.getPort() == a.getPort())
+};
+goog.Uri.prototype.makeUnique = function() {
+  this.enforceReadOnly();
+  this.setParameterValue(goog.Uri.RANDOM_PARAM, goog.string.getRandomString());
+  return this
+};
+goog.Uri.prototype.removeParameter = function(a) {
+  this.enforceReadOnly();
+  this.queryData_.remove(a);
+  return this
+};
+goog.Uri.prototype.setReadOnly = function(a) {
+  this.isReadOnly_ = a;
+  return this
+};
+goog.Uri.prototype.isReadOnly = function() {
+  return this.isReadOnly_
+};
+goog.Uri.prototype.enforceReadOnly = function() {
+  if(this.isReadOnly_) {
+    throw Error("Tried to modify a read-only Uri");
+  }
+};
+goog.Uri.prototype.setIgnoreCase = function(a) {
+  this.ignoreCase_ = a;
+  this.queryData_ && this.queryData_.setIgnoreCase(a);
+  return this
+};
+goog.Uri.prototype.getIgnoreCase = function() {
+  return this.ignoreCase_
+};
+goog.Uri.parse = function(a, b) {
+  return a instanceof goog.Uri ? a.clone() : new goog.Uri(a, b)
+};
+goog.Uri.create = function(a, b, c, d, e, f, g, h) {
+  h = new goog.Uri(null, h);
+  a && h.setScheme(a);
+  b && h.setUserInfo(b);
+  c && h.setDomain(c);
+  d && h.setPort(d);
+  e && h.setPath(e);
+  f && h.setQueryData(f);
+  g && h.setFragment(g);
+  return h
+};
+goog.Uri.resolve = function(a, b) {
+  a instanceof goog.Uri || (a = goog.Uri.parse(a));
+  b instanceof goog.Uri || (b = goog.Uri.parse(b));
+  return a.resolve(b)
+};
+goog.Uri.removeDotSegments = function(a) {
+  if(".." == a || "." == a) {
+    return""
+  }
+  if(goog.string.contains(a, "./") || goog.string.contains(a, "/.")) {
+    var b = goog.string.startsWith(a, "/");
+    a = a.split("/");
+    for(var c = [], d = 0;d < a.length;) {
+      var e = a[d++];
+      "." == e ? b && d == a.length && c.push("") : ".." == e ? ((1 < c.length || 1 == c.length && "" != c[0]) && c.pop(), b && d == a.length && c.push("")) : (c.push(e), b = !0)
+    }
+    return c.join("/")
+  }
+  return a
+};
+goog.Uri.decodeOrEmpty_ = function(a) {
+  return a ? decodeURIComponent(a) : ""
+};
+goog.Uri.encodeSpecialChars_ = function(a, b) {
+  return goog.isString(a) ? encodeURI(a).replace(b, goog.Uri.encodeChar_) : null
+};
+goog.Uri.encodeChar_ = function(a) {
+  a = a.charCodeAt(0);
+  return"%" + (a >> 4 & 15).toString(16) + (a & 15).toString(16)
+};
+goog.Uri.reDisallowedInSchemeOrUserInfo_ = /[#\/\?@]/g;
+goog.Uri.reDisallowedInRelativePath_ = /[\#\?:]/g;
+goog.Uri.reDisallowedInAbsolutePath_ = /[\#\?]/g;
+goog.Uri.reDisallowedInQuery_ = /[\#\?@]/g;
+goog.Uri.reDisallowedInFragment_ = /#/g;
+goog.Uri.haveSameDomain = function(a, b) {
+  var c = goog.uri.utils.split(a), d = goog.uri.utils.split(b);
+  return c[goog.uri.utils.ComponentIndex.DOMAIN] == d[goog.uri.utils.ComponentIndex.DOMAIN] && c[goog.uri.utils.ComponentIndex.PORT] == d[goog.uri.utils.ComponentIndex.PORT]
+};
+goog.Uri.QueryData = function(a, b, c) {
+  this.encodedQuery_ = a || null;
+  this.ignoreCase_ = !!c
+};
+goog.Uri.QueryData.prototype.ensureKeyMapInitialized_ = function() {
+  if(!this.keyMap_ && (this.keyMap_ = new goog.structs.Map, this.count_ = 0, this.encodedQuery_)) {
+    for(var a = this.encodedQuery_.split("\x26"), b = 0;b < a.length;b++) {
+      var c = a[b].indexOf("\x3d"), d = null, e = null;
+      0 <= c ? (d = a[b].substring(0, c), e = a[b].substring(c + 1)) : d = a[b];
+      d = goog.string.urlDecode(d);
+      d = this.getKeyName_(d);
+      this.add(d, e ? goog.string.urlDecode(e) : "")
+    }
+  }
+};
+goog.Uri.QueryData.createFromMap = function(a, b, c) {
+  b = goog.structs.getKeys(a);
+  if("undefined" == typeof b) {
+    throw Error("Keys are undefined");
+  }
+  c = new goog.Uri.QueryData(null, null, c);
+  a = goog.structs.getValues(a);
+  for(var d = 0;d < b.length;d++) {
+    var e = b[d], f = a[d];
+    goog.isArray(f) ? c.setValues(e, f) : c.add(e, f)
+  }
+  return c
+};
+goog.Uri.QueryData.createFromKeysValues = function(a, b, c, d) {
+  if(a.length != b.length) {
+    throw Error("Mismatched lengths for keys/values");
+  }
+  c = new goog.Uri.QueryData(null, null, d);
+  for(d = 0;d < a.length;d++) {
+    c.add(a[d], b[d])
+  }
+  return c
+};
+goog.Uri.QueryData.prototype.keyMap_ = null;
+goog.Uri.QueryData.prototype.count_ = null;
+goog.Uri.QueryData.prototype.getCount = function() {
+  this.ensureKeyMapInitialized_();
+  return this.count_
+};
+goog.Uri.QueryData.prototype.add = function(a, b) {
+  this.ensureKeyMapInitialized_();
+  this.invalidateCache_();
+  a = this.getKeyName_(a);
+  var c = this.keyMap_.get(a);
+  c || this.keyMap_.set(a, c = []);
+  c.push(b);
+  this.count_++;
+  return this
+};
+goog.Uri.QueryData.prototype.remove = function(a) {
+  this.ensureKeyMapInitialized_();
+  a = this.getKeyName_(a);
+  return this.keyMap_.containsKey(a) ? (this.invalidateCache_(), this.count_ -= this.keyMap_.get(a).length, this.keyMap_.remove(a)) : !1
+};
+goog.Uri.QueryData.prototype.clear = function() {
+  this.invalidateCache_();
+  this.keyMap_ = null;
+  this.count_ = 0
+};
+goog.Uri.QueryData.prototype.isEmpty = function() {
+  this.ensureKeyMapInitialized_();
+  return 0 == this.count_
+};
+goog.Uri.QueryData.prototype.containsKey = function(a) {
+  this.ensureKeyMapInitialized_();
+  a = this.getKeyName_(a);
+  return this.keyMap_.containsKey(a)
+};
+goog.Uri.QueryData.prototype.containsValue = function(a) {
+  var b = this.getValues();
+  return goog.array.contains(b, a)
+};
+goog.Uri.QueryData.prototype.getKeys = function() {
+  this.ensureKeyMapInitialized_();
+  for(var a = this.keyMap_.getValues(), b = this.keyMap_.getKeys(), c = [], d = 0;d < b.length;d++) {
+    for(var e = a[d], f = 0;f < e.length;f++) {
+      c.push(b[d])
+    }
+  }
+  return c
+};
+goog.Uri.QueryData.prototype.getValues = function(a) {
+  this.ensureKeyMapInitialized_();
+  var b = [];
+  if(a) {
+    this.containsKey(a) && (b = goog.array.concat(b, this.keyMap_.get(this.getKeyName_(a))))
+  }else {
+    a = this.keyMap_.getValues();
+    for(var c = 0;c < a.length;c++) {
+      b = goog.array.concat(b, a[c])
+    }
+  }
+  return b
+};
+goog.Uri.QueryData.prototype.set = function(a, b) {
+  this.ensureKeyMapInitialized_();
+  this.invalidateCache_();
+  a = this.getKeyName_(a);
+  this.containsKey(a) && (this.count_ -= this.keyMap_.get(a).length);
+  this.keyMap_.set(a, [b]);
+  this.count_++;
+  return this
+};
+goog.Uri.QueryData.prototype.get = function(a, b) {
+  var c = a ? this.getValues(a) : [];
+  return goog.Uri.preserveParameterTypesCompatibilityFlag ? 0 < c.length ? c[0] : b : 0 < c.length ? String(c[0]) : b
+};
+goog.Uri.QueryData.prototype.setValues = function(a, b) {
+  this.remove(a);
+  0 < b.length && (this.invalidateCache_(), this.keyMap_.set(this.getKeyName_(a), goog.array.clone(b)), this.count_ += b.length)
+};
+goog.Uri.QueryData.prototype.toString = function() {
+  if(this.encodedQuery_) {
+    return this.encodedQuery_
+  }
+  if(!this.keyMap_) {
+    return""
+  }
+  for(var a = [], b = this.keyMap_.getKeys(), c = 0;c < b.length;c++) {
+    for(var d = b[c], e = goog.string.urlEncode(d), d = this.getValues(d), f = 0;f < d.length;f++) {
+      var g = e;
+      "" !== d[f] && (g += "\x3d" + goog.string.urlEncode(d[f]));
+      a.push(g)
+    }
+  }
+  return this.encodedQuery_ = a.join("\x26")
+};
+goog.Uri.QueryData.prototype.toDecodedString = function() {
+  return goog.Uri.decodeOrEmpty_(this.toString())
+};
+goog.Uri.QueryData.prototype.invalidateCache_ = function() {
+  this.encodedQuery_ = null
+};
+goog.Uri.QueryData.prototype.filterKeys = function(a) {
+  this.ensureKeyMapInitialized_();
+  goog.structs.forEach(this.keyMap_, function(b, c, d) {
+    goog.array.contains(a, c) || this.remove(c)
+  }, this);
+  return this
+};
+goog.Uri.QueryData.prototype.clone = function() {
+  var a = new goog.Uri.QueryData;
+  a.encodedQuery_ = this.encodedQuery_;
+  this.keyMap_ && (a.keyMap_ = this.keyMap_.clone(), a.count_ = this.count_);
+  return a
+};
+goog.Uri.QueryData.prototype.getKeyName_ = function(a) {
+  a = String(a);
+  this.ignoreCase_ && (a = a.toLowerCase());
+  return a
+};
+goog.Uri.QueryData.prototype.setIgnoreCase = function(a) {
+  a && !this.ignoreCase_ && (this.ensureKeyMapInitialized_(), this.invalidateCache_(), goog.structs.forEach(this.keyMap_, function(a, c) {
+    var d = c.toLowerCase();
+    c != d && (this.remove(c), this.setValues(d, a))
+  }, this));
+  this.ignoreCase_ = a
+};
+goog.Uri.QueryData.prototype.extend = function(a) {
+  for(var b = 0;b < arguments.length;b++) {
+    goog.structs.forEach(arguments[b], function(a, b) {
+      this.add(b, a)
+    }, this)
+  }
+};
+goog.events.KeyCodes = {WIN_KEY_FF_LINUX:0, MAC_ENTER:3, BACKSPACE:8, TAB:9, NUM_CENTER:12, ENTER:13, SHIFT:16, CTRL:17, ALT:18, PAUSE:19, CAPS_LOCK:20, ESC:27, SPACE:32, PAGE_UP:33, PAGE_DOWN:34, END:35, HOME:36, LEFT:37, UP:38, RIGHT:39, DOWN:40, PRINT_SCREEN:44, INSERT:45, DELETE:46, ZERO:48, ONE:49, TWO:50, THREE:51, FOUR:52, FIVE:53, SIX:54, SEVEN:55, EIGHT:56, NINE:57, FF_SEMICOLON:59, FF_EQUALS:61, QUESTION_MARK:63, A:65, B:66, C:67, D:68, E:69, F:70, G:71, H:72, I:73, J:74, K:75, L:76, M:77, 
+N:78, O:79, P:80, Q:81, R:82, S:83, T:84, U:85, V:86, W:87, X:88, Y:89, Z:90, META:91, WIN_KEY_RIGHT:92, CONTEXT_MENU:93, NUM_ZERO:96, NUM_ONE:97, NUM_TWO:98, NUM_THREE:99, NUM_FOUR:100, NUM_FIVE:101, NUM_SIX:102, NUM_SEVEN:103, NUM_EIGHT:104, NUM_NINE:105, NUM_MULTIPLY:106, NUM_PLUS:107, NUM_MINUS:109, NUM_PERIOD:110, NUM_DIVISION:111, F1:112, F2:113, F3:114, F4:115, F5:116, F6:117, F7:118, F8:119, F9:120, F10:121, F11:122, F12:123, NUMLOCK:144, SCROLL_LOCK:145, FIRST_MEDIA_KEY:166, LAST_MEDIA_KEY:183, 
+SEMICOLON:186, DASH:189, EQUALS:187, COMMA:188, PERIOD:190, SLASH:191, APOSTROPHE:192, TILDE:192, SINGLE_QUOTE:222, OPEN_SQUARE_BRACKET:219, BACKSLASH:220, CLOSE_SQUARE_BRACKET:221, WIN_KEY:224, MAC_FF_META:224, WIN_IME:229, PHANTOM:255};
+goog.events.KeyCodes.isTextModifyingKeyEvent = function(a) {
+  if(a.altKey && !a.ctrlKey || a.metaKey || a.keyCode >= goog.events.KeyCodes.F1 && a.keyCode <= goog.events.KeyCodes.F12) {
+    return!1
+  }
+  switch(a.keyCode) {
+    case goog.events.KeyCodes.ALT:
+    ;
+    case goog.events.KeyCodes.CAPS_LOCK:
+    ;
+    case goog.events.KeyCodes.CONTEXT_MENU:
+    ;
+    case goog.events.KeyCodes.CTRL:
+    ;
+    case goog.events.KeyCodes.DOWN:
+    ;
+    case goog.events.KeyCodes.END:
+    ;
+    case goog.events.KeyCodes.ESC:
+    ;
+    case goog.events.KeyCodes.HOME:
+    ;
+    case goog.events.KeyCodes.INSERT:
+    ;
+    case goog.events.KeyCodes.LEFT:
+    ;
+    case goog.events.KeyCodes.MAC_FF_META:
+    ;
+    case goog.events.KeyCodes.META:
+    ;
+    case goog.events.KeyCodes.NUMLOCK:
+    ;
+    case goog.events.KeyCodes.NUM_CENTER:
+    ;
+    case goog.events.KeyCodes.PAGE_DOWN:
+    ;
+    case goog.events.KeyCodes.PAGE_UP:
+    ;
+    case goog.events.KeyCodes.PAUSE:
+    ;
+    case goog.events.KeyCodes.PHANTOM:
+    ;
+    case goog.events.KeyCodes.PRINT_SCREEN:
+    ;
+    case goog.events.KeyCodes.RIGHT:
+    ;
+    case goog.events.KeyCodes.SCROLL_LOCK:
+    ;
+    case goog.events.KeyCodes.SHIFT:
+    ;
+    case goog.events.KeyCodes.UP:
+    ;
+    case goog.events.KeyCodes.WIN_KEY:
+    ;
+    case goog.events.KeyCodes.WIN_KEY_RIGHT:
+      return!1;
+    case goog.events.KeyCodes.WIN_KEY_FF_LINUX:
+      return!goog.userAgent.GECKO;
+    default:
+      return a.keyCode < goog.events.KeyCodes.FIRST_MEDIA_KEY || a.keyCode > goog.events.KeyCodes.LAST_MEDIA_KEY
+  }
+};
+goog.events.KeyCodes.firesKeyPressEvent = function(a, b, c, d, e) {
+  if(!(goog.userAgent.IE || goog.userAgent.WEBKIT && goog.userAgent.isVersion("525"))) {
+    return!0
+  }
+  if(goog.userAgent.MAC && e) {
+    return goog.events.KeyCodes.isCharacterKey(a)
+  }
+  if(e && !d || !c && (b == goog.events.KeyCodes.CTRL || b == goog.events.KeyCodes.ALT || goog.userAgent.MAC && b == goog.events.KeyCodes.META)) {
+    return!1
+  }
+  if(goog.userAgent.WEBKIT && d && c) {
+    switch(a) {
+      case goog.events.KeyCodes.BACKSLASH:
+      ;
+      case goog.events.KeyCodes.OPEN_SQUARE_BRACKET:
+      ;
+      case goog.events.KeyCodes.CLOSE_SQUARE_BRACKET:
+      ;
+      case goog.events.KeyCodes.TILDE:
+      ;
+      case goog.events.KeyCodes.SEMICOLON:
+      ;
+      case goog.events.KeyCodes.DASH:
+      ;
+      case goog.events.KeyCodes.EQUALS:
+      ;
+      case goog.events.KeyCodes.COMMA:
+      ;
+      case goog.events.KeyCodes.PERIOD:
+      ;
+      case goog.events.KeyCodes.SLASH:
+      ;
+      case goog.events.KeyCodes.APOSTROPHE:
+      ;
+      case goog.events.KeyCodes.SINGLE_QUOTE:
+        return!1
+    }
+  }
+  if(goog.userAgent.IE && d && b == a) {
+    return!1
+  }
+  switch(a) {
+    case goog.events.KeyCodes.ENTER:
+      return!(goog.userAgent.IE && goog.userAgent.isDocumentMode(9));
+    case goog.events.KeyCodes.ESC:
+      return!goog.userAgent.WEBKIT
+  }
+  return goog.events.KeyCodes.isCharacterKey(a)
+};
+goog.events.KeyCodes.isCharacterKey = function(a) {
+  if(a >= goog.events.KeyCodes.ZERO && a <= goog.events.KeyCodes.NINE || a >= goog.events.KeyCodes.NUM_ZERO && a <= goog.events.KeyCodes.NUM_MULTIPLY || a >= goog.events.KeyCodes.A && a <= goog.events.KeyCodes.Z || goog.userAgent.WEBKIT && 0 == a) {
+    return!0
+  }
+  switch(a) {
+    case goog.events.KeyCodes.SPACE:
+    ;
+    case goog.events.KeyCodes.QUESTION_MARK:
+    ;
+    case goog.events.KeyCodes.NUM_PLUS:
+    ;
+    case goog.events.KeyCodes.NUM_MINUS:
+    ;
+    case goog.events.KeyCodes.NUM_PERIOD:
+    ;
+    case goog.events.KeyCodes.NUM_DIVISION:
+    ;
+    case goog.events.KeyCodes.SEMICOLON:
+    ;
+    case goog.events.KeyCodes.FF_SEMICOLON:
+    ;
+    case goog.events.KeyCodes.DASH:
+    ;
+    case goog.events.KeyCodes.EQUALS:
+    ;
+    case goog.events.KeyCodes.FF_EQUALS:
+    ;
+    case goog.events.KeyCodes.COMMA:
+    ;
+    case goog.events.KeyCodes.PERIOD:
+    ;
+    case goog.events.KeyCodes.SLASH:
+    ;
+    case goog.events.KeyCodes.APOSTROPHE:
+    ;
+    case goog.events.KeyCodes.SINGLE_QUOTE:
+    ;
+    case goog.events.KeyCodes.OPEN_SQUARE_BRACKET:
+    ;
+    case goog.events.KeyCodes.BACKSLASH:
+    ;
+    case goog.events.KeyCodes.CLOSE_SQUARE_BRACKET:
+      return!0;
+    default:
+      return!1
+  }
+};
+goog.events.KeyCodes.normalizeGeckoKeyCode = function(a) {
+  switch(a) {
+    case goog.events.KeyCodes.FF_EQUALS:
+      return goog.events.KeyCodes.EQUALS;
+    case goog.events.KeyCodes.FF_SEMICOLON:
+      return goog.events.KeyCodes.SEMICOLON;
+    case goog.events.KeyCodes.MAC_FF_META:
+      return goog.events.KeyCodes.META;
+    case goog.events.KeyCodes.WIN_KEY_FF_LINUX:
+      return goog.events.KeyCodes.WIN_KEY;
+    default:
+      return a
+  }
+};
+goog.events.KeyHandler = function(a, b) {
+  goog.events.EventTarget.call(this);
+  a && this.attach(a, b)
+};
+goog.inherits(goog.events.KeyHandler, goog.events.EventTarget);
+goog.events.KeyHandler.prototype.element_ = null;
+goog.events.KeyHandler.prototype.keyPressKey_ = null;
+goog.events.KeyHandler.prototype.keyDownKey_ = null;
+goog.events.KeyHandler.prototype.keyUpKey_ = null;
+goog.events.KeyHandler.prototype.lastKey_ = -1;
+goog.events.KeyHandler.prototype.keyCode_ = -1;
+goog.events.KeyHandler.prototype.altKey_ = !1;
+goog.events.KeyHandler.EventType = {KEY:"key"};
+goog.events.KeyHandler.safariKey_ = {3:goog.events.KeyCodes.ENTER, 12:goog.events.KeyCodes.NUMLOCK, 63232:goog.events.KeyCodes.UP, 63233:goog.events.KeyCodes.DOWN, 63234:goog.events.KeyCodes.LEFT, 63235:goog.events.KeyCodes.RIGHT, 63236:goog.events.KeyCodes.F1, 63237:goog.events.KeyCodes.F2, 63238:goog.events.KeyCodes.F3, 63239:goog.events.KeyCodes.F4, 63240:goog.events.KeyCodes.F5, 63241:goog.events.KeyCodes.F6, 63242:goog.events.KeyCodes.F7, 63243:goog.events.KeyCodes.F8, 63244:goog.events.KeyCodes.F9, 
+63245:goog.events.KeyCodes.F10, 63246:goog.events.KeyCodes.F11, 63247:goog.events.KeyCodes.F12, 63248:goog.events.KeyCodes.PRINT_SCREEN, 63272:goog.events.KeyCodes.DELETE, 63273:goog.events.KeyCodes.HOME, 63275:goog.events.KeyCodes.END, 63276:goog.events.KeyCodes.PAGE_UP, 63277:goog.events.KeyCodes.PAGE_DOWN, 63289:goog.events.KeyCodes.NUMLOCK, 63302:goog.events.KeyCodes.INSERT};
+goog.events.KeyHandler.keyIdentifier_ = {Up:goog.events.KeyCodes.UP, Down:goog.events.KeyCodes.DOWN, Left:goog.events.KeyCodes.LEFT, Right:goog.events.KeyCodes.RIGHT, Enter:goog.events.KeyCodes.ENTER, F1:goog.events.KeyCodes.F1, F2:goog.events.KeyCodes.F2, F3:goog.events.KeyCodes.F3, F4:goog.events.KeyCodes.F4, F5:goog.events.KeyCodes.F5, F6:goog.events.KeyCodes.F6, F7:goog.events.KeyCodes.F7, F8:goog.events.KeyCodes.F8, F9:goog.events.KeyCodes.F9, F10:goog.events.KeyCodes.F10, F11:goog.events.KeyCodes.F11, 
+F12:goog.events.KeyCodes.F12, "U+007F":goog.events.KeyCodes.DELETE, Home:goog.events.KeyCodes.HOME, End:goog.events.KeyCodes.END, PageUp:goog.events.KeyCodes.PAGE_UP, PageDown:goog.events.KeyCodes.PAGE_DOWN, Insert:goog.events.KeyCodes.INSERT};
+goog.events.KeyHandler.USES_KEYDOWN_ = goog.userAgent.IE || goog.userAgent.WEBKIT && goog.userAgent.isVersion("525");
+goog.events.KeyHandler.SAVE_ALT_FOR_KEYPRESS_ = goog.userAgent.MAC && goog.userAgent.GECKO;
+goog.events.KeyHandler.prototype.handleKeyDown_ = function(a) {
+  goog.userAgent.WEBKIT && (this.lastKey_ == goog.events.KeyCodes.CTRL && !a.ctrlKey || this.lastKey_ == goog.events.KeyCodes.ALT && !a.altKey || goog.userAgent.MAC && this.lastKey_ == goog.events.KeyCodes.META && !a.metaKey) && (this.keyCode_ = this.lastKey_ = -1);
+  -1 == this.lastKey_ && (a.ctrlKey && a.keyCode != goog.events.KeyCodes.CTRL ? this.lastKey_ = goog.events.KeyCodes.CTRL : a.altKey && a.keyCode != goog.events.KeyCodes.ALT ? this.lastKey_ = goog.events.KeyCodes.ALT : a.metaKey && a.keyCode != goog.events.KeyCodes.META && (this.lastKey_ = goog.events.KeyCodes.META));
+  goog.events.KeyHandler.USES_KEYDOWN_ && !goog.events.KeyCodes.firesKeyPressEvent(a.keyCode, this.lastKey_, a.shiftKey, a.ctrlKey, a.altKey) ? this.handleEvent(a) : (this.keyCode_ = goog.userAgent.GECKO ? goog.events.KeyCodes.normalizeGeckoKeyCode(a.keyCode) : a.keyCode, goog.events.KeyHandler.SAVE_ALT_FOR_KEYPRESS_ && (this.altKey_ = a.altKey))
+};
+goog.events.KeyHandler.prototype.resetState = function() {
+  this.keyCode_ = this.lastKey_ = -1
+};
+goog.events.KeyHandler.prototype.handleKeyup_ = function(a) {
+  this.resetState();
+  this.altKey_ = a.altKey
+};
+goog.events.KeyHandler.prototype.handleEvent = function(a) {
+  var b = a.getBrowserEvent(), c, d, e = b.altKey;
+  goog.userAgent.IE && a.type == goog.events.EventType.KEYPRESS ? (c = this.keyCode_, d = c != goog.events.KeyCodes.ENTER && c != goog.events.KeyCodes.ESC ? b.keyCode : 0) : goog.userAgent.WEBKIT && a.type == goog.events.EventType.KEYPRESS ? (c = this.keyCode_, d = 0 <= b.charCode && 63232 > b.charCode && goog.events.KeyCodes.isCharacterKey(c) ? b.charCode : 0) : goog.userAgent.OPERA ? (c = this.keyCode_, d = goog.events.KeyCodes.isCharacterKey(c) ? b.keyCode : 0) : (c = b.keyCode || this.keyCode_, 
+  d = b.charCode || 0, goog.events.KeyHandler.SAVE_ALT_FOR_KEYPRESS_ && (e = this.altKey_), goog.userAgent.MAC && (d == goog.events.KeyCodes.QUESTION_MARK && c == goog.events.KeyCodes.WIN_KEY) && (c = goog.events.KeyCodes.SLASH));
+  var f = c, g = b.keyIdentifier;
+  c ? 63232 <= c && c in goog.events.KeyHandler.safariKey_ ? f = goog.events.KeyHandler.safariKey_[c] : 25 == c && a.shiftKey && (f = 9) : g && g in goog.events.KeyHandler.keyIdentifier_ && (f = goog.events.KeyHandler.keyIdentifier_[g]);
+  a = f == this.lastKey_;
+  this.lastKey_ = f;
+  b = new goog.events.KeyEvent(f, d, a, b);
+  b.altKey = e;
+  this.dispatchEvent(b)
+};
+goog.events.KeyHandler.prototype.getElement = function() {
+  return this.element_
+};
+goog.events.KeyHandler.prototype.attach = function(a, b) {
+  this.keyUpKey_ && this.detach();
+  this.element_ = a;
+  this.keyPressKey_ = goog.events.listen(this.element_, goog.events.EventType.KEYPRESS, this, b);
+  this.keyDownKey_ = goog.events.listen(this.element_, goog.events.EventType.KEYDOWN, this.handleKeyDown_, b, this);
+  this.keyUpKey_ = goog.events.listen(this.element_, goog.events.EventType.KEYUP, this.handleKeyup_, b, this)
+};
+goog.events.KeyHandler.prototype.detach = function() {
+  this.keyPressKey_ && (goog.events.unlistenByKey(this.keyPressKey_), goog.events.unlistenByKey(this.keyDownKey_), goog.events.unlistenByKey(this.keyUpKey_), this.keyUpKey_ = this.keyDownKey_ = this.keyPressKey_ = null);
+  this.element_ = null;
+  this.keyCode_ = this.lastKey_ = -1
+};
+goog.events.KeyHandler.prototype.disposeInternal = function() {
+  goog.events.KeyHandler.superClass_.disposeInternal.call(this);
+  this.detach()
+};
+goog.events.KeyEvent = function(a, b, c, d) {
+  goog.events.BrowserEvent.call(this, d);
+  this.type = goog.events.KeyHandler.EventType.KEY;
+  this.keyCode = a;
+  this.charCode = b;
+  this.repeat = c
+};
+goog.inherits(goog.events.KeyEvent, goog.events.BrowserEvent);
+mvc.browser.math = {};
+mvc.browser.math.is_finite_number = goog.math.isFiniteNumber;
+mvc.browser.math.standard_deviation = goog.math.standardDeviation;
+mvc.browser.math.is_int = goog.math.isInt;
+mvc.browser.math.angle_dx = goog.math.angleDx;
+mvc.browser.math.angle_dy = goog.math.angleDy;
+mvc.browser.math.sum = goog.math.sum;
+mvc.browser.math.to_degrees = goog.math.toDegrees;
+mvc.browser.math.random_int = goog.math.randomInt;
+mvc.browser.math.longest_common_subsequence = goog.math.longestCommonSubsequence;
+mvc.browser.math.angle_difference = goog.math.angleDifference;
+mvc.browser.math.safe_ceil = goog.math.safeCeil;
+mvc.browser.math.angle = goog.math.angle;
+mvc.browser.math.nearly_equals = goog.math.nearlyEquals;
+mvc.browser.math.standard_angle = goog.math.standardAngle;
+mvc.browser.math.modulo = goog.math.modulo;
+mvc.browser.math.lerp = goog.math.lerp;
+mvc.browser.math.to_radians = goog.math.toRadians;
+mvc.browser.math.uniform_random = goog.math.uniformRandom;
+mvc.browser.math.clamp = goog.math.clamp;
+mvc.browser.math.sign = goog.math.sign;
+mvc.browser.math.average = goog.math.average;
+mvc.browser.math.safe_floor = goog.math.safeFloor;
+mvc.browser.net = {};
+goog.functions = {};
+goog.functions.constant = function(a) {
+  return function() {
+    return a
+  }
+};
+goog.functions.FALSE = goog.functions.constant(!1);
+goog.functions.TRUE = goog.functions.constant(!0);
+goog.functions.NULL = goog.functions.constant(null);
+goog.functions.identity = function(a, b) {
+  return a
+};
+goog.functions.error = function(a) {
+  return function() {
+    throw Error(a);
+  }
+};
+goog.functions.lock = function(a, b) {
+  b = b || 0;
+  return function() {
+    return a.apply(this, Array.prototype.slice.call(arguments, 0, b))
+  }
+};
+goog.functions.withReturnValue = function(a, b) {
+  return goog.functions.sequence(a, goog.functions.constant(b))
+};
+goog.functions.compose = function(a, b) {
+  var c = arguments, d = c.length;
+  return function() {
+    var a;
+    d && (a = c[d - 1].apply(this, arguments));
+    for(var b = d - 2;0 <= b;b--) {
+      a = c[b].call(this, a)
+    }
+    return a
+  }
+};
+goog.functions.sequence = function(a) {
+  var b = arguments, c = b.length;
+  return function() {
+    for(var a, e = 0;e < c;e++) {
+      a = b[e].apply(this, arguments)
+    }
+    return a
+  }
+};
+goog.functions.and = function(a) {
+  var b = arguments, c = b.length;
+  return function() {
+    for(var a = 0;a < c;a++) {
+      if(!b[a].apply(this, arguments)) {
+        return!1
+      }
+    }
+    return!0
+  }
+};
+goog.functions.or = function(a) {
+  var b = arguments, c = b.length;
+  return function() {
+    for(var a = 0;a < c;a++) {
+      if(b[a].apply(this, arguments)) {
+        return!0
+      }
+    }
+    return!1
+  }
+};
+goog.functions.not = function(a) {
+  return function() {
+    return!a.apply(this, arguments)
+  }
+};
+goog.functions.create = function(a, b) {
+  var c = function() {
+  };
+  c.prototype = a.prototype;
+  c = new c;
+  a.apply(c, Array.prototype.slice.call(arguments, 1));
+  return c
+};
+goog.fs.Entry = function(a, b) {
+  this.fs_ = a;
+  this.entry_ = b
+};
+goog.fs.Entry.prototype.isFile = function() {
+  return this.entry_.isFile
+};
+goog.fs.Entry.prototype.isDirectory = function() {
+  return this.entry_.isDirectory
+};
+goog.fs.Entry.prototype.getName = function() {
+  return this.entry_.name
+};
+goog.fs.Entry.prototype.getFullPath = function() {
+  return this.entry_.fullPath
+};
+goog.fs.Entry.prototype.getFileSystem = function() {
+  return this.fs_
+};
+goog.fs.Entry.prototype.getLastModified = function() {
+  return this.getMetadata().addCallback(function(a) {
+    return a.modificationTime
+  })
+};
+goog.fs.Entry.prototype.getMetadata = function() {
+  var a = new goog.async.Deferred;
+  this.entry_.getMetadata(function(b) {
+    a.callback(b)
+  }, goog.bind(function(b) {
+    var c = "retrieving metadata for " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
+goog.fs.Entry.prototype.moveTo = function(a, b) {
+  var c = new goog.async.Deferred;
+  this.entry_.moveTo(a.dir_, b, goog.bind(function(a) {
+    c.callback(this.wrapEntry(a))
+  }, this), goog.bind(function(d) {
+    var e = "moving " + this.getFullPath() + " into " + a.getFullPath() + (b ? ", renaming to " + b : "");
+    c.errback(new goog.fs.Error(d.code, e))
+  }, this));
+  return c
+};
+goog.fs.Entry.prototype.copyTo = function(a, b) {
+  var c = new goog.async.Deferred;
+  this.entry_.copyTo(a.dir_, b, goog.bind(function(a) {
+    c.callback(this.wrapEntry(a))
+  }, this), goog.bind(function(d) {
+    var e = "copying " + this.getFullPath() + " into " + a.getFullPath() + (b ? ", renaming to " + b : "");
+    c.errback(new goog.fs.Error(d.code, e))
+  }, this));
+  return c
+};
+goog.fs.Entry.prototype.wrapEntry = function(a) {
+  return a.isFile ? new goog.fs.FileEntry(this.fs_, a) : new goog.fs.DirectoryEntry(this.fs_, a)
+};
+goog.fs.Entry.prototype.toUrl = function(a) {
+  return this.entry_.toURL(a)
+};
+goog.fs.Entry.prototype.toUri = goog.fs.Entry.prototype.toUrl;
+goog.fs.Entry.prototype.remove = function() {
+  var a = new goog.async.Deferred;
+  this.entry_.remove(goog.bind(a.callback, a, !0), goog.bind(function(b) {
+    var c = "removing " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
+goog.fs.Entry.prototype.getParent = function() {
+  var a = new goog.async.Deferred;
+  this.entry_.getParent(goog.bind(function(b) {
+    a.callback(new goog.fs.DirectoryEntry(this.fs_, b))
+  }, this), goog.bind(function(b) {
+    var c = "getting parent of " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
+goog.fs.DirectoryEntry = function(a, b) {
+  goog.fs.Entry.call(this, a, b);
+  this.dir_ = b
+};
+goog.inherits(goog.fs.DirectoryEntry, goog.fs.Entry);
+goog.fs.DirectoryEntry.Behavior = {DEFAULT:1, CREATE:2, CREATE_EXCLUSIVE:3};
+goog.fs.DirectoryEntry.prototype.getFile = function(a, b) {
+  var c = new goog.async.Deferred;
+  this.dir_.getFile(a, this.getOptions_(b), goog.bind(function(a) {
+    c.callback(new goog.fs.FileEntry(this.fs_, a))
+  }, this), goog.bind(function(b) {
+    var e = "loading file " + a + " from " + this.getFullPath();
+    c.errback(new goog.fs.Error(b.code, e))
+  }, this));
+  return c
+};
+goog.fs.DirectoryEntry.prototype.getDirectory = function(a, b) {
+  var c = new goog.async.Deferred;
+  this.dir_.getDirectory(a, this.getOptions_(b), goog.bind(function(a) {
+    c.callback(new goog.fs.DirectoryEntry(this.fs_, a))
+  }, this), goog.bind(function(b) {
+    var e = "loading directory " + a + " from " + this.getFullPath();
+    c.errback(new goog.fs.Error(b.code, e))
+  }, this));
+  return c
+};
+goog.fs.DirectoryEntry.prototype.createPath = function(a) {
+  function b(a) {
+    if(!d.length) {
+      return goog.async.Deferred.succeed(a)
+    }
+    var c = d.shift();
+    return(".." == c ? a.getParent() : "." == c ? goog.async.Deferred.succeed(a) : a.getDirectory(c, goog.fs.DirectoryEntry.Behavior.CREATE)).addCallback(b)
+  }
+  if(goog.string.startsWith(a, "/")) {
+    var c = this.getFileSystem().getRoot();
+    if(this.getFullPath() != c.getFullPath()) {
+      return c.createPath(a)
+    }
+  }
+  var d = goog.array.filter(a.split("/"), goog.functions.identity);
+  return b(this)
+};
+goog.fs.DirectoryEntry.prototype.listDirectory = function() {
+  var a = new goog.async.Deferred, b = this.dir_.createReader(), c = [], d = goog.bind(function(b) {
+    var c = "listing directory " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this), e = goog.bind(function(f) {
+    if(f.length) {
+      for(var g = 0, h;h = f[g];g++) {
+        c.push(this.wrapEntry(h))
+      }
+      b.readEntries(e, d)
+    }else {
+      a.callback(c)
+    }
+  }, this);
+  b.readEntries(e, d);
+  return a
+};
+goog.fs.DirectoryEntry.prototype.removeRecursively = function() {
+  var a = new goog.async.Deferred;
+  this.dir_.removeRecursively(goog.bind(a.callback, a, !0), goog.bind(function(b) {
+    var c = "removing " + this.getFullPath() + " recursively";
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
+goog.fs.DirectoryEntry.prototype.getOptions_ = function(a) {
+  return a == goog.fs.DirectoryEntry.Behavior.CREATE ? {create:!0} : a == goog.fs.DirectoryEntry.Behavior.CREATE_EXCLUSIVE ? {create:!0, exclusive:!0} : {}
+};
+goog.fs.FileEntry = function(a, b) {
+  goog.fs.Entry.call(this, a, b);
+  this.file_ = b
+};
+goog.inherits(goog.fs.FileEntry, goog.fs.Entry);
+goog.fs.FileEntry.prototype.createWriter = function() {
+  var a = new goog.async.Deferred;
+  this.file_.createWriter(function(b) {
+    a.callback(new goog.fs.FileWriter(b))
+  }, goog.bind(function(b) {
+    var c = "creating writer for " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
+goog.fs.FileEntry.prototype.file = function() {
+  var a = new goog.async.Deferred;
+  this.file_.file(function(b) {
+    a.callback(b)
+  }, goog.bind(function(b) {
+    var c = "getting file for " + this.getFullPath();
+    a.errback(new goog.fs.Error(b.code, c))
+  }, this));
+  return a
+};
 goog.async.Delay = function(a, b, c) {
   goog.Disposable.call(this);
   this.listener_ = a;
@@ -22706,173 +23472,585 @@ goog.async.Delay.prototype.doAction_ = function() {
   this.id_ = 0;
   this.listener_ && this.listener_.call(this.handler_)
 };
+goog.structs.Heap = function(a) {
+  this.nodes_ = [];
+  a && this.insertAll(a)
+};
+goog.structs.Heap.prototype.insert = function(a, b) {
+  var c = new goog.structs.Node(a, b), d = this.nodes_;
+  d.push(c);
+  this.moveUp_(d.length - 1)
+};
+goog.structs.Heap.prototype.insertAll = function(a) {
+  var b, c;
+  if(a instanceof goog.structs.Heap) {
+    if(b = a.getKeys(), c = a.getValues(), 0 >= a.getCount()) {
+      a = this.nodes_;
+      for(var d = 0;d < b.length;d++) {
+        a.push(new goog.structs.Node(b[d], c[d]))
+      }
+      return
+    }
+  }else {
+    b = goog.object.getKeys(a), c = goog.object.getValues(a)
+  }
+  for(d = 0;d < b.length;d++) {
+    this.insert(b[d], c[d])
+  }
+};
+goog.structs.Heap.prototype.remove = function() {
+  var a = this.nodes_, b = a.length, c = a[0];
+  if(!(0 >= b)) {
+    return 1 == b ? goog.array.clear(a) : (a[0] = a.pop(), this.moveDown_(0)), c.getValue()
+  }
+};
+goog.structs.Heap.prototype.peek = function() {
+  var a = this.nodes_;
+  return 0 == a.length ? void 0 : a[0].getValue()
+};
+goog.structs.Heap.prototype.peekKey = function() {
+  return this.nodes_[0] && this.nodes_[0].getKey()
+};
+goog.structs.Heap.prototype.moveDown_ = function(a) {
+  for(var b = this.nodes_, c = b.length, d = b[a];a < c >> 1;) {
+    var e = this.getLeftChildIndex_(a), f = this.getRightChildIndex_(a), e = f < c && b[f].getKey() < b[e].getKey() ? f : e;
+    if(b[e].getKey() > d.getKey()) {
+      break
+    }
+    b[a] = b[e];
+    a = e
+  }
+  b[a] = d
+};
+goog.structs.Heap.prototype.moveUp_ = function(a) {
+  for(var b = this.nodes_, c = b[a];0 < a;) {
+    var d = this.getParentIndex_(a);
+    if(b[d].getKey() > c.getKey()) {
+      b[a] = b[d], a = d
+    }else {
+      break
+    }
+  }
+  b[a] = c
+};
+goog.structs.Heap.prototype.getLeftChildIndex_ = function(a) {
+  return 2 * a + 1
+};
+goog.structs.Heap.prototype.getRightChildIndex_ = function(a) {
+  return 2 * a + 2
+};
+goog.structs.Heap.prototype.getParentIndex_ = function(a) {
+  return a - 1 >> 1
+};
+goog.structs.Heap.prototype.getValues = function() {
+  for(var a = this.nodes_, b = [], c = a.length, d = 0;d < c;d++) {
+    b.push(a[d].getValue())
+  }
+  return b
+};
+goog.structs.Heap.prototype.getKeys = function() {
+  for(var a = this.nodes_, b = [], c = a.length, d = 0;d < c;d++) {
+    b.push(a[d].getKey())
+  }
+  return b
+};
+goog.structs.Heap.prototype.containsValue = function(a) {
+  return goog.array.some(this.nodes_, function(b) {
+    return b.getValue() == a
+  })
+};
+goog.structs.Heap.prototype.containsKey = function(a) {
+  return goog.array.some(this.nodes_, function(b) {
+    return b.getKey() == a
+  })
+};
+goog.structs.Heap.prototype.clone = function() {
+  return new goog.structs.Heap(this)
+};
+goog.structs.Heap.prototype.getCount = function() {
+  return this.nodes_.length
+};
+goog.structs.Heap.prototype.isEmpty = function() {
+  return goog.array.isEmpty(this.nodes_)
+};
+goog.structs.Heap.prototype.clear = function() {
+  goog.array.clear(this.nodes_)
+};
+goog.structs.PriorityQueue = function() {
+  goog.structs.Heap.call(this)
+};
+goog.inherits(goog.structs.PriorityQueue, goog.structs.Heap);
+goog.structs.PriorityQueue.prototype.enqueue = function(a, b) {
+  this.insert(a, b)
+};
+goog.structs.PriorityQueue.prototype.dequeue = function() {
+  return this.remove()
+};
+goog.structs.TreeNode = function(a, b) {
+  goog.structs.Node.call(this, a, b)
+};
+goog.inherits(goog.structs.TreeNode, goog.structs.Node);
+goog.structs.TreeNode.EMPTY_ARRAY_ = [];
+goog.structs.TreeNode.prototype.parent_ = null;
+goog.structs.TreeNode.prototype.children_ = null;
+goog.structs.TreeNode.prototype.clone = function() {
+  return new goog.structs.TreeNode(this.getKey(), this.getValue())
+};
+goog.structs.TreeNode.prototype.deepClone = function() {
+  var a = this.clone();
+  this.forEachChild(function(b) {
+    a.addChild(b.deepClone())
+  });
+  return a
+};
+goog.structs.TreeNode.prototype.getParent = function() {
+  return this.parent_
+};
+goog.structs.TreeNode.prototype.isLeaf = function() {
+  return!this.getChildCount()
+};
+goog.structs.TreeNode.prototype.isLastChild = function() {
+  var a = this.getParent();
+  return Boolean(a && this == goog.array.peek(a.getChildren()))
+};
+goog.structs.TreeNode.prototype.getChildren = function() {
+  return this.children_ || goog.structs.TreeNode.EMPTY_ARRAY_
+};
+goog.structs.TreeNode.prototype.getChildAt = function(a) {
+  return this.getChildren()[a] || null
+};
+goog.structs.TreeNode.prototype.getChildCount = function() {
+  return this.getChildren().length
+};
+goog.structs.TreeNode.prototype.getDepth = function() {
+  for(var a = 0, b = this;b.getParent();) {
+    a++, b = b.getParent()
+  }
+  return a
+};
+goog.structs.TreeNode.prototype.getAncestors = function() {
+  for(var a = [], b = this.getParent();b;) {
+    a.push(b), b = b.getParent()
+  }
+  return a
+};
+goog.structs.TreeNode.prototype.getRoot = function() {
+  for(var a = this;a.getParent();) {
+    a = a.getParent()
+  }
+  return a
+};
+goog.structs.TreeNode.prototype.getSubtreeKeys = function() {
+  var a = [];
+  this.forEachChild(function(b) {
+    a.push(b.getKey());
+    b.isLeaf() || a.push(b.getSubtreeKeys())
+  });
+  return a
+};
+goog.structs.TreeNode.prototype.contains = function(a) {
+  do {
+    a = a.getParent()
+  }while(a && a != this);
+  return Boolean(a)
+};
+goog.structs.TreeNode.findCommonAncestor = function(a) {
+  var b = arguments[0];
+  if(!b) {
+    return null
+  }
+  for(var c = b.getDepth(), d = 1;d < arguments.length;d++) {
+    for(var e = arguments[d], f = e.getDepth();e != b;) {
+      f <= c && (b = b.getParent(), c--), f > c && (e = e.getParent(), f--)
+    }
+  }
+  return b
+};
+goog.structs.TreeNode.prototype.forEachChild = function(a, b) {
+  goog.array.forEach(this.getChildren(), a, b)
+};
+goog.structs.TreeNode.prototype.forEachDescendant = function(a, b) {
+  goog.array.forEach(this.getChildren(), function(c) {
+    a.call(b, c);
+    c.forEachDescendant(a, b)
+  })
+};
+goog.structs.TreeNode.prototype.traverse = function(a, b) {
+  !1 !== a.call(b, this) && goog.array.forEach(this.getChildren(), function(c) {
+    c.traverse(a, b)
+  })
+};
+goog.structs.TreeNode.prototype.setParent = function(a) {
+  this.parent_ = a
+};
+goog.structs.TreeNode.prototype.addChild = function(a) {
+  this.addChildAt(a, this.children_ ? this.children_.length : 0)
+};
+goog.structs.TreeNode.prototype.addChildAt = function(a, b) {
+  goog.asserts.assert(!a.getParent());
+  a.setParent(this);
+  this.children_ = this.children_ || [];
+  goog.asserts.assert(0 <= b && b <= this.children_.length);
+  goog.array.insertAt(this.children_, a, b)
+};
+goog.structs.TreeNode.prototype.replaceChildAt = function(a, b) {
+  goog.asserts.assert(!a.getParent(), "newChild must not have parent node");
+  var c = this.getChildren(), d = c[b];
+  goog.asserts.assert(d, "Invalid child or child index is given.");
+  d.setParent(null);
+  c[b] = a;
+  a.setParent(this);
+  return d
+};
+goog.structs.TreeNode.prototype.replaceChild = function(a, b) {
+  return this.replaceChildAt(a, goog.array.indexOf(this.getChildren(), b))
+};
+goog.structs.TreeNode.prototype.removeChildAt = function(a) {
+  var b = this.children_ && this.children_[a];
+  return b ? (b.setParent(null), goog.array.removeAt(this.children_, a), 0 == this.children_.length && delete this.children_, b) : null
+};
+goog.structs.TreeNode.prototype.removeChild = function(a) {
+  return this.removeChildAt(goog.array.indexOf(this.getChildren(), a))
+};
+goog.structs.TreeNode.prototype.removeChildren = function() {
+  this.children_ && goog.array.forEach(this.children_, function(a) {
+    a.setParent(null)
+  });
+  delete this.children_
+};
+goog.structs.Queue = function() {
+  this.elements_ = []
+};
+goog.structs.Queue.prototype.head_ = 0;
+goog.structs.Queue.prototype.tail_ = 0;
+goog.structs.Queue.prototype.enqueue = function(a) {
+  this.elements_[this.tail_++] = a
+};
+goog.structs.Queue.prototype.dequeue = function() {
+  if(this.head_ != this.tail_) {
+    var a = this.elements_[this.head_];
+    delete this.elements_[this.head_];
+    this.head_++;
+    return a
+  }
+};
+goog.structs.Queue.prototype.peek = function() {
+  return this.head_ == this.tail_ ? void 0 : this.elements_[this.head_]
+};
+goog.structs.Queue.prototype.getCount = function() {
+  return this.tail_ - this.head_
+};
+goog.structs.Queue.prototype.isEmpty = function() {
+  return 0 == this.tail_ - this.head_
+};
+goog.structs.Queue.prototype.clear = function() {
+  this.tail_ = this.head_ = this.elements_.length = 0
+};
+goog.structs.Queue.prototype.contains = function(a) {
+  return goog.array.contains(this.elements_, a)
+};
+goog.structs.Queue.prototype.remove = function(a) {
+  a = goog.array.indexOf(this.elements_, a);
+  if(0 > a) {
+    return!1
+  }
+  a == this.head_ ? this.dequeue() : (goog.array.removeAt(this.elements_, a), this.tail_--);
+  return!0
+};
+goog.structs.Queue.prototype.getValues = function() {
+  return this.elements_.slice(this.head_, this.tail_)
+};
+goog.structs.Pool = function(a, b) {
+  goog.Disposable.call(this);
+  this.minCount_ = a || 0;
+  this.maxCount_ = b || 10;
+  if(this.minCount_ > this.maxCount_) {
+    throw Error(goog.structs.Pool.ERROR_MIN_MAX_);
+  }
+  this.freeQueue_ = new goog.structs.Queue;
+  this.inUseSet_ = new goog.structs.Set;
+  this.delay = 0;
+  this.lastAccess = null;
+  this.adjustForMinMax()
+};
+goog.inherits(goog.structs.Pool, goog.Disposable);
+goog.structs.Pool.ERROR_MIN_MAX_ = "[goog.structs.Pool] Min can not be greater than max";
+goog.structs.Pool.ERROR_DISPOSE_UNRELEASED_OBJS_ = "[goog.structs.Pool] Objects not released";
+goog.structs.Pool.prototype.setMinimumCount = function(a) {
+  if(a > this.maxCount_) {
+    throw Error(goog.structs.Pool.ERROR_MIN_MAX_);
+  }
+  this.minCount_ = a;
+  this.adjustForMinMax()
+};
+goog.structs.Pool.prototype.setMaximumCount = function(a) {
+  if(a < this.minCount_) {
+    throw Error(goog.structs.Pool.ERROR_MIN_MAX_);
+  }
+  this.maxCount_ = a;
+  this.adjustForMinMax()
+};
+goog.structs.Pool.prototype.setDelay = function(a) {
+  this.delay = a
+};
+goog.structs.Pool.prototype.getObject = function() {
+  var a = goog.now();
+  if(!(goog.isDefAndNotNull(this.lastAccess) && a - this.lastAccess < this.delay)) {
+    var b = this.removeFreeObject_();
+    b && (this.lastAccess = a, this.inUseSet_.add(b));
+    return b
+  }
+};
+goog.structs.Pool.prototype.releaseObject = function(a) {
+  return this.inUseSet_.remove(a) ? (this.addFreeObject(a), !0) : !1
+};
+goog.structs.Pool.prototype.removeFreeObject_ = function() {
+  for(var a;0 < this.getFreeCount() && (a = this.freeQueue_.dequeue(), !this.objectCanBeReused(a));) {
+    this.adjustForMinMax()
+  }
+  !a && this.getCount() < this.maxCount_ && (a = this.createObject());
+  return a
+};
+goog.structs.Pool.prototype.addFreeObject = function(a) {
+  this.inUseSet_.remove(a);
+  this.objectCanBeReused(a) && this.getCount() < this.maxCount_ ? this.freeQueue_.enqueue(a) : this.disposeObject(a)
+};
+goog.structs.Pool.prototype.adjustForMinMax = function() {
+  for(var a = this.freeQueue_;this.getCount() < this.minCount_;) {
+    a.enqueue(this.createObject())
+  }
+  for(;this.getCount() > this.maxCount_ && 0 < this.getFreeCount();) {
+    this.disposeObject(a.dequeue())
+  }
+};
+goog.structs.Pool.prototype.createObject = function() {
+  return{}
+};
+goog.structs.Pool.prototype.disposeObject = function(a) {
+  if("function" == typeof a.dispose) {
+    a.dispose()
+  }else {
+    for(var b in a) {
+      a[b] = null
+    }
+  }
+};
+goog.structs.Pool.prototype.objectCanBeReused = function(a) {
+  return"function" == typeof a.canBeReused ? a.canBeReused() : !0
+};
+goog.structs.Pool.prototype.contains = function(a) {
+  return this.freeQueue_.contains(a) || this.inUseSet_.contains(a)
+};
+goog.structs.Pool.prototype.getCount = function() {
+  return this.freeQueue_.getCount() + this.inUseSet_.getCount()
+};
+goog.structs.Pool.prototype.getInUseCount = function() {
+  return this.inUseSet_.getCount()
+};
+goog.structs.Pool.prototype.getFreeCount = function() {
+  return this.freeQueue_.getCount()
+};
+goog.structs.Pool.prototype.isEmpty = function() {
+  return this.freeQueue_.isEmpty() && this.inUseSet_.isEmpty()
+};
+goog.structs.Pool.prototype.disposeInternal = function() {
+  goog.structs.Pool.superClass_.disposeInternal.call(this);
+  if(0 < this.getInUseCount()) {
+    throw Error(goog.structs.Pool.ERROR_DISPOSE_UNRELEASED_OBJS_);
+  }
+  delete this.inUseSet_;
+  for(var a = this.freeQueue_;!a.isEmpty();) {
+    this.disposeObject(a.dequeue())
+  }
+  delete this.freeQueue_
+};
+goog.structs.Trie = function(a) {
+  this.childNodes_ = {};
+  a && this.setAll(a)
+};
+goog.structs.Trie.prototype.value_ = void 0;
+goog.structs.Trie.prototype.set = function(a, b) {
+  this.setOrAdd_(a, b, !1)
+};
+goog.structs.Trie.prototype.add = function(a, b) {
+  this.setOrAdd_(a, b, !0)
+};
+goog.structs.Trie.prototype.setOrAdd_ = function(a, b, c) {
+  for(var d = this, e = 0;e < a.length;e++) {
+    var f = a.charAt(e);
+    d.childNodes_[f] || (d.childNodes_[f] = new goog.structs.Trie);
+    d = d.childNodes_[f]
+  }
+  if(c && void 0 !== d.value_) {
+    throw Error('The collection already contains the key "' + a + '"');
+  }
+  d.value_ = b
+};
+goog.structs.Trie.prototype.setAll = function(a) {
+  var b = goog.structs.getKeys(a);
+  a = goog.structs.getValues(a);
+  for(var c = 0;c < b.length;c++) {
+    this.set(b[c], a[c])
+  }
+};
+goog.structs.Trie.prototype.get = function(a) {
+  for(var b = this, c = 0;c < a.length;c++) {
+    var d = a.charAt(c);
+    if(!b.childNodes_[d]) {
+      return
+    }
+    b = b.childNodes_[d]
+  }
+  return b.value_
+};
+goog.structs.Trie.prototype.getKeyAndPrefixes = function(a, b) {
+  var c = this, d = {}, e = b || 0;
+  void 0 !== c.value_ && (d[e] = c.value_);
+  for(;e < a.length;e++) {
+    var f = a.charAt(e);
+    if(!(f in c.childNodes_)) {
+      break
+    }
+    c = c.childNodes_[f];
+    void 0 !== c.value_ && (d[e] = c.value_)
+  }
+  return d
+};
+goog.structs.Trie.prototype.getValues = function() {
+  var a = [];
+  this.getValuesInternal_(a);
+  return a
+};
+goog.structs.Trie.prototype.getValuesInternal_ = function(a) {
+  void 0 !== this.value_ && a.push(this.value_);
+  for(var b in this.childNodes_) {
+    this.childNodes_[b].getValuesInternal_(a)
+  }
+};
+goog.structs.Trie.prototype.getKeys = function(a) {
+  var b = [];
+  if(a) {
+    for(var c = this, d = 0;d < a.length;d++) {
+      var e = a.charAt(d);
+      if(!c.childNodes_[e]) {
+        return[]
+      }
+      c = c.childNodes_[e]
+    }
+    c.getKeysInternal_(a, b)
+  }else {
+    this.getKeysInternal_("", b)
+  }
+  return b
+};
+goog.structs.Trie.prototype.getKeysInternal_ = function(a, b) {
+  void 0 !== this.value_ && b.push(a);
+  for(var c in this.childNodes_) {
+    this.childNodes_[c].getKeysInternal_(a + c, b)
+  }
+};
+goog.structs.Trie.prototype.containsKey = function(a) {
+  return void 0 !== this.get(a)
+};
+goog.structs.Trie.prototype.containsValue = function(a) {
+  if(this.value_ === a) {
+    return!0
+  }
+  for(var b in this.childNodes_) {
+    if(this.childNodes_[b].containsValue(a)) {
+      return!0
+    }
+  }
+  return!1
+};
+goog.structs.Trie.prototype.clear = function() {
+  this.childNodes_ = {};
+  this.value_ = void 0
+};
+goog.structs.Trie.prototype.remove = function(a) {
+  for(var b = this, c = [], d = 0;d < a.length;d++) {
+    var e = a.charAt(d);
+    if(!b.childNodes_[e]) {
+      throw Error('The collection does not have the key "' + a + '"');
+    }
+    c.push([b, e]);
+    b = b.childNodes_[e]
+  }
+  a = b.value_;
+  for(delete b.value_;0 < c.length;) {
+    if(e = c.pop(), b = e[0], e = e[1], goog.object.isEmpty(b.childNodes_[e].childNodes_)) {
+      delete b.childNodes_[e]
+    }else {
+      break
+    }
+  }
+  return a
+};
+goog.structs.Trie.prototype.clone = function() {
+  return new goog.structs.Trie(this)
+};
+goog.structs.Trie.prototype.getCount = function() {
+  return goog.structs.getCount(this.getValues())
+};
+goog.structs.Trie.prototype.isEmpty = function() {
+  return void 0 === this.value_ && goog.structs.isEmpty(this.childNodes_)
+};
+goog.structs.PriorityPool = function(a, b) {
+  this.requestQueue_ = new goog.structs.PriorityQueue;
+  goog.structs.Pool.call(this, a, b)
+};
+goog.inherits(goog.structs.PriorityPool, goog.structs.Pool);
+goog.structs.PriorityPool.DEFAULT_PRIORITY_ = 100;
+goog.structs.PriorityPool.prototype.setDelay = function(a) {
+  goog.structs.PriorityPool.superClass_.setDelay.call(this, a);
+  goog.isDefAndNotNull(this.lastAccess) && (goog.global.clearTimeout(this.delayTimeout_), this.delayTimeout_ = goog.global.setTimeout(goog.bind(this.handleQueueRequests_, this), this.delay + this.lastAccess - goog.now()), this.handleQueueRequests_())
+};
+goog.structs.PriorityPool.prototype.getObject = function(a, b) {
+  if(!a) {
+    var c = goog.structs.PriorityPool.superClass_.getObject.call(this);
+    c && this.delay && (this.delayTimeout_ = goog.global.setTimeout(goog.bind(this.handleQueueRequests_, this), this.delay));
+    return c
+  }
+  c = goog.isDef(b) ? b : goog.structs.PriorityPool.DEFAULT_PRIORITY_;
+  this.requestQueue_.enqueue(c, a);
+  this.handleQueueRequests_()
+};
+goog.structs.PriorityPool.prototype.handleQueueRequests_ = function() {
+  for(var a = this.requestQueue_;0 < a.getCount();) {
+    var b = this.getObject();
+    if(b) {
+      a.dequeue().apply(this, [b])
+    }else {
+      break
+    }
+  }
+};
+goog.structs.PriorityPool.prototype.addFreeObject = function(a) {
+  goog.structs.PriorityPool.superClass_.addFreeObject.call(this, a);
+  this.handleQueueRequests_()
+};
+goog.structs.PriorityPool.prototype.adjustForMinMax = function() {
+  goog.structs.PriorityPool.superClass_.adjustForMinMax.call(this);
+  this.handleQueueRequests_()
+};
+goog.structs.PriorityPool.prototype.disposeInternal = function() {
+  goog.structs.PriorityPool.superClass_.disposeInternal.call(this);
+  goog.global.clearTimeout(this.delayTimeout_);
+  this.requestQueue_.clear();
+  this.requestQueue_ = null
+};
 mvc.browser.structs = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.structs.is_empty = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.isEmpty, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.get_keys = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.getKeys, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.for_each = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.forEach, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.clear = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.clear, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.some = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.some, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.get_values = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.getValues, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.filter = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.filter, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.get_count = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.getCount, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.every = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.every, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.map = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.map, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.structs.contains = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.structs.contains, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.structs.is_empty = goog.structs.isEmpty;
+mvc.browser.structs.get_keys = goog.structs.getKeys;
+mvc.browser.structs.for_each = goog.structs.forEach;
+mvc.browser.structs.clear = goog.structs.clear;
+mvc.browser.structs.some = goog.structs.some;
+mvc.browser.structs.get_values = goog.structs.getValues;
+mvc.browser.structs.filter = goog.structs.filter;
+mvc.browser.structs.get_count = goog.structs.getCount;
+mvc.browser.structs.every = goog.structs.every;
+mvc.browser.structs.map = goog.structs.map;
+mvc.browser.structs.contains = goog.structs.contains;
 goog.structs.InversionMap = function(a, b, c) {
   if(a.length != b.length) {
     return null
@@ -23014,6 +24192,532 @@ goog.format.insertWordBreaksBasic = function(a, b) {
 goog.format.IS_IE8_OR_ABOVE_ = goog.userAgent.IE && goog.userAgent.isVersion(8);
 goog.format.WORD_BREAK_HTML = goog.userAgent.WEBKIT ? "\x3cwbr\x3e\x3c/wbr\x3e" : goog.userAgent.OPERA ? "\x26shy;" : goog.format.IS_IE8_OR_ABOVE_ ? "\x26#8203;" : "\x3cwbr\x3e";
 goog.format.WbrToken_ = {LT:60, GT:62, AMP:38, SEMI_COLON:59, SPACE:32};
+goog.history = {};
+goog.history.EventType = {NAVIGATE:"navigate"};
+goog.history.Event = function(a, b) {
+  goog.events.Event.call(this, goog.history.EventType.NAVIGATE);
+  this.token = a;
+  this.isNavigation = b
+};
+goog.inherits(goog.history.Event, goog.events.Event);
+goog.History = function(a, b, c, d) {
+  goog.events.EventTarget.call(this);
+  if(a && !b) {
+    throw Error("Can't use invisible history without providing a blank page.");
+  }
+  var e;
+  c ? e = c : (e = "history_state" + goog.History.historyCount_, document.write(goog.string.subs(goog.History.INPUT_TEMPLATE_, e, e)), e = goog.dom.getElement(e));
+  this.hiddenInput_ = e;
+  this.window_ = c ? goog.dom.getWindow(goog.dom.getOwnerDocument(c)) : window;
+  this.baseUrl_ = this.window_.location.href.split("#")[0];
+  this.iframeSrc_ = b;
+  goog.userAgent.IE && !b && (this.iframeSrc_ = "https" == window.location.protocol ? "https:///" : 'javascript:""');
+  this.timer_ = new goog.Timer(goog.History.PollingType.NORMAL);
+  this.registerDisposable(this.timer_);
+  this.userVisible_ = !a;
+  this.eventHandler_ = new goog.events.EventHandler(this);
+  if(a || goog.History.LEGACY_IE) {
+    d ? a = d : (a = "history_iframe" + goog.History.historyCount_, b = this.iframeSrc_ ? 'src\x3d"' + goog.string.htmlEscape(this.iframeSrc_) + '"' : "", document.write(goog.string.subs(goog.History.IFRAME_TEMPLATE_, a, b)), a = goog.dom.getElement(a)), this.iframe_ = a, this.unsetIframe_ = !0
+  }
+  goog.History.LEGACY_IE && (this.eventHandler_.listen(this.window_, goog.events.EventType.LOAD, this.onDocumentLoaded), this.shouldEnable_ = this.documentLoaded = !1);
+  this.userVisible_ ? this.setHash_(this.getToken(), !0) : this.setIframeToken_(this.hiddenInput_.value);
+  goog.History.historyCount_++
+};
+goog.inherits(goog.History, goog.events.EventTarget);
+goog.History.prototype.enabled_ = !1;
+goog.History.prototype.longerPolling_ = !1;
+goog.History.prototype.lastToken_ = null;
+goog.History.HAS_ONHASHCHANGE = goog.userAgent.IE && goog.userAgent.isDocumentMode(8) || goog.userAgent.GECKO && goog.userAgent.isVersion("1.9.2") || goog.userAgent.WEBKIT && goog.userAgent.isVersion("532.1");
+goog.History.LEGACY_IE = goog.userAgent.IE && !goog.userAgent.isDocumentMode(8);
+goog.History.HASH_ALWAYS_REQUIRED = goog.History.LEGACY_IE;
+goog.History.prototype.lockedToken_ = null;
+goog.History.prototype.disposeInternal = function() {
+  goog.History.superClass_.disposeInternal.call(this);
+  this.eventHandler_.dispose();
+  this.setEnabled(!1)
+};
+goog.History.prototype.setEnabled = function(a) {
+  if(a != this.enabled_) {
+    if(goog.History.LEGACY_IE && !this.documentLoaded) {
+      this.shouldEnable_ = a
+    }else {
+      if(a) {
+        if(goog.userAgent.OPERA ? this.eventHandler_.listen(this.window_.document, goog.History.INPUT_EVENTS_, this.operaDefibrillator_) : goog.userAgent.GECKO && this.eventHandler_.listen(this.window_, "pageshow", this.onShow_), goog.History.HAS_ONHASHCHANGE && this.userVisible_) {
+          this.eventHandler_.listen(this.window_, goog.events.EventType.HASHCHANGE, this.onHashChange_), this.enabled_ = !0, this.dispatchEvent(new goog.history.Event(this.getToken(), !1))
+        }else {
+          if(!goog.userAgent.IE || this.documentLoaded) {
+            this.eventHandler_.listen(this.timer_, goog.Timer.TICK, goog.bind(this.check_, this, !0)), this.enabled_ = !0, goog.History.LEGACY_IE || (this.lastToken_ = this.getToken(), this.dispatchEvent(new goog.history.Event(this.getToken(), !1))), this.timer_.start()
+          }
+        }
+      }else {
+        this.enabled_ = !1, this.eventHandler_.removeAll(), this.timer_.stop()
+      }
+    }
+  }
+};
+goog.History.prototype.onDocumentLoaded = function() {
+  this.documentLoaded = !0;
+  this.hiddenInput_.value && this.setIframeToken_(this.hiddenInput_.value, !0);
+  this.setEnabled(this.shouldEnable_)
+};
+goog.History.prototype.onShow_ = function(a) {
+  a.getBrowserEvent().persisted && (this.setEnabled(!1), this.setEnabled(!0))
+};
+goog.History.prototype.onHashChange_ = function(a) {
+  a = this.getLocationFragment_(this.window_);
+  a != this.lastToken_ && this.update_(a, !0)
+};
+goog.History.prototype.getToken = function() {
+  return null != this.lockedToken_ ? this.lockedToken_ : this.userVisible_ ? this.getLocationFragment_(this.window_) : this.getIframeToken_() || ""
+};
+goog.History.prototype.setToken = function(a, b) {
+  this.setHistoryState_(a, !1, b)
+};
+goog.History.prototype.replaceToken = function(a, b) {
+  this.setHistoryState_(a, !0, b)
+};
+goog.History.prototype.getLocationFragment_ = function(a) {
+  a = a.location.href;
+  var b = a.indexOf("#");
+  return 0 > b ? "" : a.substring(b + 1)
+};
+goog.History.prototype.setHistoryState_ = function(a, b, c) {
+  this.getToken() != a && (this.userVisible_ ? (this.setHash_(a, b), goog.History.HAS_ONHASHCHANGE || goog.userAgent.IE && this.setIframeToken_(a, b, c), this.enabled_ && this.check_(!1)) : (this.setIframeToken_(a, b), this.lockedToken_ = this.lastToken_ = this.hiddenInput_.value = a, this.dispatchEvent(new goog.history.Event(a, !1))))
+};
+goog.History.prototype.setHash_ = function(a, b) {
+  var c = this.window_.location, d = this.baseUrl_, e = goog.string.contains(c.href, "#");
+  if(goog.History.HASH_ALWAYS_REQUIRED || e || a) {
+    d += "#" + a
+  }
+  d != c.href && (b ? c.replace(d) : c.href = d)
+};
+goog.History.prototype.setIframeToken_ = function(a, b, c) {
+  if(this.unsetIframe_ || a != this.getIframeToken_()) {
+    if(this.unsetIframe_ = !1, a = goog.string.urlEncode(a), goog.userAgent.IE) {
+      var d = goog.dom.getFrameContentDocument(this.iframe_);
+      d.open("text/html", b ? "replace" : void 0);
+      d.write(goog.string.subs(goog.History.IFRAME_SOURCE_TEMPLATE_, goog.string.htmlEscape(c || this.window_.document.title), a));
+      d.close()
+    }else {
+      if(a = this.iframeSrc_ + "#" + a, c = this.iframe_.contentWindow) {
+        b ? c.location.replace(a) : c.location.href = a
+      }
+    }
+  }
+};
+goog.History.prototype.getIframeToken_ = function() {
+  if(goog.userAgent.IE) {
+    var a = goog.dom.getFrameContentDocument(this.iframe_);
+    return a.body ? goog.string.urlDecode(a.body.innerHTML) : null
+  }
+  if(a = this.iframe_.contentWindow) {
+    var b;
+    try {
+      b = goog.string.urlDecode(this.getLocationFragment_(a))
+    }catch(c) {
+      return this.longerPolling_ || this.setLongerPolling_(!0), null
+    }
+    this.longerPolling_ && this.setLongerPolling_(!1);
+    return b || null
+  }
+  return null
+};
+goog.History.prototype.check_ = function(a) {
+  if(this.userVisible_) {
+    var b = this.getLocationFragment_(this.window_);
+    b != this.lastToken_ && this.update_(b, a)
+  }
+  if(!this.userVisible_ || goog.History.LEGACY_IE) {
+    if(b = this.getIframeToken_() || "", null == this.lockedToken_ || b == this.lockedToken_) {
+      this.lockedToken_ = null, b != this.lastToken_ && this.update_(b, a)
+    }
+  }
+};
+goog.History.prototype.update_ = function(a, b) {
+  this.lastToken_ = this.hiddenInput_.value = a;
+  this.userVisible_ ? (goog.History.LEGACY_IE && this.setIframeToken_(a), this.setHash_(a)) : this.setIframeToken_(a);
+  this.dispatchEvent(new goog.history.Event(this.getToken(), b))
+};
+goog.History.prototype.setLongerPolling_ = function(a) {
+  this.longerPolling_ != a && this.timer_.setInterval(a ? goog.History.PollingType.LONG : goog.History.PollingType.NORMAL);
+  this.longerPolling_ = a
+};
+goog.History.prototype.operaDefibrillator_ = function() {
+  this.timer_.stop();
+  this.timer_.start()
+};
+goog.History.INPUT_EVENTS_ = [goog.events.EventType.MOUSEDOWN, goog.events.EventType.KEYDOWN, goog.events.EventType.MOUSEMOVE];
+goog.History.IFRAME_SOURCE_TEMPLATE_ = "\x3ctitle\x3e%s\x3c/title\x3e\x3cbody\x3e%s\x3c/body\x3e";
+goog.History.IFRAME_TEMPLATE_ = '\x3ciframe id\x3d"%s" style\x3d"display:none" %s\x3e\x3c/iframe\x3e';
+goog.History.INPUT_TEMPLATE_ = '\x3cinput type\x3d"text" name\x3d"%s" id\x3d"%s" style\x3d"display:none"\x3e';
+goog.History.historyCount_ = 0;
+goog.History.PollingType = {NORMAL:150, LONG:1E4};
+goog.History.EventType = goog.history.EventType;
+goog.History.Event = goog.history.Event;
+goog.crypt.base64 = {};
+goog.crypt.base64.byteToCharMap_ = null;
+goog.crypt.base64.charToByteMap_ = null;
+goog.crypt.base64.byteToCharMapWebSafe_ = null;
+goog.crypt.base64.charToByteMapWebSafe_ = null;
+goog.crypt.base64.ENCODED_VALS_BASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+goog.crypt.base64.ENCODED_VALS = goog.crypt.base64.ENCODED_VALS_BASE + "+/\x3d";
+goog.crypt.base64.ENCODED_VALS_WEBSAFE = goog.crypt.base64.ENCODED_VALS_BASE + "-_.";
+goog.crypt.base64.HAS_NATIVE_SUPPORT = goog.userAgent.GECKO || goog.userAgent.WEBKIT || goog.userAgent.OPERA || "function" == typeof goog.global.atob;
+goog.crypt.base64.encodeByteArray = function(a, b) {
+  if(!goog.isArrayLike(a)) {
+    throw Error("encodeByteArray takes an array as a parameter");
+  }
+  goog.crypt.base64.init_();
+  for(var c = b ? goog.crypt.base64.byteToCharMapWebSafe_ : goog.crypt.base64.byteToCharMap_, d = [], e = 0;e < a.length;e += 3) {
+    var f = a[e], g = e + 1 < a.length, h = g ? a[e + 1] : 0, k = e + 2 < a.length, l = k ? a[e + 2] : 0, m = f >> 2, f = (f & 3) << 4 | h >> 4, h = (h & 15) << 2 | l >> 6, l = l & 63;
+    k || (l = 64, g || (h = 64));
+    d.push(c[m], c[f], c[h], c[l])
+  }
+  return d.join("")
+};
+goog.crypt.base64.encodeString = function(a, b) {
+  return goog.crypt.base64.HAS_NATIVE_SUPPORT && !b ? goog.global.btoa(a) : goog.crypt.base64.encodeByteArray(goog.crypt.stringToByteArray(a), b)
+};
+goog.crypt.base64.decodeString = function(a, b) {
+  return goog.crypt.base64.HAS_NATIVE_SUPPORT && !b ? goog.global.atob(a) : goog.crypt.byteArrayToString(goog.crypt.base64.decodeStringToByteArray(a, b))
+};
+goog.crypt.base64.decodeStringToByteArray = function(a, b) {
+  goog.crypt.base64.init_();
+  for(var c = b ? goog.crypt.base64.charToByteMapWebSafe_ : goog.crypt.base64.charToByteMap_, d = [], e = 0;e < a.length;) {
+    var f = c[a.charAt(e++)], g = e < a.length ? c[a.charAt(e)] : 0;
+    ++e;
+    var h = e < a.length ? c[a.charAt(e)] : 0;
+    ++e;
+    var k = e < a.length ? c[a.charAt(e)] : 0;
+    ++e;
+    if(null == f || null == g || null == h || null == k) {
+      throw Error();
+    }
+    d.push(f << 2 | g >> 4);
+    64 != h && (d.push(g << 4 & 240 | h >> 2), 64 != k && d.push(h << 6 & 192 | k))
+  }
+  return d
+};
+goog.crypt.base64.init_ = function() {
+  if(!goog.crypt.base64.byteToCharMap_) {
+    goog.crypt.base64.byteToCharMap_ = {};
+    goog.crypt.base64.charToByteMap_ = {};
+    goog.crypt.base64.byteToCharMapWebSafe_ = {};
+    goog.crypt.base64.charToByteMapWebSafe_ = {};
+    for(var a = 0;a < goog.crypt.base64.ENCODED_VALS.length;a++) {
+      goog.crypt.base64.byteToCharMap_[a] = goog.crypt.base64.ENCODED_VALS.charAt(a), goog.crypt.base64.charToByteMap_[goog.crypt.base64.byteToCharMap_[a]] = a, goog.crypt.base64.byteToCharMapWebSafe_[a] = goog.crypt.base64.ENCODED_VALS_WEBSAFE.charAt(a), goog.crypt.base64.charToByteMapWebSafe_[goog.crypt.base64.byteToCharMapWebSafe_[a]] = a
+    }
+  }
+};
+/*
+
+  Copyright (c) 2008, Adobe Systems Incorporated
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+
+ Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+
+ Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+ Neither the name of Adobe Systems Incorporated nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+  IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+JPEG encoder ported to JavaScript and optimized by Andreas Ritter, www.bytestrom.eu, 11/2009
+
+Basic GUI blocking jpeg encoder
+
+v 0.9
+*/
+goog.crypt.JpegEncoder = function(a) {
+  function b(a, b) {
+    for(var c = 0, d = 0, e = [], f = 1;16 >= f;f++) {
+      for(var g = 1;g <= a[f];g++) {
+        e[b[d]] = [], e[b[d]][0] = c, e[b[d]][1] = f, d++, c++
+      }
+      c *= 2
+    }
+    return e
+  }
+  function c(a) {
+    var b = a[0];
+    for(a = a[1] - 1;0 <= a;) {
+      b & 1 << a && (M |= 1 << O), a--, O--, 0 > O && (255 == M ? (d(255), d(0)) : d(M), O = 7, M = 0)
+    }
+  }
+  function d(a) {
+    I.push(A[a])
+  }
+  function e(a) {
+    d(a >> 8 & 255);
+    d(a & 255)
+  }
+  function f(a, b, d, e, f) {
+    var g = f[0], h = f[240], k, l, m, n, p, w, x, r, s, q = 0;
+    for(k = 0;8 > k;++k) {
+      l = a[q];
+      m = a[q + 1];
+      n = a[q + 2];
+      p = a[q + 3];
+      w = a[q + 4];
+      x = a[q + 5];
+      r = a[q + 6];
+      s = a[q + 7];
+      var u = l + s;
+      l -= s;
+      s = m + r;
+      m -= r;
+      r = n + x;
+      n -= x;
+      x = p + w;
+      p -= w;
+      w = u + x;
+      u -= x;
+      x = s + r;
+      s -= r;
+      a[q] = w + x;
+      a[q + 4] = w - x;
+      w = 0.707106781 * (s + u);
+      a[q + 2] = u + w;
+      a[q + 6] = u - w;
+      w = p + n;
+      x = n + m;
+      s = m + l;
+      n = 0.382683433 * (w - s);
+      p = 0.5411961 * w + n;
+      w = 1.306562965 * s + n;
+      x *= 0.707106781;
+      n = l + x;
+      l -= x;
+      a[q + 5] = l + p;
+      a[q + 3] = l - p;
+      a[q + 1] = n + w;
+      a[q + 7] = n - w;
+      q += 8
+    }
+    for(k = q = 0;8 > k;++k) {
+      l = a[q], m = a[q + 8], n = a[q + 16], p = a[q + 24], w = a[q + 32], x = a[q + 40], r = a[q + 48], s = a[q + 56], u = l + s, l -= s, s = m + r, m -= r, r = n + x, n -= x, x = p + w, p -= w, w = u + x, u -= x, x = s + r, s -= r, a[q] = w + x, a[q + 32] = w - x, w = 0.707106781 * (s + u), a[q + 16] = u + w, a[q + 48] = u - w, w = p + n, x = n + m, s = m + l, n = 0.382683433 * (w - s), p = 0.5411961 * w + n, w = 1.306562965 * s + n, x *= 0.707106781, n = l + x, l -= x, a[q + 40] = l + p, a[q + 
+      24] = l - p, a[q + 8] = n + w, a[q + 56] = n - w, q++
+    }
+    for(k = 0;64 > k;++k) {
+      q = a[k] * b[k], C[k] = 0 < q ? q + 0.5 | 0 : q - 0.5 | 0
+    }
+    a = C;
+    for(b = 0;64 > b;++b) {
+      y[B[b]] = a[b]
+    }
+    a = y[0] - d;
+    d = y[0];
+    0 == a ? c(e[0]) : (k = 32767 + a, c(e[v[k]]), c(t[k]));
+    for(e = 63;0 < e && 0 == y[e];e--) {
+    }
+    if(0 == e) {
+      return c(g), d
+    }
+    for(a = 1;a <= e;) {
+      for(b = a;0 == y[a] && a <= e;++a) {
+      }
+      b = a - b;
+      if(16 <= b) {
+        k = b >> 4;
+        for(q = 1;q <= k;++q) {
+          c(h)
+        }
+        b &= 15
+      }
+      k = 32767 + y[a];
+      c(f[(b << 4) + v[k]]);
+      c(t[k]);
+      a++
+    }
+    63 != e && c(g);
+    return d
+  }
+  function g(a) {
+    0 >= a && (a = 1);
+    100 < a && (a = 100);
+    if(z != a) {
+      for(var b = 0, b = 50 > a ? Math.floor(5E3 / a) : Math.floor(200 - 2 * a), c = [16, 11, 10, 16, 24, 40, 51, 61, 12, 12, 14, 19, 26, 58, 60, 55, 14, 13, 16, 24, 40, 57, 69, 56, 14, 17, 22, 29, 51, 87, 80, 62, 18, 22, 37, 56, 68, 109, 103, 77, 24, 35, 55, 64, 81, 104, 113, 92, 49, 64, 78, 87, 103, 121, 120, 101, 72, 92, 95, 98, 112, 100, 103, 99], d = 0;64 > d;d++) {
+        var e = h((c[d] * b + 50) / 100);
+        1 > e ? e = 1 : 255 < e && (e = 255);
+        k[B[d]] = e
+      }
+      c = [17, 18, 24, 47, 99, 99, 99, 99, 18, 21, 26, 66, 99, 99, 99, 99, 24, 26, 56, 99, 99, 99, 99, 99, 47, 66, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99];
+      for(d = 0;64 > d;d++) {
+        e = h((c[d] * b + 50) / 100), 1 > e ? e = 1 : 255 < e && (e = 255), l[B[d]] = e
+      }
+      b = [1, 1.387039845, 1.306562965, 1.175875602, 1, 0.785694958, 0.5411961, 0.275899379];
+      for(d = c = 0;8 > d;d++) {
+        for(e = 0;8 > e;e++) {
+          m[c] = 1 / (8 * k[B[c]] * b[d] * b[e]), n[c] = 1 / (8 * l[B[c]] * b[d] * b[e]), c++
+        }
+      }
+      z = a
+    }
+  }
+  var h = Math.floor, k = Array(64), l = Array(64), m = Array(64), n = Array(64), p, r, q, s, t = Array(65535), v = Array(65535), C = Array(64), y = Array(64), I = [], M = 0, O = 7, D = Array(64), F = Array(64), G = Array(64), A = Array(256), u = Array(2048), z, B = [0, 1, 5, 6, 14, 15, 27, 28, 2, 4, 7, 13, 16, 26, 29, 42, 3, 8, 12, 17, 25, 30, 41, 43, 9, 11, 18, 24, 31, 40, 44, 53, 10, 19, 23, 32, 39, 45, 52, 54, 20, 22, 33, 38, 46, 51, 55, 60, 21, 34, 37, 47, 50, 56, 59, 61, 35, 36, 48, 49, 57, 
+  58, 62, 63], J = [0, 0, 1, 5, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0], H = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], N = [0, 0, 2, 1, 3, 3, 2, 4, 3, 5, 5, 4, 4, 0, 0, 1, 125], L = [1, 2, 3, 0, 4, 17, 5, 18, 33, 49, 65, 6, 19, 81, 97, 7, 34, 113, 20, 50, 129, 145, 161, 8, 35, 66, 177, 193, 21, 82, 209, 240, 36, 51, 98, 114, 130, 9, 10, 22, 23, 24, 25, 26, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 
+  105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 131, 132, 133, 134, 135, 136, 137, 138, 146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250], P = [0, 0, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0], Q = [0, 1, 2, 3, 4, 5, 6, 
+  7, 8, 9, 10, 11], w = [0, 0, 2, 1, 2, 4, 4, 3, 4, 7, 5, 4, 4, 0, 1, 2, 119], x = [0, 1, 2, 3, 17, 4, 5, 33, 49, 6, 18, 65, 81, 7, 97, 113, 19, 34, 50, 129, 8, 20, 66, 145, 161, 177, 193, 9, 35, 51, 82, 240, 21, 98, 114, 209, 10, 22, 36, 52, 225, 37, 241, 23, 24, 25, 26, 38, 39, 40, 41, 42, 53, 54, 55, 56, 57, 58, 67, 68, 69, 70, 71, 72, 73, 74, 83, 84, 85, 86, 87, 88, 89, 90, 99, 100, 101, 102, 103, 104, 105, 106, 115, 116, 117, 118, 119, 120, 121, 122, 130, 131, 132, 133, 134, 135, 136, 137, 138, 
+  146, 147, 148, 149, 150, 151, 152, 153, 154, 162, 163, 164, 165, 166, 167, 168, 169, 170, 178, 179, 180, 181, 182, 183, 184, 185, 186, 194, 195, 196, 197, 198, 199, 200, 201, 202, 210, 211, 212, 213, 214, 215, 216, 217, 218, 226, 227, 228, 229, 230, 231, 232, 233, 234, 242, 243, 244, 245, 246, 247, 248, 249, 250];
+  this.encode = function(a, b) {
+    b && g(b);
+    I = [];
+    M = 0;
+    O = 7;
+    e(65496);
+    e(65504);
+    e(16);
+    d(74);
+    d(70);
+    d(73);
+    d(70);
+    d(0);
+    d(1);
+    d(1);
+    d(0);
+    e(1);
+    e(1);
+    d(0);
+    d(0);
+    e(65499);
+    e(132);
+    d(0);
+    for(var h = 0;64 > h;h++) {
+      d(k[h])
+    }
+    d(1);
+    for(h = 0;64 > h;h++) {
+      d(l[h])
+    }
+    var h = a.width, t = a.height;
+    e(65472);
+    e(17);
+    d(8);
+    e(t);
+    e(h);
+    d(3);
+    d(1);
+    d(17);
+    d(0);
+    d(2);
+    d(17);
+    d(1);
+    d(3);
+    d(17);
+    d(1);
+    e(65476);
+    e(418);
+    d(0);
+    for(h = 0;16 > h;h++) {
+      d(J[h + 1])
+    }
+    for(h = 0;11 >= h;h++) {
+      d(H[h])
+    }
+    d(16);
+    for(h = 0;16 > h;h++) {
+      d(N[h + 1])
+    }
+    for(h = 0;161 >= h;h++) {
+      d(L[h])
+    }
+    d(1);
+    for(h = 0;16 > h;h++) {
+      d(P[h + 1])
+    }
+    for(h = 0;11 >= h;h++) {
+      d(Q[h])
+    }
+    d(17);
+    for(h = 0;16 > h;h++) {
+      d(w[h + 1])
+    }
+    for(h = 0;161 >= h;h++) {
+      d(x[h])
+    }
+    e(65498);
+    e(12);
+    d(3);
+    d(1);
+    d(0);
+    d(2);
+    d(17);
+    d(3);
+    d(17);
+    d(0);
+    d(63);
+    d(0);
+    var v = t = h = 0;
+    M = 0;
+    O = 7;
+    this.encode.displayName = "_encode_";
+    for(var y = a.data, C = a.height, U = 4 * a.width, T, B = 0, A, R, z, X, S;B < C;) {
+      for(T = 0;T < U;) {
+        X = U * B + T;
+        for(S = 0;64 > S;S++) {
+          R = S >> 3, A = 4 * (S & 7), z = X + R * U + A, B + R >= C && (z -= U * (B + 1 + R - C)), T + A >= U && (z -= T + A - U + 4), A = y[z++], R = y[z++], z = y[z++], D[S] = (u[A] + u[R + 256 >> 0] + u[z + 512 >> 0] >> 16) - 128, F[S] = (u[A + 768 >> 0] + u[R + 1024 >> 0] + u[z + 1280 >> 0] >> 16) - 128, G[S] = (u[A + 1280 >> 0] + u[R + 1536 >> 0] + u[z + 1792 >> 0] >> 16) - 128
+        }
+        h = f(D, m, h, p, q);
+        t = f(F, n, t, r, s);
+        v = f(G, n, v, r, s);
+        T += 32
+      }
+      B += 8
+    }
+    0 <= O && (h = [], h[1] = O + 1, h[0] = (1 << O + 1) - 1, c(h));
+    e(65497);
+    h = "data:image/jpeg;base64," + goog.crypt.base64.encodeString(I.join(""));
+    I = [];
+    return h
+  };
+  a || (a = 50);
+  (function() {
+    for(var a = String.fromCharCode, b = 0;256 > b;b++) {
+      A[b] = a(b)
+    }
+  })();
+  p = b(J, H);
+  r = b(P, Q);
+  q = b(N, L);
+  s = b(w, x);
+  (function() {
+    for(var a = 1, b = 2, c = 1;15 >= c;c++) {
+      for(var d = a;d < b;d++) {
+        v[32767 + d] = c, t[32767 + d] = [], t[32767 + d][1] = c, t[32767 + d][0] = d
+      }
+      for(d = -(b - 1);d <= -a;d++) {
+        v[32767 + d] = c, t[32767 + d] = [], t[32767 + d][1] = c, t[32767 + d][0] = b - 1 + d
+      }
+      a <<= 1;
+      b <<= 1
+    }
+  })();
+  (function() {
+    for(var a = 0;256 > a;a++) {
+      u[a] = 19595 * a, u[a + 256 >> 0] = 38470 * a, u[a + 512 >> 0] = 7471 * a + 32768, u[a + 768 >> 0] = -11059 * a, u[a + 1024 >> 0] = -21709 * a, u[a + 1280 >> 0] = 32768 * a + 8421375, u[a + 1536 >> 0] = -27439 * a, u[a + 1792 >> 0] = -5329 * a
+    }
+  })();
+  g(a)
+};
 goog.net.xpc.Transport = function(a) {
   goog.Disposable.call(this);
   this.domHelper_ = a || goog.dom.getDomHelper()
@@ -23175,1555 +24879,127 @@ goog.fs.sliceBlob = function(a, b, c) {
   return a.webkitSlice ? a.webkitSlice(b, c) : a.mozSlice ? a.mozSlice(b, c) : a.slice ? goog.userAgent.GECKO && !goog.userAgent.isVersion("13.0") || goog.userAgent.WEBKIT && !goog.userAgent.isVersion("537.1") ? (0 > b && (b += a.size), 0 > b && (b = 0), 0 > c && (c += a.size), c < b && (c = b), a.slice(b, c - b)) : a.slice(b, c) : null
 };
 mvc.browser.fs = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.fs.get_url_object_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.getUrlObject_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.Error = goog.fs.Error, mvc.browser.fs.blob_to_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.blobToString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.get_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.get_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.revoke_object_url = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.revokeObjectUrl, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.FileSystem = goog.fs.FileSystem, mvc.browser.fs.get_persistent = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.getPersistent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.slice_blob = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.sliceBlob, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.UrlObject_ = goog.fs.UrlObject_, mvc.browser.fs.get_blob = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.getBlob, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.create_object_url = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.createObjectUrl, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.FileSystemType_ = goog.fs.FileSystemType_, mvc.browser.fs.get_temporary = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.fs.getTemporary, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.fs.FileReader = goog.fs.FileReader], !0);
+mvc.browser.fs.get_url_object_ = goog.fs.getUrlObject_;
+mvc.browser.fs.Error = goog.fs.Error;
+mvc.browser.fs.blob_to_string = goog.fs.blobToString;
+mvc.browser.fs.get_ = goog.fs.get_;
+mvc.browser.fs.revoke_object_url = goog.fs.revokeObjectUrl;
+mvc.browser.fs.FileSystem = goog.fs.FileSystem;
+mvc.browser.fs.get_persistent = goog.fs.getPersistent;
+mvc.browser.fs.slice_blob = goog.fs.sliceBlob;
+mvc.browser.fs.UrlObject_ = goog.fs.UrlObject_;
+mvc.browser.fs.get_blob = goog.fs.getBlob;
+mvc.browser.fs.create_object_url = goog.fs.createObjectUrl;
+mvc.browser.fs.FileSystemType_ = goog.fs.FileSystemType_;
+mvc.browser.fs.get_temporary = goog.fs.getTemporary;
+mvc.browser.fs.FileReader = goog.fs.FileReader;
 mvc.browser.fs._STAR_fs_STAR_ = null;
 mvc.browser.dom = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.dom.get_active_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getActiveElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.compare_parents_descendant_node_ie_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.compareParentsDescendantNodeIe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_scroll_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentScroll_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_scroll_element_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentScrollElement_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_elements_by_tag_name_and_class = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getElementsByTagNameAndClass, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.append_child = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.appendChild, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_css1_compat_mode_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isCss1CompatMode_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_viewport_size_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getViewportSize_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_node_like = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isNodeLike, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.remove_children = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.removeChildren, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.append_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.append_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.TagName = goog.dom.TagName, mvc.browser.dom.is_focusable_tab_index = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isFocusableTabIndex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.classes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.remove_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.removeNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_ancestor_by_tag_name_and_class = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getAncestorByTagNameAndClass, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_dom = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createDom, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_window = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getWindow, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_height_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentHeight_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.find_nodes_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.findNodes_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.compare_node_order = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.compareNodeOrder, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.query = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.query, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.insert_sibling_before = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.insertSiblingBefore, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_text_content_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getTextContent_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_ancestor = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getAncestor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.set_text_content = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.setTextContent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_node_list = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isNodeList, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_next_element_node_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNextElementNode_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_next_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNextNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_text_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createTextNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_node_text_length = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNodeTextLength, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_last_element_child = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getLastElementChild, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.set_focusable_tab_index = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.setFocusableTabIndex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_table_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createTable_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.html_to_document_fragment_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.htmlToDocumentFragment_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.BrowserFeature = goog.dom.BrowserFeature, mvc.browser.dom.compare_sibling_order_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.compareSiblingOrder_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_previous_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getPreviousNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.TAGS_TO_IGNORE_ = goog.dom.TAGS_TO_IGNORE_, mvc.browser.dom.get_next_element_sibling = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNextElementSibling, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.can_use_query_selector_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.canUseQuerySelector_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_outer_html = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getOuterHtml, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.DomHelper = goog.dom.DomHelper, mvc.browser.dom.default_dom_helper_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.defaultDomHelper_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.html_to_document_fragment = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.htmlToDocumentFragment, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocument, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_table = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createTable, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_page_scroll = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getPageScroll, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_frame_content_window = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getFrameContentWindow, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.insert_sibling_after = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.insertSiblingAfter, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_previous_element_sibling = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getPreviousElementSibling, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_elements_by_class = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getElementsByClass, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.Appendable = goog.dom.Appendable, mvc.browser.dom.set_properties = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.setProperties, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_children = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getChildren, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_text_content = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getTextContent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.insert_child_at = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.insertChildAt, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.replace_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.replaceNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.find_common_ancestor = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.findCommonAncestor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.can_have_children = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.canHaveChildren, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.flatten_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.flattenElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.find_nodes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.findNodes, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_node_text_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNodeTextOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_owner_document = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getOwnerDocument, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_height = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentHeight, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_ancestor_by_class = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getAncestorByClass, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_window_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getWindow_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.create_dom_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.createDom_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_dom_helper = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDomHelper, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_first_element_child = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getFirstElementChild, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_window = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isWindow, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.ASSUME_QUIRKS_MODE = goog.dom.ASSUME_QUIRKS_MODE, mvc.browser.dom.get_raw_text_content = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getRawTextContent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.append = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.append, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_compat_mode = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getCompatMode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_element_by_class = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getElementByClass, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.COMPAT_MODE_KNOWN_ = goog.dom.COMPAT_MODE_KNOWN_, mvc.browser.dom.find_node = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.findNode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.NodeType = goog.dom.NodeType, mvc.browser.dom.DIRECT_ATTRIBUTE_MAP_ = goog.dom.DIRECT_ATTRIBUTE_MAP_, mvc.browser.dom.get_parent_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getParentElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_viewport_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getViewportSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.is_css1_compat_mode = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.isCss1CompatMode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_elements_by_tag_name_and_class_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getElementsByTagNameAndClass_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_frame_content_document = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getFrameContentDocument, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_scroll_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentScrollElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_document_scroll = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getDocumentScroll, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_node_at_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.getNodeAtOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.ASSUME_STANDARDS_MODE = goog.dom.ASSUME_STANDARDS_MODE, mvc.browser.dom.contains = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.contains, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.PREDEFINED_TAG_VALUES_ = goog.dom.PREDEFINED_TAG_VALUES_, mvc.browser.dom.add = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.add, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.set = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.set, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.enable = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.enable, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.remove = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.remove, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.add_remove = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.addRemove, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get_difference_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.getDifference_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.swap = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.swap, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.toggle = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.toggle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.get = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.get, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.has = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.has, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.dom.add_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.dom.classes.add_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.dom.get_active_element = goog.dom.getActiveElement;
+mvc.browser.dom.compare_parents_descendant_node_ie_ = goog.dom.compareParentsDescendantNodeIe_;
+mvc.browser.dom.create_element = goog.dom.createElement;
+mvc.browser.dom.get_document_scroll_ = goog.dom.getDocumentScroll_;
+mvc.browser.dom.get_document_scroll_element_ = goog.dom.getDocumentScrollElement_;
+mvc.browser.dom.get_elements_by_tag_name_and_class = goog.dom.getElementsByTagNameAndClass;
+mvc.browser.dom.append_child = goog.dom.appendChild;
+mvc.browser.dom.is_css1_compat_mode_ = goog.dom.isCss1CompatMode_;
+mvc.browser.dom.get_viewport_size_ = goog.dom.getViewportSize_;
+mvc.browser.dom.is_node_like = goog.dom.isNodeLike;
+mvc.browser.dom.remove_children = goog.dom.removeChildren;
+mvc.browser.dom.append_ = goog.dom.append_;
+mvc.browser.dom.TagName = goog.dom.TagName;
+mvc.browser.dom.is_focusable_tab_index = goog.dom.isFocusableTabIndex;
+mvc.browser.dom.classes = goog.dom.classes;
+mvc.browser.dom.remove_node = goog.dom.removeNode;
+mvc.browser.dom.get_ancestor_by_tag_name_and_class = goog.dom.getAncestorByTagNameAndClass;
+mvc.browser.dom.create_dom = goog.dom.createDom;
+mvc.browser.dom.get_element = goog.dom.getElement;
+mvc.browser.dom.get_window = goog.dom.getWindow;
+mvc.browser.dom.get_document_height_ = goog.dom.getDocumentHeight_;
+mvc.browser.dom.find_nodes_ = goog.dom.findNodes_;
+mvc.browser.dom.compare_node_order = goog.dom.compareNodeOrder;
+mvc.browser.dom.query = goog.dom.query;
+mvc.browser.dom.insert_sibling_before = goog.dom.insertSiblingBefore;
+mvc.browser.dom.get_text_content_ = goog.dom.getTextContent_;
+mvc.browser.dom.get_ancestor = goog.dom.getAncestor;
+mvc.browser.dom.set_text_content = goog.dom.setTextContent;
+mvc.browser.dom.is_node_list = goog.dom.isNodeList;
+mvc.browser.dom.get_next_element_node_ = goog.dom.getNextElementNode_;
+mvc.browser.dom.get_next_node = goog.dom.getNextNode;
+mvc.browser.dom.create_text_node = goog.dom.createTextNode;
+mvc.browser.dom.get_node_text_length = goog.dom.getNodeTextLength;
+mvc.browser.dom.get_last_element_child = goog.dom.getLastElementChild;
+mvc.browser.dom.set_focusable_tab_index = goog.dom.setFocusableTabIndex;
+mvc.browser.dom.create_table_ = goog.dom.createTable_;
+mvc.browser.dom.html_to_document_fragment_ = goog.dom.htmlToDocumentFragment_;
+mvc.browser.dom.BrowserFeature = goog.dom.BrowserFeature;
+mvc.browser.dom.compare_sibling_order_ = goog.dom.compareSiblingOrder_;
+mvc.browser.dom.get_previous_node = goog.dom.getPreviousNode;
+mvc.browser.dom.TAGS_TO_IGNORE_ = goog.dom.TAGS_TO_IGNORE_;
+mvc.browser.dom.get_next_element_sibling = goog.dom.getNextElementSibling;
+mvc.browser.dom.can_use_query_selector_ = goog.dom.canUseQuerySelector_;
+mvc.browser.dom.get_outer_html = goog.dom.getOuterHtml;
+mvc.browser.dom.DomHelper = goog.dom.DomHelper;
+mvc.browser.dom.default_dom_helper_ = goog.dom.defaultDomHelper_;
+mvc.browser.dom.html_to_document_fragment = goog.dom.htmlToDocumentFragment;
+mvc.browser.dom.get_document = goog.dom.getDocument;
+mvc.browser.dom.create_table = goog.dom.createTable;
+mvc.browser.dom.get_page_scroll = goog.dom.getPageScroll;
+mvc.browser.dom.is_element = goog.dom.isElement;
+mvc.browser.dom.get_frame_content_window = goog.dom.getFrameContentWindow;
+mvc.browser.dom.insert_sibling_after = goog.dom.insertSiblingAfter;
+mvc.browser.dom.get_previous_element_sibling = goog.dom.getPreviousElementSibling;
+mvc.browser.dom.get_elements_by_class = goog.dom.getElementsByClass;
+mvc.browser.dom.Appendable = goog.dom.Appendable;
+mvc.browser.dom.set_properties = goog.dom.setProperties;
+mvc.browser.dom.get_children = goog.dom.getChildren;
+mvc.browser.dom.get_text_content = goog.dom.getTextContent;
+mvc.browser.dom.insert_child_at = goog.dom.insertChildAt;
+mvc.browser.dom.replace_node = goog.dom.replaceNode;
+mvc.browser.dom.find_common_ancestor = goog.dom.findCommonAncestor;
+mvc.browser.dom.can_have_children = goog.dom.canHaveChildren;
+mvc.browser.dom.flatten_element = goog.dom.flattenElement;
+mvc.browser.dom.find_nodes = goog.dom.findNodes;
+mvc.browser.dom.get_node_text_offset = goog.dom.getNodeTextOffset;
+mvc.browser.dom.get_owner_document = goog.dom.getOwnerDocument;
+mvc.browser.dom.get_document_height = goog.dom.getDocumentHeight;
+mvc.browser.dom.get_ancestor_by_class = goog.dom.getAncestorByClass;
+mvc.browser.dom.get_window_ = goog.dom.getWindow_;
+mvc.browser.dom.create_dom_ = goog.dom.createDom_;
+mvc.browser.dom.get_dom_helper = goog.dom.getDomHelper;
+mvc.browser.dom.get_first_element_child = goog.dom.getFirstElementChild;
+mvc.browser.dom.is_window = goog.dom.isWindow;
+mvc.browser.dom.ASSUME_QUIRKS_MODE = goog.dom.ASSUME_QUIRKS_MODE;
+mvc.browser.dom.get_raw_text_content = goog.dom.getRawTextContent;
+mvc.browser.dom.append = goog.dom.append;
+mvc.browser.dom.get_compat_mode = goog.dom.getCompatMode;
+mvc.browser.dom.get_element_by_class = goog.dom.getElementByClass;
+mvc.browser.dom.COMPAT_MODE_KNOWN_ = goog.dom.COMPAT_MODE_KNOWN_;
+mvc.browser.dom.find_node = goog.dom.findNode;
+mvc.browser.dom.NodeType = goog.dom.NodeType;
+mvc.browser.dom.DIRECT_ATTRIBUTE_MAP_ = goog.dom.DIRECT_ATTRIBUTE_MAP_;
+mvc.browser.dom.get_parent_element = goog.dom.getParentElement;
+mvc.browser.dom.get_viewport_size = goog.dom.getViewportSize;
+mvc.browser.dom.is_css1_compat_mode = goog.dom.isCss1CompatMode;
+mvc.browser.dom.get_elements_by_tag_name_and_class_ = goog.dom.getElementsByTagNameAndClass_;
+mvc.browser.dom.get_frame_content_document = goog.dom.getFrameContentDocument;
+mvc.browser.dom.get_document_scroll_element = goog.dom.getDocumentScrollElement;
+mvc.browser.dom.get_document_scroll = goog.dom.getDocumentScroll;
+mvc.browser.dom.get_node_at_offset = goog.dom.getNodeAtOffset;
+mvc.browser.dom.ASSUME_STANDARDS_MODE = goog.dom.ASSUME_STANDARDS_MODE;
+mvc.browser.dom.contains = goog.dom.contains;
+mvc.browser.dom.PREDEFINED_TAG_VALUES_ = goog.dom.PREDEFINED_TAG_VALUES_;
+mvc.browser.dom.add = goog.dom.classes.add;
+mvc.browser.dom.set = goog.dom.classes.set;
+mvc.browser.dom.enable = goog.dom.classes.enable;
+mvc.browser.dom.remove = goog.dom.classes.remove;
+mvc.browser.dom.add_remove = goog.dom.classes.addRemove;
+mvc.browser.dom.get_difference_ = goog.dom.classes.getDifference_;
+mvc.browser.dom.swap = goog.dom.classes.swap;
+mvc.browser.dom.toggle = goog.dom.classes.toggle;
+mvc.browser.dom.get = goog.dom.classes.get;
+mvc.browser.dom.has = goog.dom.classes.has;
+mvc.browser.dom.add_ = goog.dom.classes.add_;
 goog.color = {};
 goog.color.names = {aliceblue:"#f0f8ff", antiquewhite:"#faebd7", aqua:"#00ffff", aquamarine:"#7fffd4", azure:"#f0ffff", beige:"#f5f5dc", bisque:"#ffe4c4", black:"#000000", blanchedalmond:"#ffebcd", blue:"#0000ff", blueviolet:"#8a2be2", brown:"#a52a2a", burlywood:"#deb887", cadetblue:"#5f9ea0", chartreuse:"#7fff00", chocolate:"#d2691e", coral:"#ff7f50", cornflowerblue:"#6495ed", cornsilk:"#fff8dc", crimson:"#dc143c", cyan:"#00ffff", darkblue:"#00008b", darkcyan:"#008b8b", darkgoldenrod:"#b8860b", 
 darkgray:"#a9a9a9", darkgreen:"#006400", darkgrey:"#a9a9a9", darkkhaki:"#bdb76b", darkmagenta:"#8b008b", darkolivegreen:"#556b2f", darkorange:"#ff8c00", darkorchid:"#9932cc", darkred:"#8b0000", darksalmon:"#e9967a", darkseagreen:"#8fbc8f", darkslateblue:"#483d8b", darkslategray:"#2f4f4f", darkslategrey:"#2f4f4f", darkturquoise:"#00ced1", darkviolet:"#9400d3", deeppink:"#ff1493", deepskyblue:"#00bfff", dimgray:"#696969", dimgrey:"#696969", dodgerblue:"#1e90ff", firebrick:"#b22222", floralwhite:"#fffaf0", 
@@ -24963,637 +25239,103 @@ goog.color.colorDiff_ = function(a, b) {
   return Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]) + Math.abs(a[2] - b[2])
 };
 mvc.browser.color = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.color.Hsl = goog.color.Hsl, mvc.browser.color.rgb_to_hsv = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbToHsv, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsv_array_to_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hsvArrayToRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_array_to_hsv = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbArrayToHsv, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.prepend_hash_if_necessary_helper = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.prependHashIfNecessaryHelper, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.high_contrast = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.highContrast, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hue_to_rgb_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hueToRgb_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.is_valid_hex_color_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.isValidHexColor_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsv_to_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hsvToRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.valid_hex_color_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.validHexColorRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.yiq_brightness_diff_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.yiqBrightnessDiff_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.names = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.names, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsl_array_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hslArrayToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.prepend_zero_if_necessary_helper = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.prependZeroIfNecessaryHelper, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.Hsv = goog.color.Hsv, mvc.browser.color.hex_to_hsl = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hexToHsl, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.yiq_brightness_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.yiqBrightness_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.Rgb = goog.color.Rgb, mvc.browser.color.normalized_hex_color_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.normalizedHexColorRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.normalize_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.normalizeHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsl_to_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hslToRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.blend = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.blend, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.is_valid_color = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.isValidColor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hex_triplet_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hexTripletRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsv_array_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hsvArrayToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.parse = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.parse, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_array_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbArrayToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsv_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hsvToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hex_to_hsv = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hexToHsv, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.is_normalized_hex_color_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.isNormalizedHexColor_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_color_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbColorRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsl_distance = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hslDistance, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hex_to_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hexToRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.color_diff_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.colorDiff_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.is_valid_rgb_color_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.isValidRgbColor_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_to_hsl = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbToHsl, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsl_array_to_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hslArrayToRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.parse_rgb = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.parseRgb, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hex_to_rgb_style = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hexToRgbStyle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_array_to_hsl = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbArrayToHsl, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.rgb_style_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.rgbStyle_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.lighten = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.lighten, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.hsl_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.hslToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.color.darken = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.color.darken, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.color.Hsl = goog.color.Hsl;
+mvc.browser.color.rgb_to_hsv = goog.color.rgbToHsv;
+mvc.browser.color.hsv_array_to_rgb = goog.color.hsvArrayToRgb;
+mvc.browser.color.rgb_array_to_hsv = goog.color.rgbArrayToHsv;
+mvc.browser.color.prepend_hash_if_necessary_helper = goog.color.prependHashIfNecessaryHelper;
+mvc.browser.color.high_contrast = goog.color.highContrast;
+mvc.browser.color.hue_to_rgb_ = goog.color.hueToRgb_;
+mvc.browser.color.is_valid_hex_color_ = goog.color.isValidHexColor_;
+mvc.browser.color.hsv_to_rgb = goog.color.hsvToRgb;
+mvc.browser.color.valid_hex_color_re_ = goog.color.validHexColorRe_;
+mvc.browser.color.yiq_brightness_diff_ = goog.color.yiqBrightnessDiff_;
+mvc.browser.color.names = goog.color.names;
+mvc.browser.color.hsl_array_to_hex = goog.color.hslArrayToHex;
+mvc.browser.color.prepend_zero_if_necessary_helper = goog.color.prependZeroIfNecessaryHelper;
+mvc.browser.color.Hsv = goog.color.Hsv;
+mvc.browser.color.hex_to_hsl = goog.color.hexToHsl;
+mvc.browser.color.yiq_brightness_ = goog.color.yiqBrightness_;
+mvc.browser.color.Rgb = goog.color.Rgb;
+mvc.browser.color.normalized_hex_color_re_ = goog.color.normalizedHexColorRe_;
+mvc.browser.color.normalize_hex = goog.color.normalizeHex;
+mvc.browser.color.hsl_to_rgb = goog.color.hslToRgb;
+mvc.browser.color.blend = goog.color.blend;
+mvc.browser.color.is_valid_color = goog.color.isValidColor;
+mvc.browser.color.hex_triplet_re_ = goog.color.hexTripletRe_;
+mvc.browser.color.hsv_array_to_hex = goog.color.hsvArrayToHex;
+mvc.browser.color.rgb_to_hex = goog.color.rgbToHex;
+mvc.browser.color.parse = goog.color.parse;
+mvc.browser.color.rgb_array_to_hex = goog.color.rgbArrayToHex;
+mvc.browser.color.hsv_to_hex = goog.color.hsvToHex;
+mvc.browser.color.hex_to_hsv = goog.color.hexToHsv;
+mvc.browser.color.is_normalized_hex_color_ = goog.color.isNormalizedHexColor_;
+mvc.browser.color.rgb_color_re_ = goog.color.rgbColorRe_;
+mvc.browser.color.hsl_distance = goog.color.hslDistance;
+mvc.browser.color.hex_to_rgb = goog.color.hexToRgb;
+mvc.browser.color.color_diff_ = goog.color.colorDiff_;
+mvc.browser.color.is_valid_rgb_color_ = goog.color.isValidRgbColor_;
+mvc.browser.color.rgb_to_hsl = goog.color.rgbToHsl;
+mvc.browser.color.hsl_array_to_rgb = goog.color.hslArrayToRgb;
+mvc.browser.color.parse_rgb = goog.color.parseRgb;
+mvc.browser.color.hex_to_rgb_style = goog.color.hexToRgbStyle;
+mvc.browser.color.rgb_array_to_hsl = goog.color.rgbArrayToHsl;
+mvc.browser.color.rgb_style_ = goog.color.rgbStyle_;
+mvc.browser.color.lighten = goog.color.lighten;
+mvc.browser.color.hsl_to_hex = goog.color.hslToHex;
+mvc.browser.color.darken = goog.color.darken;
+goog.ui.registry = {};
+goog.ui.registry.getDefaultRenderer = function(a) {
+  for(var b;a;) {
+    b = goog.getUid(a);
+    if(b = goog.ui.registry.defaultRenderers_[b]) {
+      break
+    }
+    a = a.superClass_ ? a.superClass_.constructor : null
+  }
+  return b ? goog.isFunction(b.getInstance) ? b.getInstance() : new b : null
+};
+goog.ui.registry.setDefaultRenderer = function(a, b) {
+  if(!goog.isFunction(a)) {
+    throw Error("Invalid component class " + a);
+  }
+  if(!goog.isFunction(b)) {
+    throw Error("Invalid renderer class " + b);
+  }
+  var c = goog.getUid(a);
+  goog.ui.registry.defaultRenderers_[c] = b
+};
+goog.ui.registry.getDecoratorByClassName = function(a) {
+  return a in goog.ui.registry.decoratorFunctions_ ? goog.ui.registry.decoratorFunctions_[a]() : null
+};
+goog.ui.registry.setDecoratorByClassName = function(a, b) {
+  if(!a) {
+    throw Error("Invalid class name " + a);
+  }
+  if(!goog.isFunction(b)) {
+    throw Error("Invalid decorator function " + b);
+  }
+  goog.ui.registry.decoratorFunctions_[a] = b
+};
+goog.ui.registry.getDecorator = function(a) {
+  for(var b = goog.dom.classes.get(a), c = 0, d = b.length;c < d;c++) {
+    if(a = goog.ui.registry.getDecoratorByClassName(b[c])) {
+      return a
+    }
+  }
+  return null
+};
+goog.ui.registry.reset = function() {
+  goog.ui.registry.defaultRenderers_ = {};
+  goog.ui.registry.decoratorFunctions_ = {}
+};
+goog.ui.registry.defaultRenderers_ = {};
+goog.ui.registry.decoratorFunctions_ = {};
+mvc.ui = {};
+mvc.ui.meny = {};
+mvc.ui.meny.meny = function() {
+  return mvc.impl.compiler.node.call(null, "" + cljs.core.str([cljs.core.str("\x3c"), cljs.core.str(cljs.core.name.call(null, "h1")), cljs.core.str(null), cljs.core.str(""), cljs.core.str("\x3e"), cljs.core.str("meny"), cljs.core.str("\x3c/"), cljs.core.str(cljs.core.name.call(null, "h1")), cljs.core.str("\x3e")].join("")))
+};
 goog.messaging = {};
 goog.messaging.MessageChannel = function() {
 };
@@ -25877,102 +25619,7 @@ goog.result.DependentResult = function() {
 goog.result.DependentResult.prototype.getParentResults = function() {
 };
 mvc.browser.result = {};
-cljs.core.PersistentVector.EMPTY;
-mvc.impl = {};
 mvc.impl.executor = {};
-mvc.impl.executor._STAR_callback_executor_STAR_ = null;
-mvc.impl.executor._STAR_future_executor_STAR_ = null;
-mvc.impl.executor.IDeliver = {};
-mvc.impl.executor._deliver = function(a, b) {
-  if(a ? a.mvc$impl$executor$IDeliver$_deliver$arity$2 : a) {
-    return a.mvc$impl$executor$IDeliver$_deliver$arity$2(a, b)
-  }
-  var c;
-  c = mvc.impl.executor._deliver[goog.typeOf(null == a ? null : a)];
-  if(!c && (c = mvc.impl.executor._deliver._, !c)) {
-    throw cljs.core.missing_protocol.call(null, "IDeliver.-deliver", a);
-  }
-  return c.call(null, a, b)
-};
-mvc.impl.executor._deliver_exception = function(a, b) {
-  if(a ? a.mvc$impl$executor$IDeliver$_deliver_exception$arity$2 : a) {
-    return a.mvc$impl$executor$IDeliver$_deliver_exception$arity$2(a, b)
-  }
-  var c;
-  c = mvc.impl.executor._deliver_exception[goog.typeOf(null == a ? null : a)];
-  if(!c && (c = mvc.impl.executor._deliver_exception._, !c)) {
-    throw cljs.core.missing_protocol.call(null, "IDeliver.-deliver-exception", a);
-  }
-  return c.call(null, a, b)
-};
-mvc.impl.executor.INotify = {};
-mvc.impl.executor._attend = function(a, b, c) {
-  if(a ? a.mvc$impl$executor$INotify$_attend$arity$3 : a) {
-    return a.mvc$impl$executor$INotify$_attend$arity$3(a, b, c)
-  }
-  var d;
-  d = mvc.impl.executor._attend[goog.typeOf(null == a ? null : a)];
-  if(!d && (d = mvc.impl.executor._attend._, !d)) {
-    throw cljs.core.missing_protocol.call(null, "INotify.-attend", a);
-  }
-  return d.call(null, a, b, c)
-};
-mvc.impl.executor.IFail = {};
-mvc.impl.executor._realized_exception_QMARK_ = function(a) {
-  if(a ? a.mvc$impl$executor$IFail$_realized_exception_QMARK_$arity$1 : a) {
-    return a.mvc$impl$executor$IFail$_realized_exception_QMARK_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._realized_exception_QMARK_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._realized_exception_QMARK_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IFail.-realized-exception?", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor.IFuture = {};
-mvc.impl.executor.cancelled_QMARK_ = function(a) {
-  if(a ? a.mvc$impl$executor$IFuture$cancelled_QMARK_$arity$1 : a) {
-    return a.mvc$impl$executor$IFuture$cancelled_QMARK_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor.cancelled_QMARK_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor.cancelled_QMARK_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IFuture.cancelled?", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor.completed_QMARK_ = function(a) {
-  if(a ? a.mvc$impl$executor$IFuture$completed_QMARK_$arity$1 : a) {
-    return a.mvc$impl$executor$IFuture$completed_QMARK_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor.completed_QMARK_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor.completed_QMARK_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IFuture.completed?", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor.cancel_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IFuture$cancel_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IFuture$cancel_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor.cancel_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor.cancel_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IFuture.cancel!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor.Future = function() {
-};
-mvc.impl.executor.Future.cljs$lang$type = !0;
-mvc.impl.executor.Future.cljs$lang$ctorStr = "mvc.impl.executor/Future";
-mvc.impl.executor.Future.cljs$lang$ctorPrWriter = function(a, b, c) {
-  return cljs.core._write.call(null, b, "mvc.impl.executor/Future")
-};
-mvc.impl.executor.__GT_Future = function() {
-  return new mvc.impl.executor.Future
-};
 mvc.impl.executor.IExecutor = {};
 mvc.impl.executor.execute = function(a) {
   if(a ? a.mvc$impl$executor$IExecutor$execute$arity$1 : a) {
@@ -26106,6 +25753,10 @@ mvc.impl.executor.SoloExecutor.prototype.mvc$impl$executor$IExecutorService$shut
 mvc.impl.executor.SoloExecutor.prototype.mvc$impl$executor$IExecutorService$submit$arity$3 = function(a, b, c) {
   return null
 };
+mvc.impl.executor.SoloExecutor.prototype.mvc$impl$executor$IExecutor$ = !0;
+mvc.impl.executor.SoloExecutor.prototype.mvc$impl$executor$IExecutor$execute$arity$1 = function(a) {
+  return null
+};
 mvc.impl.executor.__GT_SoloExecutor = function() {
   return new mvc.impl.executor.SoloExecutor
 };
@@ -26141,230 +25792,12 @@ mvc.impl.executor.PoolExecutor.prototype.mvc$impl$executor$IExecutorService$shut
 mvc.impl.executor.PoolExecutor.prototype.mvc$impl$executor$IExecutorService$submit$arity$3 = function(a, b, c) {
   return null
 };
+mvc.impl.executor.PoolExecutor.prototype.mvc$impl$executor$IExecutor$ = !0;
+mvc.impl.executor.PoolExecutor.prototype.mvc$impl$executor$IExecutor$execute$arity$1 = function(a) {
+  return null
+};
 mvc.impl.executor.__GT_PoolExecutor = function() {
   return new mvc.impl.executor.PoolExecutor
-};
-mvc.impl.executor.IAtomicTransactor = {};
-mvc.impl.executor._retry = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_retry$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_retry$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._retry[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._retry._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-retry", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._else_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_else_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_else_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._else_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._else_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-else!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._commit_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_commit_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_commit_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._commit_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._commit_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-commit!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._abort_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_abort_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_abort_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._abort_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._abort_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-abort!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._reset_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_reset_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_reset_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._reset_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._reset_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-reset!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._validate_BANG_ = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicTransactor$_validate_BANG_$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicTransactor$_validate_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._validate_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._validate_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-validate!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor.IAtomicReference = {};
-mvc.impl.executor._get = function(a) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_get$arity$1 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_get$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.executor._get[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.executor._get._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-get", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.executor._compare_and_set_BANG_ = function(a, b, c) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_compare_and_set_BANG_$arity$3 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_compare_and_set_BANG_$arity$3(a, b, c)
-  }
-  var d;
-  d = mvc.impl.executor._compare_and_set_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!d && (d = mvc.impl.executor._compare_and_set_BANG_._, !d)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-compare-and-set!", a);
-  }
-  return d.call(null, a, b, c)
-};
-mvc.impl.executor._get_and_set_BANG_ = function(a, b) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_get_and_set_BANG_$arity$2 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_get_and_set_BANG_$arity$2(a, b)
-  }
-  var c;
-  c = mvc.impl.executor._get_and_set_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!c && (c = mvc.impl.executor._get_and_set_BANG_._, !c)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-get-and-set!", a);
-  }
-  return c.call(null, a, b)
-};
-mvc.impl.executor._lazy_set_BANG_ = function(a, b) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_lazy_set_BANG_$arity$2 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_lazy_set_BANG_$arity$2(a, b)
-  }
-  var c;
-  c = mvc.impl.executor._lazy_set_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!c && (c = mvc.impl.executor._lazy_set_BANG_._, !c)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-lazy-set!", a);
-  }
-  return c.call(null, a, b)
-};
-mvc.impl.executor._set_BANG_ = function(a, b) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_set_BANG_$arity$2 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_set_BANG_$arity$2(a, b)
-  }
-  var c;
-  c = mvc.impl.executor._set_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!c && (c = mvc.impl.executor._set_BANG_._, !c)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-set!", a);
-  }
-  return c.call(null, a, b)
-};
-mvc.impl.executor._weak_compare_and_set_BANG_ = function(a, b, c) {
-  if(a ? a.mvc$impl$executor$IAtomicReference$_weak_compare_and_set_BANG_$arity$3 : a) {
-    return a.mvc$impl$executor$IAtomicReference$_weak_compare_and_set_BANG_$arity$3(a, b, c)
-  }
-  var d;
-  d = mvc.impl.executor._weak_compare_and_set_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!d && (d = mvc.impl.executor._weak_compare_and_set_BANG_._, !d)) {
-    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-weak-compare-and-set!", a);
-  }
-  return d.call(null, a, b, c)
-};
-mvc.impl.executor.STM = function() {
-};
-mvc.impl.executor.STM.cljs$lang$type = !0;
-mvc.impl.executor.STM.cljs$lang$ctorStr = "mvc.impl.executor/STM";
-mvc.impl.executor.STM.cljs$lang$ctorPrWriter = function(a, b, c) {
-  return cljs.core._write.call(null, b, "mvc.impl.executor/STM")
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$ = !0;
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_retry$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_else_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_commit_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_abort_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_reset_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.STM.prototype.mvc$impl$executor$IAtomicTransactor$_validate_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.executor.__GT_STM = function() {
-  return new mvc.impl.executor.STM
-};
-goog.events.EventHandler = function(a) {
-  goog.Disposable.call(this);
-  this.handler_ = a;
-  this.keys_ = []
-};
-goog.inherits(goog.events.EventHandler, goog.Disposable);
-goog.events.EventHandler.typeArray_ = [];
-goog.events.EventHandler.prototype.listen = function(a, b, c, d, e) {
-  goog.isArray(b) || (goog.events.EventHandler.typeArray_[0] = b, b = goog.events.EventHandler.typeArray_);
-  for(var f = 0;f < b.length;f++) {
-    var g = goog.events.listen(a, b[f], c || this, d || !1, e || this.handler_ || this);
-    this.keys_.push(g)
-  }
-  return this
-};
-goog.events.EventHandler.prototype.listenOnce = function(a, b, c, d, e) {
-  if(goog.isArray(b)) {
-    for(var f = 0;f < b.length;f++) {
-      this.listenOnce(a, b[f], c, d, e)
-    }
-  }else {
-    a = goog.events.listenOnce(a, b, c || this, d, e || this.handler_ || this), this.keys_.push(a)
-  }
-  return this
-};
-goog.events.EventHandler.prototype.listenWithWrapper = function(a, b, c, d, e) {
-  b.listen(a, c, d, e || this.handler_ || this, this);
-  return this
-};
-goog.events.EventHandler.prototype.getListenerCount = function() {
-  return this.keys_.length
-};
-goog.events.EventHandler.prototype.unlisten = function(a, b, c, d, e) {
-  if(goog.isArray(b)) {
-    for(var f = 0;f < b.length;f++) {
-      this.unlisten(a, b[f], c, d, e)
-    }
-  }else {
-    if(a = goog.events.getListener(a, b, c || this, d, e || this.handler_ || this)) {
-      a = a.key, goog.events.unlistenByKey(a), goog.array.remove(this.keys_, a)
-    }
-  }
-  return this
-};
-goog.events.EventHandler.prototype.unlistenWithWrapper = function(a, b, c, d, e) {
-  b.unlisten(a, c, d, e || this.handler_ || this, this);
-  return this
-};
-goog.events.EventHandler.prototype.removeAll = function() {
-  goog.array.forEach(this.keys_, goog.events.unlistenByKey);
-  this.keys_.length = 0
-};
-goog.events.EventHandler.prototype.disposeInternal = function() {
-  goog.events.EventHandler.superClass_.disposeInternal.call(this);
-  this.removeAll()
-};
-goog.events.EventHandler.prototype.handleEvent = function(a) {
-  throw Error("EventHandler.handleEvent not implemented");
 };
 goog.db.Transaction = function(a, b) {
   goog.events.EventTarget.call(this);
@@ -26530,52 +25963,14 @@ goog.db.deleteDatabase = function(a, b) {
   return c
 };
 mvc.browser.db = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.db.open_database = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.db.openDatabase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.db.delete_database = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.db.deleteDatabase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.db.Error = goog.db.Error, mvc.browser.db.IndexedDb = goog.db.IndexedDb, mvc.browser.db.indexed_db_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.db.indexedDb_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.db.BlockedCallback = goog.db.BlockedCallback, mvc.browser.db.UpgradeNeededCallback = goog.db.UpgradeNeededCallback, mvc.browser.db.Transaction = goog.db.Transaction], !0);
+mvc.browser.db.open_database = goog.db.openDatabase;
+mvc.browser.db.delete_database = goog.db.deleteDatabase;
+mvc.browser.db.Error = goog.db.Error;
+mvc.browser.db.IndexedDb = goog.db.IndexedDb;
+mvc.browser.db.indexed_db_ = goog.db.indexedDb_;
+mvc.browser.db.BlockedCallback = goog.db.BlockedCallback;
+mvc.browser.db.UpgradeNeededCallback = goog.db.UpgradeNeededCallback;
+mvc.browser.db.Transaction = goog.db.Transaction;
 mvc.browser.db._STAR_db_STAR_ = null;
 mvc.browser.db._STAR_version_STAR_ = null;
 mvc.browser.db.open_BANG_ = function(a, b, c) {
@@ -26587,758 +25982,1246 @@ mvc.browser.db.close_BANG_ = function() {
 mvc.browser.db.transaction = function() {
   return null
 };
-mvc.browser.core = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.core.contains_key = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.containsKey, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
+goog.ui.decorate = function(a) {
+  var b = goog.ui.registry.getDecorator(a);
+  b && b.decorate(a);
   return b
-}(), mvc.browser.core.add = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.add, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.set = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.set, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.is_empty = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.isEmpty, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.remove = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.remove, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.create_set = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.createSet, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.find_key = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.findKey, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get_value_by_keys = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getValueByKeys, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.PROTOTYPE_FIELDS_ = goog.object.PROTOTYPE_FIELDS_, mvc.browser.core.get_any_key = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getAnyKey, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get_keys = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getKeys, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.for_each = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.forEach, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.create_immutable_view = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.createImmutableView, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.clear = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.clear, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.set_if_undefined = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.setIfUndefined, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.contains_value = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.containsValue, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.some = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.some, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.get, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.unsafe_clone = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.unsafeClone, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get_values = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getValues, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.find_value = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.findValue, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.filter = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.filter, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.transpose = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.transpose, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get_count = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getCount, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.extend = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.extend, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.get_any_value = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.getAnyValue, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.every = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.every, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.create = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.create, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.map = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.map, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.clone = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.clone, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.is_immutable_view = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.isImmutableView, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.contains = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.object.contains, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.serialize = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.json.serialize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.unsafe_parse = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.json.unsafeParse, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.is_valid_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.json.isValid_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.Serializer = goog.json.Serializer, mvc.browser.core.parse = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.json.parse, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.Reviver = goog.json.Reviver, mvc.browser.core.Replacer = goog.json.Replacer, mvc.browser.core.WORD_BREAK_HTML = goog.format.WORD_BREAK_HTML, mvc.browser.core.FIRST_GRAPHEME_EXTEND_ = goog.format.FIRST_GRAPHEME_EXTEND_, mvc.browser.core.NUMERIC_SCALES_SI_ = goog.format.NUMERIC_SCALES_SI_, mvc.browser.core.is_convertable_scaled_number = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.isConvertableScaledNumber, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.IS_IE8_OR_ABOVE_ = goog.format.IS_IE8_OR_ABOVE_, mvc.browser.core.WbrToken_ = goog.format.WbrToken_, mvc.browser.core.conservatively_has_grapheme_break_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.conservativelyHasGraphemeBreak_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.numeric_value_to_string_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.numericValueToString_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.string_to_numeric_value_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.stringToNumericValue_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.numeric_value_to_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.numericValueToString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.string_to_numeric_value = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.stringToNumericValue, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.num_bytes_to_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.numBytesToString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.string_to_num_bytes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.stringToNumBytes, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.SCALED_NUMERIC_RE_ = goog.format.SCALED_NUMERIC_RE_, mvc.browser.core.insert_word_breaks = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.insertWordBreaks, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.insert_word_breaks_basic = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.insertWordBreaksBasic, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.NUMERIC_SCALE_PREFIXES_ = goog.format.NUMERIC_SCALE_PREFIXES_, mvc.browser.core.NUMERIC_SCALES_BINARY_ = goog.format.NUMERIC_SCALES_BINARY_, mvc.browser.core.is_treated_as_breaking_space_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.isTreatedAsBreakingSpace_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.file_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.fileSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.is_invisible_formatting_character_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.isInvisibleFormattingCharacter_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.core.insert_word_breaks_generic_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.format.insertWordBreaksGeneric_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
-mvc.browser.core.immutable = function(a) {
-  return mvc.browser.core.create_immutable_view.call(null, a)
 };
+goog.ui.Control = function(a, b, c) {
+  goog.ui.Component.call(this, c);
+  this.renderer_ = b || goog.ui.registry.getDefaultRenderer(this.constructor);
+  this.setContentInternal(a)
+};
+goog.inherits(goog.ui.Control, goog.ui.Component);
+goog.ui.Control.registerDecorator = goog.ui.registry.setDecoratorByClassName;
+goog.ui.Control.getDecorator = goog.ui.registry.getDecorator;
+goog.ui.Control.decorate = goog.ui.decorate;
+goog.ui.Control.prototype.content_ = null;
+goog.ui.Control.prototype.state_ = 0;
+goog.ui.Control.prototype.supportedStates_ = goog.ui.Component.State.DISABLED | goog.ui.Component.State.HOVER | goog.ui.Component.State.ACTIVE | goog.ui.Component.State.FOCUSED;
+goog.ui.Control.prototype.autoStates_ = goog.ui.Component.State.ALL;
+goog.ui.Control.prototype.statesWithTransitionEvents_ = 0;
+goog.ui.Control.prototype.visible_ = !0;
+goog.ui.Control.prototype.extraClassNames_ = null;
+goog.ui.Control.prototype.handleMouseEvents_ = !0;
+goog.ui.Control.prototype.allowTextSelection_ = !1;
+goog.ui.Control.prototype.preferredAriaRole_ = null;
+goog.ui.Control.prototype.isHandleMouseEvents = function() {
+  return this.handleMouseEvents_
+};
+goog.ui.Control.prototype.setHandleMouseEvents = function(a) {
+  this.isInDocument() && a != this.handleMouseEvents_ && this.enableMouseEventHandling_(a);
+  this.handleMouseEvents_ = a
+};
+goog.ui.Control.prototype.getKeyEventTarget = function() {
+  return this.renderer_.getKeyEventTarget(this)
+};
+goog.ui.Control.prototype.getKeyHandler = function() {
+  return this.keyHandler_ || (this.keyHandler_ = new goog.events.KeyHandler)
+};
+goog.ui.Control.prototype.getRenderer = function() {
+  return this.renderer_
+};
+goog.ui.Control.prototype.setRenderer = function(a) {
+  if(this.isInDocument()) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  this.getElement() && this.setElementInternal(null);
+  this.renderer_ = a
+};
+goog.ui.Control.prototype.getExtraClassNames = function() {
+  return this.extraClassNames_
+};
+goog.ui.Control.prototype.addClassName = function(a) {
+  a && (this.extraClassNames_ ? goog.array.contains(this.extraClassNames_, a) || this.extraClassNames_.push(a) : this.extraClassNames_ = [a], this.renderer_.enableExtraClassName(this, a, !0))
+};
+goog.ui.Control.prototype.removeClassName = function(a) {
+  a && this.extraClassNames_ && (goog.array.remove(this.extraClassNames_, a), 0 == this.extraClassNames_.length && (this.extraClassNames_ = null), this.renderer_.enableExtraClassName(this, a, !1))
+};
+goog.ui.Control.prototype.enableClassName = function(a, b) {
+  b ? this.addClassName(a) : this.removeClassName(a)
+};
+goog.ui.Control.prototype.createDom = function() {
+  var a = this.renderer_.createDom(this);
+  this.setElementInternal(a);
+  this.renderer_.setAriaRole(a, this.getPreferredAriaRole());
+  this.isAllowTextSelection() || this.renderer_.setAllowTextSelection(a, !1);
+  this.isVisible() || this.renderer_.setVisible(a, !1)
+};
+goog.ui.Control.prototype.getPreferredAriaRole = function() {
+  return this.preferredAriaRole_
+};
+goog.ui.Control.prototype.setPreferredAriaRole = function(a) {
+  this.preferredAriaRole_ = a
+};
+goog.ui.Control.prototype.getContentElement = function() {
+  return this.renderer_.getContentElement(this.getElement())
+};
+goog.ui.Control.prototype.canDecorate = function(a) {
+  return this.renderer_.canDecorate(a)
+};
+goog.ui.Control.prototype.decorateInternal = function(a) {
+  a = this.renderer_.decorate(this, a);
+  this.setElementInternal(a);
+  this.renderer_.setAriaRole(a, this.getPreferredAriaRole());
+  this.isAllowTextSelection() || this.renderer_.setAllowTextSelection(a, !1);
+  this.visible_ = "none" != a.style.display
+};
+goog.ui.Control.prototype.enterDocument = function() {
+  goog.ui.Control.superClass_.enterDocument.call(this);
+  this.renderer_.initializeDom(this);
+  if(this.supportedStates_ & ~goog.ui.Component.State.DISABLED && (this.isHandleMouseEvents() && this.enableMouseEventHandling_(!0), this.isSupportedState(goog.ui.Component.State.FOCUSED))) {
+    var a = this.getKeyEventTarget();
+    if(a) {
+      var b = this.getKeyHandler();
+      b.attach(a);
+      this.getHandler().listen(b, goog.events.KeyHandler.EventType.KEY, this.handleKeyEvent).listen(a, goog.events.EventType.FOCUS, this.handleFocus).listen(a, goog.events.EventType.BLUR, this.handleBlur)
+    }
+  }
+};
+goog.ui.Control.prototype.enableMouseEventHandling_ = function(a) {
+  var b = this.getHandler(), c = this.getElement();
+  a ? (b.listen(c, goog.events.EventType.MOUSEOVER, this.handleMouseOver).listen(c, goog.events.EventType.MOUSEDOWN, this.handleMouseDown).listen(c, goog.events.EventType.MOUSEUP, this.handleMouseUp).listen(c, goog.events.EventType.MOUSEOUT, this.handleMouseOut), this.handleContextMenu != goog.nullFunction && b.listen(c, goog.events.EventType.CONTEXTMENU, this.handleContextMenu), goog.userAgent.IE && b.listen(c, goog.events.EventType.DBLCLICK, this.handleDblClick)) : (b.unlisten(c, goog.events.EventType.MOUSEOVER, 
+  this.handleMouseOver).unlisten(c, goog.events.EventType.MOUSEDOWN, this.handleMouseDown).unlisten(c, goog.events.EventType.MOUSEUP, this.handleMouseUp).unlisten(c, goog.events.EventType.MOUSEOUT, this.handleMouseOut), this.handleContextMenu != goog.nullFunction && b.unlisten(c, goog.events.EventType.CONTEXTMENU, this.handleContextMenu), goog.userAgent.IE && b.unlisten(c, goog.events.EventType.DBLCLICK, this.handleDblClick))
+};
+goog.ui.Control.prototype.exitDocument = function() {
+  goog.ui.Control.superClass_.exitDocument.call(this);
+  this.keyHandler_ && this.keyHandler_.detach();
+  this.isVisible() && this.isEnabled() && this.renderer_.setFocusable(this, !1)
+};
+goog.ui.Control.prototype.disposeInternal = function() {
+  goog.ui.Control.superClass_.disposeInternal.call(this);
+  this.keyHandler_ && (this.keyHandler_.dispose(), delete this.keyHandler_);
+  delete this.renderer_;
+  this.extraClassNames_ = this.content_ = null
+};
+goog.ui.Control.prototype.getContent = function() {
+  return this.content_
+};
+goog.ui.Control.prototype.setContent = function(a) {
+  this.renderer_.setContent(this.getElement(), a);
+  this.setContentInternal(a)
+};
+goog.ui.Control.prototype.setContentInternal = function(a) {
+  this.content_ = a
+};
+goog.ui.Control.prototype.getCaption = function() {
+  var a = this.getContent();
+  if(!a) {
+    return""
+  }
+  a = goog.isString(a) ? a : goog.isArray(a) ? goog.array.map(a, goog.dom.getRawTextContent).join("") : goog.dom.getTextContent(a);
+  return goog.string.collapseBreakingSpaces(a)
+};
+goog.ui.Control.prototype.setCaption = function(a) {
+  this.setContent(a)
+};
+goog.ui.Control.prototype.setRightToLeft = function(a) {
+  goog.ui.Control.superClass_.setRightToLeft.call(this, a);
+  var b = this.getElement();
+  b && this.renderer_.setRightToLeft(b, a)
+};
+goog.ui.Control.prototype.isAllowTextSelection = function() {
+  return this.allowTextSelection_
+};
+goog.ui.Control.prototype.setAllowTextSelection = function(a) {
+  this.allowTextSelection_ = a;
+  var b = this.getElement();
+  b && this.renderer_.setAllowTextSelection(b, a)
+};
+goog.ui.Control.prototype.isVisible = function() {
+  return this.visible_
+};
+goog.ui.Control.prototype.setVisible = function(a, b) {
+  if(b || this.visible_ != a && this.dispatchEvent(a ? goog.ui.Component.EventType.SHOW : goog.ui.Component.EventType.HIDE)) {
+    var c = this.getElement();
+    c && this.renderer_.setVisible(c, a);
+    this.isEnabled() && this.renderer_.setFocusable(this, a);
+    this.visible_ = a;
+    return!0
+  }
+  return!1
+};
+goog.ui.Control.prototype.isEnabled = function() {
+  return!this.hasState(goog.ui.Component.State.DISABLED)
+};
+goog.ui.Control.prototype.isParentDisabled_ = function() {
+  var a = this.getParent();
+  return!!a && "function" == typeof a.isEnabled && !a.isEnabled()
+};
+goog.ui.Control.prototype.setEnabled = function(a) {
+  !this.isParentDisabled_() && this.isTransitionAllowed(goog.ui.Component.State.DISABLED, !a) && (a || (this.setActive(!1), this.setHighlighted(!1)), this.isVisible() && this.renderer_.setFocusable(this, a), this.setState(goog.ui.Component.State.DISABLED, !a))
+};
+goog.ui.Control.prototype.isHighlighted = function() {
+  return this.hasState(goog.ui.Component.State.HOVER)
+};
+goog.ui.Control.prototype.setHighlighted = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.HOVER, a) && this.setState(goog.ui.Component.State.HOVER, a)
+};
+goog.ui.Control.prototype.isActive = function() {
+  return this.hasState(goog.ui.Component.State.ACTIVE)
+};
+goog.ui.Control.prototype.setActive = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.ACTIVE, a) && this.setState(goog.ui.Component.State.ACTIVE, a)
+};
+goog.ui.Control.prototype.isSelected = function() {
+  return this.hasState(goog.ui.Component.State.SELECTED)
+};
+goog.ui.Control.prototype.setSelected = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.SELECTED, a) && this.setState(goog.ui.Component.State.SELECTED, a)
+};
+goog.ui.Control.prototype.isChecked = function() {
+  return this.hasState(goog.ui.Component.State.CHECKED)
+};
+goog.ui.Control.prototype.setChecked = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.CHECKED, a) && this.setState(goog.ui.Component.State.CHECKED, a)
+};
+goog.ui.Control.prototype.isFocused = function() {
+  return this.hasState(goog.ui.Component.State.FOCUSED)
+};
+goog.ui.Control.prototype.setFocused = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.FOCUSED, a) && this.setState(goog.ui.Component.State.FOCUSED, a)
+};
+goog.ui.Control.prototype.isOpen = function() {
+  return this.hasState(goog.ui.Component.State.OPENED)
+};
+goog.ui.Control.prototype.setOpen = function(a) {
+  this.isTransitionAllowed(goog.ui.Component.State.OPENED, a) && this.setState(goog.ui.Component.State.OPENED, a)
+};
+goog.ui.Control.prototype.getState = function() {
+  return this.state_
+};
+goog.ui.Control.prototype.hasState = function(a) {
+  return!!(this.state_ & a)
+};
+goog.ui.Control.prototype.setState = function(a, b) {
+  this.isSupportedState(a) && b != this.hasState(a) && (this.renderer_.setState(this, a, b), this.state_ = b ? this.state_ | a : this.state_ & ~a)
+};
+goog.ui.Control.prototype.setStateInternal = function(a) {
+  this.state_ = a
+};
+goog.ui.Control.prototype.isSupportedState = function(a) {
+  return!!(this.supportedStates_ & a)
+};
+goog.ui.Control.prototype.setSupportedState = function(a, b) {
+  if(this.isInDocument() && this.hasState(a) && !b) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  !b && this.hasState(a) && this.setState(a, !1);
+  this.supportedStates_ = b ? this.supportedStates_ | a : this.supportedStates_ & ~a
+};
+goog.ui.Control.prototype.isAutoState = function(a) {
+  return!!(this.autoStates_ & a) && this.isSupportedState(a)
+};
+goog.ui.Control.prototype.setAutoStates = function(a, b) {
+  this.autoStates_ = b ? this.autoStates_ | a : this.autoStates_ & ~a
+};
+goog.ui.Control.prototype.isDispatchTransitionEvents = function(a) {
+  return!!(this.statesWithTransitionEvents_ & a) && this.isSupportedState(a)
+};
+goog.ui.Control.prototype.setDispatchTransitionEvents = function(a, b) {
+  this.statesWithTransitionEvents_ = b ? this.statesWithTransitionEvents_ | a : this.statesWithTransitionEvents_ & ~a
+};
+goog.ui.Control.prototype.isTransitionAllowed = function(a, b) {
+  return this.isSupportedState(a) && this.hasState(a) != b && (!(this.statesWithTransitionEvents_ & a) || this.dispatchEvent(goog.ui.Component.getStateTransitionEvent(a, b))) && !this.isDisposed()
+};
+goog.ui.Control.prototype.handleMouseOver = function(a) {
+  !goog.ui.Control.isMouseEventWithinElement_(a, this.getElement()) && (this.dispatchEvent(goog.ui.Component.EventType.ENTER) && this.isEnabled() && this.isAutoState(goog.ui.Component.State.HOVER)) && this.setHighlighted(!0)
+};
+goog.ui.Control.prototype.handleMouseOut = function(a) {
+  !goog.ui.Control.isMouseEventWithinElement_(a, this.getElement()) && this.dispatchEvent(goog.ui.Component.EventType.LEAVE) && (this.isAutoState(goog.ui.Component.State.ACTIVE) && this.setActive(!1), this.isAutoState(goog.ui.Component.State.HOVER) && this.setHighlighted(!1))
+};
+goog.ui.Control.prototype.handleContextMenu = goog.nullFunction;
+goog.ui.Control.isMouseEventWithinElement_ = function(a, b) {
+  return!!a.relatedTarget && goog.dom.contains(b, a.relatedTarget)
+};
+goog.ui.Control.prototype.handleMouseDown = function(a) {
+  this.isEnabled() && (this.isAutoState(goog.ui.Component.State.HOVER) && this.setHighlighted(!0), a.isMouseActionButton() && (this.isAutoState(goog.ui.Component.State.ACTIVE) && this.setActive(!0), this.renderer_.isFocusable(this) && this.getKeyEventTarget().focus()));
+  !this.isAllowTextSelection() && a.isMouseActionButton() && a.preventDefault()
+};
+goog.ui.Control.prototype.handleMouseUp = function(a) {
+  this.isEnabled() && (this.isAutoState(goog.ui.Component.State.HOVER) && this.setHighlighted(!0), this.isActive() && (this.performActionInternal(a) && this.isAutoState(goog.ui.Component.State.ACTIVE)) && this.setActive(!1))
+};
+goog.ui.Control.prototype.handleDblClick = function(a) {
+  this.isEnabled() && this.performActionInternal(a)
+};
+goog.ui.Control.prototype.performActionInternal = function(a) {
+  this.isAutoState(goog.ui.Component.State.CHECKED) && this.setChecked(!this.isChecked());
+  this.isAutoState(goog.ui.Component.State.SELECTED) && this.setSelected(!0);
+  this.isAutoState(goog.ui.Component.State.OPENED) && this.setOpen(!this.isOpen());
+  var b = new goog.events.Event(goog.ui.Component.EventType.ACTION, this);
+  a && (b.altKey = a.altKey, b.ctrlKey = a.ctrlKey, b.metaKey = a.metaKey, b.shiftKey = a.shiftKey, b.platformModifierKey = a.platformModifierKey);
+  return this.dispatchEvent(b)
+};
+goog.ui.Control.prototype.handleFocus = function(a) {
+  this.isAutoState(goog.ui.Component.State.FOCUSED) && this.setFocused(!0)
+};
+goog.ui.Control.prototype.handleBlur = function(a) {
+  this.isAutoState(goog.ui.Component.State.ACTIVE) && this.setActive(!1);
+  this.isAutoState(goog.ui.Component.State.FOCUSED) && this.setFocused(!1)
+};
+goog.ui.Control.prototype.handleKeyEvent = function(a) {
+  return this.isVisible() && this.isEnabled() && this.handleKeyEventInternal(a) ? (a.preventDefault(), a.stopPropagation(), !0) : !1
+};
+goog.ui.Control.prototype.handleKeyEventInternal = function(a) {
+  return a.keyCode == goog.events.KeyCodes.ENTER && this.performActionInternal(a)
+};
+goog.ui.registry.setDefaultRenderer(goog.ui.Control, goog.ui.ControlRenderer);
+goog.ui.registry.setDecoratorByClassName(goog.ui.ControlRenderer.CSS_CLASS, function() {
+  return new goog.ui.Control(null)
+});
+goog.ui.MenuSeparatorRenderer = function() {
+  goog.ui.ControlRenderer.call(this)
+};
+goog.inherits(goog.ui.MenuSeparatorRenderer, goog.ui.ControlRenderer);
+goog.addSingletonGetter(goog.ui.MenuSeparatorRenderer);
+goog.ui.MenuSeparatorRenderer.CSS_CLASS = "goog-menuseparator";
+goog.ui.MenuSeparatorRenderer.prototype.createDom = function(a) {
+  return a.getDomHelper().createDom("div", this.getCssClass())
+};
+goog.ui.MenuSeparatorRenderer.prototype.decorate = function(a, b) {
+  b.id && a.setId(b.id);
+  if("HR" == b.tagName) {
+    var c = b;
+    b = this.createDom(a);
+    goog.dom.insertSiblingBefore(b, c);
+    goog.dom.removeNode(c)
+  }else {
+    goog.dom.classes.add(b, this.getCssClass())
+  }
+  return b
+};
+goog.ui.MenuSeparatorRenderer.prototype.setContent = function(a, b) {
+};
+goog.ui.MenuSeparatorRenderer.prototype.getCssClass = function() {
+  return goog.ui.MenuSeparatorRenderer.CSS_CLASS
+};
+goog.ui.Separator = function(a, b) {
+  goog.ui.Control.call(this, null, a || goog.ui.MenuSeparatorRenderer.getInstance(), b);
+  this.setSupportedState(goog.ui.Component.State.DISABLED, !1);
+  this.setSupportedState(goog.ui.Component.State.HOVER, !1);
+  this.setSupportedState(goog.ui.Component.State.ACTIVE, !1);
+  this.setSupportedState(goog.ui.Component.State.FOCUSED, !1);
+  this.setStateInternal(goog.ui.Component.State.DISABLED)
+};
+goog.inherits(goog.ui.Separator, goog.ui.Control);
+goog.ui.Separator.prototype.enterDocument = function() {
+  goog.ui.Separator.superClass_.enterDocument.call(this);
+  var a = this.getElement();
+  goog.asserts.assert(a, "The DOM element for the separator cannot be null.");
+  goog.a11y.aria.setRole(a, "separator")
+};
+goog.ui.registry.setDecoratorByClassName(goog.ui.MenuSeparatorRenderer.CSS_CLASS, function() {
+  return new goog.ui.Separator
+});
+goog.ui.ContainerRenderer = function() {
+};
+goog.addSingletonGetter(goog.ui.ContainerRenderer);
+goog.ui.ContainerRenderer.getCustomRenderer = function(a, b) {
+  var c = new a;
+  c.getCssClass = function() {
+    return b
+  };
+  return c
+};
+goog.ui.ContainerRenderer.CSS_CLASS = "goog-container";
+goog.ui.ContainerRenderer.prototype.getAriaRole = function() {
+};
+goog.ui.ContainerRenderer.prototype.enableTabIndex = function(a, b) {
+  a && (a.tabIndex = b ? 0 : -1)
+};
+goog.ui.ContainerRenderer.prototype.createDom = function(a) {
+  return a.getDomHelper().createDom("div", this.getClassNames(a).join(" "))
+};
+goog.ui.ContainerRenderer.prototype.getContentElement = function(a) {
+  return a
+};
+goog.ui.ContainerRenderer.prototype.canDecorate = function(a) {
+  return"DIV" == a.tagName
+};
+goog.ui.ContainerRenderer.prototype.decorate = function(a, b) {
+  b.id && a.setId(b.id);
+  var c = this.getCssClass(), d = !1, e = goog.dom.classes.get(b);
+  e && goog.array.forEach(e, function(b) {
+    b == c ? d = !0 : b && this.setStateFromClassName(a, b, c)
+  }, this);
+  d || goog.dom.classes.add(b, c);
+  this.decorateChildren(a, this.getContentElement(b));
+  return b
+};
+goog.ui.ContainerRenderer.prototype.setStateFromClassName = function(a, b, c) {
+  b == c + "-disabled" ? a.setEnabled(!1) : b == c + "-horizontal" ? a.setOrientation(goog.ui.Container.Orientation.HORIZONTAL) : b == c + "-vertical" && a.setOrientation(goog.ui.Container.Orientation.VERTICAL)
+};
+goog.ui.ContainerRenderer.prototype.decorateChildren = function(a, b, c) {
+  if(b) {
+    c = c || b.firstChild;
+    for(var d;c && c.parentNode == b;) {
+      d = c.nextSibling;
+      if(c.nodeType == goog.dom.NodeType.ELEMENT) {
+        var e = this.getDecoratorForChild(c);
+        e && (e.setElementInternal(c), a.isEnabled() || e.setEnabled(!1), a.addChild(e), e.decorate(c))
+      }else {
+        c.nodeValue && "" != goog.string.trim(c.nodeValue) || b.removeChild(c)
+      }
+      c = d
+    }
+  }
+};
+goog.ui.ContainerRenderer.prototype.getDecoratorForChild = function(a) {
+  return goog.ui.registry.getDecorator(a)
+};
+goog.ui.ContainerRenderer.prototype.initializeDom = function(a) {
+  a = a.getElement();
+  goog.asserts.assert(a, "The container DOM element cannot be null.");
+  goog.style.setUnselectable(a, !0, goog.userAgent.GECKO);
+  goog.userAgent.IE && (a.hideFocus = !0);
+  var b = this.getAriaRole();
+  b && goog.a11y.aria.setRole(a, b)
+};
+goog.ui.ContainerRenderer.prototype.getKeyEventTarget = function(a) {
+  return a.getElement()
+};
+goog.ui.ContainerRenderer.prototype.getCssClass = function() {
+  return goog.ui.ContainerRenderer.CSS_CLASS
+};
+goog.ui.ContainerRenderer.prototype.getClassNames = function(a) {
+  var b = this.getCssClass(), c = a.getOrientation() == goog.ui.Container.Orientation.HORIZONTAL, c = [b, c ? b + "-horizontal" : b + "-vertical"];
+  a.isEnabled() || c.push(b + "-disabled");
+  return c
+};
+goog.ui.ContainerRenderer.prototype.getDefaultOrientation = function() {
+  return goog.ui.Container.Orientation.VERTICAL
+};
+goog.ui.Container = function(a, b, c) {
+  goog.ui.Component.call(this, c);
+  this.renderer_ = b || goog.ui.ContainerRenderer.getInstance();
+  this.orientation_ = a || this.renderer_.getDefaultOrientation()
+};
+goog.inherits(goog.ui.Container, goog.ui.Component);
+goog.ui.Container.EventType = {AFTER_SHOW:"aftershow", AFTER_HIDE:"afterhide"};
+goog.ui.Container.Orientation = {HORIZONTAL:"horizontal", VERTICAL:"vertical"};
+goog.ui.Container.prototype.keyEventTarget_ = null;
+goog.ui.Container.prototype.keyHandler_ = null;
+goog.ui.Container.prototype.renderer_ = null;
+goog.ui.Container.prototype.orientation_ = null;
+goog.ui.Container.prototype.visible_ = !0;
+goog.ui.Container.prototype.enabled_ = !0;
+goog.ui.Container.prototype.focusable_ = !0;
+goog.ui.Container.prototype.highlightedIndex_ = -1;
+goog.ui.Container.prototype.openItem_ = null;
+goog.ui.Container.prototype.mouseButtonPressed_ = !1;
+goog.ui.Container.prototype.allowFocusableChildren_ = !1;
+goog.ui.Container.prototype.openFollowsHighlight_ = !0;
+goog.ui.Container.prototype.childElementIdMap_ = null;
+goog.ui.Container.prototype.getKeyEventTarget = function() {
+  return this.keyEventTarget_ || this.renderer_.getKeyEventTarget(this)
+};
+goog.ui.Container.prototype.setKeyEventTarget = function(a) {
+  if(this.focusable_) {
+    var b = this.getKeyEventTarget(), c = this.isInDocument();
+    this.keyEventTarget_ = a;
+    var d = this.getKeyEventTarget();
+    c && (this.keyEventTarget_ = b, this.enableFocusHandling_(!1), this.keyEventTarget_ = a, this.getKeyHandler().attach(d), this.enableFocusHandling_(!0))
+  }else {
+    throw Error("Can't set key event target for container that doesn't support keyboard focus!");
+  }
+};
+goog.ui.Container.prototype.getKeyHandler = function() {
+  return this.keyHandler_ || (this.keyHandler_ = new goog.events.KeyHandler(this.getKeyEventTarget()))
+};
+goog.ui.Container.prototype.getRenderer = function() {
+  return this.renderer_
+};
+goog.ui.Container.prototype.setRenderer = function(a) {
+  if(this.getElement()) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  this.renderer_ = a
+};
+goog.ui.Container.prototype.createDom = function() {
+  this.setElementInternal(this.renderer_.createDom(this))
+};
+goog.ui.Container.prototype.getContentElement = function() {
+  return this.renderer_.getContentElement(this.getElement())
+};
+goog.ui.Container.prototype.canDecorate = function(a) {
+  return this.renderer_.canDecorate(a)
+};
+goog.ui.Container.prototype.decorateInternal = function(a) {
+  this.setElementInternal(this.renderer_.decorate(this, a));
+  "none" == a.style.display && (this.visible_ = !1)
+};
+goog.ui.Container.prototype.enterDocument = function() {
+  goog.ui.Container.superClass_.enterDocument.call(this);
+  this.forEachChild(function(a) {
+    a.isInDocument() && this.registerChildId_(a)
+  }, this);
+  var a = this.getElement();
+  this.renderer_.initializeDom(this);
+  this.setVisible(this.visible_, !0);
+  this.getHandler().listen(this, goog.ui.Component.EventType.ENTER, this.handleEnterItem).listen(this, goog.ui.Component.EventType.HIGHLIGHT, this.handleHighlightItem).listen(this, goog.ui.Component.EventType.UNHIGHLIGHT, this.handleUnHighlightItem).listen(this, goog.ui.Component.EventType.OPEN, this.handleOpenItem).listen(this, goog.ui.Component.EventType.CLOSE, this.handleCloseItem).listen(a, goog.events.EventType.MOUSEDOWN, this.handleMouseDown).listen(goog.dom.getOwnerDocument(a), goog.events.EventType.MOUSEUP, 
+  this.handleDocumentMouseUp).listen(a, [goog.events.EventType.MOUSEDOWN, goog.events.EventType.MOUSEUP, goog.events.EventType.MOUSEOVER, goog.events.EventType.MOUSEOUT, goog.events.EventType.CONTEXTMENU], this.handleChildMouseEvents);
+  this.isFocusable() && this.enableFocusHandling_(!0)
+};
+goog.ui.Container.prototype.enableFocusHandling_ = function(a) {
+  var b = this.getHandler(), c = this.getKeyEventTarget();
+  a ? b.listen(c, goog.events.EventType.FOCUS, this.handleFocus).listen(c, goog.events.EventType.BLUR, this.handleBlur).listen(this.getKeyHandler(), goog.events.KeyHandler.EventType.KEY, this.handleKeyEvent) : b.unlisten(c, goog.events.EventType.FOCUS, this.handleFocus).unlisten(c, goog.events.EventType.BLUR, this.handleBlur).unlisten(this.getKeyHandler(), goog.events.KeyHandler.EventType.KEY, this.handleKeyEvent)
+};
+goog.ui.Container.prototype.exitDocument = function() {
+  this.setHighlightedIndex(-1);
+  this.openItem_ && this.openItem_.setOpen(!1);
+  this.mouseButtonPressed_ = !1;
+  goog.ui.Container.superClass_.exitDocument.call(this)
+};
+goog.ui.Container.prototype.disposeInternal = function() {
+  goog.ui.Container.superClass_.disposeInternal.call(this);
+  this.keyHandler_ && (this.keyHandler_.dispose(), this.keyHandler_ = null);
+  this.renderer_ = this.openItem_ = this.childElementIdMap_ = this.keyEventTarget_ = null
+};
+goog.ui.Container.prototype.handleEnterItem = function(a) {
+  return!0
+};
+goog.ui.Container.prototype.handleHighlightItem = function(a) {
+  var b = this.indexOfChild(a.target);
+  if(-1 < b && b != this.highlightedIndex_) {
+    var c = this.getHighlighted();
+    c && c.setHighlighted(!1);
+    this.highlightedIndex_ = b;
+    c = this.getHighlighted();
+    this.isMouseButtonPressed() && c.setActive(!0);
+    this.openFollowsHighlight_ && (this.openItem_ && c != this.openItem_) && (c.isSupportedState(goog.ui.Component.State.OPENED) ? c.setOpen(!0) : this.openItem_.setOpen(!1))
+  }
+  b = this.getElement();
+  goog.asserts.assert(b, "The DOM element for the container cannot be null.");
+  null != a.target.getElement() && goog.a11y.aria.setState(b, goog.a11y.aria.State.ACTIVEDESCENDANT, a.target.getElement().id)
+};
+goog.ui.Container.prototype.handleUnHighlightItem = function(a) {
+  a.target == this.getHighlighted() && (this.highlightedIndex_ = -1);
+  a = this.getElement();
+  goog.asserts.assert(a, "The DOM element for the container cannot be null.");
+  goog.a11y.aria.setState(a, goog.a11y.aria.State.ACTIVEDESCENDANT, "")
+};
+goog.ui.Container.prototype.handleOpenItem = function(a) {
+  (a = a.target) && (a != this.openItem_ && a.getParent() == this) && (this.openItem_ && this.openItem_.setOpen(!1), this.openItem_ = a)
+};
+goog.ui.Container.prototype.handleCloseItem = function(a) {
+  a.target == this.openItem_ && (this.openItem_ = null)
+};
+goog.ui.Container.prototype.handleMouseDown = function(a) {
+  this.enabled_ && this.setMouseButtonPressed(!0);
+  var b = this.getKeyEventTarget();
+  b && goog.dom.isFocusableTabIndex(b) ? b.focus() : a.preventDefault()
+};
+goog.ui.Container.prototype.handleDocumentMouseUp = function(a) {
+  this.setMouseButtonPressed(!1)
+};
+goog.ui.Container.prototype.handleChildMouseEvents = function(a) {
+  var b = this.getOwnerControl(a.target);
+  if(b) {
+    switch(a.type) {
+      case goog.events.EventType.MOUSEDOWN:
+        b.handleMouseDown(a);
+        break;
+      case goog.events.EventType.MOUSEUP:
+        b.handleMouseUp(a);
+        break;
+      case goog.events.EventType.MOUSEOVER:
+        b.handleMouseOver(a);
+        break;
+      case goog.events.EventType.MOUSEOUT:
+        b.handleMouseOut(a);
+        break;
+      case goog.events.EventType.CONTEXTMENU:
+        b.handleContextMenu(a)
+    }
+  }
+};
+goog.ui.Container.prototype.getOwnerControl = function(a) {
+  if(this.childElementIdMap_) {
+    for(var b = this.getElement();a && a !== b;) {
+      var c = a.id;
+      if(c in this.childElementIdMap_) {
+        return this.childElementIdMap_[c]
+      }
+      a = a.parentNode
+    }
+  }
+  return null
+};
+goog.ui.Container.prototype.handleFocus = function(a) {
+};
+goog.ui.Container.prototype.handleBlur = function(a) {
+  this.setHighlightedIndex(-1);
+  this.setMouseButtonPressed(!1);
+  this.openItem_ && this.openItem_.setOpen(!1)
+};
+goog.ui.Container.prototype.handleKeyEvent = function(a) {
+  return this.isEnabled() && this.isVisible() && (0 != this.getChildCount() || this.keyEventTarget_) && this.handleKeyEventInternal(a) ? (a.preventDefault(), a.stopPropagation(), !0) : !1
+};
+goog.ui.Container.prototype.handleKeyEventInternal = function(a) {
+  var b = this.getHighlighted();
+  if(b && "function" == typeof b.handleKeyEvent && b.handleKeyEvent(a) || this.openItem_ && this.openItem_ != b && "function" == typeof this.openItem_.handleKeyEvent && this.openItem_.handleKeyEvent(a)) {
+    return!0
+  }
+  if(a.shiftKey || a.ctrlKey || a.metaKey || a.altKey) {
+    return!1
+  }
+  switch(a.keyCode) {
+    case goog.events.KeyCodes.ESC:
+      if(this.isFocusable()) {
+        this.getKeyEventTarget().blur()
+      }else {
+        return!1
+      }
+      break;
+    case goog.events.KeyCodes.HOME:
+      this.highlightFirst();
+      break;
+    case goog.events.KeyCodes.END:
+      this.highlightLast();
+      break;
+    case goog.events.KeyCodes.UP:
+      if(this.orientation_ == goog.ui.Container.Orientation.VERTICAL) {
+        this.highlightPrevious()
+      }else {
+        return!1
+      }
+      break;
+    case goog.events.KeyCodes.LEFT:
+      if(this.orientation_ == goog.ui.Container.Orientation.HORIZONTAL) {
+        this.isRightToLeft() ? this.highlightNext() : this.highlightPrevious()
+      }else {
+        return!1
+      }
+      break;
+    case goog.events.KeyCodes.DOWN:
+      if(this.orientation_ == goog.ui.Container.Orientation.VERTICAL) {
+        this.highlightNext()
+      }else {
+        return!1
+      }
+      break;
+    case goog.events.KeyCodes.RIGHT:
+      if(this.orientation_ == goog.ui.Container.Orientation.HORIZONTAL) {
+        this.isRightToLeft() ? this.highlightPrevious() : this.highlightNext()
+      }else {
+        return!1
+      }
+      break;
+    default:
+      return!1
+  }
+  return!0
+};
+goog.ui.Container.prototype.registerChildId_ = function(a) {
+  var b = a.getElement(), b = b.id || (b.id = a.getId());
+  this.childElementIdMap_ || (this.childElementIdMap_ = {});
+  this.childElementIdMap_[b] = a
+};
+goog.ui.Container.prototype.addChild = function(a, b) {
+  goog.asserts.assertInstanceof(a, goog.ui.Control, "The child of a container must be a control");
+  goog.ui.Container.superClass_.addChild.call(this, a, b)
+};
+goog.ui.Container.prototype.addChildAt = function(a, b, c) {
+  a.setDispatchTransitionEvents(goog.ui.Component.State.HOVER, !0);
+  a.setDispatchTransitionEvents(goog.ui.Component.State.OPENED, !0);
+  !this.isFocusable() && this.isFocusableChildrenAllowed() || a.setSupportedState(goog.ui.Component.State.FOCUSED, !1);
+  a.setHandleMouseEvents(!1);
+  goog.ui.Container.superClass_.addChildAt.call(this, a, b, c);
+  a.isInDocument() && this.isInDocument() && this.registerChildId_(a);
+  b <= this.highlightedIndex_ && this.highlightedIndex_++
+};
+goog.ui.Container.prototype.removeChild = function(a, b) {
+  if(a = goog.isString(a) ? this.getChild(a) : a) {
+    var c = this.indexOfChild(a);
+    -1 != c && (c == this.highlightedIndex_ ? a.setHighlighted(!1) : c < this.highlightedIndex_ && this.highlightedIndex_--);
+    (c = a.getElement()) && (c.id && this.childElementIdMap_) && goog.object.remove(this.childElementIdMap_, c.id)
+  }
+  a = goog.ui.Container.superClass_.removeChild.call(this, a, b);
+  a.setHandleMouseEvents(!0);
+  return a
+};
+goog.ui.Container.prototype.getOrientation = function() {
+  return this.orientation_
+};
+goog.ui.Container.prototype.setOrientation = function(a) {
+  if(this.getElement()) {
+    throw Error(goog.ui.Component.Error.ALREADY_RENDERED);
+  }
+  this.orientation_ = a
+};
+goog.ui.Container.prototype.isVisible = function() {
+  return this.visible_
+};
+goog.ui.Container.prototype.setVisible = function(a, b) {
+  if(b || this.visible_ != a && this.dispatchEvent(a ? goog.ui.Component.EventType.SHOW : goog.ui.Component.EventType.HIDE)) {
+    this.visible_ = a;
+    var c = this.getElement();
+    c && (goog.style.showElement(c, a), this.isFocusable() && this.renderer_.enableTabIndex(this.getKeyEventTarget(), this.enabled_ && this.visible_), b || this.dispatchEvent(this.visible_ ? goog.ui.Container.EventType.AFTER_SHOW : goog.ui.Container.EventType.AFTER_HIDE));
+    return!0
+  }
+  return!1
+};
+goog.ui.Container.prototype.isEnabled = function() {
+  return this.enabled_
+};
+goog.ui.Container.prototype.setEnabled = function(a) {
+  this.enabled_ != a && this.dispatchEvent(a ? goog.ui.Component.EventType.ENABLE : goog.ui.Component.EventType.DISABLE) && (a ? (this.enabled_ = !0, this.forEachChild(function(a) {
+    a.wasDisabled ? delete a.wasDisabled : a.setEnabled(!0)
+  })) : (this.forEachChild(function(a) {
+    a.isEnabled() ? a.setEnabled(!1) : a.wasDisabled = !0
+  }), this.enabled_ = !1, this.setMouseButtonPressed(!1)), this.isFocusable() && this.renderer_.enableTabIndex(this.getKeyEventTarget(), a && this.visible_))
+};
+goog.ui.Container.prototype.isFocusable = function() {
+  return this.focusable_
+};
+goog.ui.Container.prototype.setFocusable = function(a) {
+  a != this.focusable_ && this.isInDocument() && this.enableFocusHandling_(a);
+  this.focusable_ = a;
+  this.enabled_ && this.visible_ && this.renderer_.enableTabIndex(this.getKeyEventTarget(), a)
+};
+goog.ui.Container.prototype.isFocusableChildrenAllowed = function() {
+  return this.allowFocusableChildren_
+};
+goog.ui.Container.prototype.setFocusableChildrenAllowed = function(a) {
+  this.allowFocusableChildren_ = a
+};
+goog.ui.Container.prototype.isOpenFollowsHighlight = function() {
+  return this.openFollowsHighlight_
+};
+goog.ui.Container.prototype.setOpenFollowsHighlight = function(a) {
+  this.openFollowsHighlight_ = a
+};
+goog.ui.Container.prototype.getHighlightedIndex = function() {
+  return this.highlightedIndex_
+};
+goog.ui.Container.prototype.setHighlightedIndex = function(a) {
+  (a = this.getChildAt(a)) ? a.setHighlighted(!0) : -1 < this.highlightedIndex_ && this.getHighlighted().setHighlighted(!1)
+};
+goog.ui.Container.prototype.setHighlighted = function(a) {
+  this.setHighlightedIndex(this.indexOfChild(a))
+};
+goog.ui.Container.prototype.getHighlighted = function() {
+  return this.getChildAt(this.highlightedIndex_)
+};
+goog.ui.Container.prototype.highlightFirst = function() {
+  this.highlightHelper(function(a, b) {
+    return(a + 1) % b
+  }, this.getChildCount() - 1)
+};
+goog.ui.Container.prototype.highlightLast = function() {
+  this.highlightHelper(function(a, b) {
+    a--;
+    return 0 > a ? b - 1 : a
+  }, 0)
+};
+goog.ui.Container.prototype.highlightNext = function() {
+  this.highlightHelper(function(a, b) {
+    return(a + 1) % b
+  }, this.highlightedIndex_)
+};
+goog.ui.Container.prototype.highlightPrevious = function() {
+  this.highlightHelper(function(a, b) {
+    a--;
+    return 0 > a ? b - 1 : a
+  }, this.highlightedIndex_)
+};
+goog.ui.Container.prototype.highlightHelper = function(a, b) {
+  for(var c = 0 > b ? this.indexOfChild(this.openItem_) : b, d = this.getChildCount(), c = a.call(this, c, d), e = 0;e <= d;) {
+    var f = this.getChildAt(c);
+    if(f && this.canHighlightItem(f)) {
+      return this.setHighlightedIndexFromKeyEvent(c), !0
+    }
+    e++;
+    c = a.call(this, c, d)
+  }
+  return!1
+};
+goog.ui.Container.prototype.canHighlightItem = function(a) {
+  return a.isVisible() && a.isEnabled() && a.isSupportedState(goog.ui.Component.State.HOVER)
+};
+goog.ui.Container.prototype.setHighlightedIndexFromKeyEvent = function(a) {
+  this.setHighlightedIndex(a)
+};
+goog.ui.Container.prototype.getOpenItem = function() {
+  return this.openItem_
+};
+goog.ui.Container.prototype.isMouseButtonPressed = function() {
+  return this.mouseButtonPressed_
+};
+goog.ui.Container.prototype.setMouseButtonPressed = function(a) {
+  this.mouseButtonPressed_ = a
+};
+goog.ui.MenuHeaderRenderer = function() {
+  goog.ui.ControlRenderer.call(this)
+};
+goog.inherits(goog.ui.MenuHeaderRenderer, goog.ui.ControlRenderer);
+goog.addSingletonGetter(goog.ui.MenuHeaderRenderer);
+goog.ui.MenuHeaderRenderer.CSS_CLASS = "goog-menuheader";
+goog.ui.MenuHeaderRenderer.prototype.getCssClass = function() {
+  return goog.ui.MenuHeaderRenderer.CSS_CLASS
+};
+goog.ui.MenuHeader = function(a, b, c) {
+  goog.ui.Control.call(this, a, c || goog.ui.MenuHeaderRenderer.getInstance(), b);
+  this.setSupportedState(goog.ui.Component.State.DISABLED, !1);
+  this.setSupportedState(goog.ui.Component.State.HOVER, !1);
+  this.setSupportedState(goog.ui.Component.State.ACTIVE, !1);
+  this.setSupportedState(goog.ui.Component.State.FOCUSED, !1);
+  this.setStateInternal(goog.ui.Component.State.DISABLED)
+};
+goog.inherits(goog.ui.MenuHeader, goog.ui.Control);
+goog.ui.registry.setDecoratorByClassName(goog.ui.MenuHeaderRenderer.CSS_CLASS, function() {
+  return new goog.ui.MenuHeader(null)
+});
+goog.ui.MenuItem = function(a, b, c, d) {
+  goog.ui.Control.call(this, a, d || goog.ui.MenuItemRenderer.getInstance(), c);
+  this.setValue(b)
+};
+goog.inherits(goog.ui.MenuItem, goog.ui.Control);
+goog.ui.MenuItem.MNEMONIC_WRAPPER_CLASS_ = "goog-menuitem-mnemonic-separator";
+goog.ui.MenuItem.ACCELERATOR_CLASS_ = "goog-menuitem-accel";
+goog.ui.MenuItem.prototype.getValue = function() {
+  var a = this.getModel();
+  return null != a ? a : this.getCaption()
+};
+goog.ui.MenuItem.prototype.setValue = function(a) {
+  this.setModel(a)
+};
+goog.ui.MenuItem.prototype.setSelectable = function(a) {
+  this.setSupportedState(goog.ui.Component.State.SELECTED, a);
+  this.isChecked() && !a && this.setChecked(!1);
+  var b = this.getElement();
+  b && this.getRenderer().setSelectable(this, b, a)
+};
+goog.ui.MenuItem.prototype.setCheckable = function(a) {
+  this.setSupportedState(goog.ui.Component.State.CHECKED, a);
+  var b = this.getElement();
+  b && this.getRenderer().setCheckable(this, b, a)
+};
+goog.ui.MenuItem.prototype.getCaption = function() {
+  var a = this.getContent();
+  if(goog.isArray(a)) {
+    var b = goog.ui.MenuItem.ACCELERATOR_CLASS_, c = goog.ui.MenuItem.MNEMONIC_WRAPPER_CLASS_, a = goog.array.map(a, function(a) {
+      var e = goog.dom.classes.get(a);
+      return goog.array.contains(e, b) || goog.array.contains(e, c) ? "" : goog.dom.getRawTextContent(a)
+    }).join("");
+    return goog.string.collapseBreakingSpaces(a)
+  }
+  return goog.ui.MenuItem.superClass_.getCaption.call(this)
+};
+goog.ui.MenuItem.prototype.handleMouseUp = function(a) {
+  var b = this.getParent();
+  if(b) {
+    var c = b.openingCoords;
+    b.openingCoords = null;
+    if(c && goog.isNumber(a.clientX) && (b = new goog.math.Coordinate(a.clientX, a.clientY), goog.math.Coordinate.equals(c, b))) {
+      return
+    }
+  }
+  goog.ui.MenuItem.superClass_.handleMouseUp.call(this, a)
+};
+goog.ui.MenuItem.prototype.handleKeyEventInternal = function(a) {
+  return a.keyCode == this.getMnemonic() && this.performActionInternal(a) ? !0 : goog.ui.MenuItem.superClass_.handleKeyEventInternal.call(this, a)
+};
+goog.ui.MenuItem.prototype.setMnemonic = function(a) {
+  this.mnemonicKey_ = a
+};
+goog.ui.MenuItem.prototype.getMnemonic = function() {
+  return this.mnemonicKey_
+};
+goog.ui.registry.setDecoratorByClassName(goog.ui.MenuItemRenderer.CSS_CLASS, function() {
+  return new goog.ui.MenuItem(null)
+});
+goog.ui.MenuRenderer = function() {
+  goog.ui.ContainerRenderer.call(this)
+};
+goog.inherits(goog.ui.MenuRenderer, goog.ui.ContainerRenderer);
+goog.addSingletonGetter(goog.ui.MenuRenderer);
+goog.ui.MenuRenderer.CSS_CLASS = "goog-menu";
+goog.ui.MenuRenderer.prototype.getAriaRole = function() {
+  return goog.a11y.aria.Role.MENU
+};
+goog.ui.MenuRenderer.prototype.canDecorate = function(a) {
+  return"UL" == a.tagName || goog.ui.MenuRenderer.superClass_.canDecorate.call(this, a)
+};
+goog.ui.MenuRenderer.prototype.getDecoratorForChild = function(a) {
+  return"HR" == a.tagName ? new goog.ui.Separator : goog.ui.MenuRenderer.superClass_.getDecoratorForChild.call(this, a)
+};
+goog.ui.MenuRenderer.prototype.containsElement = function(a, b) {
+  return goog.dom.contains(a.getElement(), b)
+};
+goog.ui.MenuRenderer.prototype.getCssClass = function() {
+  return goog.ui.MenuRenderer.CSS_CLASS
+};
+goog.ui.MenuRenderer.prototype.initializeDom = function(a) {
+  goog.ui.MenuRenderer.superClass_.initializeDom.call(this, a);
+  a = a.getElement();
+  goog.asserts.assert(a, "The menu DOM element cannot be null.");
+  goog.a11y.aria.setState(a, goog.a11y.aria.State.HASPOPUP, "true")
+};
+goog.ui.MenuSeparator = function(a) {
+  goog.ui.Separator.call(this, goog.ui.MenuSeparatorRenderer.getInstance(), a)
+};
+goog.inherits(goog.ui.MenuSeparator, goog.ui.Separator);
+goog.ui.registry.setDecoratorByClassName(goog.ui.MenuSeparatorRenderer.CSS_CLASS, function() {
+  return new goog.ui.Separator
+});
+goog.ui.Menu = function(a, b) {
+  goog.ui.Container.call(this, goog.ui.Container.Orientation.VERTICAL, b || goog.ui.MenuRenderer.getInstance(), a);
+  this.setFocusable(!1)
+};
+goog.inherits(goog.ui.Menu, goog.ui.Container);
+goog.ui.Menu.EventType = {BEFORE_SHOW:goog.ui.Component.EventType.BEFORE_SHOW, SHOW:goog.ui.Component.EventType.SHOW, BEFORE_HIDE:goog.ui.Component.EventType.HIDE, HIDE:goog.ui.Component.EventType.HIDE};
+goog.ui.Menu.CSS_CLASS = goog.ui.MenuRenderer.CSS_CLASS;
+goog.ui.Menu.prototype.allowAutoFocus_ = !0;
+goog.ui.Menu.prototype.allowHighlightDisabled_ = !1;
+goog.ui.Menu.prototype.getCssClass = function() {
+  return this.getRenderer().getCssClass()
+};
+goog.ui.Menu.prototype.containsElement = function(a) {
+  if(this.getRenderer().containsElement(this, a)) {
+    return!0
+  }
+  for(var b = 0, c = this.getChildCount();b < c;b++) {
+    var d = this.getChildAt(b);
+    if("function" == typeof d.containsElement && d.containsElement(a)) {
+      return!0
+    }
+  }
+  return!1
+};
+goog.ui.Menu.prototype.addItem = function(a) {
+  this.addChild(a, !0)
+};
+goog.ui.Menu.prototype.addItemAt = function(a, b) {
+  this.addChildAt(a, b, !0)
+};
+goog.ui.Menu.prototype.removeItem = function(a) {
+  (a = this.removeChild(a, !0)) && a.dispose()
+};
+goog.ui.Menu.prototype.removeItemAt = function(a) {
+  (a = this.removeChildAt(a, !0)) && a.dispose()
+};
+goog.ui.Menu.prototype.getItemAt = function(a) {
+  return this.getChildAt(a)
+};
+goog.ui.Menu.prototype.getItemCount = function() {
+  return this.getChildCount()
+};
+goog.ui.Menu.prototype.getItems = function() {
+  var a = [];
+  this.forEachChild(function(b) {
+    a.push(b)
+  });
+  return a
+};
+goog.ui.Menu.prototype.setPosition = function(a, b) {
+  var c = this.isVisible();
+  c || goog.style.showElement(this.getElement(), !0);
+  goog.style.setPageOffset(this.getElement(), a, b);
+  c || goog.style.showElement(this.getElement(), !1)
+};
+goog.ui.Menu.prototype.getPosition = function() {
+  return this.isVisible() ? goog.style.getPageOffset(this.getElement()) : null
+};
+goog.ui.Menu.prototype.setAllowAutoFocus = function(a) {
+  (this.allowAutoFocus_ = a) && this.setFocusable(!0)
+};
+goog.ui.Menu.prototype.getAllowAutoFocus = function() {
+  return this.allowAutoFocus_
+};
+goog.ui.Menu.prototype.setAllowHighlightDisabled = function(a) {
+  this.allowHighlightDisabled_ = a
+};
+goog.ui.Menu.prototype.getAllowHighlightDisabled = function() {
+  return this.allowHighlightDisabled_
+};
+goog.ui.Menu.prototype.setVisible = function(a, b, c) {
+  (b = goog.ui.Menu.superClass_.setVisible.call(this, a, b)) && (a && this.isInDocument() && this.allowAutoFocus_) && this.getKeyEventTarget().focus();
+  a && c && goog.isNumber(c.clientX) ? this.openingCoords = new goog.math.Coordinate(c.clientX, c.clientY) : this.openingCoords = null;
+  return b
+};
+goog.ui.Menu.prototype.handleEnterItem = function(a) {
+  this.allowAutoFocus_ && this.getKeyEventTarget().focus();
+  return goog.ui.Menu.superClass_.handleEnterItem.call(this, a)
+};
+goog.ui.Menu.prototype.highlightNextPrefix = function(a) {
+  var b = RegExp("^" + goog.string.regExpEscape(a), "i");
+  return this.highlightHelper(function(a, d) {
+    var e = 0 > a ? 0 : a, f = !1;
+    do {
+      ++a;
+      a == d && (a = 0, f = !0);
+      var g = this.getChildAt(a).getCaption();
+      if(g && g.match(b)) {
+        return a
+      }
+    }while(!f || a != e);
+    return this.getHighlightedIndex()
+  }, this.getHighlightedIndex())
+};
+goog.ui.Menu.prototype.canHighlightItem = function(a) {
+  return(this.allowHighlightDisabled_ || a.isEnabled()) && a.isVisible() && a.isSupportedState(goog.ui.Component.State.HOVER)
+};
+goog.ui.Menu.prototype.decorateInternal = function(a) {
+  this.decorateContent(a);
+  goog.ui.Menu.superClass_.decorateInternal.call(this, a)
+};
+goog.ui.Menu.prototype.handleKeyEventInternal = function(a) {
+  var b = goog.ui.Menu.superClass_.handleKeyEventInternal.call(this, a);
+  b || this.forEachChild(function(c) {
+    !b && (c.getMnemonic && c.getMnemonic() == a.keyCode) && (this.isEnabled() && this.setHighlighted(c), b = c.handleKeyEvent(a))
+  }, this);
+  return b
+};
+goog.ui.Menu.prototype.setHighlightedIndex = function(a) {
+  goog.ui.Menu.superClass_.setHighlightedIndex.call(this, a);
+  (a = this.getChildAt(a)) && goog.style.scrollIntoContainerView(a.getElement(), this.getElement())
+};
+goog.ui.Menu.prototype.decorateContent = function(a) {
+  var b = this.getRenderer();
+  a = this.getDomHelper().getElementsByTagNameAndClass("div", b.getCssClass() + "-content", a);
+  for(var c = a.length, d = 0;d < c;d++) {
+    b.decorateChildren(this, a[d])
+  }
+};
+mvc.browser.string = {};
+mvc.browser.string.compare_versions = goog.string.compareVersions;
+mvc.browser.string.to_map = goog.string.toMap;
+mvc.browser.string.trim = goog.string.trim;
+mvc.browser.string.quot_re_ = goog.string.quotRe_;
+mvc.browser.string.is_empty = goog.string.isEmpty;
+mvc.browser.string.is_numeric = goog.string.isNumeric;
+mvc.browser.string.compare_elements_ = goog.string.compareElements_;
+mvc.browser.string.remove = goog.string.remove;
+mvc.browser.string.to_number = goog.string.toNumber;
+mvc.browser.string.lt_re_ = goog.string.ltRe_;
+mvc.browser.string.case_insensitive_compare = goog.string.caseInsensitiveCompare;
+mvc.browser.string.url_encode = goog.string.urlEncode;
+mvc.browser.string.unique_string_counter_ = goog.string.uniqueStringCounter_;
+mvc.browser.string.numerate_compare = goog.string.numerateCompare;
+mvc.browser.string.truncate = goog.string.truncate;
+mvc.browser.string.unescape_entities_using_dom_ = goog.string.unescapeEntitiesUsingDom_;
+mvc.browser.string.count_of = goog.string.countOf;
+mvc.browser.string.js_escape_cache_ = goog.string.jsEscapeCache_;
+mvc.browser.string.is_unicode_char = goog.string.isUnicodeChar;
+mvc.browser.string.trim_left = goog.string.trimLeft;
+mvc.browser.string.is_breaking_whitespace = goog.string.isBreakingWhitespace;
+mvc.browser.string.get_random_string = goog.string.getRandomString;
+mvc.browser.string.normalize_whitespace = goog.string.normalizeWhitespace;
+mvc.browser.string.to_selector_case = goog.string.toSelectorCase;
+mvc.browser.string.collapse_whitespace = goog.string.collapseWhitespace;
+mvc.browser.string.reg_exp_escape = goog.string.regExpEscape;
+mvc.browser.string.to_camel_case = goog.string.toCamelCase;
+mvc.browser.string.all_re_ = goog.string.allRe_;
+mvc.browser.string.html_escape = goog.string.htmlEscape;
+mvc.browser.string.to_title_case = goog.string.toTitleCase;
+mvc.browser.string.strip_quotes = goog.string.stripQuotes;
+mvc.browser.string.is_empty_safe = goog.string.isEmptySafe;
+mvc.browser.string.numerate_compare_reg_exp_ = goog.string.numerateCompareRegExp_;
+mvc.browser.string.escape_string = goog.string.escapeString;
+mvc.browser.string.subs = goog.string.subs;
+mvc.browser.string.is_alpha = goog.string.isAlpha;
+mvc.browser.string.strip_newlines = goog.string.stripNewlines;
+mvc.browser.string.starts_with = goog.string.startsWith;
+mvc.browser.string.HTML_ENTITY_PATTERN_ = goog.string.HTML_ENTITY_PATTERN_;
+mvc.browser.string.escape_char = goog.string.escapeChar;
+mvc.browser.string.remove_at = goog.string.removeAt;
+mvc.browser.string.case_insensitive_starts_with = goog.string.caseInsensitiveStartsWith;
+mvc.browser.string.unescape_pure_xml_entities_ = goog.string.unescapePureXmlEntities_;
+mvc.browser.string.is_alpha_numeric = goog.string.isAlphaNumeric;
+mvc.browser.string.normalize_spaces = goog.string.normalizeSpaces;
+mvc.browser.string.trim_right = goog.string.trimRight;
+mvc.browser.string.hash_code = goog.string.hashCode;
+mvc.browser.string.amper_re_ = goog.string.amperRe_;
+mvc.browser.string.repeat = goog.string.repeat;
+mvc.browser.string.unescape_entities = goog.string.unescapeEntities;
+mvc.browser.string.make_safe = goog.string.makeSafe;
+mvc.browser.string.truncate_middle = goog.string.truncateMiddle;
+mvc.browser.string.parse_int = goog.string.parseInt;
+mvc.browser.string.pad_number = goog.string.padNumber;
+mvc.browser.string.is_space = goog.string.isSpace;
+mvc.browser.string.quote = goog.string.quote;
+mvc.browser.string.special_escape_chars_ = goog.string.specialEscapeChars_;
+mvc.browser.string.url_decode = goog.string.urlDecode;
+mvc.browser.string.collapse_breaking_spaces = goog.string.collapseBreakingSpaces;
+mvc.browser.string.remove_all = goog.string.removeAll;
+mvc.browser.string.Unicode = goog.string.Unicode;
+mvc.browser.string.whitespace_escape = goog.string.whitespaceEscape;
+mvc.browser.string.create_unique_string = goog.string.createUniqueString;
+mvc.browser.string.ends_with = goog.string.endsWith;
+mvc.browser.string.build_string = goog.string.buildString;
+mvc.browser.string.gt_re_ = goog.string.gtRe_;
+mvc.browser.string.case_insensitive_ends_with = goog.string.caseInsensitiveEndsWith;
+mvc.browser.string.canonicalize_newlines = goog.string.canonicalizeNewlines;
+mvc.browser.string.HASHCODE_MAX_ = goog.string.HASHCODE_MAX_;
+mvc.browser.string.contains = goog.string.contains;
+mvc.browser.string.new_line_to_br = goog.string.newLineToBr;
+mvc.browser.string.clojurify = function(a) {
+  return cljs.core.keyword.call(null, mvc.browser.string.to_selector_case.call(null, a))
+};
+mvc.browser.core = {};
+mvc.browser.core.contains_key = goog.object.containsKey;
+mvc.browser.core.add = goog.object.add;
+mvc.browser.core.set = goog.object.set;
+mvc.browser.core.is_empty = goog.object.isEmpty;
+mvc.browser.core.remove = goog.object.remove;
+mvc.browser.core.create_set = goog.object.createSet;
+mvc.browser.core.find_key = goog.object.findKey;
+mvc.browser.core.get_value_by_keys = goog.object.getValueByKeys;
+mvc.browser.core.PROTOTYPE_FIELDS_ = goog.object.PROTOTYPE_FIELDS_;
+mvc.browser.core.get_any_key = goog.object.getAnyKey;
+mvc.browser.core.get_keys = goog.object.getKeys;
+mvc.browser.core.for_each = goog.object.forEach;
+mvc.browser.core.create_immutable_view = goog.object.createImmutableView;
+mvc.browser.core.clear = goog.object.clear;
+mvc.browser.core.set_if_undefined = goog.object.setIfUndefined;
+mvc.browser.core.contains_value = goog.object.containsValue;
+mvc.browser.core.some = goog.object.some;
+mvc.browser.core.get = goog.object.get;
+mvc.browser.core.unsafe_clone = goog.object.unsafeClone;
+mvc.browser.core.get_values = goog.object.getValues;
+mvc.browser.core.find_value = goog.object.findValue;
+mvc.browser.core.filter = goog.object.filter;
+mvc.browser.core.transpose = goog.object.transpose;
+mvc.browser.core.get_count = goog.object.getCount;
+mvc.browser.core.extend = goog.object.extend;
+mvc.browser.core.get_any_value = goog.object.getAnyValue;
+mvc.browser.core.every = goog.object.every;
+mvc.browser.core.create = goog.object.create;
+mvc.browser.core.map = goog.object.map;
+mvc.browser.core.clone = goog.object.clone;
+mvc.browser.core.is_immutable_view = goog.object.isImmutableView;
+mvc.browser.core.contains = goog.object.contains;
+mvc.browser.core.serialize = goog.json.serialize;
+mvc.browser.core.unsafe_parse = goog.json.unsafeParse;
+mvc.browser.core.is_valid_ = goog.json.isValid_;
+mvc.browser.core.Serializer = goog.json.Serializer;
+mvc.browser.core.parse = goog.json.parse;
+mvc.browser.core.Reviver = goog.json.Reviver;
+mvc.browser.core.Replacer = goog.json.Replacer;
+mvc.browser.core.WORD_BREAK_HTML = goog.format.WORD_BREAK_HTML;
+mvc.browser.core.FIRST_GRAPHEME_EXTEND_ = goog.format.FIRST_GRAPHEME_EXTEND_;
+mvc.browser.core.NUMERIC_SCALES_SI_ = goog.format.NUMERIC_SCALES_SI_;
+mvc.browser.core.is_convertable_scaled_number = goog.format.isConvertableScaledNumber;
+mvc.browser.core.IS_IE8_OR_ABOVE_ = goog.format.IS_IE8_OR_ABOVE_;
+mvc.browser.core.WbrToken_ = goog.format.WbrToken_;
+mvc.browser.core.conservatively_has_grapheme_break_ = goog.format.conservativelyHasGraphemeBreak_;
+mvc.browser.core.numeric_value_to_string_ = goog.format.numericValueToString_;
+mvc.browser.core.string_to_numeric_value_ = goog.format.stringToNumericValue_;
+mvc.browser.core.numeric_value_to_string = goog.format.numericValueToString;
+mvc.browser.core.string_to_numeric_value = goog.format.stringToNumericValue;
+mvc.browser.core.num_bytes_to_string = goog.format.numBytesToString;
+mvc.browser.core.string_to_num_bytes = goog.format.stringToNumBytes;
+mvc.browser.core.SCALED_NUMERIC_RE_ = goog.format.SCALED_NUMERIC_RE_;
+mvc.browser.core.insert_word_breaks = goog.format.insertWordBreaks;
+mvc.browser.core.insert_word_breaks_basic = goog.format.insertWordBreaksBasic;
+mvc.browser.core.NUMERIC_SCALE_PREFIXES_ = goog.format.NUMERIC_SCALE_PREFIXES_;
+mvc.browser.core.NUMERIC_SCALES_BINARY_ = goog.format.NUMERIC_SCALES_BINARY_;
+mvc.browser.core.is_treated_as_breaking_space_ = goog.format.isTreatedAsBreakingSpace_;
+mvc.browser.core.file_size = goog.format.fileSize;
+mvc.browser.core.is_invisible_formatting_character_ = goog.format.isInvisibleFormattingCharacter_;
+mvc.browser.core.insert_word_breaks_generic_ = goog.format.insertWordBreaksGeneric_;
 mvc.browser.core.immutable_QMARK_ = function(a) {
   return mvc.browser.core.is_immutable_view.call(null, a)
 };
 mvc.browser.core.inherits = function(a, b) {
   return goog.inherits(a, b)
 };
+mvc.browser.core.extend_BANG_ = function() {
+  var a = null, b = function(b) {
+    return a.call(null, {}, b)
+  }, c = function(a, b) {
+    mvc.browser.core.extend.call(null, a, b);
+    return a
+  }, a = function(a, e) {
+    switch(arguments.length) {
+      case 1:
+        return b.call(this, a);
+      case 2:
+        return c.call(this, a, e)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$1 = b;
+  a.cljs$core$IFn$_invoke$arity$2 = c;
+  return a
+}();
+mvc.browser.core.clone_js = function(a) {
+  return cljs.core.js__GT_clj.call(null, mvc.browser.core.clone.call(null, a), "\ufdd0:keywordize-keys", !0)
+};
+mvc.browser.core.immutable = function(a) {
+  a = mvc.browser.core.extend_BANG_.call(null, a);
+  return mvc.browser.core.create_immutable_view.call(null, a)
+};
+mvc.browser.core.js_vals = function(a) {
+  var b = [];
+  goog.object.forEach(a, function(a, d, e) {
+    return b.push(a)
+  });
+  return b
+};
+mvc.browser.core.js_kvs = function(a) {
+  var b = [];
+  goog.object.forEach(a, function(a, d, e) {
+    b.push(goog.string.toSelectorCase(d));
+    return b.push(a)
+  });
+  return b
+};
+mvc.browser.core.object_QMARK_ = goog.isObject;
+mvc.browser.core.array_like_QMARK_ = goog.isArrayLike;
+mvc.browser.core.persistent_object = function() {
+  var a = null, b = function(b) {
+    return a.call(null, b, cljs.core.PersistentArrayMap.fromArray(["\ufdd0:clojurify-keys", !0], !0))
+  }, c = function(a, b) {
+    var c = cljs.core.seq_QMARK_.call(null, b) ? cljs.core.apply.call(null, cljs.core.hash_map, b) : b;
+    cljs.core.get.call(null, c, "\ufdd0:clojurify-keys");
+    var g = cljs.core.transient$.call(null, cljs.core.PersistentHashMap.EMPTY);
+    goog.object.forEach(a, function(a, b, c) {
+      return cljs.core.assoc_BANG_.call(null, g, b, a)
+    });
+    return cljs.core.persistent_BANG_.call(null, g)
+  }, a = function(a, e) {
+    switch(arguments.length) {
+      case 1:
+        return b.call(this, a);
+      case 2:
+        return c.call(this, a, e)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$1 = b;
+  a.cljs$core$IFn$_invoke$arity$2 = c;
+  return a
+}();
+mvc.browser.core.immutable_BANG_ = function() {
+  var a = null, b = function() {
+    return a.call(null, {})
+  }, c = function(a) {
+    var b = mvc.browser.core.immutable.call(null, a);
+    return cljs.core.atom.call(null, b, "\ufdd0:meta", cljs.core.PersistentArrayMap.fromArray(["\ufdd0:mutable", a], !0), "\ufdd0:validator", function(a) {
+      return!0
+    })
+  }, a = function(a) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      case 1:
+        return c.call(this, a)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$1 = c;
+  return a
+}();
 mvc.impl.agent = {};
 mvc.impl.agent._STAR_agent_STAR_ = null;
 mvc.impl.agent._STAR_agent_pool_STAR_ = null;
 mvc.impl.agent.queue = function() {
   var a = null, b = function() {
-    return PersistentQueue.EMPTY
+    return cljs.core.PersistentQueue.EMPTY
   }, c = function() {
     var a = function(a) {
       if(cljs.core.truth_(cljs.core.first.call(null, a))) {
@@ -27374,142 +27257,39 @@ mvc.impl.agent.queue = function() {
   a.cljs$core$IFn$_invoke$arity$variadic = c.cljs$core$IFn$_invoke$arity$variadic;
   return a
 }();
-mvc.impl.agent.DerefChannel = function(a, b, c, d, e, f, g, h, k) {
-  this.takes = a;
-  this.dirty_takes = b;
-  this.puts = c;
-  this.dirty_puts = d;
-  this.buf = e;
-  this.closed = f;
-  this.state = g;
-  this.meta = h;
-  this.action_queue = k;
-  this.cljs$lang$protocol_mask$partition1$ = 0;
-  this.cljs$lang$protocol_mask$partition0$ = 6455296
-};
-mvc.impl.agent.DerefChannel.cljs$lang$type = !0;
-mvc.impl.agent.DerefChannel.cljs$lang$ctorStr = "mvc.impl.agent/DerefChannel";
-mvc.impl.agent.DerefChannel.cljs$lang$ctorPrWriter = function(a, b, c) {
-  return cljs.core._write.call(null, b, "mvc.impl.agent/DerefChannel")
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$IHash$_hash$arity$1 = function(a) {
-  return goog.getUid(a)
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$IMeta$_meta$arity$1 = function(a) {
-  return this.meta
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$IDeref$_deref$arity$1 = function(a) {
-  return this.state
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(a, b) {
-  return a === b
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$Channel$ = !0;
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$Channel$close_BANG_$arity$1 = function(a) {
-  return null
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$ReadPort$ = !0;
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$ReadPort$take_BANG_$arity$2 = function(a, b) {
-  return null
-};
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$WritePort$ = !0;
-mvc.impl.agent.DerefChannel.prototype.cljs$core$async$impl$protocols$WritePort$put_BANG_$arity$3 = function(a, b, c) {
-  return null
-};
-mvc.impl.agent.__GT_DerefChannel = function(a, b, c, d, e, f, g, h, k) {
-  return new mvc.impl.agent.DerefChannel(a, b, c, d, e, f, g, h, k)
-};
-mvc.impl.agent.deref_chan = function(a) {
-  return new mvc.impl.agent.DerefChannel(cljs.core.async.impl.buffers.ring_buffer.call(null, 32), 0, cljs.core.async.impl.buffers.ring_buffer.call(null, 32), 0, a, null, null, cljs.core.PersistentArrayMap.EMPTY, mvc.impl.agent.queue.call(null))
-};
 mvc.impl.agent.IAgent = {};
-mvc.impl.agent._shutdown_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_shutdown_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_shutdown_BANG_$arity$1(a)
+mvc.impl.agent._send = function(a, b, c) {
+  if(a ? a.mvc$impl$agent$IAgent$_send$arity$3 : a) {
+    return a.mvc$impl$agent$IAgent$_send$arity$3(a, b, c)
   }
-  var b;
-  b = mvc.impl.agent._shutdown_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._shutdown_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-shutdown!", a);
+  var d;
+  d = mvc.impl.agent._send[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.agent._send._, !d)) {
+    throw cljs.core.missing_protocol.call(null, "IAgent.-send", a);
   }
-  return b.call(null, a)
+  return d.call(null, a, b, c)
 };
-mvc.impl.agent._set_error_handler_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_set_error_handler_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_set_error_handler_BANG_$arity$1(a)
+mvc.impl.agent._send_off = function(a, b, c) {
+  if(a ? a.mvc$impl$agent$IAgent$_send_off$arity$3 : a) {
+    return a.mvc$impl$agent$IAgent$_send_off$arity$3(a, b, c)
   }
-  var b;
-  b = mvc.impl.agent._set_error_handler_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._set_error_handler_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-set-error-handler!", a);
+  var d;
+  d = mvc.impl.agent._send_off[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.agent._send_off._, !d)) {
+    throw cljs.core.missing_protocol.call(null, "IAgent.-send-off", a);
   }
-  return b.call(null, a)
+  return d.call(null, a, b, c)
 };
-mvc.impl.agent._set_error_mode_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_set_error_mode_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_set_error_mode_BANG_$arity$1(a)
+mvc.impl.agent._enqueue_BANG_ = function(a, b, c) {
+  if(a ? a.mvc$impl$agent$IAgent$_enqueue_BANG_$arity$3 : a) {
+    return a.mvc$impl$agent$IAgent$_enqueue_BANG_$arity$3(a, b, c)
   }
-  var b;
-  b = mvc.impl.agent._set_error_mode_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._set_error_mode_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-set-error-mode!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._error_handler = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_error_handler$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_error_handler$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._error_handler[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._error_handler._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-error-handler", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._restart_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_restart_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_restart_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._restart_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._restart_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-restart!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._error = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_error$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_error$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._error[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._error._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-error", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._release_pending_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_release_pending_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_release_pending_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._release_pending_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._release_pending_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-release-pending!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._enqueue_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_enqueue_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_enqueue_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._enqueue_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._enqueue_BANG_._, !b)) {
+  var d;
+  d = mvc.impl.agent._enqueue_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.agent._enqueue_BANG_._, !d)) {
     throw cljs.core.missing_protocol.call(null, "IAgent.-enqueue!", a);
   }
-  return b.call(null, a)
+  return d.call(null, a, b, c)
 };
 mvc.impl.agent._enqueued_count = function(a) {
   if(a ? a.mvc$impl$agent$IAgent$_enqueued_count$arity$1 : a) {
@@ -27522,53 +27302,7 @@ mvc.impl.agent._enqueued_count = function(a) {
   }
   return b.call(null, a)
 };
-mvc.impl.agent._dispatch_BANG_ = function(a) {
-  if(a ? a.mvc$impl$agent$IAgent$_dispatch_BANG_$arity$1 : a) {
-    return a.mvc$impl$agent$IAgent$_dispatch_BANG_$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._dispatch_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._dispatch_BANG_._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAgent.-dispatch!", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent.IFailed = {};
-mvc.impl.agent.get_error = function(a) {
-  if(a ? a.mvc$impl$agent$IFailed$get_error$arity$1 : a) {
-    return a.mvc$impl$agent$IFailed$get_error$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent.get_error[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent.get_error._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IFailed.get-error", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent.IAction = {};
-mvc.impl.agent._execute = function(a) {
-  if(a ? a.mvc$impl$agent$IAction$_execute$arity$1 : a) {
-    return a.mvc$impl$agent$IAction$_execute$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._execute[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._execute._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAction.-execute", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent._dorun = function(a) {
-  if(a ? a.mvc$impl$agent$IAction$_dorun$arity$1 : a) {
-    return a.mvc$impl$agent$IAction$_dorun$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._dorun[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._dorun._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IAction.-dorun", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent.Agent = function(a, b, c, d, e, f, g, h, k, l, m) {
+mvc.impl.agent.Agent = function(a, b, c, d, e, f, g, h, k) {
   this.state = a;
   this.meta = b;
   this.validator = c;
@@ -27577,9 +27311,7 @@ mvc.impl.agent.Agent = function(a, b, c, d, e, f, g, h, k, l, m) {
   this.watches = f;
   this.send_counter = g;
   this.send_off_counter = h;
-  this.pooled_executor = k;
-  this.solo_executor = l;
-  this.nested = m;
+  this.action_queue = k;
   this.cljs$lang$protocol_mask$partition0$ = 2153938944;
   this.cljs$lang$protocol_mask$partition1$ = 2
 };
@@ -27587,6 +27319,31 @@ mvc.impl.agent.Agent.cljs$lang$type = !0;
 mvc.impl.agent.Agent.cljs$lang$ctorStr = "mvc.impl.agent/Agent";
 mvc.impl.agent.Agent.cljs$lang$ctorPrWriter = function(a, b, c) {
   return cljs.core._write.call(null, b, "mvc.impl.agent/Agent")
+};
+mvc.impl.agent.Agent.prototype.mvc$impl$agent$IAgent$ = !0;
+mvc.impl.agent.Agent.prototype.mvc$impl$agent$IAgent$_send$arity$3 = function(a, b, c) {
+  var d = this, e = cljs.core.seq.call(null, c) ? c : cljs.core.list.call(null);
+  if(cljs.core.truth_(function() {
+    var c = (new cljs.core.Keyword("\ufdd0:mutable")).call(null, d.meta.call(null, a));
+    return cljs.core.truth_(c) ? cljs.core.keyword_QMARK_.call(null, b) : c
+  }())) {
+    var f = (new cljs.core.Keyword("\ufdd0:mutable")).call(null, d.meta.call(null, a)), g = cljs.core.truth_(cljs.core.get.call(null, f, b)) ? cljs.core.get.call(null, f, b) : cljs.core.truth_(cljs.core.get.call(null, f, goog.string.toCamelCase(cljs.core.name.call(null, b)))) ? cljs.core.get.call(null, f, goog.string.toCamelCase(cljs.core.name.call(null, b))) : null;
+    return cljs.core.async.put_BANG_.call(null, d.action_queue, function() {
+      return mvc.browser.core.immutable_BANG_.call(null, cljs.core.apply.call(null, g, cljs.core.cons.call(null, f, e)))
+    })
+  }
+  return cljs.core.async.put_BANG_.call(null, d.action_queue, function() {
+    return cljs.core.apply.call(null, b, cljs.core.cons.call(null, cljs.core.deref.call(null, a), e))
+  })
+};
+mvc.impl.agent.Agent.prototype.mvc$impl$agent$IAgent$_send_off$arity$3 = function(a, b, c) {
+  return cljs.core.async.put_BANG_.call(null, this.action_queue, cljs.core.partial.call(null, b, cljs.core.cons.call(null, cljs.core.deref.call(null, a), c)))
+};
+mvc.impl.agent.Agent.prototype.mvc$impl$agent$IAgent$_enqueue_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.agent.Agent.prototype.mvc$impl$agent$IAgent$_enqueued_count$arity$1 = function(a) {
+  return null
 };
 mvc.impl.agent.Agent.prototype.cljs$core$IHash$_hash$arity$1 = function(a) {
   return goog.getUid(a)
@@ -27626,8 +27383,8 @@ mvc.impl.agent.Agent.prototype.cljs$core$IDeref$_deref$arity$1 = function(a) {
 mvc.impl.agent.Agent.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(a, b) {
   return a === b
 };
-mvc.impl.agent.__GT_Agent = function(a, b, c, d, e, f, g, h, k, l, m) {
-  return new mvc.impl.agent.Agent(a, b, c, d, e, f, g, h, k, l, m)
+mvc.impl.agent.__GT_Agent = function(a, b, c, d, e, f, g, h, k) {
+  return new mvc.impl.agent.Agent(a, b, c, d, e, f, g, h, k)
 };
 mvc.impl.agent.agent = function() {
   var a = null, b = function() {
@@ -27636,8 +27393,94 @@ mvc.impl.agent.agent = function() {
     var a = function(a, b) {
       var c = cljs.core.seq_QMARK_.call(null, b) ? cljs.core.apply.call(null, cljs.core.hash_map, b) : b;
       cljs.core.get.call(null, c, "\ufdd0:error-mode");
-      var d = cljs.core.get.call(null, c, "\ufdd0:error-handler", null), e = cljs.core.get.call(null, c, "\ufdd0:validator", null), c = cljs.core.get.call(null, c, "\ufdd0:meta", cljs.core.PersistentArrayMap.EMPTY);
-      return new mvc.impl.agent.Agent(a, c, e, d, cljs.core.truth_(d) ? "\ufdd0:continue" : "\ufdd0:fail", null, 0, 0, new mvc.impl.executor.PoolExecutor, new mvc.impl.executor.SoloExecutor, null)
+      var d = cljs.core.get.call(null, c, "\ufdd0:error-handler", null), e = cljs.core.get.call(null, c, "\ufdd0:validator", null), c = cljs.core.get.call(null, c, "\ufdd0:meta", cljs.core.PersistentArrayMap.EMPTY), m = cljs.core.async.chan.call(null), n = mvc.impl.agent.__GT_Agent.call(null, a, c, e, d, cljs.core.truth_(d) ? "\ufdd0:continue" : "\ufdd0:fail", null, 0, 0, m), p = cljs.core.async.chan.call(null, 1);
+      cljs.core.async.impl.dispatch.run.call(null, function() {
+        var a = function() {
+          return function(a) {
+            return function() {
+              var b = null, c = function() {
+                var a = Array(8);
+                a[0] = b;
+                a[1] = 1;
+                return a
+              }, d = function(b) {
+                for(;;) {
+                  var c = a.call(null, b);
+                  if("\ufdd0:recur" !== c) {
+                    return c
+                  }
+                }
+              }, b = function(a) {
+                switch(arguments.length) {
+                  case 0:
+                    return c.call(this);
+                  case 1:
+                    return d.call(this, a)
+                }
+                throw Error("Invalid arity: " + arguments.length);
+              };
+              b.cljs$core$IFn$_invoke$arity$0 = c;
+              b.cljs$core$IFn$_invoke$arity$1 = d;
+              return b
+            }()
+          }(function(a) {
+            var b = a[1];
+            if(1 === b) {
+              return a[2] = null, a[1] = 2, "\ufdd0:recur"
+            }
+            if(2 === b) {
+              return a[1] = 4, "\ufdd0:recur"
+            }
+            if(3 === b) {
+              var c = a[2];
+              return cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, c)
+            }
+            if(4 === b) {
+              return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 7, m)
+            }
+            if(5 === b) {
+              return a[2] = null, a[1] = 6, "\ufdd0:recur"
+            }
+            if(6 === b) {
+              return c = a[2], a[2] = c, a[1] = 3, "\ufdd0:recur"
+            }
+            if(7 === b) {
+              var d = a[2];
+              a[5] = d;
+              a[2] = null;
+              a[1] = 10;
+              return"\ufdd0:recur"
+            }
+            if(8 === b) {
+              return a[6] = a[2], a[2] = null, a[1] = 2, "\ufdd0:recur"
+            }
+            if(9 === b) {
+              return a[7] = a[2], a[2] = "there was an error!", a[1] = 8, "\ufdd0:recur"
+            }
+            if(10 === b) {
+              try {
+                var d = a[5], e = d.call(null), c = cljs.core.reset_BANG_.call(null, n, e), b = a;
+                b[2] = c;
+                b[1] = 8;
+                return"\ufdd0:recur"
+              }catch(f) {
+                if(f instanceof Error) {
+                  return a[1] = 9, a[2] = f, "\ufdd0:recur"
+                }
+                throw f;
+              }
+            }else {
+              return null
+            }
+          })
+        }(), b = function() {
+          var b = a.call(null);
+          b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = p;
+          return b
+        }();
+        return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, b)
+      });
+      return n
     }, b = function(b, c) {
       var e = null;
       1 < arguments.length && (e = cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0));
@@ -27687,22 +27530,24 @@ mvc.impl.agent.send_via = function() {
   return a
 }();
 mvc.impl.agent.send = function() {
-  var a = function(a, c, d) {
-    2 < arguments.length && cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0);
-    return null
+  var a = function(a, b, e) {
+    mvc.impl.agent._send.call(null, a, b, e);
+    return a
+  }, b = function(b, d, e) {
+    var f = null;
+    2 < arguments.length && (f = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0));
+    return a.call(this, b, d, f)
   };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = function(a) {
-    cljs.core.first(a);
-    a = cljs.core.next(a);
-    cljs.core.first(a);
-    cljs.core.rest(a);
-    return null
+  b.cljs$lang$maxFixedArity = 2;
+  b.cljs$lang$applyTo = function(b) {
+    var d = cljs.core.first(b);
+    b = cljs.core.next(b);
+    var e = cljs.core.first(b);
+    b = cljs.core.rest(b);
+    return a(d, e, b)
   };
-  a.cljs$core$IFn$_invoke$arity$variadic = function(a, c, d) {
-    return null
-  };
-  return a
+  b.cljs$core$IFn$_invoke$arity$variadic = a;
+  return b
 }();
 mvc.impl.agent.send_off = function() {
   var a = function(a, c, d) {
@@ -27758,1201 +27603,6 @@ mvc.impl.agent.set_error_mode_BANG_ = function(a, b) {
 mvc.impl.agent.error_mode = function() {
   return null
 };
-mvc.impl.agent.shutdown_agents = function() {
-  return null
-};
-mvc.impl.agent.await = function() {
-  var a = function(a) {
-    0 < arguments.length && cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0);
-    return null
-  };
-  a.cljs$lang$maxFixedArity = 0;
-  a.cljs$lang$applyTo = function(a) {
-    cljs.core.seq(a);
-    return null
-  };
-  a.cljs$core$IFn$_invoke$arity$variadic = function(a) {
-    return null
-  };
-  return a
-}();
-mvc.impl.agent.await_for = function() {
-  var a = function(a, c) {
-    1 < arguments.length && cljs.core.array_seq(Array.prototype.slice.call(arguments, 1), 0);
-    return null
-  };
-  a.cljs$lang$maxFixedArity = 1;
-  a.cljs$lang$applyTo = function(a) {
-    cljs.core.first(a);
-    cljs.core.rest(a);
-    return null
-  };
-  a.cljs$core$IFn$_invoke$arity$variadic = function(a, c) {
-    return null
-  };
-  return a
-}();
-mvc.impl.agent.commute = function() {
-  var a = function(a, c, d) {
-    2 < arguments.length && cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0);
-    return null
-  };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = function(a) {
-    cljs.core.first(a);
-    a = cljs.core.next(a);
-    cljs.core.first(a);
-    cljs.core.rest(a);
-    return null
-  };
-  a.cljs$core$IFn$_invoke$arity$variadic = function(a, c, d) {
-    return null
-  };
-  return a
-}();
-mvc.impl.agent.alter = function() {
-  var a = function(a, c, d) {
-    2 < arguments.length && cljs.core.array_seq(Array.prototype.slice.call(arguments, 2), 0);
-    return null
-  };
-  a.cljs$lang$maxFixedArity = 2;
-  a.cljs$lang$applyTo = function(a) {
-    cljs.core.first(a);
-    a = cljs.core.next(a);
-    cljs.core.first(a);
-    cljs.core.rest(a);
-    return null
-  };
-  a.cljs$core$IFn$_invoke$arity$variadic = function(a, c, d) {
-    return null
-  };
-  return a
-}();
-mvc.impl.agent.IClojureScript = {};
-mvc.impl.agent._js__GT_cljs = function(a) {
-  if(a ? a.mvc$impl$agent$IClojureScript$_js__GT_cljs$arity$1 : a) {
-    return a.mvc$impl$agent$IClojureScript$_js__GT_cljs$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._js__GT_cljs[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._js__GT_cljs._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IClojureScript.-js-\x3ecljs", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent.IClojureScript._ = !0;
-mvc.impl.agent._js__GT_cljs._ = function(a) {
-  var b = cljs.core.js__GT_clj.call(null, a);
-  return cljs.core.with_meta.call(null, b, cljs.core.PersistentArrayMap.fromArray(["\ufdd0:obj", a], !0))
-};
-mvc.impl.agent.IClojureScript["null"] = !0;
-mvc.impl.agent._js__GT_cljs["null"] = function(a) {
-  return null
-};
-mvc.impl.agent.IClojureScript.object = !0;
-mvc.impl.agent._js__GT_cljs.object = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-mvc.impl.agent.IClojureScript.string = !0;
-mvc.impl.agent._js__GT_cljs.string = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-mvc.impl.agent.IClojureScript.number = !0;
-mvc.impl.agent._js__GT_cljs.number = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-Date.prototype.mvc$impl$agent$IClojureScript$ = !0;
-Date.prototype.mvc$impl$agent$IClojureScript$_js__GT_cljs$arity$1 = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-mvc.impl.agent.IClojureScript["boolean"] = !0;
-mvc.impl.agent._js__GT_cljs["boolean"] = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-mvc.impl.agent.IClojureScript.array = !0;
-mvc.impl.agent._js__GT_cljs.array = function(a) {
-  return cljs.core.js__GT_clj.call(null, a)
-};
-mvc.impl.agent.IJavaScript = {};
-mvc.impl.agent._cljs__GT_js = function(a) {
-  if(a ? a.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 : a) {
-    return a.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1(a)
-  }
-  var b;
-  b = mvc.impl.agent._cljs__GT_js[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.agent._cljs__GT_js._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "IJavaScript.-cljs-\x3ejs", a);
-  }
-  return b.call(null, a)
-};
-mvc.impl.agent.IJavaScript["null"] = !0;
-mvc.impl.agent._cljs__GT_js["null"] = function(a) {
-  return null
-};
-cljs.core.PersistentTreeMap.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentTreeMap.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-cljs.core.PersistentArrayMap.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentArrayMap.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-cljs.core.PersistentQueue.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentQueue.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-mvc.impl.agent.IJavaScript._ = !0;
-mvc.impl.agent._cljs__GT_js._ = function(a) {
-  return a
-};
-cljs.core.PersistentTreeSet.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentTreeSet.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-cljs.core.PersistentHashMap.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentHashMap.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-cljs.core.PersistentHashSet.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentHashSet.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-cljs.core.PersistentVector.prototype.mvc$impl$agent$IJavaScript$ = !0;
-cljs.core.PersistentVector.prototype.mvc$impl$agent$IJavaScript$_cljs__GT_js$arity$1 = function(a) {
-  return a
-};
-mvc.impl.agent.IJavaScript.object = !0;
-mvc.impl.agent._cljs__GT_js.object = function(a) {
-  return a
-};
-mvc.impl.agent.cljs__GT_js = function(a) {
-  return mvc.impl.agent._cljs__GT_js.call(null, a)
-};
-mvc.impl.agent.js__GT_cljs = function(a) {
-  return mvc.impl.agent._js__GT_cljs.call(null, a)
-};
-mvc.browser.string = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.string.compare_versions = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.compareVersions, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.to_map = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.toMap, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.trim = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.trim, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.quot_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.quotRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_empty = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isEmpty, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_numeric = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isNumeric, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.compare_elements_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.compareElements_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.remove = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.remove, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.to_number = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.toNumber, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.lt_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.ltRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.case_insensitive_compare = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.caseInsensitiveCompare, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.url_encode = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.urlEncode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.unique_string_counter_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.uniqueStringCounter_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.numerate_compare = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.numerateCompare, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.truncate = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.truncate, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.unescape_entities_using_dom_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.unescapeEntitiesUsingDom_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.count_of = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.countOf, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.js_escape_cache_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.jsEscapeCache_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_unicode_char = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isUnicodeChar, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.trim_left = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.trimLeft, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_breaking_whitespace = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isBreakingWhitespace, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.get_random_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.getRandomString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.normalize_whitespace = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.normalizeWhitespace, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.to_selector_case = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.toSelectorCase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.collapse_whitespace = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.collapseWhitespace, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.reg_exp_escape = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.regExpEscape, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.to_camel_case = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.toCamelCase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.all_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.allRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.html_escape = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.htmlEscape, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.to_title_case = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.toTitleCase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.strip_quotes = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.stripQuotes, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_empty_safe = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isEmptySafe, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.numerate_compare_reg_exp_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.numerateCompareRegExp_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.escape_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.escapeString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.subs = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.subs, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_alpha = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isAlpha, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.strip_newlines = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.stripNewlines, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.starts_with = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.startsWith, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.HTML_ENTITY_PATTERN_ = goog.string.HTML_ENTITY_PATTERN_, mvc.browser.string.escape_char = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.escapeChar, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.remove_at = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.removeAt, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.case_insensitive_starts_with = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.caseInsensitiveStartsWith, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.unescape_pure_xml_entities_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.unescapePureXmlEntities_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_alpha_numeric = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isAlphaNumeric, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.normalize_spaces = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.normalizeSpaces, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.trim_right = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.trimRight, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.hash_code = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.hashCode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.amper_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.amperRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.repeat = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.repeat, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.unescape_entities = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.unescapeEntities, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.make_safe = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.makeSafe, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.truncate_middle = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.truncateMiddle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.parse_int = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.parseInt, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.pad_number = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.padNumber, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.is_space = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.isSpace, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.quote = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.quote, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.special_escape_chars_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.specialEscapeChars_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.url_decode = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.urlDecode, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.collapse_breaking_spaces = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.collapseBreakingSpaces, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.remove_all = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.removeAll, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.Unicode = goog.string.Unicode, mvc.browser.string.whitespace_escape = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.whitespaceEscape, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.create_unique_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.createUniqueString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.ends_with = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.endsWith, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.build_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.buildString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.gt_re_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.gtRe_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.case_insensitive_ends_with = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.caseInsensitiveEndsWith, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.canonicalize_newlines = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.canonicalizeNewlines, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.HASHCODE_MAX_ = goog.string.HASHCODE_MAX_, mvc.browser.string.contains = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.contains, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.string.new_line_to_br = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.string.newLineToBr, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
 goog.net.xpc.CrossPageChannelRole = {OUTER:0, INNER:1};
 goog.net.xpc.IframePollingTransport = function(a, b) {
   goog.net.xpc.Transport.call(this, b);
@@ -29200,8 +27850,6 @@ goog.net.xpc.IframePollingTransport.Receiver.prototype.receive = function() {
   }
   return!1
 };
-goog.history = {};
-goog.history.EventType = {NAVIGATE:"navigate"};
 goog.net.xpc.FrameElementMethodTransport = function(a, b) {
   goog.net.xpc.Transport.call(this, b);
   this.channel_ = a;
@@ -30112,19 +28760,19 @@ goog.dom.query = function() {
     a = 0 <= "\x3e~+".indexOf(a.slice(-1)) ? a + " * " : a + " ";
     for(var b = function(b, c) {
       return goog.string.trim(a.slice(b, c))
-    }, c = [], e = -1, f = -1, g = -1, h = -1, k = -1, l = -1, m = -1, n = "", p = "", q, r = 0, s = a.length, t = null, u = null, v = function() {
-      0 <= l && (t.id = b(l, r).replace(/\\/g, ""), l = -1);
+    }, c = [], e = -1, f = -1, g = -1, h = -1, k = -1, l = -1, m = -1, n = "", p = "", r, q = 0, s = a.length, t = null, u = null, v = function() {
+      0 <= l && (t.id = b(l, q).replace(/\\/g, ""), l = -1);
       if(0 <= m) {
-        var a = m == r ? null : b(m, r);
+        var a = m == q ? null : b(m, q);
         0 > "\x3e~+".indexOf(a) ? t.tag = a : t.oper = a;
         m = -1
       }
-      0 <= k && (t.classes.push(b(k + 1, r).replace(/\\/g, "")), k = -1)
-    };n = p, p = a.charAt(r), r < s;r++) {
-      "\\" != n && (t || (q = r, t = {query:null, pseudos:[], attrs:[], classes:[], tag:null, oper:null, id:null, getTag:function() {
+      0 <= k && (t.classes.push(b(k + 1, q).replace(/\\/g, "")), k = -1)
+    };n = p, p = a.charAt(q), q < s;q++) {
+      "\\" != n && (t || (r = q, t = {query:null, pseudos:[], attrs:[], classes:[], tag:null, oper:null, id:null, getTag:function() {
         return d ? this.otag : this.tag
-      }}, m = r), 0 <= e ? "]" == p ? (u.attr ? u.matchFor = b(g || e + 1, r) : u.attr = b(e + 1, r), !(e = u.matchFor) || '"' != e.charAt(0) && "'" != e.charAt(0) || (u.matchFor = e.slice(1, -1)), t.attrs.push(u), u = null, e = g = -1) : "\x3d" == p && (g = 0 <= "|~^$*".indexOf(n) ? n : "", u.type = g + p, u.attr = b(e + 1, r - g.length), g = r + 1) : 0 <= f ? ")" == p && (0 <= h && (u.value = b(f + 1, r)), h = f = -1) : "#" == p ? (v(), l = r + 1) : "." == p ? (v(), k = r) : ":" == p ? (v(), h = 
-      r) : "[" == p ? (v(), e = r, u = {}) : "(" == p ? (0 <= h && (u = {name:b(h + 1, r), value:null}, t.pseudos.push(u)), f = r) : " " == p && n != p && (v(), 0 <= h && t.pseudos.push({name:b(h + 1, r)}), t.loops = t.pseudos.length || t.attrs.length || t.classes.length, t.oquery = t.query = b(q, r), t.otag = t.tag = t.oper ? null : t.tag || "*", t.tag && (t.tag = t.tag.toUpperCase()), c.length && c[c.length - 1].oper && (t.infixOper = c.pop(), t.query = t.infixOper.query + " " + t.query), c.push(t), 
+      }}, m = q), 0 <= e ? "]" == p ? (u.attr ? u.matchFor = b(g || e + 1, q) : u.attr = b(e + 1, q), !(e = u.matchFor) || '"' != e.charAt(0) && "'" != e.charAt(0) || (u.matchFor = e.slice(1, -1)), t.attrs.push(u), u = null, e = g = -1) : "\x3d" == p && (g = 0 <= "|~^$*".indexOf(n) ? n : "", u.type = g + p, u.attr = b(e + 1, q - g.length), g = q + 1) : 0 <= f ? ")" == p && (0 <= h && (u.value = b(f + 1, q)), h = f = -1) : "#" == p ? (v(), l = q + 1) : "." == p ? (v(), k = q) : ":" == p ? (v(), h = 
+      q) : "[" == p ? (v(), e = q, u = {}) : "(" == p ? (0 <= h && (u = {name:b(h + 1, q), value:null}, t.pseudos.push(u)), f = q) : " " == p && n != p && (v(), 0 <= h && t.pseudos.push({name:b(h + 1, q)}), t.loops = t.pseudos.length || t.attrs.length || t.classes.length, t.oquery = t.query = b(r, q), t.otag = t.tag = t.oper ? null : t.tag || "*", t.tag && (t.tag = t.tag.toUpperCase()), c.length && c[c.length - 1].oper && (t.infixOper = c.pop(), t.query = t.infixOper.query + " " + t.query), c.push(t), 
       t = null))
     }
     return c
@@ -30164,14 +28812,14 @@ goog.dom.query = function() {
     return function(c) {
       return h(c, a) == b
     }
-  }}, l = "undefined" == typeof goog.dom.getDocument().firstChild.nextElementSibling, m = l ? "nextSibling" : "nextElementSibling", n = l ? "previousSibling" : "previousElementSibling", p = l ? g : goog.functions.TRUE, q = function(a) {
+  }}, l = "undefined" == typeof goog.dom.getDocument().firstChild.nextElementSibling, m = l ? "nextSibling" : "nextElementSibling", n = l ? "previousSibling" : "previousElementSibling", p = l ? g : goog.functions.TRUE, r = function(a) {
     for(;a = a[n];) {
       if(p(a)) {
         return!1
       }
     }
     return!0
-  }, r = function(a) {
+  }, q = function(a) {
     for(;a = a[m];) {
       if(p(a)) {
         return!1
@@ -30195,19 +28843,19 @@ goog.dom.query = function() {
     return f
   }, t = function(a) {
     return!(s(a) % 2)
-  }, u = function(a) {
+  }, v = function(a) {
     return s(a) % 2
-  }, w = {checked:function(a, b) {
+  }, C = {checked:function(a, b) {
     return function(a) {
       return a.checked || a.attributes.checked
     }
   }, "first-child":function() {
-    return q
-  }, "last-child":function() {
     return r
+  }, "last-child":function() {
+    return q
   }, "only-child":function(a, b) {
     return function(a) {
-      return q(a) && r(a) ? !0 : !1
+      return r(a) && q(a) ? !0 : !1
     }
   }, empty:function(a, b) {
     return function(a) {
@@ -30232,13 +28880,13 @@ goog.dom.query = function() {
     var c = e(b)[0], d = {el:1};
     "*" != c.tag && (d.tag = 1);
     c.classes.length || (d.classes = 1);
-    var f = y(c, d);
+    var f = I(c, d);
     return function(a) {
       return!f(a)
     }
   }, "nth-child":function(a, b) {
     if("odd" == b) {
-      return u
+      return v
     }
     if("even" == b) {
       return t
@@ -30258,7 +28906,7 @@ goog.dom.query = function() {
     return function(a) {
       return s(a) == h
     }
-  }}, v = goog.userAgent.IE ? function(a) {
+  }}, y = goog.userAgent.IE ? function(a) {
     var b = a.toLowerCase();
     "class" == b && (a = "className");
     return function(c) {
@@ -30268,7 +28916,7 @@ goog.dom.query = function() {
     return function(b) {
       return b && b.getAttribute && b.hasAttribute(a)
     }
-  }, y = function(a, b) {
+  }, I = function(a, b) {
     if(!a) {
       return goog.functions.TRUE
     }
@@ -30287,11 +28935,11 @@ goog.dom.query = function() {
     });
     b.pseudos || goog.array.forEach(a.pseudos, function(a) {
       var b = a.name;
-      w[b] && (c = f(c, w[b](b, a.value)))
+      C[b] && (c = f(c, C[b](b, a.value)))
     });
     b.attrs || goog.array.forEach(a.attrs, function(a) {
       var b, d = a.attr;
-      a.type && k[a.type] ? b = k[a.type](d, a.matchFor) : d.length && (b = v(d));
+      a.type && k[a.type] ? b = k[a.type](d, a.matchFor) : d.length && (b = y(d));
       b && (c = f(c, b))
     });
     b.id || a.id && (c = f(c, function(b) {
@@ -30299,21 +28947,21 @@ goog.dom.query = function() {
     }));
     c || "default" in b || (c = goog.functions.TRUE);
     return c
-  }, H = function(a) {
+  }, M = function(a) {
     return function(b, c, d) {
       for(;b = b[m];) {
         if(!l || g(b)) {
-          d && !I(b, d) || !a(b) || c.push(b);
+          d && !L(b, d) || !a(b) || c.push(b);
           break
         }
       }
       return c
     }
-  }, Q = function(a) {
+  }, O = function(a) {
     return function(b, c, d) {
       for(b = b[m];b;) {
         if(p(b)) {
-          if(d && !I(b, d)) {
+          if(d && !L(b, d)) {
             break
           }
           a(b) && c.push(b)
@@ -30322,25 +28970,25 @@ goog.dom.query = function() {
       }
       return c
     }
-  }, x = function(a) {
+  }, D = function(a) {
     a = a || goog.functions.TRUE;
     return function(b, d, e) {
       for(var f = 0, g = b[c];b = g[f++];) {
-        p(b) && ((!e || I(b, e)) && a(b, f)) && d.push(b)
+        p(b) && ((!e || L(b, e)) && a(b, f)) && d.push(b)
       }
       return d
     }
-  }, z = {}, A = function(c) {
-    var d = z[c.query];
+  }, F = {}, G = function(c) {
+    var d = F[c.query];
     if(d) {
       return d
     }
-    var e = c.infixOper, e = e ? e.oper : "", f = y(c, {el:1}), g = "*" == c.tag, h = goog.dom.getDocument().getElementsByClassName;
+    var e = c.infixOper, e = e ? e.oper : "", f = I(c, {el:1}), g = "*" == c.tag, h = goog.dom.getDocument().getElementsByClassName;
     if(e) {
-      h = {el:1}, g && (h.tag = 1), f = y(c, h), "+" == e ? d = H(f) : "~" == e ? d = Q(f) : "\x3e" == e && (d = x(f))
+      h = {el:1}, g && (h.tag = 1), f = I(c, h), "+" == e ? d = M(f) : "~" == e ? d = O(f) : "\x3e" == e && (d = D(f))
     }else {
       if(c.id) {
-        f = !c.loops && g ? goog.functions.TRUE : y(c, {el:1, id:1}), d = function(b, d) {
+        f = !c.loops && g ? goog.functions.TRUE : I(c, {el:1, id:1}), d = function(b, d) {
           var e = goog.dom.getDomHelper(b).getElement(c.id);
           if(e && f(e)) {
             if(9 == b.nodeType) {
@@ -30356,14 +29004,14 @@ goog.dom.query = function() {
         }
       }else {
         if(h && /\{\s*\[native code\]\s*\}/.test(String(h)) && c.classes.length && !b) {
-          var f = y(c, {el:1, classes:1, id:1}), k = c.classes.join(" "), d = function(b, c) {
+          var f = I(c, {el:1, classes:1, id:1}), k = c.classes.join(" "), d = function(b, c) {
             for(var d = a(0, c), e, g = 0, h = b.getElementsByClassName(k);e = h[g++];) {
               f(e, b) && d.push(e)
             }
             return d
           }
         }else {
-          g || c.loops ? (f = y(c, {el:1, tag:1, id:1}), d = function(b, d) {
+          g || c.loops ? (f = I(c, {el:1, tag:1, id:1}), d = function(b, d) {
             for(var e = a(0, d), g, h = 0, k = b.getElementsByTagName(c.getTag());g = k[h++];) {
               f(g, b) && e.push(g)
             }
@@ -30377,11 +29025,11 @@ goog.dom.query = function() {
         }
       }
     }
-    return z[c.query] = d
-  }, C = {}, D = {}, E = function(b) {
+    return F[c.query] = d
+  }, A = {}, u = {}, z = function(b) {
     var c = e(goog.string.trim(b));
     if(1 == c.length) {
-      var d = A(c[0]);
+      var d = G(c[0]);
       return function(a) {
         if(a = d(a, [])) {
           a.nozip = !0
@@ -30396,7 +29044,7 @@ goog.dom.query = function() {
         d = c[k];
         e = b.length - 1;
         0 < e && (g = {}, h.nozip = !0);
-        e = A(d);
+        e = G(d);
         for(var l = 0;d = b[l];l++) {
           e(d, h, g)
         }
@@ -30407,29 +29055,29 @@ goog.dom.query = function() {
       }
       return h
     }
-  }, F = !!goog.dom.getDocument().querySelectorAll && (!goog.userAgent.WEBKIT || goog.userAgent.isVersion("526")), G = function(a, c) {
-    if(F) {
-      var d = D[a];
+  }, B = !!goog.dom.getDocument().querySelectorAll && (!goog.userAgent.WEBKIT || goog.userAgent.isVersion("526")), J = function(a, c) {
+    if(B) {
+      var d = u[a];
       if(d && !c) {
         return d
       }
     }
-    if(d = C[a]) {
+    if(d = A[a]) {
       return d
     }
     var d = a.charAt(0), e = -1 == a.indexOf(" ");
     0 <= a.indexOf("#") && e && (c = !0);
-    if(!F || c || -1 != "\x3e~+".indexOf(d) || goog.userAgent.IE && -1 != a.indexOf(":") || b && 0 <= a.indexOf(".") || -1 != a.indexOf(":contains") || -1 != a.indexOf("|\x3d")) {
+    if(!B || c || -1 != "\x3e~+".indexOf(d) || goog.userAgent.IE && -1 != a.indexOf(":") || b && 0 <= a.indexOf(".") || -1 != a.indexOf(":contains") || -1 != a.indexOf("|\x3d")) {
       var f = a.split(/\s*,\s*/);
-      return C[a] = 2 > f.length ? E(a) : function(a) {
+      return A[a] = 2 > f.length ? z(a) : function(a) {
         for(var b = 0, c = [], d;d = f[b++];) {
-          c = c.concat(E(d)(a))
+          c = c.concat(z(d)(a))
         }
         return c
       }
     }
     var g = 0 <= "\x3e~+".indexOf(a.charAt(a.length - 1)) ? a + " *" : a;
-    return D[a] = function(b) {
+    return u[a] = function(b) {
       try {
         if(9 != b.nodeType && !e) {
           throw"";
@@ -30438,20 +29086,20 @@ goog.dom.query = function() {
         goog.userAgent.IE ? c.commentStrip = !0 : c.nozip = !0;
         return c
       }catch(d) {
-        return G(a, !0)(b)
+        return J(a, !0)(b)
       }
     }
-  }, B = 0, K = goog.userAgent.IE ? function(a) {
-    return d ? a.getAttribute("_uid") || a.setAttribute("_uid", ++B) || B : a.uniqueID
+  }, H = 0, N = goog.userAgent.IE ? function(a) {
+    return d ? a.getAttribute("_uid") || a.setAttribute("_uid", ++H) || H : a.uniqueID
   } : function(a) {
-    return a._uid || (a._uid = ++B)
-  }, I = function(a, b) {
+    return a._uid || (a._uid = ++H)
+  }, L = function(a, b) {
     if(!b) {
       return 1
     }
-    var c = K(a);
+    var c = N(a);
     return b[c] ? 0 : b[c] = 1
-  }, L = function(a) {
+  }, P = function(a) {
     if(a && a.nozip) {
       return a
     }
@@ -30463,9 +29111,9 @@ goog.dom.query = function() {
     if(2 > a.length) {
       return b
     }
-    B++;
+    H++;
     if(goog.userAgent.IE && d) {
-      var c = B + "";
+      var c = H + "";
       a[0].setAttribute("_zipIdx", c);
       for(var e = 1, f;f = a[e];e++) {
         a[e].getAttribute("_zipIdx") != c && b.push(f), f.setAttribute("_zipIdx", c)
@@ -30479,13 +29127,13 @@ goog.dom.query = function() {
         }catch(h) {
         }
       }else {
-        for(a[0] && (a[0]._zipIdx = B), e = 1;f = a[e];e++) {
-          a[e]._zipIdx != B && b.push(f), f._zipIdx = B
+        for(a[0] && (a[0]._zipIdx = H), e = 1;f = a[e];e++) {
+          a[e]._zipIdx != H && b.push(f), f._zipIdx = H
         }
       }
     }
     return b
-  }, M = function(a, b) {
+  }, Q = function(a, b) {
     if(!a) {
       return[]
     }
@@ -30501,10 +29149,10 @@ goog.dom.query = function() {
     b = b || goog.dom.getDocument();
     var c = b.ownerDocument || b.documentElement;
     d = b.contentType && "application/xml" == b.contentType || goog.userAgent.OPERA && (b.doctype || "[object XMLDocument]" == c.toString()) || !!c && (goog.userAgent.IE ? c.xml : b.xmlVersion || c.xmlVersion);
-    return(c = G(a)(b)) && c.nozip ? c : L(c)
+    return(c = J(a)(b)) && c.nozip ? c : P(c)
   };
-  M.pseudos = w;
-  return M
+  Q.pseudos = C;
+  return Q
 }();
 goog.exportSymbol("goog.dom.query", goog.dom.query);
 goog.exportSymbol("goog.dom.query.pseudos", goog.dom.query.pseudos);
@@ -30516,538 +29164,58 @@ mvc.core.model.model = function(a, b) {
   mvc.core.protocols.sub_BANG_.call(null, cljs.core.PersistentVector.fromArray([c, "\ufdd0:sync"], !0), mvc.core.protocols.pub_BANG_.call(null, c, "\ufdd0:update", c));
   return c
 };
-mvc.ui = {};
 mvc.ui.autocomplete = {};
 mvc.ui.autocomplete.autocompleter = function() {
   return null
 };
 mvc.browser.events = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.events.unlisten = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.unlisten, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.listeners_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listeners_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.dispatch_event = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.dispatchEvent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.wrap_listener_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.wrapListener_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.Listenable = goog.events.Listenable, mvc.browser.events.get_unique_id = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getUniqueId, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.clean_up = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.cleanUp, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.expose = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.expose, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.handle_browser_event_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.handleBrowserEvent_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.LISTENER_WRAPPER_PROP_ = goog.events.LISTENER_WRAPPER_PROP_, mvc.browser.events.listen_with_wrapper = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listenWithWrapper, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.listen = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listen, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.sources_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.sources_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.unlisten_by_key = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.unlistenByKey, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.listen_once = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listenOnce, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.fire_listeners = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.fireListeners, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.get_listeners = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getListeners, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.fire_listener = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.fireListener, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.get_listener = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getListener, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.EventTarget = goog.events.EventTarget, mvc.browser.events.listener_tree_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listenerTree_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.get_total_listener_count = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getTotalListenerCount, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.unlisten_with_wrapper = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.unlistenWithWrapper, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.has_listener = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.hasListener, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.BrowserFeature = goog.events.BrowserFeature, mvc.browser.events.mark_ie_event_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.markIeEvent_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.unique_id_counter_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.uniqueIdCounter_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.on_string_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.onString_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.EventLike = goog.events.EventLike, mvc.browser.events.BrowserEvent = goog.events.BrowserEvent, mvc.browser.events.on_string_map_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.onStringMap_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.Listener = goog.events.Listener, mvc.browser.events.fire_listeners_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.fireListeners_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.get_listeners_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getListeners_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.is_marked_ie_event_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.isMarkedIeEvent_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.get_proxy = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getProxy, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.listen_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.listen_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.EventWrapper = goog.events.EventWrapper, mvc.browser.events.get_on_string_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.getOnString_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.key_separator_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.keySeparator_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.Event = goog.events.Event, mvc.browser.events.clean_up_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.cleanUp_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.ListenableType = goog.events.ListenableType, mvc.browser.events.remove_all = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.removeAll, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.events.ListenableKey = goog.events.ListenableKey, mvc.browser.events.Key = goog.events.Key, mvc.browser.events.protect_browser_event_entry_point = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.events.protectBrowserEventEntryPoint, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.events.unlisten = goog.events.unlisten;
+mvc.browser.events.listeners_ = goog.events.listeners_;
+mvc.browser.events.dispatch_event = goog.events.dispatchEvent;
+mvc.browser.events.wrap_listener_ = goog.events.wrapListener_;
+mvc.browser.events.Listenable = goog.events.Listenable;
+mvc.browser.events.get_unique_id = goog.events.getUniqueId;
+mvc.browser.events.clean_up = goog.events.cleanUp;
+mvc.browser.events.expose = goog.events.expose;
+mvc.browser.events.handle_browser_event_ = goog.events.handleBrowserEvent_;
+mvc.browser.events.LISTENER_WRAPPER_PROP_ = goog.events.LISTENER_WRAPPER_PROP_;
+mvc.browser.events.listen_with_wrapper = goog.events.listenWithWrapper;
+mvc.browser.events.listen = goog.events.listen;
+mvc.browser.events.sources_ = goog.events.sources_;
+mvc.browser.events.unlisten_by_key = goog.events.unlistenByKey;
+mvc.browser.events.listen_once = goog.events.listenOnce;
+mvc.browser.events.fire_listeners = goog.events.fireListeners;
+mvc.browser.events.get_listeners = goog.events.getListeners;
+mvc.browser.events.fire_listener = goog.events.fireListener;
+mvc.browser.events.get_listener = goog.events.getListener;
+mvc.browser.events.EventTarget = goog.events.EventTarget;
+mvc.browser.events.listener_tree_ = goog.events.listenerTree_;
+mvc.browser.events.get_total_listener_count = goog.events.getTotalListenerCount;
+mvc.browser.events.unlisten_with_wrapper = goog.events.unlistenWithWrapper;
+mvc.browser.events.has_listener = goog.events.hasListener;
+mvc.browser.events.BrowserFeature = goog.events.BrowserFeature;
+mvc.browser.events.mark_ie_event_ = goog.events.markIeEvent_;
+mvc.browser.events.unique_id_counter_ = goog.events.uniqueIdCounter_;
+mvc.browser.events.on_string_ = goog.events.onString_;
+mvc.browser.events.EventLike = goog.events.EventLike;
+mvc.browser.events.BrowserEvent = goog.events.BrowserEvent;
+mvc.browser.events.on_string_map_ = goog.events.onStringMap_;
+mvc.browser.events.Listener = goog.events.Listener;
+mvc.browser.events.fire_listeners_ = goog.events.fireListeners_;
+mvc.browser.events.get_listeners_ = goog.events.getListeners_;
+mvc.browser.events.is_marked_ie_event_ = goog.events.isMarkedIeEvent_;
+mvc.browser.events.get_proxy = goog.events.getProxy;
+mvc.browser.events.listen_ = goog.events.listen_;
+mvc.browser.events.EventWrapper = goog.events.EventWrapper;
+mvc.browser.events.get_on_string_ = goog.events.getOnString_;
+mvc.browser.events.key_separator_ = goog.events.keySeparator_;
+mvc.browser.events.Event = goog.events.Event;
+mvc.browser.events.clean_up_ = goog.events.cleanUp_;
+mvc.browser.events.ListenableType = goog.events.ListenableType;
+mvc.browser.events.remove_all = goog.events.removeAll;
+mvc.browser.events.ListenableKey = goog.events.ListenableKey;
+mvc.browser.events.Key = goog.events.Key;
+mvc.browser.events.protect_browser_event_entry_point = goog.events.protectBrowserEventEntryPoint;
 mvc.browser.events.cross_browser_event = function(a) {
   return new mvc.browser.events.BrowserEvent(a)
 };
@@ -31252,8 +29420,8 @@ mvc.impl.compiler.compile_form = function(a) {
               a: {
                 for(var p = 0;;) {
                   if(p < d) {
-                    var q = cljs.core._nth.call(null, c, p);
-                    cljs.core.chunk_append.call(null, e, mvc.impl.compiler._node.call(null, q));
+                    var r = cljs.core._nth.call(null, c, p);
+                    cljs.core.chunk_append.call(null, e, mvc.impl.compiler._node.call(null, r));
                     p += 1
                   }else {
                     c = !0;
@@ -31316,35 +29484,38 @@ mvc.impl.compiler.sel = function() {
 mvc.impl.compiler.node = function(a) {
   a = clojure.string.replace.call(null, a, /data-(\w+)=\"/, 'data-event\x3d"$1 ');
   a = goog.dom.htmlToDocumentFragment.call(null, a);
-  for(var b = mvc.impl.compiler.sel.call(null, "[data-event]", a), b = cljs.core.seq.call(null, b), c = null, d = 0, e = 0;;) {
-    if(e < d) {
-      var f = cljs.core._nth.call(null, c, e), g = f.getAttribute("data-event"), h = clojure.string.trim.call(null, cljs.core.first.call(null, cljs.core.re_seq.call(null, /^\w+ /, g))), g = eval(function(a, b, c, d, e, f, g) {
-        return function(a) {
-          return[cljs.core.str("var "), cljs.core.str(f), cljs.core.str(" \x3d"), cljs.core.str(a)].join("")
-        }
-      }(b, c, d, e, g, h, f).call(null, [cljs.core.str(clojure.string.replace.call(null, g, cljs.core.re_pattern.call(null, [cljs.core.str("^"), cljs.core.str(h)].join("")), "")), cljs.core.str("; "), cljs.core.str(h), cljs.core.str(";")].join("")));
-      mvc.browser.events.listen_BANG_.call(null, f, h, g);
-      e += 1
-    }else {
-      var k = cljs.core.seq.call(null, b);
-      if(k) {
-        f = k;
-        if(cljs.core.chunked_seq_QMARK_.call(null, f)) {
-          b = cljs.core.chunk_first.call(null, f), e = cljs.core.chunk_rest.call(null, f), c = b, d = cljs.core.count.call(null, b), b = e
-        }else {
-          var h = cljs.core.first.call(null, f), l = h.getAttribute("data-event"), g = clojure.string.trim.call(null, cljs.core.first.call(null, cljs.core.re_seq.call(null, /^\w+ /, l))), b = eval(function(a, b, c, d, e, f, g, h, k) {
-            return function(a) {
-              return[cljs.core.str("var "), cljs.core.str(f), cljs.core.str(" \x3d"), cljs.core.str(a)].join("")
-            }
-          }(b, c, d, e, l, g, h, f, k).call(null, [cljs.core.str(clojure.string.replace.call(null, l, cljs.core.re_pattern.call(null, [cljs.core.str("^"), cljs.core.str(g)].join("")), "")), cljs.core.str("; "), cljs.core.str(g), cljs.core.str(";")].join("")));
-          mvc.browser.events.listen_BANG_.call(null, h, g, b);
-          b = cljs.core.next.call(null, f);
-          c = null;
-          d = 0
-        }
-        e = 0
+  var b = mvc.impl.compiler.sel.call(null, "[data-event]", a);
+  if(0 < cljs.core.count.call(null, b)) {
+    for(var b = cljs.core.seq.call(null, b), c = null, d = 0, e = 0;;) {
+      if(e < d) {
+        var f = cljs.core._nth.call(null, c, e), g = f.getAttribute("data-event"), h = clojure.string.trim.call(null, cljs.core.first.call(null, cljs.core.re_seq.call(null, /^\w+ /, g))), g = eval(function(a, b, c, d, e, f, g) {
+          return function(a) {
+            return[cljs.core.str("var "), cljs.core.str(f), cljs.core.str(" \x3d"), cljs.core.str(a)].join("")
+          }
+        }(b, c, d, e, g, h, f).call(null, [cljs.core.str(clojure.string.replace.call(null, g, cljs.core.re_pattern.call(null, [cljs.core.str("^"), cljs.core.str(h)].join("")), "")), cljs.core.str("; "), cljs.core.str(h), cljs.core.str(";")].join("")));
+        mvc.browser.events.listen_BANG_.call(null, f, h, g);
+        e += 1
       }else {
-        break
+        var k = cljs.core.seq.call(null, b);
+        if(k) {
+          f = k;
+          if(cljs.core.chunked_seq_QMARK_.call(null, f)) {
+            b = cljs.core.chunk_first.call(null, f), e = cljs.core.chunk_rest.call(null, f), c = b, d = cljs.core.count.call(null, b), b = e
+          }else {
+            var h = cljs.core.first.call(null, f), l = h.getAttribute("data-event"), g = clojure.string.trim.call(null, cljs.core.first.call(null, cljs.core.re_seq.call(null, /^\w+ /, l))), b = eval(function(a, b, c, d, e, f, g, h, k) {
+              return function(a) {
+                return[cljs.core.str("var "), cljs.core.str(f), cljs.core.str(" \x3d"), cljs.core.str(a)].join("")
+              }
+            }(b, c, d, e, l, g, h, f, k).call(null, [cljs.core.str(clojure.string.replace.call(null, l, cljs.core.re_pattern.call(null, [cljs.core.str("^"), cljs.core.str(g)].join("")), "")), cljs.core.str("; "), cljs.core.str(g), cljs.core.str(";")].join("")));
+            mvc.browser.events.listen_BANG_.call(null, h, g, b);
+            b = cljs.core.next.call(null, f);
+            c = null;
+            d = 0
+          }
+          e = 0
+        }else {
+          break
+        }
       }
     }
   }
@@ -31530,12 +29701,12 @@ try {
   Window.prototype.dommy$template$PElement$ = !0, Window.prototype.dommy$template$PElement$_elem$arity$1 = function(a) {
     return a
   }
-}catch(e454886) {
-  if(e454886 instanceof ReferenceError) {
-    var __454887 = e454886;
+}catch(e62238) {
+  if(e62238 instanceof ReferenceError) {
+    var __62239 = e62238;
     console.log("PElement: js/Window not defined by browser, skipping it... (running on phantomjs?)")
   }else {
-    throw e454886;
+    throw e62238;
   }
 }
 dommy.template.node = function(a) {
@@ -31863,16 +30034,16 @@ dommy.core.listen_BANG_ = function() {
     }
     for(var e = dommy.core.elem_and_selector.call(null, a), f = cljs.core.nth.call(null, e, 0, null), e = cljs.core.nth.call(null, e, 1, null), g = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), h = null, k = 0, l = 0;;) {
       if(l < k) {
-        for(var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null), n = cljs.core.seq.call(null, cljs.core.get.call(null, dommy.core.special_listener_makers, n, cljs.core.PersistentArrayMap.fromArray([n, cljs.core.identity], !0))), p = null, q = 0, r = 0;;) {
-          if(r < q) {
-            var s = cljs.core._nth.call(null, p, r), t = cljs.core.nth.call(null, s, 0, null), s = cljs.core.nth.call(null, s, 1, null), s = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, s.call(null, m));
+        for(var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null), n = cljs.core.seq.call(null, cljs.core.get.call(null, dommy.core.special_listener_makers, n, cljs.core.PersistentArrayMap.fromArray([n, cljs.core.identity], !0))), p = null, r = 0, q = 0;;) {
+          if(q < r) {
+            var s = cljs.core._nth.call(null, p, q), t = cljs.core.nth.call(null, s, 0, null), s = cljs.core.nth.call(null, s, 1, null), s = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, s.call(null, m));
             dommy.core.update_event_listeners_BANG_.call(null, f, cljs.core.assoc_in, cljs.core.PersistentVector.fromArray([e, t, m], !0), s);
             cljs.core.truth_(f.addEventListener) ? f.addEventListener(cljs.core.name.call(null, t), s) : f.attachEvent(cljs.core.name.call(null, t), s);
-            r += 1
+            q += 1
           }else {
             if(n = cljs.core.seq.call(null, n)) {
-              cljs.core.chunked_seq_QMARK_.call(null, n) ? (q = cljs.core.chunk_first.call(null, n), n = cljs.core.chunk_rest.call(null, n), p = q, q = cljs.core.count.call(null, q)) : (q = cljs.core.first.call(null, n), p = cljs.core.nth.call(null, q, 0, null), q = cljs.core.nth.call(null, q, 1, null), q = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, q.call(null, m)), dommy.core.update_event_listeners_BANG_.call(null, f, cljs.core.assoc_in, 
-              cljs.core.PersistentVector.fromArray([e, p, m], !0), q), cljs.core.truth_(f.addEventListener) ? f.addEventListener(cljs.core.name.call(null, p), q) : f.attachEvent(cljs.core.name.call(null, p), q), n = cljs.core.next.call(null, n), p = null, q = 0), r = 0
+              cljs.core.chunked_seq_QMARK_.call(null, n) ? (r = cljs.core.chunk_first.call(null, n), n = cljs.core.chunk_rest.call(null, n), p = r, r = cljs.core.count.call(null, r)) : (r = cljs.core.first.call(null, n), p = cljs.core.nth.call(null, r, 0, null), r = cljs.core.nth.call(null, r, 1, null), r = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, r.call(null, m)), dommy.core.update_event_listeners_BANG_.call(null, f, cljs.core.assoc_in, 
+              cljs.core.PersistentVector.fromArray([e, p, m], !0), r), cljs.core.truth_(f.addEventListener) ? f.addEventListener(cljs.core.name.call(null, p), r) : f.attachEvent(cljs.core.name.call(null, p), r), n = cljs.core.next.call(null, n), p = null, r = 0), q = 0
             }else {
               break
             }
@@ -31891,8 +30062,8 @@ dommy.core.listen_BANG_ = function() {
             l = null;
             for(n = m = 0;;) {
               if(n < m) {
-                q = cljs.core._nth.call(null, l, n), p = cljs.core.nth.call(null, q, 0, null), q = cljs.core.nth.call(null, q, 1, null), q = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, q.call(null, h)), dommy.core.update_event_listeners_BANG_.call(null, f, cljs.core.assoc_in, cljs.core.PersistentVector.fromArray([e, p, h], !0), q), cljs.core.truth_(f.addEventListener) ? f.addEventListener(cljs.core.name.call(null, p), q) : f.attachEvent(cljs.core.name.call(null, 
-                p), q), n += 1
+                r = cljs.core._nth.call(null, l, n), p = cljs.core.nth.call(null, r, 0, null), r = cljs.core.nth.call(null, r, 1, null), r = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, r.call(null, h)), dommy.core.update_event_listeners_BANG_.call(null, f, cljs.core.assoc_in, cljs.core.PersistentVector.fromArray([e, p, h], !0), r), cljs.core.truth_(f.addEventListener) ? f.addEventListener(cljs.core.name.call(null, p), r) : f.attachEvent(cljs.core.name.call(null, 
+                p), r), n += 1
               }else {
                 if(k = cljs.core.seq.call(null, k)) {
                   cljs.core.chunked_seq_QMARK_.call(null, k) ? (m = cljs.core.chunk_first.call(null, k), k = cljs.core.chunk_rest.call(null, k), l = m, m = cljs.core.count.call(null, m)) : (m = cljs.core.first.call(null, k), l = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null), m = (cljs.core.truth_(e) ? cljs.core.partial.call(null, dommy.core.live_listener, f, e) : cljs.core.identity).call(null, m.call(null, h)), dommy.core.update_event_listeners_BANG_.call(null, f, 
@@ -31934,18 +30105,18 @@ dommy.core.unlisten_BANG_ = function() {
     }
     for(var e = dommy.core.elem_and_selector.call(null, a), f = cljs.core.nth.call(null, e, 0, null), e = cljs.core.nth.call(null, e, 1, null), g = cljs.core.seq.call(null, cljs.core.partition.call(null, 2, b)), h = null, k = 0, l = 0;;) {
       if(l < k) {
-        for(var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null), n = cljs.core.seq.call(null, cljs.core.get.call(null, dommy.core.special_listener_makers, n, cljs.core.PersistentArrayMap.fromArray([n, cljs.core.identity], !0))), p = null, q = 0, r = 0;;) {
-          if(r < q) {
-            var s = cljs.core._nth.call(null, p, r), t = cljs.core.nth.call(null, s, 0, null);
+        for(var m = cljs.core._nth.call(null, h, l), n = cljs.core.nth.call(null, m, 0, null), m = cljs.core.nth.call(null, m, 1, null), n = cljs.core.seq.call(null, cljs.core.get.call(null, dommy.core.special_listener_makers, n, cljs.core.PersistentArrayMap.fromArray([n, cljs.core.identity], !0))), p = null, r = 0, q = 0;;) {
+          if(q < r) {
+            var s = cljs.core._nth.call(null, p, q), t = cljs.core.nth.call(null, s, 0, null);
             cljs.core.nth.call(null, s, 1, null);
-            var s = cljs.core.PersistentVector.fromArray([e, t, m], !0), u = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), s);
+            var s = cljs.core.PersistentVector.fromArray([e, t, m], !0), v = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), s);
             dommy.core.update_event_listeners_BANG_.call(null, f, dommy.utils.dissoc_in, s);
-            cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, t), u) : f.detachEvent(cljs.core.name.call(null, t), u);
-            r += 1
+            cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, t), v) : f.detachEvent(cljs.core.name.call(null, t), v);
+            q += 1
           }else {
             if(n = cljs.core.seq.call(null, n)) {
-              cljs.core.chunked_seq_QMARK_.call(null, n) ? (q = cljs.core.chunk_first.call(null, n), n = cljs.core.chunk_rest.call(null, n), p = q, q = cljs.core.count.call(null, q)) : (q = cljs.core.first.call(null, n), p = cljs.core.nth.call(null, q, 0, null), cljs.core.nth.call(null, q, 1, null), q = cljs.core.PersistentVector.fromArray([e, p, m], !0), r = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), q), dommy.core.update_event_listeners_BANG_.call(null, f, dommy.utils.dissoc_in, 
-              q), cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, p), r) : f.detachEvent(cljs.core.name.call(null, p), r), n = cljs.core.next.call(null, n), p = null, q = 0), r = 0
+              cljs.core.chunked_seq_QMARK_.call(null, n) ? (r = cljs.core.chunk_first.call(null, n), n = cljs.core.chunk_rest.call(null, n), p = r, r = cljs.core.count.call(null, r)) : (r = cljs.core.first.call(null, n), p = cljs.core.nth.call(null, r, 0, null), cljs.core.nth.call(null, r, 1, null), r = cljs.core.PersistentVector.fromArray([e, p, m], !0), q = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), r), dommy.core.update_event_listeners_BANG_.call(null, f, dommy.utils.dissoc_in, 
+              r), cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, p), q) : f.detachEvent(cljs.core.name.call(null, p), q), n = cljs.core.next.call(null, n), p = null, r = 0), q = 0
             }else {
               break
             }
@@ -31964,7 +30135,7 @@ dommy.core.unlisten_BANG_ = function() {
             l = null;
             for(n = m = 0;;) {
               if(n < m) {
-                q = cljs.core._nth.call(null, l, n), p = cljs.core.nth.call(null, q, 0, null), cljs.core.nth.call(null, q, 1, null), q = cljs.core.PersistentVector.fromArray([e, p, h], !0), r = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), q), dommy.core.update_event_listeners_BANG_.call(null, f, dommy.utils.dissoc_in, q), cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, p), r) : f.detachEvent(cljs.core.name.call(null, p), r), n += 
+                r = cljs.core._nth.call(null, l, n), p = cljs.core.nth.call(null, r, 0, null), cljs.core.nth.call(null, r, 1, null), r = cljs.core.PersistentVector.fromArray([e, p, h], !0), q = cljs.core.get_in.call(null, dommy.core.event_listeners.call(null, f), r), dommy.core.update_event_listeners_BANG_.call(null, f, dommy.utils.dissoc_in, r), cljs.core.truth_(f.removeEventListener) ? f.removeEventListener(cljs.core.name.call(null, p), q) : f.detachEvent(cljs.core.name.call(null, p), q), n += 
                 1
               }else {
                 if(k = cljs.core.seq.call(null, k)) {
@@ -32012,8 +30183,8 @@ dommy.core.listen_once_BANG_ = function() {
       if(h < g) {
         var k = cljs.core._nth.call(null, f, h), l = cljs.core.nth.call(null, k, 0, null), m = cljs.core.nth.call(null, k, 1, null);
         dommy.core.listen_BANG_.call(null, a, l, function(b, d, e, f, g, h, k) {
-          return function H(b) {
-            dommy.core.unlisten_BANG_.call(null, a, h, H);
+          return function M(b) {
+            dommy.core.unlisten_BANG_.call(null, a, h, M);
             return k.call(null, b)
           }
         }(e, f, g, h, k, l, m));
@@ -32026,8 +30197,8 @@ dommy.core.listen_once_BANG_ = function() {
           }else {
             var m = cljs.core.first.call(null, k), n = cljs.core.nth.call(null, m, 0, null), p = cljs.core.nth.call(null, m, 1, null);
             dommy.core.listen_BANG_.call(null, a, n, function(b, d, e, f, g, h, k, l, m) {
-              return function x(b) {
-                dommy.core.unlisten_BANG_.call(null, a, h, x);
+              return function D(b) {
+                dommy.core.unlisten_BANG_.call(null, a, h, D);
                 return k.call(null, b)
               }
             }(e, f, g, h, m, n, p, k, l));
@@ -32137,7 +30308,7 @@ mvc.examples.core.test_node = function(a) {
 mvc.examples.core.bootstrap = function() {
   var a = function(a) {
     cljs.core.println.call(null, "Hello, examples!");
-    return dommy.core.append_BANG_.call(null, document.querySelector("div#content"), mvc.examples.core.test_node.call(null, 10))
+    return dommy.core.append_BANG_.call(null, document.body, mvc.ui.meny.meny.call(null))
   }, b = function(b) {
     var d = null;
     0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
@@ -32153,12 +30324,289 @@ mvc.examples.core.bootstrap = function() {
 }();
 mvc.examples.todos = {};
 mvc.examples.todos.core = {};
-goog.history.Event = function(a, b) {
-  goog.events.Event.call(this, goog.history.EventType.NAVIGATE);
-  this.token = a;
-  this.isNavigation = b
+mvc.impl.stm = {};
+mvc.impl.stm.IAtomicTransaction = {};
+mvc.impl.stm.IAtomicTransactor = {};
+mvc.impl.stm._retry = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_retry$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_retry$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._retry[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._retry._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-retry", a);
+  }
+  return b.call(null, a)
 };
-goog.inherits(goog.history.Event, goog.events.Event);
+mvc.impl.stm._else_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_else_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_else_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._else_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._else_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-else!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._commit_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_commit_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_commit_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._commit_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._commit_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-commit!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._abort_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_abort_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_abort_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._abort_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._abort_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-abort!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._reset_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_reset_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_reset_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._reset_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._reset_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-reset!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._validate_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicTransactor$_validate_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicTransactor$_validate_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._validate_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._validate_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicTransactor.-validate!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm.IAtomicReference = {};
+mvc.impl.stm._get = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_get$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_get$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._get[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._get._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-get", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._compare_and_set_BANG_ = function(a, b, c) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_compare_and_set_BANG_$arity$3 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_compare_and_set_BANG_$arity$3(a, b, c)
+  }
+  var d;
+  d = mvc.impl.stm._compare_and_set_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.stm._compare_and_set_BANG_._, !d)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-compare-and-set!", a);
+  }
+  return d.call(null, a, b, c)
+};
+mvc.impl.stm._get_and_set_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_get_and_set_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_get_and_set_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._get_and_set_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._get_and_set_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-get-and-set!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._lazy_set_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_lazy_set_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_lazy_set_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._lazy_set_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._lazy_set_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-lazy-set!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._set_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_set_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_set_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._set_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._set_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-set!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._weak_compare_and_set_BANG_ = function(a, b, c) {
+  if(a ? a.mvc$impl$stm$IAtomicReference$_weak_compare_and_set_BANG_$arity$3 : a) {
+    return a.mvc$impl$stm$IAtomicReference$_weak_compare_and_set_BANG_$arity$3(a, b, c)
+  }
+  var d;
+  d = mvc.impl.stm._weak_compare_and_set_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!d && (d = mvc.impl.stm._weak_compare_and_set_BANG_._, !d)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicReference.-weak-compare-and-set!", a);
+  }
+  return d.call(null, a, b, c)
+};
+mvc.impl.stm.IAtomicInteger = {};
+mvc.impl.stm._add_and_get_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_add_and_get_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_add_and_get_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._add_and_get_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._add_and_get_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-add-and-get!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._get_and_add_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_get_and_add_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_get_and_add_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._get_and_add_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._get_and_add_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-get-and-add!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._dec_and_get_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_dec_and_get_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_dec_and_get_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._dec_and_get_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._dec_and_get_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-dec-and-get!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._get_and_dec_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_get_and_dec_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_get_and_dec_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._get_and_dec_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._get_and_dec_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-get-and-dec!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._inc_and_get_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_inc_and_get_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_inc_and_get_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._inc_and_get_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._inc_and_get_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-inc-and-get!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._get_and_inc_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IAtomicInteger$_get_and_inc_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IAtomicInteger$_get_and_inc_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._get_and_inc_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._get_and_inc_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IAtomicInteger.-get-and-inc!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm.ICountDownLatch = {};
+mvc.impl.stm.await = function(a) {
+  if(a ? a.mvc$impl$stm$ICountDownLatch$await$arity$1 : a) {
+    return a.mvc$impl$stm$ICountDownLatch$await$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm.await[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm.await._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ICountDownLatch.await", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm.CountDownLatch = function(a) {
+  this.count = a
+};
+mvc.impl.stm.CountDownLatch.cljs$lang$type = !0;
+mvc.impl.stm.CountDownLatch.cljs$lang$ctorStr = "mvc.impl.stm/CountDownLatch";
+mvc.impl.stm.CountDownLatch.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.stm/CountDownLatch")
+};
+mvc.impl.stm.CountDownLatch.prototype.mvc$impl$stm$ICountDownLatch$ = !0;
+mvc.impl.stm.CountDownLatch.prototype.mvc$impl$stm$ICountDownLatch$await$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.__GT_CountDownLatch = function(a) {
+  return new mvc.impl.stm.CountDownLatch(a)
+};
+mvc.impl.stm.Ref = function(a, b, c) {
+  this.history = a;
+  this.min_history = b;
+  this.max_history = c
+};
+mvc.impl.stm.Ref.cljs$lang$type = !0;
+mvc.impl.stm.Ref.cljs$lang$ctorStr = "mvc.impl.stm/Ref";
+mvc.impl.stm.Ref.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.stm/Ref")
+};
+mvc.impl.stm.__GT_Ref = function(a, b, c) {
+  return new mvc.impl.stm.Ref(a, b, c)
+};
+mvc.impl.stm.AtomicTransaction = function(a) {
+  this.status = a
+};
+mvc.impl.stm.AtomicTransaction.cljs$lang$type = !0;
+mvc.impl.stm.AtomicTransaction.cljs$lang$ctorStr = "mvc.impl.stm/AtomicTransaction";
+mvc.impl.stm.AtomicTransaction.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.stm/AtomicTransaction")
+};
+mvc.impl.stm.__GT_AtomicTransaction = function(a) {
+  return new mvc.impl.stm.AtomicTransaction(a)
+};
+mvc.impl.stm.STM = function() {
+};
+mvc.impl.stm.STM.cljs$lang$type = !0;
+mvc.impl.stm.STM.cljs$lang$ctorStr = "mvc.impl.stm/STM";
+mvc.impl.stm.STM.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.stm/STM")
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$ = !0;
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_retry$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_else_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_commit_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_abort_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_reset_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.STM.prototype.mvc$impl$stm$IAtomicTransactor$_validate_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.__GT_STM = function() {
+  return new mvc.impl.stm.STM
+};
 goog.history.Html5History = function(a, b) {
   goog.events.EventTarget.call(this);
   goog.asserts.assert(goog.history.Html5History.isSupported(a), "HTML5 history is not supported.");
@@ -32376,1317 +30824,169 @@ mvc.core._main = function() {
 }();
 mvc.core._main.call(null);
 mvc.browser.crypt = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.crypt.string_to_byte_array = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.stringToByteArray, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.utf8_byte_array_to_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.utf8ByteArrayToString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.byte_array_to_hex = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.byteArrayToHex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.string_to_utf8_byte_array = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.stringToUtf8ByteArray, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.xor_byte_array = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.xorByteArray, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.hex_to_byte_array = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.hexToByteArray, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.crypt.byte_array_to_string = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.crypt.byteArrayToString, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.crypt.string_to_byte_array = goog.crypt.stringToByteArray;
+mvc.browser.crypt.utf8_byte_array_to_string = goog.crypt.utf8ByteArrayToString;
+mvc.browser.crypt.byte_array_to_hex = goog.crypt.byteArrayToHex;
+mvc.browser.crypt.string_to_utf8_byte_array = goog.crypt.stringToUtf8ByteArray;
+mvc.browser.crypt.xor_byte_array = goog.crypt.xorByteArray;
+mvc.browser.crypt.hex_to_byte_array = goog.crypt.hexToByteArray;
+mvc.browser.crypt.byte_array_to_string = goog.crypt.byteArrayToString;
+mvc.browser.crypt.JpegEncoder = goog.crypt.JpegEncoder;
 mvc.browser.style = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.style.translate_rect_for_another_frame = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.translateRectForAnotherFrame, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_vendor_style_name_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getVendorStyleName_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_ie_pixel_value_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getIePixelValue_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.length_unit_regex_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.lengthUnitRegex_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.uninstall_styles = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.uninstallStyles, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_css_translation = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getCssTranslation, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_page_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setPageOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_width = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setWidth, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.MATRIX_TRANSLATION_REGEX_ = goog.style.MATRIX_TRANSLATION_REGEX_, mvc.browser.style.get_style_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getStyle_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_styles = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setStyles, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.ABSOLUTE_CSS_LENGTH_UNITS_ = goog.style.ABSOLUTE_CSS_LENGTH_UNITS_, mvc.browser.style.CONVERTIBLE_RELATIVE_CSS_UNITS_ = goog.style.CONVERTIBLE_RELATIVE_CSS_UNITS_, mvc.browser.style.get_float = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getFloat, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_container_offset_to_scroll_into = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getContainerOffsetToScrollInto, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_font_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getFontSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.to_style_attribute = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.toStyleAttribute, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_margin_box = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getMarginBox, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.clear_transparent_background_image = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.clearTransparentBackgroundImage, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_height = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setHeight, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_font_family = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getFontFamily, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_opacity = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setOpacity, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_content_box_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getContentBoxSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_border_box = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBorderBox, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_box_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBox_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_vendor_js_style_name_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getVendorJsStyleName_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.to_selector_case = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.toSelectorCase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_border_box_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBorderBoxSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_client_position = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getClientPosition, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.to_camel_case = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.toCamelCase, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_bounds = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBounds, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_pre_wrap = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setPreWrap, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_relative_position = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getRelativePosition, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_cascaded_style = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getCascadedStyle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_position = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setPosition, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_position = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedPosition, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_client_left_top = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getClientLeftTop, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_style = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedStyle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_style = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setStyle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_pixel_style_value_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPixelStyleValue_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_framed_page_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getFramedPageOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_style_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setStyle_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_padding_box = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPaddingBox, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_unselectable = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setUnselectable, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_inline_block = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setInlineBlock, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_offset_parent = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getOffsetParent, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_visible_rect_for_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getVisibleRectForElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_length_units = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getLengthUnits, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_overflow_x = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedOverflowX, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.is_right_to_left = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.isRightToLeft, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_overflow_y = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedOverflowY, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_text_align = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedTextAlign, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_client_viewport_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getClientViewportElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_content_box_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setContentBoxSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_opacity = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getOpacity, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_scrollbar_width = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getScrollbarWidth, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_bounding_client_rect_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBoundingClientRect_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_ie_pixel_distance_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getIePixelDistance_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_box_sizing_size_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setBoxSizingSize_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.ie_border_width_keywords_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.ieBorderWidthKeywords_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_page_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPageOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.scroll_into_container_view = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.scrollIntoContainerView, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_cursor = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedCursor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.is_unselectable = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.isUnselectable, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_size_with_display_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getSizeWithDisplay_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_float = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setFloat, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_computed_z_index = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getComputedZIndex, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_style = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getStyle, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.unselectable_style_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.unselectableStyle_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_page_offset_top = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPageOffsetTop, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.install_styles = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.installStyles, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_transparent_background_image = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setTransparentBackgroundImage, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.set_border_box_size = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.setBorderBoxSize, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.parse_style_attribute = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.parseStyleAttribute, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_viewport_page_offset = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getViewportPageOffset, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_page_offset_left = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPageOffsetLeft, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_ie_pixel_border_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getIePixelBorder_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_background_color = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getBackgroundColor, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.show_element = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.showElement, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.is_element_shown = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.isElementShown, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.style.get_position = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.style.getPosition, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.style.translate_rect_for_another_frame = goog.style.translateRectForAnotherFrame;
+mvc.browser.style.get_vendor_style_name_ = goog.style.getVendorStyleName_;
+mvc.browser.style.get_ie_pixel_value_ = goog.style.getIePixelValue_;
+mvc.browser.style.length_unit_regex_ = goog.style.lengthUnitRegex_;
+mvc.browser.style.set_size = goog.style.setSize;
+mvc.browser.style.uninstall_styles = goog.style.uninstallStyles;
+mvc.browser.style.get_css_translation = goog.style.getCssTranslation;
+mvc.browser.style.set_page_offset = goog.style.setPageOffset;
+mvc.browser.style.set_width = goog.style.setWidth;
+mvc.browser.style.MATRIX_TRANSLATION_REGEX_ = goog.style.MATRIX_TRANSLATION_REGEX_;
+mvc.browser.style.get_style_ = goog.style.getStyle_;
+mvc.browser.style.set_styles = goog.style.setStyles;
+mvc.browser.style.ABSOLUTE_CSS_LENGTH_UNITS_ = goog.style.ABSOLUTE_CSS_LENGTH_UNITS_;
+mvc.browser.style.CONVERTIBLE_RELATIVE_CSS_UNITS_ = goog.style.CONVERTIBLE_RELATIVE_CSS_UNITS_;
+mvc.browser.style.get_float = goog.style.getFloat;
+mvc.browser.style.get_container_offset_to_scroll_into = goog.style.getContainerOffsetToScrollInto;
+mvc.browser.style.get_font_size = goog.style.getFontSize;
+mvc.browser.style.to_style_attribute = goog.style.toStyleAttribute;
+mvc.browser.style.get_margin_box = goog.style.getMarginBox;
+mvc.browser.style.clear_transparent_background_image = goog.style.clearTransparentBackgroundImage;
+mvc.browser.style.set_height = goog.style.setHeight;
+mvc.browser.style.get_font_family = goog.style.getFontFamily;
+mvc.browser.style.set_opacity = goog.style.setOpacity;
+mvc.browser.style.get_content_box_size = goog.style.getContentBoxSize;
+mvc.browser.style.get_border_box = goog.style.getBorderBox;
+mvc.browser.style.get_box_ = goog.style.getBox_;
+mvc.browser.style.get_vendor_js_style_name_ = goog.style.getVendorJsStyleName_;
+mvc.browser.style.to_selector_case = goog.style.toSelectorCase;
+mvc.browser.style.get_border_box_size = goog.style.getBorderBoxSize;
+mvc.browser.style.get_client_position = goog.style.getClientPosition;
+mvc.browser.style.to_camel_case = goog.style.toCamelCase;
+mvc.browser.style.get_bounds = goog.style.getBounds;
+mvc.browser.style.set_pre_wrap = goog.style.setPreWrap;
+mvc.browser.style.get_relative_position = goog.style.getRelativePosition;
+mvc.browser.style.get_cascaded_style = goog.style.getCascadedStyle;
+mvc.browser.style.set_position = goog.style.setPosition;
+mvc.browser.style.get_computed_position = goog.style.getComputedPosition;
+mvc.browser.style.get_client_left_top = goog.style.getClientLeftTop;
+mvc.browser.style.get_computed_style = goog.style.getComputedStyle;
+mvc.browser.style.set_style = goog.style.setStyle;
+mvc.browser.style.get_pixel_style_value_ = goog.style.getPixelStyleValue_;
+mvc.browser.style.get_framed_page_offset = goog.style.getFramedPageOffset;
+mvc.browser.style.set_style_ = goog.style.setStyle_;
+mvc.browser.style.get_padding_box = goog.style.getPaddingBox;
+mvc.browser.style.set_unselectable = goog.style.setUnselectable;
+mvc.browser.style.set_inline_block = goog.style.setInlineBlock;
+mvc.browser.style.get_offset_parent = goog.style.getOffsetParent;
+mvc.browser.style.get_visible_rect_for_element = goog.style.getVisibleRectForElement;
+mvc.browser.style.get_length_units = goog.style.getLengthUnits;
+mvc.browser.style.get_computed_overflow_x = goog.style.getComputedOverflowX;
+mvc.browser.style.is_right_to_left = goog.style.isRightToLeft;
+mvc.browser.style.get_computed_overflow_y = goog.style.getComputedOverflowY;
+mvc.browser.style.get_computed_text_align = goog.style.getComputedTextAlign;
+mvc.browser.style.get_client_viewport_element = goog.style.getClientViewportElement;
+mvc.browser.style.set_content_box_size = goog.style.setContentBoxSize;
+mvc.browser.style.get_opacity = goog.style.getOpacity;
+mvc.browser.style.get_scrollbar_width = goog.style.getScrollbarWidth;
+mvc.browser.style.get_bounding_client_rect_ = goog.style.getBoundingClientRect_;
+mvc.browser.style.get_ie_pixel_distance_ = goog.style.getIePixelDistance_;
+mvc.browser.style.get_size = goog.style.getSize;
+mvc.browser.style.set_box_sizing_size_ = goog.style.setBoxSizingSize_;
+mvc.browser.style.ie_border_width_keywords_ = goog.style.ieBorderWidthKeywords_;
+mvc.browser.style.get_page_offset = goog.style.getPageOffset;
+mvc.browser.style.scroll_into_container_view = goog.style.scrollIntoContainerView;
+mvc.browser.style.get_computed_cursor = goog.style.getComputedCursor;
+mvc.browser.style.is_unselectable = goog.style.isUnselectable;
+mvc.browser.style.get_size_with_display_ = goog.style.getSizeWithDisplay_;
+mvc.browser.style.set_float = goog.style.setFloat;
+mvc.browser.style.get_computed_z_index = goog.style.getComputedZIndex;
+mvc.browser.style.get_style = goog.style.getStyle;
+mvc.browser.style.unselectable_style_ = goog.style.unselectableStyle_;
+mvc.browser.style.get_page_offset_top = goog.style.getPageOffsetTop;
+mvc.browser.style.install_styles = goog.style.installStyles;
+mvc.browser.style.set_transparent_background_image = goog.style.setTransparentBackgroundImage;
+mvc.browser.style.set_border_box_size = goog.style.setBorderBoxSize;
+mvc.browser.style.parse_style_attribute = goog.style.parseStyleAttribute;
+mvc.browser.style.get_viewport_page_offset = goog.style.getViewportPageOffset;
+mvc.browser.style.get_page_offset_left = goog.style.getPageOffsetLeft;
+mvc.browser.style.get_ie_pixel_border_ = goog.style.getIePixelBorder_;
+mvc.browser.style.get_background_color = goog.style.getBackgroundColor;
+mvc.browser.style.show_element = goog.style.showElement;
+mvc.browser.style.is_element_shown = goog.style.isElementShown;
+mvc.browser.style.get_position = goog.style.getPosition;
 mvc.browser.worker = {};
 mvc.browser.worker._STAR_worker_STAR_ = null;
 mvc.browser.worker._STAR_worker_pool_STAR_ = null;
+mvc.browser.worker.IWorker = {};
+mvc.browser.worker._handler = function(a) {
+  if(a ? a.mvc$browser$worker$IWorker$_handler$arity$1 : a) {
+    return a.mvc$browser$worker$IWorker$_handler$arity$1(a)
+  }
+  var b;
+  b = mvc.browser.worker._handler[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.browser.worker._handler._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IWorker.-handler", a);
+  }
+  return b.call(null, a)
+};
+mvc.browser.worker._add_handler_BANG_ = function(a, b) {
+  if(a ? a.mvc$browser$worker$IWorker$_add_handler_BANG_$arity$2 : a) {
+    return a.mvc$browser$worker$IWorker$_add_handler_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.browser.worker._add_handler_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.browser.worker._add_handler_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IWorker.-add-handler!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.browser.worker.IWorkerPool = {};
+mvc.browser.worker._enqueue = function(a) {
+  if(a ? a.mvc$browser$worker$IWorkerPool$_enqueue$arity$1 : a) {
+    return a.mvc$browser$worker$IWorkerPool$_enqueue$arity$1(a)
+  }
+  var b;
+  b = mvc.browser.worker._enqueue[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.browser.worker._enqueue._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IWorkerPool.-enqueue", a);
+  }
+  return b.call(null, a)
+};
+mvc.browser.worker._dequeue = function(a) {
+  if(a ? a.mvc$browser$worker$IWorkerPool$_dequeue$arity$1 : a) {
+    return a.mvc$browser$worker$IWorkerPool$_dequeue$arity$1(a)
+  }
+  var b;
+  b = mvc.browser.worker._dequeue[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.browser.worker._dequeue._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IWorkerPool.-dequeue", a);
+  }
+  return b.call(null, a)
+};
+mvc.browser.worker._count = function(a) {
+  if(a ? a.mvc$browser$worker$IWorkerPool$_count$arity$1 : a) {
+    return a.mvc$browser$worker$IWorkerPool$_count$arity$1(a)
+  }
+  var b;
+  b = mvc.browser.worker._count[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.browser.worker._count._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IWorkerPool.-count", a);
+  }
+  return b.call(null, a)
+};
+mvc.browser.worker._log = function(a) {
+  if(a ? a.mvc$browser$worker$IWorkerPool$_log$arity$1 : a) {
+    return a.mvc$browser$worker$IWorkerPool$_log$arity$1(a)
+  }
+  var b;
+  b = mvc.browser.worker._log[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.browser.worker._log._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IWorkerPool.-log", a);
+  }
+  return b.call(null, a)
+};
 mvc.browser.worker.IWebWorker = {};
 mvc.browser.worker.WebWorker = function() {
 };
@@ -33705,232 +31005,22 @@ mvc.browser.worker.worker_pool = function() {
   return cljs.core.PersistentHashSet.EMPTY
 };
 mvc.browser.debug = {};
-cljs.core.PersistentVector.fromArray([mvc.browser.debug.set_function_resolver = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.setFunctionResolver, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.expose = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.expose, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.get_stacktrace_simple = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.getStacktraceSimple, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.catch_errors = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.catchErrors, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.fn_name_resolver_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.fnNameResolver_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.make_whitespace_visible = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.makeWhitespaceVisible, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.expose_exception = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.exposeException, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.fn_name_cache_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.fnNameCache_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.deep_expose = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.deepExpose, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.MAX_STACK_DEPTH = goog.debug.MAX_STACK_DEPTH, mvc.browser.debug.get_stacktrace = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.getStacktrace, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.expose_array = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.exposeArray, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.get_function_name = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.getFunctionName, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.normalize_error_object = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.normalizeErrorObject, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.enhance_error = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.enhanceError, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}(), mvc.browser.debug.get_stacktrace_helper_ = function() {
-  var a = function(a) {
-    return cljs.core.apply.call(null, goog.debug.getStacktraceHelper_, cljs.core.map.call(null, cljs.core.clj__GT_js, a))
-  }, b = function(b) {
-    var d = null;
-    0 < arguments.length && (d = cljs.core.array_seq(Array.prototype.slice.call(arguments, 0), 0));
-    return a.call(this, d)
-  };
-  b.cljs$lang$maxFixedArity = 0;
-  b.cljs$lang$applyTo = function(b) {
-    b = cljs.core.seq(b);
-    return a(b)
-  };
-  b.cljs$core$IFn$_invoke$arity$variadic = a;
-  return b
-}()], !0);
+mvc.browser.debug.set_function_resolver = goog.debug.setFunctionResolver;
+mvc.browser.debug.expose = goog.debug.expose;
+mvc.browser.debug.get_stacktrace_simple = goog.debug.getStacktraceSimple;
+mvc.browser.debug.catch_errors = goog.debug.catchErrors;
+mvc.browser.debug.fn_name_resolver_ = goog.debug.fnNameResolver_;
+mvc.browser.debug.make_whitespace_visible = goog.debug.makeWhitespaceVisible;
+mvc.browser.debug.expose_exception = goog.debug.exposeException;
+mvc.browser.debug.fn_name_cache_ = goog.debug.fnNameCache_;
+mvc.browser.debug.deep_expose = goog.debug.deepExpose;
+mvc.browser.debug.MAX_STACK_DEPTH = goog.debug.MAX_STACK_DEPTH;
+mvc.browser.debug.get_stacktrace = goog.debug.getStacktrace;
+mvc.browser.debug.expose_array = goog.debug.exposeArray;
+mvc.browser.debug.get_function_name = goog.debug.getFunctionName;
+mvc.browser.debug.normalize_error_object = goog.debug.normalizeErrorObject;
+mvc.browser.debug.enhance_error = goog.debug.enhanceError;
+mvc.browser.debug.get_stacktrace_helper_ = goog.debug.getStacktraceHelper_;
 mvc.core.collection = {};
 mvc.core.collection.collection = function() {
   var a = function(a, b) {
@@ -33956,6 +31046,172 @@ mvc.core.collection.collection = function() {
   return b
 }();
 mvc.browser.history = {};
-cljs.core.PersistentVector.EMPTY;
+mvc.browser.history.Html5History = goog.History.Html5History;
+mvc.browser.history.EventType = goog.History.EventType;
+mvc.browser.history.Event = goog.History.Event;
+mvc.browser.history.util = goog.Uri.util;
+mvc.browser.history.utils = goog.Uri.utils;
 mvc.browser.pubsub = {};
-cljs.core.PersistentVector.EMPTY;
+mvc.impl.future = {};
+mvc.impl.future.IFuture = {};
+mvc.impl.future.cancelled_QMARK_ = function(a) {
+  if(a ? a.mvc$impl$future$IFuture$cancelled_QMARK_$arity$1 : a) {
+    return a.mvc$impl$future$IFuture$cancelled_QMARK_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.future.cancelled_QMARK_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.future.cancelled_QMARK_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IFuture.cancelled?", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.future.completed_QMARK_ = function(a) {
+  if(a ? a.mvc$impl$future$IFuture$completed_QMARK_$arity$1 : a) {
+    return a.mvc$impl$future$IFuture$completed_QMARK_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.future.completed_QMARK_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.future.completed_QMARK_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IFuture.completed?", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.future.cancel_BANG_ = function(a) {
+  if(a ? a.mvc$impl$future$IFuture$cancel_BANG_$arity$1 : a) {
+    return a.mvc$impl$future$IFuture$cancel_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.future.cancel_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.future.cancel_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IFuture.cancel!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.future.IListenableFuture = {};
+mvc.impl.future.add_listener_BANG_ = function(a) {
+  if(a ? a.mvc$impl$future$IListenableFuture$add_listener_BANG_$arity$1 : a) {
+    return a.mvc$impl$future$IListenableFuture$add_listener_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.future.add_listener_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.future.add_listener_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IListenableFuture.add-listener!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.future.Future = function() {
+};
+mvc.impl.future.Future.cljs$lang$type = !0;
+mvc.impl.future.Future.cljs$lang$ctorStr = "mvc.impl.future/Future";
+mvc.impl.future.Future.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.future/Future")
+};
+mvc.impl.future.Future.prototype.mvc$impl$future$IListenableFuture$ = !0;
+mvc.impl.future.Future.prototype.mvc$impl$future$IListenableFuture$add_listener_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.future.Future.prototype.mvc$impl$future$IFuture$ = !0;
+mvc.impl.future.Future.prototype.mvc$impl$future$IFuture$cancelled_QMARK_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.future.Future.prototype.mvc$impl$future$IFuture$completed_QMARK_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.future.Future.prototype.mvc$impl$future$IFuture$cancel_BANG_$arity$1 = function(a) {
+  return null
+};
+mvc.impl.future.__GT_Future = function() {
+  return new mvc.impl.future.Future
+};
+mvc.core.observable = {};
+mvc.core.observable.IObservable = {};
+mvc.core.observable._subscribe = function(a) {
+  if(a ? a.mvc$core$observable$IObservable$_subscribe$arity$1 : a) {
+    return a.mvc$core$observable$IObservable$_subscribe$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._subscribe[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._subscribe._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObservable.-subscribe", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable.IObserver = {};
+mvc.core.observable._handler = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_handler$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_handler$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._handler[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._handler._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-handler", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable._set_handler_BANG_ = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_set_handler_BANG_$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_set_handler_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._set_handler_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._set_handler_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-set-handler!", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable._error_handler = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_error_handler$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_error_handler$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._error_handler[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._error_handler._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-error-handler", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable._set_error_handler_BANG_ = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_set_error_handler_BANG_$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_set_error_handler_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._set_error_handler_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._set_error_handler_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-set-error-handler!", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable._next_handler = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_next_handler$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_next_handler$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._next_handler[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._next_handler._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-next-handler", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable._set_next_handler_BANG_ = function(a) {
+  if(a ? a.mvc$core$observable$IObserver$_set_next_handler_BANG_$arity$1 : a) {
+    return a.mvc$core$observable$IObserver$_set_next_handler_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._set_next_handler_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._set_next_handler_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IObserver.-set-next-handler!", a);
+  }
+  return b.call(null, a)
+};
+mvc.core.observable.IDisposable = {};
+mvc.core.observable._dispose = function(a) {
+  if(a ? a.mvc$core$observable$IDisposable$_dispose$arity$1 : a) {
+    return a.mvc$core$observable$IDisposable$_dispose$arity$1(a)
+  }
+  var b;
+  b = mvc.core.observable._dispose[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.core.observable._dispose._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IDisposable.-dispose", a);
+  }
+  return b.call(null, a)
+};
