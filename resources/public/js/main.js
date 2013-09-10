@@ -377,6 +377,13 @@ goog.base = function(a, b, c) {
 goog.scope = function(a) {
   a.call(goog.global)
 };
+goog.debug = {};
+goog.debug.Error = function(a) {
+  Error.captureStackTrace ? Error.captureStackTrace(this, goog.debug.Error) : this.stack = Error().stack || "";
+  a && (this.message = String(a))
+};
+goog.inherits(goog.debug.Error, Error);
+goog.debug.Error.prototype.name = "CustomError";
 goog.string = {};
 goog.string.Unicode = {NBSP:"\u00a0"};
 goog.string.startsWith = function(a, b) {
@@ -708,13 +715,6 @@ goog.string.parseInt = function(a) {
   isFinite(a) && (a = String(a));
   return goog.isString(a) ? /^\s*-?0x/i.test(a) ? parseInt(a, 16) : parseInt(a, 10) : NaN
 };
-goog.debug = {};
-goog.debug.Error = function(a) {
-  Error.captureStackTrace ? Error.captureStackTrace(this, goog.debug.Error) : this.stack = Error().stack || "";
-  a && (this.message = String(a))
-};
-goog.inherits(goog.debug.Error, Error);
-goog.debug.Error.prototype.name = "CustomError";
 goog.asserts = {};
 goog.asserts.ENABLE_ASSERTS = goog.DEBUG;
 goog.asserts.AssertionError = function(a, b) {
@@ -24051,6 +24051,23 @@ mvc.browser.structs.get_count = goog.structs.getCount;
 mvc.browser.structs.every = goog.structs.every;
 mvc.browser.structs.map = goog.structs.map;
 mvc.browser.structs.contains = goog.structs.contains;
+goog.messaging = {};
+goog.messaging.MessageChannel = function() {
+};
+goog.messaging.MessageChannel.prototype.connect = function(a) {
+};
+goog.messaging.MessageChannel.prototype.isConnected = function() {
+};
+goog.messaging.MessageChannel.prototype.registerService = function(a, b, c) {
+};
+goog.messaging.MessageChannel.prototype.registerDefaultService = function(a) {
+};
+goog.messaging.MessageChannel.prototype.send = function(a, b) {
+};
+goog.messaging.pipe = function(a, b) {
+  a.registerDefaultService(goog.bind(b.send, b));
+  b.registerDefaultService(goog.bind(a.send, a))
+};
 mvc.impl.transaction = {};
 mvc.impl.transaction.RETRY_LIMIT = 1E4;
 mvc.impl.transaction.LOCK_WAIT_MSECS = 100;
@@ -24105,16 +24122,16 @@ mvc.impl.transaction._exclusive_QMARK_ = function(a) {
   }
   return b.call(null, a)
 };
-mvc.impl.transaction._release_BANG_ = function(a) {
-  if(a ? a.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$1 : a) {
-    return a.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$1(a)
+mvc.impl.transaction._release_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$2 : a) {
+    return a.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$2(a, b)
   }
-  var b;
-  b = mvc.impl.transaction._release_BANG_[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.transaction._release_BANG_._, !b)) {
+  var c;
+  c = mvc.impl.transaction._release_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.transaction._release_BANG_._, !c)) {
     throw cljs.core.missing_protocol.call(null, "ISynchronizer.-release!", a);
   }
-  return b.call(null, a)
+  return c.call(null, a, b)
 };
 mvc.impl.transaction._compare_and_set_BANG_ = function(a, b, c) {
   if(a ? a.mvc$impl$transaction$ISynchronizer$_compare_and_set_BANG_$arity$3 : a) {
@@ -24150,10 +24167,10 @@ mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_queued_Q
 mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_exclusive_QMARK_$arity$1 = function(a) {
   return null
 };
-mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$1 = function(a) {
-  var b = this, c = cljs.core.async.chan.call(null, 1);
+mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_release_BANG_$arity$2 = function(a, b) {
+  var c = this, d = cljs.core.async.chan.call(null, 1);
   cljs.core.async.impl.dispatch.run.call(null, function() {
-    var d = function() {
+    var b = function() {
       return function(a) {
         return function() {
           var b = null, c = function() {
@@ -24181,22 +24198,22 @@ mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_release_
           b.cljs$core$IFn$_invoke$arity$1 = d;
           return b
         }()
-      }(function(c) {
-        var d = c[1];
-        return 1 === d ? (c[2] = null, c[1] = 2, "\ufdd0:recur") : 2 === d ? (c[1] = 4, "\ufdd0:recur") : 3 === d ? (d = c[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, c, d)) : 4 === d ? (d = cljs.core.not.call(null, 0 === b.state), c[1] = d ? 7 : 8, "\ufdd0:recur") : 5 === d ? (c[2] = null, c[1] = 6, "\ufdd0:recur") : 6 === d ? (d = c[2], c[2] = d, c[1] = 3, "\ufdd0:recur") : 7 === d ? (c[2] = !1, c[1] = 9, "\ufdd0:recur") : 8 === d ? (d = mvc.impl.transaction._compare_and_set_BANG_.call(null, 
-        a, b.state, b.state - 1), cljs.core.truth_(d) ? c[1] = 10 : c[1] = 11, "\ufdd0:recur") : 9 === d ? (c[5] = c[2], c[2] = null, c[1] = 2, "\ufdd0:recur") : 10 === d ? (d = cljs.core._EQ_.call(null, 0, b.state - 1), c[2] = d, c[1] = 12, "\ufdd0:recur") : 11 === d ? (c[2] = null, c[1] = 12, "\ufdd0:recur") : 12 === d ? (d = c[2], c[2] = d, c[1] = 9, "\ufdd0:recur") : null
+      }(function(b) {
+        var d = b[1];
+        return 1 === d ? (b[2] = null, b[1] = 2, "\ufdd0:recur") : 2 === d ? (b[1] = 4, "\ufdd0:recur") : 3 === d ? (d = b[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, b, d)) : 4 === d ? (d = cljs.core.not.call(null, 0 === c.state), b[1] = d ? 7 : 8, "\ufdd0:recur") : 5 === d ? (b[2] = null, b[1] = 6, "\ufdd0:recur") : 6 === d ? (d = b[2], b[2] = d, b[1] = 3, "\ufdd0:recur") : 7 === d ? (b[2] = !1, b[1] = 9, "\ufdd0:recur") : 8 === d ? (d = mvc.impl.transaction._compare_and_set_BANG_.call(null, 
+        a, c.state, c.state - 1), cljs.core.truth_(d) ? b[1] = 10 : b[1] = 11, "\ufdd0:recur") : 9 === d ? (b[5] = b[2], b[2] = null, b[1] = 2, "\ufdd0:recur") : 10 === d ? (d = cljs.core._EQ_.call(null, 0, c.state - 1), b[2] = d, b[1] = 12, "\ufdd0:recur") : 11 === d ? (b[2] = null, b[1] = 12, "\ufdd0:recur") : 12 === d ? (d = b[2], b[2] = d, b[1] = 9, "\ufdd0:recur") : null
       })
-    }(), e = function() {
-      var a = d.call(null);
-      a[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c;
+    }(), f = function() {
+      var a = b.call(null);
+      a[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = d;
       return a
     }();
-    return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, e)
+    return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, f)
   });
-  return c
+  return d
 };
 mvc.impl.transaction.Sync.prototype.mvc$impl$transaction$ISynchronizer$_compare_and_set_BANG_$arity$3 = function(a, b, c) {
-  return cljs.core._EQ_.call(null, this.state, b) ? (cljs.core.reset_BANG_.call(null, this.state, c), !0) : !1
+  return cljs.core._EQ_.call(null, this.state, b) ? (a.state = c, !0) : !1
 };
 mvc.impl.transaction.Sync.prototype.cljs$core$IDeref$_deref$arity$1 = function(a) {
   return this.state
@@ -24204,6 +24221,24 @@ mvc.impl.transaction.Sync.prototype.cljs$core$IDeref$_deref$arity$1 = function(a
 mvc.impl.transaction.__GT_Sync = function(a) {
   return new mvc.impl.transaction.Sync(a)
 };
+mvc.impl.transaction.sync = function() {
+  var a = null, b = function() {
+    return a.call(null, 0)
+  }, c = function(a) {
+    return new mvc.impl.transaction.Sync(a)
+  }, a = function(a) {
+    switch(arguments.length) {
+      case 0:
+        return b.call(this);
+      case 1:
+        return c.call(this, a)
+    }
+    throw Error("Invalid arity: " + arguments.length);
+  };
+  a.cljs$core$IFn$_invoke$arity$0 = b;
+  a.cljs$core$IFn$_invoke$arity$1 = c;
+  return a
+}();
 mvc.impl.transaction.ICountDownLatch = {};
 mvc.impl.transaction._await = function(a) {
   if(a ? a.mvc$impl$transaction$ICountDownLatch$_await$arity$1 : a) {
@@ -24238,8 +24273,11 @@ mvc.impl.transaction._get_count = function(a) {
   }
   return b.call(null, a)
 };
-mvc.impl.transaction.CountDownLatch = function(a) {
-  this.count = a
+mvc.impl.transaction.CountDownLatch = function(a, b, c, d) {
+  this.count = a;
+  this.sync = b;
+  this.count_chan = c;
+  this.interrupt_chan = d
 };
 mvc.impl.transaction.CountDownLatch.cljs$lang$type = !0;
 mvc.impl.transaction.CountDownLatch.cljs$lang$ctorStr = "mvc.impl.transaction/CountDownLatch";
@@ -24248,42 +24286,188 @@ mvc.impl.transaction.CountDownLatch.cljs$lang$ctorPrWriter = function(a, b, c) {
 };
 mvc.impl.transaction.CountDownLatch.prototype.mvc$impl$transaction$ICountDownLatch$ = !0;
 mvc.impl.transaction.CountDownLatch.prototype.mvc$impl$transaction$ICountDownLatch$_await$arity$1 = function(a) {
+  var b = this;
+  if(0 === b.count) {
+    return b.count
+  }
+  if(0 < b.count) {
+    var c = cljs.core.async.chan.call(null, 1);
+    cljs.core.async.impl.dispatch.run.call(null, function() {
+      var a = function() {
+        return function(a) {
+          return function() {
+            var b = null, c = function() {
+              var a = Array(7);
+              a[0] = b;
+              a[1] = 1;
+              return a
+            }, d = function(b) {
+              for(;;) {
+                var c = a.call(null, b);
+                if("\ufdd0:recur" !== c) {
+                  return c
+                }
+              }
+            }, b = function(a) {
+              switch(arguments.length) {
+                case 0:
+                  return c.call(this);
+                case 1:
+                  return d.call(this, a)
+              }
+              throw Error("Invalid arity: " + arguments.length);
+            };
+            b.cljs$core$IFn$_invoke$arity$0 = c;
+            b.cljs$core$IFn$_invoke$arity$1 = d;
+            return b
+          }()
+        }(function(a) {
+          var c = a[1];
+          if(8 === c) {
+            return c = a, c[2] = a[2], c[1] = 5, "\ufdd0:recur"
+          }
+          if(7 === c) {
+            throw c = a[5], a = [cljs.core.str("No matching clause: "), cljs.core.str(c)].join(""), Error(a);
+          }
+          if(6 === c) {
+            return a[2] = -1, a[1] = 8, "\ufdd0:recur"
+          }
+          if(5 === c) {
+            return c = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, c)
+          }
+          if(4 === c) {
+            return c = a[5], c = cljs.core._EQ_.call(null, b.interrupt_chan, c), a[1] = c ? 6 : 7, "\ufdd0:recur"
+          }
+          if(3 === c) {
+            return a[2] = 0, a[1] = 5, "\ufdd0:recur"
+          }
+          if(2 === c) {
+            var d = a[2], c = cljs.core.nth.call(null, d, 0, null), d = cljs.core.nth.call(null, d, 1, null), e = cljs.core._EQ_.call(null, b.count_chan, d);
+            a[6] = c;
+            a[5] = d;
+            a[1] = e ? 3 : 4;
+            return"\ufdd0:recur"
+          }
+          return 1 === c ? (c = cljs.core.vector.call(null, b.count_chan, b.interrupt_chan), cljs.core.async.impl.ioc_helpers.ioc_alts_BANG_.call(null, a, 2, c)) : null
+        })
+      }(), e = function() {
+        var b = a.call(null);
+        b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c;
+        return b
+      }();
+      return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, e)
+    });
+    return c
+  }
   return null
 };
 mvc.impl.transaction.CountDownLatch.prototype.mvc$impl$transaction$ICountDownLatch$_count_down$arity$1 = function(a) {
-  return null
+  return mvc.impl.transaction._release_BANG_.call(null, this.sync, 1)
 };
 mvc.impl.transaction.CountDownLatch.prototype.mvc$impl$transaction$ICountDownLatch$_get_count$arity$1 = function(a) {
-  return null
+  return this.count
 };
-mvc.impl.transaction.__GT_CountDownLatch = function(a) {
-  return new mvc.impl.transaction.CountDownLatch(a)
+mvc.impl.transaction.__GT_CountDownLatch = function(a, b, c, d) {
+  return new mvc.impl.transaction.CountDownLatch(a, b, c, d)
+};
+mvc.impl.transaction.countdown_latch = function(a) {
+  if(0 < a) {
+    throw Error;
+  }
+  return new mvc.impl.transaction.CountDownLatch(a, new mvc.impl.transaction.Sync(a), cljs.core.async.chan.call(null), cljs.core.async.chan.call(null))
 };
 mvc.impl.transaction.ILockingTransaction = {};
-mvc.impl.transaction.running = function(a) {
-  if(a ? a.mvc$impl$transaction$ILockingTransaction$running$arity$1 : a) {
-    return a.mvc$impl$transaction$ILockingTransaction$running$arity$1(a)
+mvc.impl.transaction.running_QMARK_ = function(a) {
+  if(a ? a.mvc$impl$transaction$ILockingTransaction$running_QMARK_$arity$1 : a) {
+    return a.mvc$impl$transaction$ILockingTransaction$running_QMARK_$arity$1(a)
   }
   var b;
-  b = mvc.impl.transaction.running[goog.typeOf(null == a ? null : a)];
-  if(!b && (b = mvc.impl.transaction.running._, !b)) {
-    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.running", a);
+  b = mvc.impl.transaction.running_QMARK_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.transaction.running_QMARK_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.running?", a);
   }
   return b.call(null, a)
 };
-mvc.impl.transaction.LockingTransaction = function(a, b, c, d) {
+mvc.impl.transaction._read_point = function(a) {
+  if(a ? a.mvc$impl$transaction$ILockingTransaction$_read_point$arity$1 : a) {
+    return a.mvc$impl$transaction$ILockingTransaction$_read_point$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.transaction._read_point[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.transaction._read_point._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.-read-point", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.transaction._commit_point = function(a) {
+  if(a ? a.mvc$impl$transaction$ILockingTransaction$_commit_point$arity$1 : a) {
+    return a.mvc$impl$transaction$ILockingTransaction$_commit_point$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.transaction._commit_point[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.transaction._commit_point._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.-commit-point", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.transaction._stop = function(a, b) {
+  if(a ? a.mvc$impl$transaction$ILockingTransaction$_stop$arity$2 : a) {
+    return a.mvc$impl$transaction$ILockingTransaction$_stop$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.transaction._stop[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.transaction._stop._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.-stop", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.transaction._lock = function(a) {
+  if(a ? a.mvc$impl$transaction$ILockingTransaction$_lock$arity$1 : a) {
+    return a.mvc$impl$transaction$ILockingTransaction$_lock$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.transaction._lock[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.transaction._lock._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockingTransaction.-lock", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.transaction.LockingTransaction = function(a, b, c, d, e, f, g, h, k, l, m) {
   this.transaction = a;
   this.status = b;
-  this.start_point = c;
-  this.latch = d
+  this.read_point = c;
+  this.start_point = d;
+  this.last_point = e;
+  this.latch = f;
+  this.start_time = g;
+  this.actions = h;
+  this.vals = k;
+  this.sets = l;
+  this.commutes = m
 };
 mvc.impl.transaction.LockingTransaction.cljs$lang$type = !0;
 mvc.impl.transaction.LockingTransaction.cljs$lang$ctorStr = "mvc.impl.transaction/LockingTransaction";
 mvc.impl.transaction.LockingTransaction.cljs$lang$ctorPrWriter = function(a, b, c) {
   return cljs.core._write.call(null, b, "mvc.impl.transaction/LockingTransaction")
 };
-mvc.impl.transaction.__GT_LockingTransaction = function(a, b, c, d) {
-  return new mvc.impl.transaction.LockingTransaction(a, b, c, d)
+mvc.impl.transaction.LockingTransaction.prototype.mvc$impl$transaction$ILockingTransaction$ = !0;
+mvc.impl.transaction.LockingTransaction.prototype.mvc$impl$transaction$ILockingTransaction$running_QMARK_$arity$1 = function(a) {
+  return(a = cljs.core._EQ_.call(null, this.status, "\ufdd0:running")) ? a : cljs.core._EQ_.call(null, this.status, "\ufdd0:committing")
+};
+mvc.impl.transaction.LockingTransaction.prototype.mvc$impl$transaction$ILockingTransaction$_read_point$arity$1 = function(a) {
+  var b = this;
+  return cljs.core.swap_BANG_.call(null, b.read_point, function() {
+    return cljs.core.swap_BANG_.call(null, b.last_point, cljs.core.inc)
+  })
+};
+mvc.impl.transaction.LockingTransaction.prototype.mvc$impl$transaction$ILockingTransaction$_commit_point$arity$1 = function(a) {
+  return cljs.core.swap_BANG_.call(null, this.last_point, cljs.core.inc)
+};
+mvc.impl.transaction.LockingTransaction.prototype.mvc$impl$transaction$ILockingTransaction$_stop$arity$2 = function(a, b) {
+  return null
+};
+mvc.impl.transaction.__GT_LockingTransaction = function(a, b, c, d, e, f, g, h, k, l, m) {
+  return new mvc.impl.transaction.LockingTransaction(a, b, c, d, e, f, g, h, k, l, m)
 };
 mvc.impl.transaction.locking_transaction = function(a) {
   return a.call(null)
@@ -24429,6 +24613,30 @@ goog.format.insertWordBreaksBasic = function(a, b) {
 goog.format.IS_IE8_OR_ABOVE_ = goog.userAgent.IE && goog.userAgent.isVersion(8);
 goog.format.WORD_BREAK_HTML = goog.userAgent.WEBKIT ? "\x3cwbr\x3e\x3c/wbr\x3e" : goog.userAgent.OPERA ? "\x26shy;" : goog.format.IS_IE8_OR_ABOVE_ ? "\x26#8203;" : "\x3cwbr\x3e";
 goog.format.WbrToken_ = {LT:60, GT:62, AMP:38, SEMI_COLON:59, SPACE:32};
+mvc.impl.mutex = {};
+mvc.impl.mutex.ILockable = {};
+mvc.impl.mutex._lock = function(a) {
+  if(a ? a.mvc$impl$mutex$ILockable$_lock$arity$1 : a) {
+    return a.mvc$impl$mutex$ILockable$_lock$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.mutex._lock[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.mutex._lock._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockable.-lock", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.mutex._unlock = function(a) {
+  if(a ? a.mvc$impl$mutex$ILockable$_unlock$arity$1 : a) {
+    return a.mvc$impl$mutex$ILockable$_unlock$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.mutex._unlock[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.mutex._unlock._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "ILockable.-unlock", a);
+  }
+  return b.call(null, a)
+};
 goog.history = {};
 goog.history.EventType = {NAVIGATE:"navigate"};
 goog.history.Event = function(a, b) {
@@ -25572,19 +25780,6 @@ mvc.ui = {};
 mvc.ui.meny = {};
 mvc.ui.meny.meny = function() {
   return mvc.impl.compiler.node.call(null, "" + cljs.core.str([cljs.core.str("\x3c"), cljs.core.str(cljs.core.name.call(null, "h1")), cljs.core.str(null), cljs.core.str(""), cljs.core.str("\x3e"), cljs.core.str("meny"), cljs.core.str("\x3c/"), cljs.core.str(cljs.core.name.call(null, "h1")), cljs.core.str("\x3e")].join("")))
-};
-goog.messaging = {};
-goog.messaging.MessageChannel = function() {
-};
-goog.messaging.MessageChannel.prototype.connect = function(a) {
-};
-goog.messaging.MessageChannel.prototype.isConnected = function() {
-};
-goog.messaging.MessageChannel.prototype.registerService = function(a, b, c) {
-};
-goog.messaging.MessageChannel.prototype.registerDefaultService = function(a) {
-};
-goog.messaging.MessageChannel.prototype.send = function(a, b) {
 };
 goog.messaging.AbstractChannel = function() {
   goog.Disposable.call(this);
@@ -30607,11 +30802,102 @@ mvc.impl.stm._dosync = function(a, b) {
   }
   return c.call(null, a, b)
 };
-mvc.impl.stm.Ref = function(a, b, c) {
+mvc.impl.stm._set_validator_BANG_ = function(a, b) {
+  if(a ? a.mvc$impl$stm$IRef$_set_validator_BANG_$arity$2 : a) {
+    return a.mvc$impl$stm$IRef$_set_validator_BANG_$arity$2(a, b)
+  }
+  var c;
+  c = mvc.impl.stm._set_validator_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!c && (c = mvc.impl.stm._set_validator_BANG_._, !c)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-set-validator!", a);
+  }
+  return c.call(null, a, b)
+};
+mvc.impl.stm._get_validator = function(a) {
+  if(a ? a.mvc$impl$stm$IRef$_get_validator$arity$1 : a) {
+    return a.mvc$impl$stm$IRef$_get_validator$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._get_validator[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._get_validator._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-get-validator", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._set_min_history_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IRef$_set_min_history_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IRef$_set_min_history_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._set_min_history_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._set_min_history_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-set-min-history!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._set_max_history_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IRef$_set_max_history_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IRef$_set_max_history_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._set_max_history_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._set_max_history_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-set-max-history!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._validate_BANG_ = function(a) {
+  if(a ? a.mvc$impl$stm$IRef$_validate_BANG_$arity$1 : a) {
+    return a.mvc$impl$stm$IRef$_validate_BANG_$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._validate_BANG_[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._validate_BANG_._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-validate!", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm._watches = function(a) {
+  if(a ? a.mvc$impl$stm$IRef$_watches$arity$1 : a) {
+    return a.mvc$impl$stm$IRef$_watches$arity$1(a)
+  }
+  var b;
+  b = mvc.impl.stm._watches[goog.typeOf(null == a ? null : a)];
+  if(!b && (b = mvc.impl.stm._watches._, !b)) {
+    throw cljs.core.missing_protocol.call(null, "IRef.-watches", a);
+  }
+  return b.call(null, a)
+};
+mvc.impl.stm.TVal = function(a, b, c, d, e) {
+  this.val = a;
+  this.point = b;
+  this.msecs = c;
+  this.prior = d;
+  this.next = e
+};
+mvc.impl.stm.TVal.cljs$lang$type = !0;
+mvc.impl.stm.TVal.cljs$lang$ctorStr = "mvc.impl.stm/TVal";
+mvc.impl.stm.TVal.cljs$lang$ctorPrWriter = function(a, b, c) {
+  return cljs.core._write.call(null, b, "mvc.impl.stm/TVal")
+};
+mvc.impl.stm.__GT_TVal = function(a, b, c, d, e) {
+  return new mvc.impl.stm.TVal(a, b, c, d, e)
+};
+mvc.impl.stm.Ref = function(a, b, c, d, e, f, g, h, k, l, m, n, p) {
   this.state = a;
   this.meta = b;
-  this.revision_id = c;
-  this.cljs$lang$protocol_mask$partition1$ = 0;
+  this.validator = c;
+  this.revision_id = d;
+  this.watches = e;
+  this.tvals = f;
+  this.faults = g;
+  this.lock = h;
+  this.tinfo = k;
+  this.id = l;
+  this.min_history = m;
+  this.max_history = n;
+  this.ids = p;
+  this.cljs$lang$protocol_mask$partition1$ = 2;
   this.cljs$lang$protocol_mask$partition0$ = 163840
 };
 mvc.impl.stm.Ref.cljs$lang$type = !0;
@@ -30619,14 +30905,69 @@ mvc.impl.stm.Ref.cljs$lang$ctorStr = "mvc.impl.stm/Ref";
 mvc.impl.stm.Ref.cljs$lang$ctorPrWriter = function(a, b, c) {
   return cljs.core._write.call(null, b, "mvc.impl.stm/Ref")
 };
+mvc.impl.stm.Ref.prototype.cljs$core$IWatchable$_notify_watches$arity$3 = function(a, b, c) {
+  for(var d = cljs.core.seq.call(null, this.watches), e = null, f = 0, g = 0;;) {
+    if(g < f) {
+      var h = cljs.core._nth.call(null, e, g), k = cljs.core.nth.call(null, h, 0, null), h = cljs.core.nth.call(null, h, 1, null);
+      h.call(null, k, a, b, c);
+      g += 1
+    }else {
+      if(d = cljs.core.seq.call(null, d)) {
+        cljs.core.chunked_seq_QMARK_.call(null, d) ? (e = cljs.core.chunk_first.call(null, d), d = cljs.core.chunk_rest.call(null, d), k = e, f = cljs.core.count.call(null, e), e = k) : (e = cljs.core.first.call(null, d), k = cljs.core.nth.call(null, e, 0, null), h = cljs.core.nth.call(null, e, 1, null), h.call(null, k, a, b, c), d = cljs.core.next.call(null, d), e = null, f = 0), g = 0
+      }else {
+        return null
+      }
+    }
+  }
+};
+mvc.impl.stm.Ref.prototype.cljs$core$IWatchable$_add_watch$arity$3 = function(a, b, c) {
+  return a.watches = cljs.core.assoc.call(null, this.watches, b, c)
+};
+mvc.impl.stm.Ref.prototype.cljs$core$IWatchable$_remove_watch$arity$2 = function(a, b) {
+  return a.watches = cljs.core.dissoc.call(null, this.watches, b)
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$ = !0;
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_commute$arity$3 = function(a, b, c) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_watches$arity$1 = function(a) {
+  return this.watches
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_ensure$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_set_validator_BANG_$arity$2 = function(a, b) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_dosync$arity$2 = function(a, b) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_set_min_history_BANG_$arity$2 = function(a, b) {
+  return a.min_history = b
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_alter$arity$3 = function(a, b, c) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_get_validator$arity$1 = function(a) {
+  return null
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_set_max_history_BANG_$arity$2 = function(a, b) {
+  return a.max_history = b
+};
+mvc.impl.stm.Ref.prototype.mvc$impl$stm$IRef$_validate_BANG_$arity$2 = function(a, b) {
+  if(cljs.core.truth_(this.validator.call(null, b))) {
+    return null
+  }
+  throw Error([cljs.core.str("Assert failed: "), cljs.core.str("Validator rejected state."), cljs.core.str("\n"), cljs.core.str(cljs.core.pr_str.call(null, cljs.core.list(new cljs.core.Symbol(null, "validator", "validator", 1544652043, null), new cljs.core.Symbol(null, "new-val", "new-val", 203525933, null))))].join(""));
+};
 mvc.impl.stm.Ref.prototype.cljs$core$IMeta$_meta$arity$1 = function(a) {
   return this.meta
 };
 mvc.impl.stm.Ref.prototype.cljs$core$IDeref$_deref$arity$1 = function(a) {
   return this.state
 };
-mvc.impl.stm.__GT_Ref = function(a, b, c) {
-  return new mvc.impl.stm.Ref(a, b, c)
+mvc.impl.stm.__GT_Ref = function(a, b, c, d, e, f, g, h, k, l, m, n, p) {
+  return new mvc.impl.stm.Ref(a, b, c, d, e, f, g, h, k, l, m, n, p)
 };
 mvc.impl.stm.IAtomicTransaction = {};
 mvc.impl.stm.IAtomicTransactor = {};
@@ -30941,6 +31282,7 @@ goog.history.Html5History.TokenTransformer.prototype.retrieveToken = function(a,
 };
 goog.history.Html5History.TokenTransformer.prototype.createUrl = function(a, b, c) {
 };
+mvc.impl.lab = {};
 clojure.browser.repl = {};
 clojure.browser.repl.xpc_connection = cljs.core.atom.call(null, null);
 clojure.browser.repl.repl_print = function(a) {
